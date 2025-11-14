@@ -46,16 +46,36 @@ a {
   text-decoration: none;
 }
 
-/* Premium Frosted Glass Header */
+/* Premium Frosted Glass Header - Apple Style */
 .header-glass {
   position: relative;
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(40px) saturate(180%);
-  -webkit-backdrop-filter: blur(40px) saturate(180%);
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(60px) saturate(200%);
+  -webkit-backdrop-filter: blur(60px) saturate(200%);
   box-shadow:
-    0 8px 32px 0 rgba(0, 0, 0, 0.08),
-    inset 0 1px 1px 0 rgba(255, 255, 255, 0.5),
-    0 0 0 1px rgba(255, 255, 255, 0.2);
+    0 2px 16px 0 rgba(0, 0, 0, 0.04),
+    0 8px 32px 0 rgba(0, 0, 0, 0.06),
+    inset 0 0.5px 1px 0 rgba(255, 255, 255, 0.9),
+    inset 0 -0.5px 1px 0 rgba(0, 0, 0, 0.02),
+    0 0 0 0.5px rgba(255, 255, 255, 0.15);
+}
+
+/* Glossy shine gradient overlay */
+.header-glass::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  pointer-events: none;
+  z-index: 2;
+  border-radius: inherit;
 }
 
 /* Ensure sticky positioning works */
@@ -77,10 +97,10 @@ a {
   z-index: 1;
 }
 
-/* Ensure content is above noise texture */
-.header-glass > nav {
+/* Ensure content is above both overlays */
+.header-glass > * {
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 /* Atlassian-style Navigation Links */
