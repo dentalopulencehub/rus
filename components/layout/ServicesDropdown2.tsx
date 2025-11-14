@@ -30,7 +30,12 @@ const services = [
     description: 'Strategic business guidance',
   },
   {
-    name: 'Company Formation',
+    name: 'HMRC & NCA Investigations',
+    slug: 'hmrc-nca-investigations',
+    description: 'Tax investigation support',
+  },
+  {
+    name: 'Company Secretarial',
     slug: 'company-formation-secretarial',
     description: 'Company setup and compliance',
   },

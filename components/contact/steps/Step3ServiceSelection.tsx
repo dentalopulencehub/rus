@@ -3,20 +3,21 @@
 import { useContactForm } from '../ContactFormContext';
 
 const corporateServices = [
-  'Taxation Services',
   'Accounting & Bookkeeping',
   'Audit & Assurance',
-  'Payroll Services',
   'Business Advisory',
-  'Company Formation',
+  'Company Secretarial',
+  'HMRC & NCA Investigations',
+  'Payroll Services',
+  'Taxation Services',
   'Other',
 ];
 
 const individualServices = [
+  'Estate Planning',
   'Personal Tax Returns',
   'Self-Assessment',
   'Tax Planning',
-  'Estate Planning',
   'Other',
 ];
 

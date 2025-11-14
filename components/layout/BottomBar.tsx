@@ -19,7 +19,8 @@ const menuItems: MenuItem[] = [
       { label: 'Audit & Assurance', href: '/services/audit-assurance' },
       { label: 'Payroll Services', href: '/services/payroll-services' },
       { label: 'Business Advisory', href: '/services/business-advisory' },
-      { label: 'Company Formation', href: '/services/company-formation-secretarial' },
+      { label: 'HMRC & NCA Investigations', href: '/services/hmrc-nca-investigations' },
+      { label: 'Company Secretarial', href: '/services/company-formation-secretarial' },
     ],
   },
   {
@@ -30,7 +31,8 @@ const menuItems: MenuItem[] = [
       { label: 'Audit & Assurance', href: '/services/audit-assurance' },
       { label: 'Payroll Services', href: '/services/payroll-services' },
       { label: 'Business Advisory', href: '/services/business-advisory' },
-      { label: 'Company Formation', href: '/services/company-formation-secretarial' },
+      { label: 'HMRC & NCA Investigations', href: '/services/hmrc-nca-investigations' },
+      { label: 'Company Secretarial', href: '/services/company-formation-secretarial' },
     ],
   },
   {
@@ -38,11 +40,9 @@ const menuItems: MenuItem[] = [
     submenu: [
       { label: 'Charities & Not-for-profit', href: '/sectors/charities-not-for-profit' },
       { label: 'Contractors & Professional Services', href: '/sectors/contractors-professional-services' },
-      { label: 'Corporate', href: '/sectors/corporate' },
       { label: 'Creative & Media', href: '/sectors/creative-media' },
       { label: 'Education & Academies', href: '/sectors/education-academies' },
       { label: 'Healthcare', href: '/sectors/healthcare' },
-      { label: 'Owner Managed Businesses', href: '/sectors/owner-managed-businesses' },
       { label: 'Private Individuals', href: '/sectors/private-individuals' },
       { label: 'Property Services', href: '/sectors/property-services' },
       { label: 'Retail', href: '/sectors/retail' },

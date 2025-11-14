@@ -5,11 +5,9 @@ import { useContactForm } from '../ContactFormContext';
 const sectors = [
   'Charities & Not-for-profit',
   'Contractors & Professional Services',
-  'Corporate',
   'Creative & Media',
   'Education & Academies',
   'Healthcare',
-  'Owner Managed Businesses',
   'Property Services',
   'Retail',
   'Solicitors',
@@ -30,10 +28,10 @@ export function Step4IndustrySector() {
     <div className="space-y-6">
       <div>
         <h3 className="text-lg font-medium text-gray-900 mb-2">
-          Which industry/sector does this relate to?
+          Which sector does this relate to?
         </h3>
         <p className="text-sm text-gray-600">
-          This helps us provide industry-specific advice
+          This helps us tailor our services to you
         </p>
       </div>
 

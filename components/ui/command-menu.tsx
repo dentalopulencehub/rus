@@ -36,18 +36,18 @@ export function CommandMenu() {
       {/* Command Palette */}
       {open && (
         <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm" onClick={() => setOpen(false)}>
-          <div className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl" onClick={(e) => e.stopPropagation()}>
+          <div className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[calc(100%-2rem)] sm:w-full max-w-2xl mx-4" onClick={(e) => e.stopPropagation()}>
             <Command className="bg-white rounded-xl shadow-2xl border border-gray-200 overflow-hidden">
               <div className="flex items-center border-b border-gray-200 px-4">
-                <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
                 <Command.Input
                   placeholder="Search services, sectors, or pages..."
-                  className="flex-1 px-3 py-4 text-base bg-transparent outline-none placeholder:text-gray-400"
+                  className="flex-1 px-3 py-4 text-sm sm:text-base bg-transparent outline-none placeholder:text-gray-400"
                 />
               </div>
-              <Command.List className="max-h-[400px] overflow-y-auto p-2">
+              <Command.List className="max-h-[60vh] sm:max-h-[400px] overflow-y-auto p-2">
                 <Command.Empty className="py-6 text-center text-sm text-gray-500">No results found.</Command.Empty>
 
                 <Command.Group heading="Services" className="text-xs font-semibold text-gray-500 px-2 py-2">
@@ -68,9 +68,6 @@ export function CommandMenu() {
                 <Command.Group heading="Sectors" className="text-xs font-semibold text-gray-500 px-2 py-2 mt-2">
                   <CommandItem href="/sectors/charities-not-for-profit" onSelect={() => setOpen(false)}>
                     <span>Charities & Not-for-profit</span>
-                  </CommandItem>
-                  <CommandItem href="/sectors/corporate" onSelect={() => setOpen(false)}>
-                    <span>Corporate</span>
                   </CommandItem>
                   <CommandItem href="/sectors/healthcare" onSelect={() => setOpen(false)}>
                     <span>Healthcare</span>
