@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { ServicesDropdown } from './ServicesDropdown';
 import { SectorsDropdown } from './SectorsDropdown';
 import { CommandMenu } from '@/components/ui/command-menu';
@@ -11,6 +11,29 @@ import { cn } from '@/lib/utils';
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const isScrolled = useScrollPosition(50);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY < 50) {
+        setIsVisible(true);
+      } else if (currentScrollY > lastScrollY) {
+        // Scrolling down
+        setIsVisible(false);
+      } else {
+        // Scrolling up
+        setIsVisible(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY]);
 
   const handleToggleMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -18,11 +41,12 @@ export function Header() {
 
   return (
     <header className={cn(
-      "fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-out",
-      isScrolled ? "py-2 px-4" : "py-6 px-4"
+      "fixed left-0 right-0 z-50 transition-all duration-300 ease-out",
+      isScrolled ? "py-2 px-4" : "py-6 px-4",
+      isVisible ? "top-0" : "-top-32"
     )}>
       <nav className={cn(
-        "h-16 max-w-6xl mx-auto px-6 rounded-xl transition-all duration-300 ease-out flex items-center",
+        "h-[75px] max-w-6xl mx-auto px-8 rounded-xl transition-all duration-300 ease-out flex items-center",
         isScrolled
           ? "header-glass border border-gray-200/50 shadow-sm"
           : "bg-transparent border border-transparent"
@@ -37,7 +61,7 @@ export function Header() {
             <img
               src="/Rus Accountancy Logo .svg"
               alt="RUS Chartered Accountants"
-              className="h-16 w-auto"
+              className="h-[75px] w-auto"
             />
           </Link>
 

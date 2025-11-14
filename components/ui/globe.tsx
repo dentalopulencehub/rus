@@ -8,7 +8,8 @@ export function Globe({ className }: { className?: string }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
-    let phi = 0;
+    // Fixed position to show UK - no rotation
+    const phi = 0.1;
     let width = 0;
 
     if (!canvasRef.current) return;
@@ -25,7 +26,7 @@ export function Globe({ className }: { className?: string }) {
       devicePixelRatio: 2,
       width: 600 * 2,
       height: 600 * 2,
-      phi: 0,
+      phi: 0.1,
       theta: 0.3,
       dark: 0,
       diffuse: 1.2,
@@ -42,7 +43,7 @@ export function Globe({ className }: { className?: string }) {
       ],
       onRender: (state) => {
         state.phi = phi;
-        phi += 0.003;
+        // Removed rotation: phi += 0.003;
         state.width = width * 2;
         state.height = width * 2;
       },

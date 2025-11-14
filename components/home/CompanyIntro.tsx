@@ -359,7 +359,7 @@ export function CompanyIntro() {
             <div className="relative z-10 text-center">
               <div className="text-5xl font-bold text-[#01458f] mb-2 tracking-tight">30+</div>
               <div className="text-sm font-semibold text-gray-700 tracking-wide mb-1">Years of Excellence</div>
-              <div className="text-xs font-light text-gray-500 tracking-wide">Across UK businesses and worldwide</div>
+              <div className="text-xs font-light text-gray-500 tracking-wide">UK-based, serving clients worldwide</div>
             </div>
 
             {/* Globe below - half cut off, absolutely positioned */}

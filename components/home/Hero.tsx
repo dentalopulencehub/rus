@@ -21,33 +21,27 @@ export function Hero() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-4">
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center px-8 py-2 bg-gray-900 text-white rounded-full text-sm font-medium hover:bg-gray-800 transition-all duration-200 shadow-sm"
+                className="inline-flex items-center justify-center px-8 py-2 bg-gray-900 text-white rounded-full text-sm font-medium hover:bg-gray-800 transition-all duration-200 shadow-sm w-40"
               >
-                Get Started
+                Enquiry Now
               </a>
               <a
                 href="/services"
-                className="inline-flex items-center justify-center px-8 py-2 bg-white text-gray-900 rounded-full text-sm font-medium border border-gray-200 hover:border-gray-300 transition-all duration-200"
+                className="inline-flex items-center justify-center px-8 py-2 bg-white text-gray-900 rounded-full text-sm font-medium border border-gray-200 hover:border-gray-300 transition-all duration-200 w-40"
               >
                 Our Services
               </a>
             </div>
           </div>
 
-          {/* Bottom - Image Placeholder Banner */}
+          {/* Bottom - Hero Image */}
           <div className="relative w-full max-w-4xl">
-            <div className="relative w-full aspect-[16/6] rounded-xl border border-gray-200/50 bg-gradient-to-br from-gray-100 to-gray-50 shadow-lg overflow-hidden">
-              {/* Decorative Elements */}
-              <div className="absolute top-8 right-8 w-32 h-32 bg-[#01458f]/5 rounded-full blur-3xl" />
-              <div className="absolute bottom-8 left-8 w-40 h-40 bg-[#0052cc]/5 rounded-full blur-3xl" />
-
-              {/* Grid Pattern Overlay */}
-              <div
-                className="absolute inset-0 opacity-[0.02]"
-                style={{
-                  backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-                  backgroundSize: '60px 60px',
-                }}
+            <div className="relative w-full aspect-[16/6] rounded-xl border border-gray-200/50 shadow-lg overflow-hidden">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/775191b2-9e3a-4ad1-ddbc-4922cd4cf600/public"
+                alt="RUS Accountancy Services"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
