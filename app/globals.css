@@ -30,6 +30,8 @@
 
 html {
   height: 100%;
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 body {
@@ -39,6 +41,7 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: system-ui, -apple-system, sans-serif;
+  position: relative;
 }
 
 a {
@@ -267,4 +270,9 @@ a {
 
 .animate-modal-enter {
   animation: modal-enter 300ms ease-out forwards;
+}
+
+/* Prevent horizontal scroll on all sections */
+section {
+  overflow-x: hidden;
 }

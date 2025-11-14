@@ -25,11 +25,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className="overflow-x-hidden">
+      <body suppressHydrationWarning className="overflow-x-hidden">
         <ContactFormProvider>
           <Header />
-          <main className="pb-16">{children}</main>
+          <main className="pb-16 overflow-x-hidden">{children}</main>
           <Footer />
           <BottomBar />
           <ContactModal />

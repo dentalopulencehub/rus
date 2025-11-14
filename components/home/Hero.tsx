@@ -23,7 +23,7 @@ export function Hero() {
                 href="/contact"
                 className="inline-flex items-center justify-center px-8 py-2 bg-gray-900 text-white rounded-full text-sm font-medium hover:bg-gray-800 transition-all duration-200 shadow-sm w-40"
               >
-                Enquiry Now
+                Enquire Now
               </a>
               <a
                 href="/services"

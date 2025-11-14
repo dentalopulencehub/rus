@@ -193,12 +193,12 @@ export function CompanyIntro() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Card 1 - Title and First Part */}
           <div className="bg-gradient-to-br from-white to-gray-50/50 rounded-xl p-10 border border-gray-200/50 hover:border-gray-300/50 transition-all duration-300 hover:shadow-lg">
-            <h2 className="text-4xl font-light italic text-gray-900 mb-4 leading-tight">
+            <h2 className="text-4xl font-light italic text-gray-900 mb-4 leading-tight text-center md:text-left">
               Your Trusted<br />
               Accountancy<br />
               Partner
             </h2>
-            <p className="text-base text-gray-600 leading-relaxed">
+            <p className="text-base text-gray-600 leading-relaxed text-center md:text-left">
               For over 30 years, RUS Chartered Accountants has been serving businesses across the UK with expert accounting, tax, and advisory services.
             </p>
           </div>

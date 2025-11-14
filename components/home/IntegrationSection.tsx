@@ -28,10 +28,58 @@ export function IntegrationSection() {
     <section className="min-h-screen w-full flex items-center justify-center bg-[#01458f] px-4 py-24">
       <div className="max-w-6xl mx-auto w-full">
         {/* White minimal card with border */}
-        <div className="bg-white rounded-xl border border-gray-200/50 shadow-lg p-8 md:p-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left Side - Content */}
-            <div className="text-left">
+        <div className="bg-white rounded-xl border border-gray-200/50 shadow-lg p-6 md:p-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            {/* Mobile: Reordered Content Stack */}
+            <div className="flex flex-col lg:hidden">
+              {/* Badge - Centered on Mobile */}
+              <div className="mb-4 flex justify-center">
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white border border-[#01458f] rounded-full">
+                  <span className="text-xs font-medium text-black">Making Tax Digital</span>
+                </div>
+              </div>
+
+              {/* Headline - Centered on Mobile */}
+              <h2 className="text-2xl font-light italic text-gray-900 mb-6 leading-tight tracking-tight text-center">
+                Connect your accounting software seamlessly
+              </h2>
+
+              {/* Logos - Mobile Priority */}
+              <div className="grid grid-cols-2 gap-4 mb-6">
+                {partners.map((partner) => (
+                  <div
+                    key={partner.name}
+                    className="flex items-center justify-center w-full h-16"
+                  >
+                    {partner.icon}
+                  </div>
+                ))}
+              </div>
+
+              {/* Short Description */}
+              <p className="text-sm text-gray-600 mb-6 leading-relaxed">
+                Seamless integration with leading accounting platforms for MTD compliance and expert financial advice.
+              </p>
+
+              {/* CTA Buttons - Full Width */}
+              <div className="flex flex-col gap-3">
+                <Link
+                  href="/contact"
+                  className="w-full inline-flex items-center justify-center px-8 py-3 bg-gray-900 text-white rounded-full text-sm font-medium hover:bg-gray-800 transition-all duration-200 shadow-sm"
+                >
+                  Find out more
+                </Link>
+                <Link
+                  href="/contact"
+                  className="w-full inline-flex items-center justify-center px-8 py-3 bg-white text-black rounded-full text-sm font-medium border border-[#01458f] hover:bg-gray-50 transition-all duration-200"
+                >
+                  Enquire Now
+                </Link>
+              </div>
+            </div>
+
+            {/* Desktop: Original Layout */}
+            <div className="hidden lg:block text-left">
               {/* Badge */}
               <div className="mb-6">
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white border border-[#01458f] rounded-full">
@@ -61,13 +109,13 @@ export function IntegrationSection() {
                   href="/contact"
                   className="inline-flex items-center justify-center px-8 py-2 bg-white text-black rounded-full text-sm font-medium border border-[#01458f] hover:bg-gray-50 transition-all duration-200"
                 >
-                  Enquiry Now
+                  Enquire Now
                 </Link>
               </div>
             </div>
 
-            {/* Right Side - Partner Logos in 2x2 Grid */}
-            <div className="grid grid-cols-2 gap-6 items-center justify-items-center">
+            {/* Right Side - Partner Logos (Desktop Only) */}
+            <div className="hidden lg:grid grid-cols-2 gap-6 items-center justify-items-center">
               {partners.map((partner) => (
                 <div
                   key={partner.name}

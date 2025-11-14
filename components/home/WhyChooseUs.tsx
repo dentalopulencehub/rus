@@ -49,25 +49,25 @@ export function WhyChooseUs() {
         </div>
 
         {/* 4 Cards Inline */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="relative flex flex-col items-center justify-center text-center p-8 rounded-xl border border-gray-200/50 bg-[#BBDEFB] transition-all duration-200 hover:shadow-lg hover:border-[#01458f]/30 min-h-[320px]"
+              className="relative flex flex-col items-center justify-center text-center p-4 md:p-8 rounded-xl border border-gray-200/50 bg-[#BBDEFB] transition-all duration-200 hover:shadow-lg hover:border-[#01458f]/30 min-h-[280px] md:min-h-[320px]"
             >
               {/* Icon - Large and Centered */}
-              <div className="mb-8">
+              <div className="mb-4 md:mb-8">
                 <Image
                   src={benefit.iconSrc}
                   alt={benefit.title}
                   width={96}
                   height={96}
-                  className="w-24 h-24 object-contain"
+                  className="w-16 h-16 md:w-24 md:h-24 object-contain"
                 />
               </div>
 
               {/* Title */}
-              <h3 className="text-sm font-bold text-gray-900 mb-2 tracking-wide uppercase">
+              <h3 className="text-xs md:text-sm font-bold text-gray-900 mb-2 tracking-wide uppercase">
                 {benefit.title}
               </h3>
 
