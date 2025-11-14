@@ -3,6 +3,8 @@ import './globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { BottomBar } from '@/components/layout/BottomBar';
+import { ContactFormProvider } from '@/components/contact/ContactFormContext';
+import { ContactModal } from '@/components/contact/ContactModal';
 
 export const metadata: Metadata = {
   title: 'RUS Chartered Accountants | Birmingham',
@@ -25,10 +27,13 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body suppressHydrationWarning>
-        <Header />
-        <main className="pb-16">{children}</main>
-        <Footer />
-        <BottomBar />
+        <ContactFormProvider>
+          <Header />
+          <main className="pb-16">{children}</main>
+          <Footer />
+          <BottomBar />
+          <ContactModal />
+        </ContactFormProvider>
       </body>
     </html>
   );

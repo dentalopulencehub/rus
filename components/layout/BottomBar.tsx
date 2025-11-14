@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { ContactTrigger } from '@/components/contact/ContactTrigger';
 
 export function BottomBar() {
   return (
@@ -21,12 +22,9 @@ export function BottomBar() {
         >
           Services
         </Link>
-        <Link
-          href="/contact"
-          className="text-sm font-medium text-white/90 hover:text-white transition-colors"
-        >
+        <ContactTrigger className="text-sm font-medium text-white/90 hover:text-white transition-colors">
           Contact
-        </Link>
+        </ContactTrigger>
       </div>
     </div>
   );

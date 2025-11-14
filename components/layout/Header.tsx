@@ -3,10 +3,12 @@
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { ServicesDropdown } from './ServicesDropdown';
+import { ServicesDropdown2 } from './ServicesDropdown2';
 import { SectorsDropdown } from './SectorsDropdown';
 import { CommandMenu } from '@/components/ui/command-menu';
 import { useScrollPosition } from '@/hooks/useScrollPosition';
 import { cn } from '@/lib/utils';
+import { ContactTrigger } from '@/components/contact/ContactTrigger';
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -71,6 +73,9 @@ export function Header() {
               <ServicesDropdown />
             </li>
             <li>
+              <ServicesDropdown2 />
+            </li>
+            <li>
               <SectorsDropdown />
             </li>
             <li>
@@ -82,20 +87,9 @@ export function Header() {
               </Link>
             </li>
             <li>
-              <Link
-                href="/insights"
-                className="nav-link"
-              >
-                Insights
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/contact"
-                className="nav-link"
-              >
+              <ContactTrigger className="nav-link">
                 Contact
-              </Link>
+              </ContactTrigger>
             </li>
           </ul>
 
@@ -156,7 +150,16 @@ export function Header() {
                   className="nav-link-mobile"
                   onClick={handleToggleMenu}
                 >
-                  Services
+                  Corporate
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services"
+                  className="nav-link-mobile"
+                  onClick={handleToggleMenu}
+                >
+                  Individual
                 </Link>
               </li>
               <li>
@@ -178,22 +181,9 @@ export function Header() {
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/insights"
-                  className="nav-link-mobile"
-                  onClick={handleToggleMenu}
-                >
-                  Insights
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact"
-                  className="nav-link-mobile"
-                  onClick={handleToggleMenu}
-                >
+                <ContactTrigger className="nav-link-mobile w-full text-left">
                   Contact
-                </Link>
+                </ContactTrigger>
               </li>
               <li className="pt-2 border-t border-gray-200">
                 <a

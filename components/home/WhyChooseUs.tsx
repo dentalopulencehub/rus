@@ -9,26 +9,26 @@ type Benefit = {
 
 const benefits: Benefit[] = [
   {
-    title: 'PERSONALIZED SERVICE',
-    description: 'Tailored solutions for your unique business needs',
+    title: 'TAILORED SERVICE',
+    description: 'Personalised solutions to meet your unique needs',
     iconType: 'image',
     iconSrc: '/jewelry.png',
   },
   {
-    title: 'PROACTIVE ADVICE',
-    description: 'Strategic guidance to grow your business',
+    title: 'TRANSPARENT FEES',
+    description: 'Clear fee structure with no hidden costs',
     iconType: 'image',
     iconSrc: '/information.png',
   },
   {
-    title: 'DATA SECURITY',
-    description: 'Your financial data protected with highest standards',
+    title: 'EXPERT GUIDANCE',
+    description: 'Precise up-to-date advice and planning',
     iconType: 'image',
     iconSrc: '/security.png',
   },
   {
-    title: 'UK & GLOBAL REACH',
-    description: 'Birmingham-based serving UK and international clients',
+    title: 'FUTURE READY',
+    description: 'Making financial management quicker, easier and more accurate',
     iconType: 'image',
     iconSrc: '/community-outreach.png',
   },
@@ -41,10 +41,10 @@ export function WhyChooseUs() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light italic text-gray-900 mb-3 tracking-tight">
-            Why Choose RUS Accountants
+            Why Choose RUS Chartered Accountants
           </h2>
           <p className="text-base text-gray-600 max-w-2xl mx-auto">
-            Trusted expertise, modern solutions, and dedicated service for your business
+            Personal service from accountants who truly understand UK businesses - we know your business by name, not by number
           </p>
         </div>
 

@@ -36,7 +36,7 @@ const services = [
   },
 ];
 
-export function ServicesDropdown() {
+export function ServicesDropdown2() {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
@@ -75,7 +75,7 @@ export function ServicesDropdown() {
         aria-expanded={isOpen}
         aria-haspopup="true"
       >
-        Corporate
+        Individual
         <svg
           className={`w-3.5 h-3.5 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
           fill="none"

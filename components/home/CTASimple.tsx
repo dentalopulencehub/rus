@@ -46,7 +46,7 @@ export function CTASimple() {
           <div className="relative z-10 flex flex-col items-center text-center space-y-8">
             {/* Main Heading */}
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight">
-              Streamline. Optimise. Succeed
+              Precision. Clarity. Insights.
             </h2>
 
             {/* CTA Button */}
