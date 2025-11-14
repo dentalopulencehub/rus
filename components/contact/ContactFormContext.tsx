@@ -10,7 +10,7 @@ export interface ContactFormData {
   enquiryType: 'corporate' | 'individual' | null;
 
   // Step 3: Service Selection
-  service: string | null;
+  services: string[];
 
   // Step 4: Industry/Sector
   sector: string | null;
@@ -46,7 +46,7 @@ interface ContactFormContextType {
 const initialFormData: ContactFormData = {
   customerType: null,
   enquiryType: null,
-  service: null,
+  services: [],
   sector: null,
   fullName: '',
   email: '',

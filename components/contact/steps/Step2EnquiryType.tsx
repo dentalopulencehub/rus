@@ -38,7 +38,7 @@ export function Step2EnquiryType() {
           <div className="space-y-3">
             <h4 className="font-medium text-lg text-gray-900">Corporate Services</h4>
             <p className="text-sm text-gray-600">
-              Business accounting & advisory
+              For businesses
             </p>
           </div>
 
@@ -67,7 +67,7 @@ export function Step2EnquiryType() {
           <div className="space-y-3">
             <h4 className="font-medium text-lg text-gray-900">Individual Services</h4>
             <p className="text-sm text-gray-600">
-              Personal tax & planning
+              For individuals
             </p>
           </div>
 

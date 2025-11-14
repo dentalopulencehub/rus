@@ -112,9 +112,15 @@ export function Step7Confirmation() {
             <span className="font-medium text-gray-900 capitalize">{formData.enquiryType}</span>
           </div>
 
-          <div className="flex justify-between py-2 border-b border-gray-200">
-            <span className="text-gray-600">Service:</span>
-            <span className="font-medium text-gray-900">{formData.service}</span>
+          <div className="py-2 border-b border-gray-200">
+            <span className="text-gray-600 block mb-1">Services:</span>
+            <div className="flex flex-wrap gap-2">
+              {formData.services && formData.services.map((service) => (
+                <span key={service} className="inline-flex items-center px-2 py-1 rounded bg-[#01458f]/10 text-[#01458f] text-sm font-medium">
+                  {service}
+                </span>
+              ))}
+            </div>
           </div>
 
           <div className="flex justify-between py-2 border-b border-gray-200">

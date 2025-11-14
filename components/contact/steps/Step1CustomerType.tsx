@@ -17,10 +17,10 @@ export function Step1CustomerType() {
     <div className="space-y-6">
       <div>
         <h3 className="text-lg font-medium text-gray-900 mb-2">
-          Are you a new or existing customer?
+          Are you a new or existing client?
         </h3>
         <p className="text-sm text-gray-600">
-          This helps us provide you with the most relevant information
+          This helps us connect you with the relevant team
         </p>
       </div>
 
@@ -37,9 +37,9 @@ export function Step1CustomerType() {
           `}
         >
           <div className="space-y-3">
-            <h4 className="font-medium text-lg text-gray-900">New Customer</h4>
+            <h4 className="font-medium text-lg text-gray-900">New Client</h4>
             <p className="text-sm text-gray-600">
-              Looking for accounting services
+              Not currently a client with RUS
             </p>
           </div>
 
@@ -66,9 +66,9 @@ export function Step1CustomerType() {
           `}
         >
           <div className="space-y-3">
-            <h4 className="font-medium text-lg text-gray-900">Existing Customer</h4>
+            <h4 className="font-medium text-lg text-gray-900">Existing Client</h4>
             <p className="text-sm text-gray-600">
-              Already a RUS client
+              Already a client with RUS
             </p>
           </div>
 

@@ -22,7 +22,7 @@ export function ContactModal() {
       case 2:
         return !!formData.enquiryType;
       case 3:
-        return !!formData.service;
+        return formData.services && formData.services.length > 0;
       case 4:
         return !!formData.sector;
       case 5:
