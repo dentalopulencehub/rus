@@ -72,6 +72,9 @@ export function CommandMenu() {
                   <CommandItem href="/sectors/healthcare" onSelect={() => setOpen(false)}>
                     <span>Healthcare</span>
                   </CommandItem>
+                  <CommandItem href="/sectors/hospitality-leisure" onSelect={() => setOpen(false)}>
+                    <span>Hospitality & Leisure</span>
+                  </CommandItem>
                   <CommandItem href="/sectors/retail" onSelect={() => setOpen(false)}>
                     <span>Retail</span>
                   </CommandItem>

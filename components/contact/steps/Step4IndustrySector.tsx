@@ -8,6 +8,7 @@ const sectors = [
   'Creative & Media',
   'Education & Academies',
   'Healthcare',
+  'Hospitality & Leisure',
   'Property Services',
   'Retail',
   'Solicitors',

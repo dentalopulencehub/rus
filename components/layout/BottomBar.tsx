@@ -43,6 +43,7 @@ const menuItems: MenuItem[] = [
       { label: 'Creative & Media', href: '/sectors/creative-media' },
       { label: 'Education & Academies', href: '/sectors/education-academies' },
       { label: 'Healthcare', href: '/sectors/healthcare' },
+      { label: 'Hospitality & Leisure', href: '/sectors/hospitality-leisure' },
       { label: 'Private Individuals', href: '/sectors/private-individuals' },
       { label: 'Property Services', href: '/sectors/property-services' },
       { label: 'Retail', href: '/sectors/retail' },
