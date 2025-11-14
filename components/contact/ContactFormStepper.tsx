@@ -7,8 +7,8 @@ const steps = [
   { number: 2, label: 'Enquiry' },
   { number: 3, label: 'Service' },
   { number: 4, label: 'Sector' },
-  { number: 5, label: 'Details' },
-  { number: 6, label: 'Info' },
+  { number: 5, label: 'Contact' },
+  { number: 6, label: 'Details' },
   { number: 7, label: 'Confirm' },
 ];
 

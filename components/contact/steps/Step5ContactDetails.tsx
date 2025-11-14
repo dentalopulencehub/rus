@@ -16,10 +16,10 @@ export function Step5ContactDetails() {
     <div className="space-y-6">
       <div>
         <h3 className="text-lg font-medium text-gray-900 mb-2">
-          Please provide your contact information
+          Please provide your contact details
         </h3>
         <p className="text-sm text-gray-600">
-          We'll use these details to get back to you
+          We'll use these contact details to get back to you
         </p>
       </div>
 
