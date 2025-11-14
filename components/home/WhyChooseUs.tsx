@@ -1,6 +1,13 @@
 import Image from 'next/image';
 
-const benefits = [
+type Benefit = {
+  title: string;
+  description: string;
+  iconType: 'image';
+  iconSrc: string;
+};
+
+const benefits: Benefit[] = [
   {
     title: 'PERSONALIZED SERVICE',
     description: 'Tailored solutions for your unique business needs',
@@ -50,19 +57,13 @@ export function WhyChooseUs() {
             >
               {/* Icon - Large and Centered */}
               <div className="mb-8">
-                {benefit.iconType === 'image' ? (
-                  <Image
-                    src={benefit.iconSrc!}
-                    alt={benefit.title}
-                    width={96}
-                    height={96}
-                    className="w-24 h-24 object-contain"
-                  />
-                ) : (
-                  <svg className="w-16 h-16 text-[#01458f]" viewBox="0 0 24 24" fill="currentColor">
-                    <path d={benefit.iconPath} />
-                  </svg>
-                )}
+                <Image
+                  src={benefit.iconSrc}
+                  alt={benefit.title}
+                  width={96}
+                  height={96}
+                  className="w-24 h-24 object-contain"
+                />
               </div>
 
               {/* Title */}

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { BottomBar } from '@/components/layout/BottomBar';
 
 export const metadata: Metadata = {
   title: 'RUS Chartered Accountants | Birmingham',
@@ -25,8 +26,9 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body suppressHydrationWarning>
         <Header />
-        <main>{children}</main>
+        <main className="pb-16">{children}</main>
         <Footer />
+        <BottomBar />
       </body>
     </html>
   );
