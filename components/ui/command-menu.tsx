@@ -69,11 +69,17 @@ export function CommandMenu() {
                   <CommandItem href="/sectors/charities-not-for-profit" onSelect={() => setOpen(false)}>
                     <span>Charities & Not-for-profit</span>
                   </CommandItem>
+                  <CommandItem href="/sectors/construction" onSelect={() => setOpen(false)}>
+                    <span>Construction</span>
+                  </CommandItem>
                   <CommandItem href="/sectors/healthcare" onSelect={() => setOpen(false)}>
                     <span>Healthcare</span>
                   </CommandItem>
                   <CommandItem href="/sectors/hospitality-leisure" onSelect={() => setOpen(false)}>
                     <span>Hospitality & Leisure</span>
+                  </CommandItem>
+                  <CommandItem href="/sectors/information-technology" onSelect={() => setOpen(false)}>
+                    <span>Information Technology</span>
                   </CommandItem>
                   <CommandItem href="/sectors/retail" onSelect={() => setOpen(false)}>
                     <span>Retail</span>

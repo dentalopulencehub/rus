@@ -4,11 +4,13 @@ import { useContactForm } from '../ContactFormContext';
 
 const sectors = [
   'Charities & Not-for-profit',
+  'Construction',
   'Contractors & Professional Services',
   'Creative & Media',
   'Education & Academies',
   'Healthcare',
   'Hospitality & Leisure',
+  'Information Technology',
   'Property Services',
   'Retail',
   'Solicitors',

@@ -39,11 +39,13 @@ const menuItems: MenuItem[] = [
     label: 'Sectors',
     submenu: [
       { label: 'Charities & Not-for-profit', href: '/sectors/charities-not-for-profit' },
+      { label: 'Construction', href: '/sectors/construction' },
       { label: 'Contractors & Professional Services', href: '/sectors/contractors-professional-services' },
       { label: 'Creative & Media', href: '/sectors/creative-media' },
       { label: 'Education & Academies', href: '/sectors/education-academies' },
       { label: 'Healthcare', href: '/sectors/healthcare' },
       { label: 'Hospitality & Leisure', href: '/sectors/hospitality-leisure' },
+      { label: 'Information Technology', href: '/sectors/information-technology' },
       { label: 'Private Individuals', href: '/sectors/private-individuals' },
       { label: 'Property Services', href: '/sectors/property-services' },
       { label: 'Retail', href: '/sectors/retail' },
