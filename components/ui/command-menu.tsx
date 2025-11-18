@@ -2,10 +2,16 @@
 
 import { useState, useEffect } from 'react';
 import { Command } from 'cmdk';
-import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 export function CommandMenu() {
   const [open, setOpen] = useState(false);
+  const router = useRouter();
+
+  const handleNavigate = (href: string) => {
+    setOpen(false);
+    router.push(href);
+  };
 
   useEffect(() => {
     const down = (e: KeyboardEvent) => {
@@ -24,9 +30,10 @@ export function CommandMenu() {
       {/* Search Button */}
       <button
         onClick={() => setOpen(true)}
-        className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm text-gray-700 hover:bg-[rgba(5,21,36,0.06)] transition-colors"
+        className="inline-flex items-center justify-center gap-2 px-3 py-2 rounded-lg text-sm text-gray-700 hover:bg-[rgba(5,21,36,0.06)] transition-colors min-w-[44px] min-h-[44px] sm:min-w-0 sm:min-h-0"
+        aria-label="Search"
       >
-        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-5 h-5 sm:w-4 sm:h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
         </svg>
         <span className="hidden sm:inline">Search</span>
@@ -51,49 +58,49 @@ export function CommandMenu() {
                 <Command.Empty className="py-6 text-center text-sm text-gray-500">No results found.</Command.Empty>
 
                 <Command.Group heading="Services" className="text-xs font-semibold text-gray-500 px-2 py-2">
-                  <CommandItem href="/services/taxation-services" onSelect={() => setOpen(false)}>
+                  <CommandItem href="/services/taxation-services" onSelect={handleNavigate}>
                     <span>Taxation Services</span>
                   </CommandItem>
-                  <CommandItem href="/services/accounting-bookkeeping" onSelect={() => setOpen(false)}>
+                  <CommandItem href="/services/accounting-bookkeeping" onSelect={handleNavigate}>
                     <span>Accounting & Bookkeeping</span>
                   </CommandItem>
-                  <CommandItem href="/services/audit-assurance" onSelect={() => setOpen(false)}>
+                  <CommandItem href="/services/audit-assurance" onSelect={handleNavigate}>
                     <span>Audit & Assurance</span>
                   </CommandItem>
-                  <CommandItem href="/services/payroll-services" onSelect={() => setOpen(false)}>
+                  <CommandItem href="/services/payroll-services" onSelect={handleNavigate}>
                     <span>Payroll Services</span>
                   </CommandItem>
                 </Command.Group>
 
                 <Command.Group heading="Sectors" className="text-xs font-semibold text-gray-500 px-2 py-2 mt-2">
-                  <CommandItem href="/sectors/charities-not-for-profit" onSelect={() => setOpen(false)}>
+                  <CommandItem href="/sectors/charities-not-for-profit" onSelect={handleNavigate}>
                     <span>Charities & Not-for-profit</span>
                   </CommandItem>
-                  <CommandItem href="/sectors/construction" onSelect={() => setOpen(false)}>
+                  <CommandItem href="/sectors/construction" onSelect={handleNavigate}>
                     <span>Construction</span>
                   </CommandItem>
-                  <CommandItem href="/sectors/healthcare" onSelect={() => setOpen(false)}>
+                  <CommandItem href="/sectors/healthcare" onSelect={handleNavigate}>
                     <span>Healthcare</span>
                   </CommandItem>
-                  <CommandItem href="/sectors/hospitality-leisure" onSelect={() => setOpen(false)}>
+                  <CommandItem href="/sectors/hospitality-leisure" onSelect={handleNavigate}>
                     <span>Hospitality & Leisure</span>
                   </CommandItem>
-                  <CommandItem href="/sectors/information-technology" onSelect={() => setOpen(false)}>
+                  <CommandItem href="/sectors/information-technology" onSelect={handleNavigate}>
                     <span>Information Technology</span>
                   </CommandItem>
-                  <CommandItem href="/sectors/retail" onSelect={() => setOpen(false)}>
+                  <CommandItem href="/sectors/retail" onSelect={handleNavigate}>
                     <span>Retail</span>
                   </CommandItem>
                 </Command.Group>
 
                 <Command.Group heading="Pages" className="text-xs font-semibold text-gray-500 px-2 py-2 mt-2">
-                  <CommandItem href="/who-we-are" onSelect={() => setOpen(false)}>
+                  <CommandItem href="/who-we-are" onSelect={handleNavigate}>
                     <span>Who We Are</span>
                   </CommandItem>
-                  <CommandItem href="/insights" onSelect={() => setOpen(false)}>
+                  <CommandItem href="/insights" onSelect={handleNavigate}>
                     <span>Insights</span>
                   </CommandItem>
-                  <CommandItem href="/contact" onSelect={() => setOpen(false)}>
+                  <CommandItem href="/contact" onSelect={handleNavigate}>
                     <span>Contact</span>
                   </CommandItem>
                 </Command.Group>
@@ -106,16 +113,14 @@ export function CommandMenu() {
   );
 }
 
-function CommandItem({ href, onSelect, children }: { href: string; onSelect: () => void; children: React.ReactNode }) {
+function CommandItem({ href, onSelect, children }: { href: string; onSelect: (href: string) => void; children: React.ReactNode }) {
   return (
     <Command.Item
       value={href}
-      onSelect={onSelect}
+      onSelect={() => onSelect(href)}
       className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm cursor-pointer hover:bg-gray-100 aria-selected:bg-gray-100"
     >
-      <Link href={href} className="flex-1">
-        {children}
-      </Link>
+      {children}
     </Command.Item>
   );
 }

@@ -6,6 +6,16 @@ import { motion } from 'framer-motion';
 
 const services = [
   {
+    name: 'Taxation Services',
+    slug: 'taxation-services',
+    description: 'Tax planning and compliance',
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+      </svg>
+    ),
+  },
+  {
     name: 'Accounting & Bookkeeping',
     slug: 'accounting-bookkeeping',
     description: 'Financial management',
@@ -36,8 +46,18 @@ const services = [
     ),
   },
   {
+    name: 'Company Secretarial',
+    slug: 'company-secretarial',
+    description: 'Company compliance',
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+      </svg>
+    ),
+  },
+  {
     name: 'Company Formation',
-    slug: 'company-formation-secretarial',
+    slug: 'company-formation',
     description: 'Company setup',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -46,8 +66,8 @@ const services = [
     ),
   },
   {
-    name: 'Payroll Services',
-    slug: 'payroll-services',
+    name: 'Payroll',
+    slug: 'payroll',
     description: 'Payroll processing',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -56,12 +76,22 @@ const services = [
     ),
   },
   {
-    name: 'Taxation Services',
-    slug: 'taxation-services',
-    description: 'Tax planning and compliance',
+    name: 'HMRC & NCA Investigations',
+    slug: 'hmrc-nca-investigations',
+    description: 'Tax investigation support',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+      </svg>
+    ),
+  },
+  {
+    name: 'Forensic Accounting',
+    slug: 'forensic-accounting',
+    description: 'Financial investigation',
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
       </svg>
     ),
   },
@@ -69,32 +99,12 @@ const services = [
 
 const sectors = [
   {
-    name: 'Charities & Not-for-profit',
-    slug: 'charities-not-for-profit',
-    description: 'Charitable organizations',
+    name: 'Construction',
+    slug: 'construction',
+    description: 'Construction and building',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-      </svg>
-    ),
-  },
-  {
-    name: 'Contractors & Professional Services',
-    slug: 'contractors-professional-services',
-    description: 'Self-employed professionals',
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-      </svg>
-    ),
-  },
-  {
-    name: 'Corporate',
-    slug: 'corporate',
-    description: 'Large enterprises',
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
       </svg>
     ),
   },
@@ -126,27 +136,27 @@ const sectors = [
     description: 'Healthcare providers',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
       </svg>
     ),
   },
   {
-    name: 'Owner Managed Businesses',
-    slug: 'owner-managed-businesses',
-    description: 'SMEs and family businesses',
+    name: 'Hospitality & Leisure',
+    slug: 'hospitality-leisure',
+    description: 'Hotels and restaurants',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
       </svg>
     ),
   },
   {
-    name: 'Private Individuals',
-    slug: 'private-individuals',
-    description: 'Personal wealth management',
+    name: 'Information Technology',
+    slug: 'information-technology',
+    description: 'IT services and tech',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
       </svg>
     ),
   },
@@ -156,7 +166,7 @@ const sectors = [
     description: 'Real estate management',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
       </svg>
     ),
   },
@@ -196,23 +206,23 @@ export function ServicesIndustrySection() {
           <div className="inline-flex p-1 bg-gray-100 rounded-full">
             <button
               onClick={() => setActiveTab('services')}
-              className={`w-20 py-1.5 rounded-full text-xs font-medium transition-all duration-200 ${
+              className={`relative overflow-hidden w-20 py-1.5 rounded-full text-xs font-medium transition-all duration-200 group ${
                 activeTab === 'services'
-                  ? 'bg-white text-gray-900 shadow-sm'
+                  ? 'bg-[#01458f] text-white shadow-sm'
                   : 'text-gray-600 hover:text-gray-900'
               }`}
             >
-              Services
+              <span className="relative z-10">Services</span>
             </button>
             <button
               onClick={() => setActiveTab('sectors')}
-              className={`w-20 py-1.5 rounded-full text-xs font-medium transition-all duration-200 ${
+              className={`relative overflow-hidden w-20 py-1.5 rounded-full text-xs font-medium transition-all duration-200 group ${
                 activeTab === 'sectors'
-                  ? 'bg-white text-gray-900 shadow-sm'
+                  ? 'bg-[#01458f] text-white shadow-sm'
                   : 'text-gray-600 hover:text-gray-900'
               }`}
             >
-              Sectors
+              <span className="relative z-10">Sectors</span>
             </button>
           </div>
         </div>
@@ -223,47 +233,13 @@ export function ServicesIndustrySection() {
             <Link
               key={item.slug}
               href={`${basePath}/${item.slug}`}
-              className="group relative overflow-hidden flex flex-col items-center justify-center text-center p-4 rounded-xl border border-gray-200 bg-white hover:border-[#01458f] transition-all duration-200 hover:shadow-sm aspect-square"
+              className="group relative overflow-hidden flex flex-col items-center justify-center text-center p-4 rounded-xl border border-gray-200 bg-white transition-all duration-200 hover:shadow-sm aspect-square"
             >
-              {/* Glassy Background SVG */}
-              <svg
-                className="absolute inset-0 w-full h-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <defs>
-                  <linearGradient id={`gradient-${item.slug}`} x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="#01458f" stopOpacity="0.04" />
-                    <stop offset="50%" stopColor="#01458f" stopOpacity="0.02" />
-                    <stop offset="100%" stopColor="#01458f" stopOpacity="0.06" />
-                  </linearGradient>
-                  <filter id={`blur-${item.slug}`}>
-                    <feGaussianBlur in="SourceGraphic" stdDeviation="50" />
-                  </filter>
-                  <radialGradient id={`radial-${item.slug}`}>
-                    <stop offset="0%" stopColor="#01458f" stopOpacity="0.08" />
-                    <stop offset="70%" stopColor="#01458f" stopOpacity="0.02" />
-                    <stop offset="100%" stopColor="#01458f" stopOpacity="0" />
-                  </radialGradient>
-                </defs>
-                {/* Main glow */}
-                <circle
-                  cx="50%"
-                  cy="45%"
-                  r="45%"
-                  fill={`url(#radial-${item.slug})`}
-                  filter={`url(#blur-${item.slug})`}
-                />
-                {/* Secondary subtle glow */}
-                <ellipse
-                  cx="50%"
-                  cy="60%"
-                  rx="40%"
-                  ry="35%"
-                  fill={`url(#gradient-${item.slug})`}
-                  filter={`url(#blur-${item.slug})`}
-                  opacity="0.5"
-                />
-              </svg>
+              {/* Background Image - Fades in on Hover */}
+              <div
+                className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-300 pointer-events-none bg-cover bg-center"
+                style={{ backgroundImage: 'url(https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/5ee11fdf-aac0-4c26-0f5e-026a2df87900/public)' }}
+              />
 
               <motion.div
                 className="relative z-10 text-gray-700 group-hover:text-[#01458f] mb-3 transition-colors duration-200"

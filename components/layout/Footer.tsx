@@ -20,9 +20,9 @@ export function Footer() {
       <div className="relative">
         {/* Main Footer Content */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-10 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 lg:gap-10 mb-16">
             {/* Company Info */}
-            <div className="lg:col-span-4">
+            <div className="md:col-span-2 lg:col-span-2">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/Rus Accountancy Logo .svg"
@@ -52,7 +52,7 @@ export function Footer() {
             </div>
 
             {/* Corporate Services */}
-            <div className="lg:col-span-2">
+            <div className="lg:col-span-1">
               <h3 className="text-xs font-semibold text-white/90 uppercase tracking-wider mb-5">
                 Corporate Services
               </h3>
@@ -86,7 +86,7 @@ export function Footer() {
             </div>
 
             {/* Individual Services */}
-            <div className="lg:col-span-2">
+            <div className="lg:col-span-1">
               <h3 className="text-xs font-semibold text-white/90 uppercase tracking-wider mb-5">
                 Individual Services
               </h3>
@@ -115,7 +115,7 @@ export function Footer() {
             </div>
 
             {/* Company */}
-            <div className="lg:col-span-2">
+            <div className="lg:col-span-1">
               <h3 className="text-xs font-semibold text-white/90 uppercase tracking-wider mb-5">
                 Company
               </h3>
@@ -148,8 +148,32 @@ export function Footer() {
               </ul>
             </div>
 
+            {/* Legal */}
+            <div className="lg:col-span-1">
+              <h3 className="text-xs font-semibold text-white/90 uppercase tracking-wider mb-5">
+                Legal
+              </h3>
+              <ul className="space-y-2.5">
+                <li>
+                  <Link href="/terms" className="text-sm text-white/70 hover:text-white hover:translate-x-0.5 transition-all duration-200 inline-block">
+                    Terms & Conditions
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/privacy" className="text-sm text-white/70 hover:text-white hover:translate-x-0.5 transition-all duration-200 inline-block">
+                    Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/cookies" className="text-sm text-white/70 hover:text-white hover:translate-x-0.5 transition-all duration-200 inline-block">
+                    Cookie Policy
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
             {/* Contact */}
-            <div className="lg:col-span-2">
+            <div className="lg:col-span-1">
               <h3 className="text-xs font-semibold text-white/90 uppercase tracking-wider mb-5">
                 Get in Touch
               </h3>

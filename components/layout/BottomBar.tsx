@@ -12,27 +12,17 @@ type MenuItem = {
 
 const menuItems: MenuItem[] = [
   {
-    label: 'Corporate',
+    label: 'Services',
     submenu: [
       { label: 'Taxation Services', href: '/services/taxation-services' },
       { label: 'Accounting & Bookkeeping', href: '/services/accounting-bookkeeping' },
       { label: 'Audit & Assurance', href: '/services/audit-assurance' },
-      { label: 'Payroll Services', href: '/services/payroll-services' },
       { label: 'Business Advisory', href: '/services/business-advisory' },
+      { label: 'Company Secretarial', href: '/services/company-secretarial' },
+      { label: 'Company Formation', href: '/services/company-formation' },
+      { label: 'Payroll', href: '/services/payroll' },
       { label: 'HMRC & NCA Investigations', href: '/services/hmrc-nca-investigations' },
-      { label: 'Company Secretarial', href: '/services/company-formation-secretarial' },
-    ],
-  },
-  {
-    label: 'Individual',
-    submenu: [
-      { label: 'Taxation Services', href: '/services/taxation-services' },
-      { label: 'Accounting & Bookkeeping', href: '/services/accounting-bookkeeping' },
-      { label: 'Audit & Assurance', href: '/services/audit-assurance' },
-      { label: 'Payroll Services', href: '/services/payroll-services' },
-      { label: 'Business Advisory', href: '/services/business-advisory' },
-      { label: 'HMRC & NCA Investigations', href: '/services/hmrc-nca-investigations' },
-      { label: 'Company Secretarial', href: '/services/company-formation-secretarial' },
+      { label: 'Forensic Accounting', href: '/services/forensic-accounting' },
     ],
   },
   {
@@ -46,7 +36,7 @@ const menuItems: MenuItem[] = [
       { label: 'Healthcare', href: '/sectors/healthcare' },
       { label: 'Hospitality & Leisure', href: '/sectors/hospitality-leisure' },
       { label: 'Information Technology', href: '/sectors/information-technology' },
-      { label: 'Private Individuals', href: '/sectors/private-individuals' },
+      { label: 'Other', href: '/sectors/other' },
       { label: 'Property Services', href: '/sectors/property-services' },
       { label: 'Retail', href: '/sectors/retail' },
       { label: 'Solicitors', href: '/sectors/solicitors' },
@@ -80,37 +70,49 @@ export function BottomBar() {
     <>
       {/* Bottom Navigation Bar */}
       <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-40 w-auto">
-        <div className="bg-[#01458f] rounded-full shadow-lg border border-white/10 px-3 py-1 flex items-center justify-center gap-4">
+        <div className="bg-[#01458f] rounded-full shadow-lg border border-white/10 px-5 py-1.5 flex items-center justify-center gap-5">
+          {/* Home - Desktop only */}
+          <Link
+            href="/"
+            className="hidden lg:flex flex-col items-center gap-0 py-0.5 px-2.5 text-white/90 hover:text-white transition-colors group"
+            aria-label="Home"
+          >
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            </svg>
+            <span className="text-[8px] font-medium mt-0.5">Home</span>
+          </Link>
+
           {/* Menu */}
           <button
             onClick={() => setIsMenuOpen(true)}
-            className="flex flex-col items-center gap-0 py-1 px-1.5 text-white/90 hover:text-white transition-colors group"
+            className="flex flex-col items-center gap-0 py-0.5 px-2.5 text-white/90 hover:text-white transition-colors group"
             aria-label="Menu"
           >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
-            <span className="text-[9px] font-medium mt-0.5">Menu</span>
+            <span className="text-[8px] font-medium mt-0.5">Menu</span>
           </button>
 
-          {/* Call */}
+          {/* Call - Mobile only */}
           <a
             href="tel:01217771200"
-            className="flex flex-col items-center gap-0 py-1 px-1.5 text-white/90 hover:text-white transition-colors group"
+            className="lg:hidden flex flex-col items-center gap-0 py-0.5 px-2.5 text-white/90 hover:text-white transition-colors group"
             aria-label="Call us"
           >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
             </svg>
-            <span className="text-[9px] font-medium mt-0.5">Call</span>
+            <span className="text-[8px] font-medium mt-0.5">Call</span>
           </a>
 
           {/* Enquiry */}
-          <ContactTrigger className="flex flex-col items-center gap-0 py-1 px-1.5 text-white/90 hover:text-white transition-colors group">
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <ContactTrigger className="flex flex-col items-center gap-0 py-0.5 px-2.5 text-white/90 hover:text-white transition-colors group">
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
-            <span className="text-[9px] font-medium mt-0.5">Enquiry</span>
+            <span className="text-[8px] font-medium mt-0.5">Enquiry</span>
           </ContactTrigger>
         </div>
       </div>

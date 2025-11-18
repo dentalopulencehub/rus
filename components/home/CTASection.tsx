@@ -18,7 +18,7 @@ export function CTASection() {
 
               {/* Headline */}
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight tracking-tight">
-                Finance made simple, growth made possible
+                Precision. Clarity. Insights.
               </h2>
 
               {/* Description */}
@@ -42,28 +42,24 @@ export function CTASection() {
                 <div className="absolute w-16 h-16 rounded-full bg-gradient-to-br from-[#01458f] to-[#0052cc] shadow-lg flex items-center justify-center z-10">
                   <svg
                     className="w-8 h-8 text-white"
-                    fill="none"
-                    stroke="currentColor"
+                    fill="currentColor"
                     viewBox="0 0 24 24"
                   >
                     <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
                       d="M13 10V3L4 14h7v7l9-11h-7z"
                     />
                   </svg>
                 </div>
 
                 {/* Inner Circle - Fast rotation */}
-                <OrbitingCircles iconSize={50} radius={90} duration={20} path>
+                <OrbitingCircles iconSize={50} radius={90} duration={20} path={false}>
                   <FinancePartnerIcons.xero />
                   <FinancePartnerIcons.quickbooks />
                   <FinancePartnerIcons.sage />
                 </OrbitingCircles>
 
                 {/* Outer Circle - Slow rotation, reverse direction */}
-                <OrbitingCircles iconSize={50} radius={150} duration={30} reverse path>
+                <OrbitingCircles iconSize={50} radius={150} duration={30} reverse path={false}>
                   <FinancePartnerIcons.freeagent />
                   <FinancePartnerIcons.croner />
                 </OrbitingCircles>

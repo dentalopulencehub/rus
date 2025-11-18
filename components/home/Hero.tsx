@@ -2,14 +2,21 @@ import { BorderBeam } from '@/components/ui/border-beam';
 
 export function Hero() {
   return (
-    <section className="min-h-screen w-full flex items-center justify-center bg-[#F0F7FF] px-4 pt-24 pb-16">
-      <div className="max-w-5xl mx-auto w-full">
+    <section className="relative min-h-screen w-full flex items-center justify-center bg-[#F0F7FF] px-4 pt-24 pb-16 overflow-hidden">
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 opacity-10 bg-cover bg-center"
+        style={{ backgroundImage: 'url(https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/5ee11fdf-aac0-4c26-0f5e-026a2df87900/public)' }}
+      />
+
+      <div className="relative z-10 max-w-5xl mx-auto w-full">
         <div className="flex flex-col items-center text-center space-y-12">
           {/* Top - Content */}
           <div className="space-y-6">
             {/* Main Title - Uppercase */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-tight tracking-tight uppercase">
-              Anchored in Integrity. Driven by Expertise.
+              An Anchor of Stability <br className="hidden md:block" />
+              in a Sea of Complexity.
             </h1>
 
             {/* Subtitle */}

@@ -263,67 +263,22 @@ export function CompanyIntro() {
 
         {/* Bottom - 3 Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {/* Financial Growth Sparkline Chart */}
-          <div className="relative overflow-hidden bg-gradient-to-br from-[#F0F7FF] to-white rounded-xl p-6 border border-[#01458f]/10 hover:border-[#01458f]/30 transition-all duration-300 group hover:shadow-lg">
+          {/* Trustpilot Badge Card */}
+          <div className="relative overflow-hidden bg-gradient-to-br from-white to-gray-50/50 rounded-xl p-6 border border-gray-200/50 hover:border-gray-300/50 transition-all duration-300 hover:shadow-lg flex flex-col items-center justify-center group">
             {/* Decorative elements */}
-            <div className="absolute -top-10 -right-10 w-32 h-32 bg-[#01458f]/5 rounded-full blur-2xl group-hover:bg-[#01458f]/8 transition-all duration-500"></div>
-            <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-[#01458f]/3 rounded-full blur-xl"></div>
+            <div className="absolute -top-10 -right-10 w-32 h-32 bg-green-500/5 rounded-full blur-2xl group-hover:bg-green-500/8 transition-all duration-500"></div>
+            <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-green-500/3 rounded-full blur-xl"></div>
 
-            {/* Subtle grid pattern */}
-            <div className="absolute inset-0 opacity-[0.02]" style={{
-              backgroundImage: 'linear-gradient(#01458f 1px, transparent 1px), linear-gradient(90deg, #01458f 1px, transparent 1px)',
-              backgroundSize: '20px 20px'
-            }}></div>
-            <div className="relative z-10">
-              <div className="flex items-center justify-between mb-3">
-                <div>
-                  <h3 className="text-sm font-medium text-gray-600 mb-1 tracking-wide">Growth Partners</h3>
-                  <div className="text-3xl font-bold text-[#01458f] tracking-tight">11,800+</div>
-                </div>
-                <div className="relative">
-                  <div className="absolute inset-0 bg-green-400/20 rounded-full blur-md animate-pulse"></div>
-                  <div className="relative px-2.5 py-1 bg-gradient-to-br from-green-50 to-green-100 rounded-full border border-green-200/50">
-                    <span className="text-xs font-semibold text-green-700">↑ 195%</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="-mx-4 mb-3 relative group/chart">
-                {/* Subtle data annotations */}
-                <div className="absolute top-2 left-4 flex items-center gap-1 opacity-0 group-hover/chart:opacity-100 transition-opacity duration-300">
-                  <div className="w-1 h-1 rounded-full bg-[#01458f] animate-pulse"></div>
-                  <span className="text-[8px] text-[#01458f] font-semibold">Live Data</span>
-                </div>
-
-                <ChartComponent data={data} />
-
-                {/* Inline Period Labels */}
-                <div className="absolute bottom-0 left-0 right-0 flex justify-between px-3 text-[9px] text-gray-400 font-medium tracking-wide">
-                  <span className="opacity-50 hover:opacity-100 transition-opacity cursor-default">2020</span>
-                  <span className="opacity-50 hover:opacity-100 transition-opacity cursor-default">2021</span>
-                  <span className="opacity-50 hover:opacity-100 transition-opacity cursor-default">2022</span>
-                  <span className="opacity-60 hover:opacity-100 transition-opacity cursor-default">2023</span>
-                  <span className="opacity-70 hover:opacity-100 transition-opacity cursor-default">2024</span>
-                  <span className="text-[#01458f] font-semibold relative">
-                    2025
-                    <div className="absolute -top-1 -right-1 w-1 h-1 rounded-full bg-[#01458f] animate-ping"></div>
-                  </span>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-4 text-[9px] text-gray-500 font-medium">
-                <div className="flex items-center gap-1.5 group/item cursor-default">
-                  <div className="relative">
-                    <div className="absolute inset-0 bg-[#01458f]/20 blur-sm rounded-full"></div>
-                    <div className="relative w-4 h-[3px] bg-[#01458f] rounded-full group-hover/item:w-5 transition-all"></div>
-                  </div>
-                  <span className="group-hover/item:text-[#01458f] transition-colors">Clients</span>
-                </div>
-                <div className="flex items-center gap-1.5 group/item cursor-default">
-                  <div className="w-4 h-[3px] bg-[#64748b] rounded-full opacity-60 group-hover/item:w-5 transition-all"></div>
-                  <span className="group-hover/item:text-gray-700 transition-colors">Revenue</span>
-                </div>
-              </div>
+            {/* Trustpilot Badge */}
+            <div className="relative z-10 w-full flex flex-col items-center justify-center">
+              <Image
+                src="/43074c_f7f8d6f304bf4ed280fc5c3a2c796db3~mv2.png"
+                alt="Trustpilot - Rated Excellent"
+                width={200}
+                height={80}
+                className="w-full max-w-[180px] h-auto"
+                priority
+              />
             </div>
           </div>
 
@@ -350,16 +305,22 @@ export function CompanyIntro() {
             </div>
           </div>
 
-          {/* Card 3 - 30+ Years with Globe */}
+          {/* Card 3 - 30+ Years with Globe - UK Focused */}
           <div className="relative overflow-hidden bg-white rounded-xl p-6 border border-gray-200/50 hover:border-[#01458f]/30 hover:shadow-lg transition-all duration-300 group">
-            {/* Subtle decorative elements */}
-            <div className="absolute top-0 right-0 w-24 h-24 bg-[#01458f]/3 rounded-full blur-2xl group-hover:bg-[#01458f]/5 transition-all duration-500"></div>
+            {/* UK-focused pulsating glow effects - Multiple layers for depth */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-[#01458f]/10 rounded-full blur-3xl animate-pulse-slow"></div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-[#01458f]/15 rounded-full blur-2xl animate-pulse-slow" style={{ animationDelay: '0.5s' }}></div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-[#01458f]/20 rounded-full blur-xl animate-pulse-slow" style={{ animationDelay: '1s' }}></div>
+
+            {/* Corner accents */}
+            <div className="absolute top-0 right-0 w-24 h-24 bg-[#01458f]/5 rounded-full blur-2xl animate-pulse-slow" style={{ animationDelay: '1.5s' }}></div>
+            <div className="absolute bottom-0 left-0 w-24 h-24 bg-[#01458f]/5 rounded-full blur-2xl animate-pulse-slow" style={{ animationDelay: '0.75s' }}></div>
 
             {/* Text at top */}
             <div className="relative z-10 text-center">
               <div className="text-5xl font-bold text-[#01458f] mb-2 tracking-tight">30+</div>
               <div className="text-sm font-semibold text-gray-700 tracking-wide mb-1">Years of Excellence</div>
-              <div className="text-xs font-light text-gray-500 tracking-wide">UK-based, serving clients worldwide</div>
+              <div className="text-xs font-medium text-[#01458f] tracking-wide">Specialists in UK Accounting & Tax Law</div>
             </div>
 
             {/* Globe below - half cut off, absolutely positioned */}

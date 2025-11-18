@@ -7,27 +7,37 @@ const services = [
   {
     name: 'Taxation Services',
     slug: 'taxation-services',
-    description: 'Expert tax planning and compliance',
+    description: 'Tax planning and compliance',
   },
   {
     name: 'Accounting & Bookkeeping',
     slug: 'accounting-bookkeeping',
-    description: 'Comprehensive financial management',
+    description: 'Financial management',
   },
   {
     name: 'Audit & Assurance',
     slug: 'audit-assurance',
-    description: 'Independent audit services',
-  },
-  {
-    name: 'Payroll Services',
-    slug: 'payroll-services',
-    description: 'Efficient payroll processing',
+    description: 'Independent audits',
   },
   {
     name: 'Business Advisory',
     slug: 'business-advisory',
-    description: 'Strategic business guidance',
+    description: 'Strategic guidance',
+  },
+  {
+    name: 'Company Secretarial',
+    slug: 'company-secretarial',
+    description: 'Company compliance and governance',
+  },
+  {
+    name: 'Company Formation',
+    slug: 'company-formation',
+    description: 'Company setup',
+  },
+  {
+    name: 'Payroll',
+    slug: 'payroll',
+    description: 'Payroll processing',
   },
   {
     name: 'HMRC & NCA Investigations',
@@ -35,9 +45,9 @@ const services = [
     description: 'Tax investigation support',
   },
   {
-    name: 'Company Secretarial',
-    slug: 'company-formation-secretarial',
-    description: 'Company setup and compliance',
+    name: 'Forensic Accounting',
+    slug: 'forensic-accounting',
+    description: 'Financial investigation and analysis',
   },
 ];
 
@@ -80,7 +90,7 @@ export function ServicesDropdown() {
         aria-expanded={isOpen}
         aria-haspopup="true"
       >
-        Corporate
+        Services
         <svg
           className={`w-3.5 h-3.5 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
           fill="none"
@@ -104,13 +114,40 @@ export function ServicesDropdown() {
               <Link
                 key={service.slug}
                 href={`/services/${service.slug}`}
-                className="dropdown-item block px-3 py-2.5 rounded transition-all duration-100"
-                style={{ animationDelay: `${index * 30}ms` }}
+                className="dropdown-item relative block px-3 py-2.5 rounded group overflow-hidden"
               >
-                <div className="font-medium text-sm text-gray-900">
+                {/* Background Image - Fades in on Hover */}
+                <div
+                  className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-100 pointer-events-none bg-cover bg-center"
+                  style={{ backgroundImage: 'url(https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/5ee11fdf-aac0-4c26-0f5e-026a2df87900/public)' }}
+                />
+
+                {/* Blue Glass Prism Background - Fades in on Hover */}
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-100 pointer-events-none">
+                  <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" preserveAspectRatio="none">
+                    <defs>
+                      <linearGradient id={`prism-gradient-${index}`} x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stopColor="#01458f" stopOpacity="0.08" />
+                        <stop offset="50%" stopColor="#0052cc" stopOpacity="0.12" />
+                        <stop offset="100%" stopColor="#2684ff" stopOpacity="0.06" />
+                      </linearGradient>
+                      <filter id={`glass-blur-${index}`}>
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
+                      </filter>
+                    </defs>
+                    {/* Prism Shapes */}
+                    <polygon points="0,0 80,0 40,100" fill={`url(#prism-gradient-${index})`} filter={`url(#glass-blur-${index})`} opacity="0.7" />
+                    <polygon points="80,0 160,0 120,100 40,100" fill={`url(#prism-gradient-${index})`} filter={`url(#glass-blur-${index})`} opacity="0.5" />
+                    <polygon points="160,0 200,0 200,100 120,100" fill={`url(#prism-gradient-${index})`} filter={`url(#glass-blur-${index})`} opacity="0.6" />
+                    {/* Glass shine overlay */}
+                    <rect x="0" y="0" width="200" height="30" fill="white" opacity="0.1" />
+                  </svg>
+                </div>
+
+                <div className="relative z-10 font-medium text-sm text-gray-900">
                   {service.name}
                 </div>
-                <div className="text-xs text-gray-500 mt-0.5">
+                <div className="relative z-10 text-xs text-gray-500 mt-0.5">
                   {service.description}
                 </div>
               </Link>
@@ -136,7 +173,7 @@ export function ServicesDropdown() {
                 <svg className="w-3.5 h-3.5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                Trusted by 10,000 UK businesses
+                Trusted by more than 5,000 UK businesses and individuals
               </p>
             </div>
           </div>
