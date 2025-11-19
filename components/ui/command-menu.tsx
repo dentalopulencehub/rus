@@ -30,13 +30,13 @@ export function CommandMenu() {
       {/* Search Button */}
       <button
         onClick={() => setOpen(true)}
-        className="inline-flex items-center justify-center gap-2 px-3 py-2 rounded-lg text-sm text-gray-700 hover:bg-[rgba(5,21,36,0.06)] transition-colors min-w-[44px] min-h-[44px] sm:min-w-0 sm:min-h-0"
+        className="inline-flex items-center justify-center gap-2 px-3 py-2 rounded-lg text-sm text-gray-700 hover:text-[#01458f] hover:bg-gray-50 transition-all duration-200 min-w-[44px] min-h-[44px] sm:min-w-0 sm:min-h-0"
         aria-label="Search"
       >
         <svg className="w-5 h-5 sm:w-4 sm:h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
         </svg>
-        <span className="hidden sm:inline">Search</span>
+        <span className="hidden sm:inline font-medium">Search</span>
         <kbd className="hidden lg:inline-block px-1.5 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">⌘K</kbd>
       </button>
 
@@ -57,7 +57,7 @@ export function CommandMenu() {
               <Command.List className="max-h-[60vh] sm:max-h-[400px] overflow-y-auto p-2">
                 <Command.Empty className="py-6 text-center text-sm text-gray-500">No results found.</Command.Empty>
 
-                <Command.Group heading="Services" className="text-xs font-semibold text-gray-500 px-2 py-2">
+                <Command.Group heading="Services" className="text-sm font-bold text-gray-900 px-2 py-3 pt-2">
                   <CommandItem href="/services/taxation-services" onSelect={handleNavigate}>
                     <span>Taxation Services</span>
                   </CommandItem>
@@ -67,17 +67,41 @@ export function CommandMenu() {
                   <CommandItem href="/services/audit-assurance" onSelect={handleNavigate}>
                     <span>Audit & Assurance</span>
                   </CommandItem>
-                  <CommandItem href="/services/payroll-services" onSelect={handleNavigate}>
-                    <span>Payroll Services</span>
+                  <CommandItem href="/services/business-advisory" onSelect={handleNavigate}>
+                    <span>Business Advisory</span>
+                  </CommandItem>
+                  <CommandItem href="/services/company-secretarial" onSelect={handleNavigate}>
+                    <span>Company Secretarial</span>
+                  </CommandItem>
+                  <CommandItem href="/services/company-formation" onSelect={handleNavigate}>
+                    <span>Company Formation</span>
+                  </CommandItem>
+                  <CommandItem href="/services/payroll" onSelect={handleNavigate}>
+                    <span>Payroll</span>
+                  </CommandItem>
+                  <CommandItem href="/services/hmrc-nca-investigations" onSelect={handleNavigate}>
+                    <span>HMRC & NCA Investigations</span>
+                  </CommandItem>
+                  <CommandItem href="/services/forensic-accounting" onSelect={handleNavigate}>
+                    <span>Forensic Accounting</span>
                   </CommandItem>
                 </Command.Group>
 
-                <Command.Group heading="Sectors" className="text-xs font-semibold text-gray-500 px-2 py-2 mt-2">
+                <Command.Group heading="Sectors" className="text-sm font-bold text-gray-900 px-2 py-3 mt-4">
                   <CommandItem href="/sectors/charities-not-for-profit" onSelect={handleNavigate}>
                     <span>Charities & Not-for-profit</span>
                   </CommandItem>
                   <CommandItem href="/sectors/construction" onSelect={handleNavigate}>
                     <span>Construction</span>
+                  </CommandItem>
+                  <CommandItem href="/sectors/contractors-professional-services" onSelect={handleNavigate}>
+                    <span>Contractors & Professional Services</span>
+                  </CommandItem>
+                  <CommandItem href="/sectors/creative-media" onSelect={handleNavigate}>
+                    <span>Creative & Media</span>
+                  </CommandItem>
+                  <CommandItem href="/sectors/education-academies" onSelect={handleNavigate}>
+                    <span>Education & Academies</span>
                   </CommandItem>
                   <CommandItem href="/sectors/healthcare" onSelect={handleNavigate}>
                     <span>Healthcare</span>
@@ -88,12 +112,21 @@ export function CommandMenu() {
                   <CommandItem href="/sectors/information-technology" onSelect={handleNavigate}>
                     <span>Information Technology</span>
                   </CommandItem>
+                  <CommandItem href="/sectors/property-services" onSelect={handleNavigate}>
+                    <span>Property Services</span>
+                  </CommandItem>
                   <CommandItem href="/sectors/retail" onSelect={handleNavigate}>
                     <span>Retail</span>
                   </CommandItem>
+                  <CommandItem href="/sectors/solicitors" onSelect={handleNavigate}>
+                    <span>Solicitors</span>
+                  </CommandItem>
+                  <CommandItem href="/sectors/other" onSelect={handleNavigate}>
+                    <span>Other</span>
+                  </CommandItem>
                 </Command.Group>
 
-                <Command.Group heading="Pages" className="text-xs font-semibold text-gray-500 px-2 py-2 mt-2">
+                <Command.Group heading="Pages" className="text-sm font-bold text-gray-900 px-2 py-3 mt-4">
                   <CommandItem href="/who-we-are" onSelect={handleNavigate}>
                     <span>Who We Are</span>
                   </CommandItem>
@@ -118,9 +151,17 @@ function CommandItem({ href, onSelect, children }: { href: string; onSelect: (hr
     <Command.Item
       value={href}
       onSelect={() => onSelect(href)}
-      className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm cursor-pointer hover:bg-gray-100 aria-selected:bg-gray-100"
+      className="group relative overflow-hidden flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm cursor-pointer hover:bg-gray-50 hover:shadow-sm aria-selected:bg-gray-50 transition-all duration-200"
     >
-      {children}
+      {/* Background Image - Fades in on Hover */}
+      <div
+        className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-300 pointer-events-none bg-cover bg-center"
+        style={{ backgroundImage: 'url(https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/5ee11fdf-aac0-4c26-0f5e-026a2df87900/public)' }}
+      />
+
+      <div className="relative z-10 text-gray-900 group-hover:text-[#01458f] transition-colors duration-200 font-medium">
+        {children}
+      </div>
     </Command.Item>
   );
 }
