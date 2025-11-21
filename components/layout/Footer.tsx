@@ -7,209 +7,273 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative mt-auto overflow-hidden border-t border-white/5">
-      {/* Decorative Background Elements */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#01458f] via-[#0052cc] to-[#01458f]">
-        {/* Blur Circles */}
-        <div className="absolute top-20 left-10 w-96 h-96 bg-cyan-400/20 rounded-full blur-3xl animate-pulse-subtle" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-400/20 rounded-full blur-3xl animate-pulse-subtle" style={{ animationDelay: '1s' }} />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl" />
-      </div>
+    <footer className="relative mt-auto overflow-hidden">
+      {/* Deep Blue Gradient Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#01458f] via-[#002d5c] to-[#001428]" />
+
+      {/* Architectural Grid Pattern */}
+      <div
+        className="absolute inset-0 opacity-[0.04]"
+        style={{
+          backgroundImage: `
+            linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px)
+          `,
+          backgroundSize: '100px 100px'
+        }}
+      />
+
+      {/* Vertical Side Grids - Architectural Detail */}
+      <div className="absolute left-0 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-white/10 to-transparent" />
+      <div className="absolute left-20 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-white/5 to-transparent hidden lg:block" />
+      <div className="absolute right-0 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-white/10 to-transparent" />
+      <div className="absolute right-20 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-white/5 to-transparent hidden lg:block" />
+
+      {/* Corner Brackets - Premium Detail */}
+      <div className="absolute top-0 left-0 w-32 h-32 border-l-2 border-t-2 border-white/5 pointer-events-none" />
+      <div className="absolute top-0 right-0 w-32 h-32 border-r-2 border-t-2 border-white/5 pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-32 h-32 border-l-2 border-b-2 border-white/5 pointer-events-none" />
+      <div className="absolute bottom-0 right-0 w-32 h-32 border-r-2 border-b-2 border-white/5 pointer-events-none" />
+
+      {/* Top Accent Bar */}
+      <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+
+      {/* Radial Ambient Light */}
+      <div className="absolute top-0 left-1/4 w-[800px] h-[800px] bg-blue-300/[0.02] rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-1/4 w-[1000px] h-[1000px] bg-cyan-300/[0.02] rounded-full blur-3xl" />
+
+      {/* Noise Texture Overlay */}
+      <div className="absolute inset-0 opacity-[0.015] mix-blend-overlay pointer-events-none"
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`
+        }}
+      />
 
       {/* Content */}
       <div className="relative">
-        {/* Main Footer Content */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 lg:gap-10 mb-16">
-            {/* Company Info */}
-            <div className="md:col-span-2 lg:col-span-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/Rus Accountancy Logo .svg"
-                alt="RUS Chartered Accountants"
-                className="h-16 w-auto mb-5 [filter:drop-shadow(0_0_20px_rgba(255,255,255,0.3))]"
-              />
-              <p className="text-sm text-white/80 mb-5 leading-relaxed">
-                Established accountants providing expert financial guidance for over 30 years.
-                Birmingham-based, serving businesses across the UK.
-              </p>
-              <div className="space-y-1 text-sm text-white/70 mb-6">
-                <p className="font-medium text-white/90 mb-1.5">Birmingham Office</p>
-                <p>1190A-1194 Stratford Road</p>
-                <p>Hall Green, Birmingham</p>
-                <p>B28 8AB</p>
-              </div>
+        <div className="max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-20">
 
-              {/* Certifications */}
-              <div className="flex flex-wrap gap-2">
-                <div className="px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-xs text-white/90 font-medium hover:bg-white/15 transition-colors duration-200">
-                  ICAEW Certified
-                </div>
-                <div className="px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-xs text-white/90 font-medium hover:bg-white/15 transition-colors duration-200">
-                  Making Tax Digital
+          {/* Hero Section - Brand Statement */}
+          <div className="pt-20 pb-12">
+            <div className="max-w-6xl mx-auto">
+              {/* Logo */}
+              <div className="space-y-3 flex flex-col items-start">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/Rus Accountancy Logo .svg"
+                  alt="RUS Chartered Accountants"
+                  className="h-12 w-auto"
+                />
+
+                {/* Since Badge */}
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-[1px] bg-gradient-to-r from-white/30 to-transparent"></div>
+                  <span className="text-[10px] text-white/40 uppercase tracking-[0.4em] font-light">Est. 1995</span>
                 </div>
               </div>
+
+              {/* Brand Statement with ICAEW Logo */}
+              <div className="mt-6 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                {/* Brand Statement Text */}
+                <div className="lg:col-span-8 space-y-2.5">
+                  <h2 className="text-2xl lg:text-3xl text-white/90 leading-[1.4] font-light">
+                    Established accountants providing expert<br />
+                    financial guidance for over<span className="text-white font-normal"> 30 years</span>.
+                  </h2>
+                  <p className="text-base text-white/50 leading-relaxed font-light">
+                    Birmingham-based, serving businesses across the UK<br />
+                    with precision, integrity, and forward-thinking solutions.
+                  </p>
+                </div>
+
+                {/* ICAEW Logo - Inline with text */}
+                <div className="lg:col-span-4 flex justify-start items-start lg:pl-8">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/6b872cbc-f4ae-4919-7a00-5c64cea80f00/public"
+                    alt="ICAEW Chartered Accountants"
+                    className="h-16 w-auto brightness-0 invert opacity-70 hover:opacity-90 transition-opacity duration-500"
+                  />
+                </div>
+              </div>
             </div>
+          </div>
 
-            {/* Corporate Services */}
-            <div className="lg:col-span-1">
-              <h3 className="text-xs font-semibold text-white/90 uppercase tracking-wider mb-5">
-                Corporate Services
-              </h3>
-              <ul className="space-y-2.5">
-                <li>
-                  <Link href="/services/taxation-services" className="text-sm text-white/70 hover:text-white hover:translate-x-0.5 transition-all duration-200 inline-block">
-                    Taxation Services
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services/accounting-bookkeeping" className="text-sm text-white/70 hover:text-white hover:translate-x-0.5 transition-all duration-200 inline-block">
-                    Accounting & Bookkeeping
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services/audit-assurance" className="text-sm text-white/70 hover:text-white hover:translate-x-0.5 transition-all duration-200 inline-block">
-                    Audit & Assurance
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services/payroll-services" className="text-sm text-white/70 hover:text-white hover:translate-x-0.5 transition-all duration-200 inline-block">
-                    Payroll Services
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services/business-advisory" className="text-sm text-white/70 hover:text-white hover:translate-x-0.5 transition-all duration-200 inline-block">
-                    Business Advisory
-                  </Link>
-                </li>
-              </ul>
-            </div>
+          {/* Premium Divider */}
+          <div className="relative h-px my-4">
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+            <div className="absolute left-1/2 top-0 -translate-x-1/2 w-2 h-2 rounded-full bg-white/10 -translate-y-[3px]"></div>
+          </div>
 
-            {/* Individual Services */}
-            <div className="lg:col-span-1">
-              <h3 className="text-xs font-semibold text-white/90 uppercase tracking-wider mb-5">
-                Individual Services
-              </h3>
-              <ul className="space-y-2.5">
-                <li>
-                  <Link href="/services/personal-tax" className="text-sm text-white/70 hover:text-white hover:translate-x-0.5 transition-all duration-200 inline-block">
-                    Personal Tax Returns
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services/self-assessment" className="text-sm text-white/70 hover:text-white hover:translate-x-0.5 transition-all duration-200 inline-block">
-                    Self-Assessment
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services/tax-planning" className="text-sm text-white/70 hover:text-white hover:translate-x-0.5 transition-all duration-200 inline-block">
-                    Tax Planning
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services/estate-planning" className="text-sm text-white/70 hover:text-white hover:translate-x-0.5 transition-all duration-200 inline-block">
-                    Estate Planning
-                  </Link>
-                </li>
-              </ul>
-            </div>
+          {/* Navigation Grid */}
+          <div className="py-12">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-x-12 gap-y-10 max-w-6xl mx-auto">
 
-            {/* Company */}
-            <div className="lg:col-span-1">
-              <h3 className="text-xs font-semibold text-white/90 uppercase tracking-wider mb-5">
-                Company
-              </h3>
-              <ul className="space-y-2.5">
-                <li>
-                  <Link href="/who-we-are" className="text-sm text-white/70 hover:text-white hover:translate-x-0.5 transition-all duration-200 inline-block">
-                    Who We Are
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/sectors" className="text-sm text-white/70 hover:text-white hover:translate-x-0.5 transition-all duration-200 inline-block">
-                    Sectors
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/insights" className="text-sm text-white/70 hover:text-white hover:translate-x-0.5 transition-all duration-200 inline-block">
-                    Insights
-                  </Link>
-                </li>
-                <li>
-                  <ContactTrigger className="text-sm text-white/70 hover:text-white hover:translate-x-0.5 transition-all duration-200 inline-block">
-                    Contact
-                  </ContactTrigger>
-                </li>
-                <li>
-                  <a href="#" className="text-sm text-white/70 hover:text-white hover:translate-x-0.5 transition-all duration-200 inline-block">
-                    Client Portal
-                  </a>
-                </li>
-              </ul>
-            </div>
+              {/* Services */}
+              <div className="space-y-4">
+                <h4 className="text-[10px] font-bold text-white/60 uppercase tracking-[0.4em]">
+                  Services
+                </h4>
+                <ul className="space-y-2.5">
+                  {[
+                    { name: 'Taxation Services', href: '/services/taxation-services' },
+                    { name: 'Accounting', href: '/services/accounting-bookkeeping' },
+                    { name: 'Audit', href: '/services/audit-assurance' },
+                    { name: 'Advisory', href: '/services/business-advisory' },
+                    { name: 'Payroll', href: '/services/payroll' },
+                  ].map((item) => (
+                    <li key={item.href}>
+                      <Link
+                        href={item.href}
+                        className="text-sm text-white/40 hover:text-white transition-colors duration-300 font-light block"
+                      >
+                        {item.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-            {/* Legal */}
-            <div className="lg:col-span-1">
-              <h3 className="text-xs font-semibold text-white/90 uppercase tracking-wider mb-5">
-                Legal
-              </h3>
-              <ul className="space-y-2.5">
-                <li>
-                  <Link href="/terms" className="text-sm text-white/70 hover:text-white hover:translate-x-0.5 transition-all duration-200 inline-block">
-                    Terms & Conditions
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/privacy" className="text-sm text-white/70 hover:text-white hover:translate-x-0.5 transition-all duration-200 inline-block">
-                    Privacy Policy
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/cookies" className="text-sm text-white/70 hover:text-white hover:translate-x-0.5 transition-all duration-200 inline-block">
-                    Cookie Policy
-                  </Link>
-                </li>
-              </ul>
-            </div>
+              {/* Sectors */}
+              <div className="space-y-4">
+                <h4 className="text-[10px] font-bold text-white/60 uppercase tracking-[0.4em]">
+                  Sectors
+                </h4>
+                <ul className="space-y-2.5">
+                  {[
+                    { name: 'Healthcare', href: '/sectors/healthcare' },
+                    { name: 'Property', href: '/sectors/property-services' },
+                    { name: 'Retail', href: '/sectors/retail' },
+                    { name: 'Hospitality', href: '/sectors/hospitality-leisure' },
+                    { name: 'Technology', href: '/sectors/information-technology' },
+                  ].map((item) => (
+                    <li key={item.href}>
+                      <Link
+                        href={item.href}
+                        className="text-sm text-white/40 hover:text-white transition-colors duration-300 font-light block"
+                      >
+                        {item.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-            {/* Contact */}
-            <div className="lg:col-span-1">
-              <h3 className="text-xs font-semibold text-white/90 uppercase tracking-wider mb-5">
-                Get in Touch
-              </h3>
-              <ul className="space-y-2.5">
-                <li>
-                  <a href="tel:01217771200" className="text-sm text-white/70 hover:text-white transition-colors duration-200 flex items-center gap-2 group">
-                    <svg className="w-4 h-4 flex-shrink-0 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                    0121 777 1200
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:info@rus.co.uk" className="text-sm text-white/70 hover:text-white transition-colors duration-200 flex items-center gap-2 group">
-                    <svg className="w-4 h-4 flex-shrink-0 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    info@rus.co.uk
-                  </a>
-                </li>
-              </ul>
+              {/* Company */}
+              <div className="space-y-4">
+                <h4 className="text-[10px] font-bold text-white/60 uppercase tracking-[0.4em]">
+                  Company
+                </h4>
+                <ul className="space-y-2.5">
+                  <li>
+                    <Link
+                      href="/who-we-are"
+                      className="text-sm text-white/40 hover:text-white transition-colors duration-300 font-light block"
+                    >
+                      Who We Are
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/insights"
+                      className="text-sm text-white/40 hover:text-white transition-colors duration-300 font-light block"
+                    >
+                      Insights
+                    </Link>
+                  </li>
+                  <li>
+                    <ContactTrigger className="text-sm text-white/40 hover:text-white transition-colors duration-300 font-light block text-left">
+                      Contact
+                    </ContactTrigger>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-sm text-white/40 hover:text-white transition-colors duration-300 font-light block"
+                    >
+                      Client Portal
+                    </a>
+                  </li>
+                </ul>
+              </div>
 
-              {/* Social Media */}
-              <div className="mt-7">
-                <p className="text-xs font-semibold text-white/90 uppercase tracking-wider mb-4">
-                  Follow Us
-                </p>
-                <div className="flex gap-2.5">
-                  <a href="#" className="w-9 h-9 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center hover:bg-white/20 hover:scale-110 transition-all duration-200" aria-label="LinkedIn">
-                    <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+              {/* Legal */}
+              <div className="space-y-4">
+                <h4 className="text-[10px] font-bold text-white/60 uppercase tracking-[0.4em]">
+                  Legal
+                </h4>
+                <ul className="space-y-2.5">
+                  <li>
+                    <Link
+                      href="/privacy"
+                      className="text-sm text-white/40 hover:text-white transition-colors duration-300 font-light block"
+                    >
+                      Privacy
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/terms"
+                      className="text-sm text-white/40 hover:text-white transition-colors duration-300 font-light block"
+                    >
+                      Terms
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/cookies"
+                      className="text-sm text-white/40 hover:text-white transition-colors duration-300 font-light block"
+                    >
+                      Cookies
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Social - 2x2 Grid */}
+              <div className="space-y-4">
+                <h4 className="text-[10px] font-bold text-white/60 uppercase tracking-[0.4em]">
+                  Follow
+                </h4>
+                <div className="grid grid-cols-2 gap-2.5">
+                  <a
+                    href="#"
+                    className="group relative w-10 h-10 rounded-full border border-white/10 bg-white/[0.02] backdrop-blur-sm flex items-center justify-center overflow-hidden transition-all duration-500 hover:scale-105 hover:border-white/30"
+                    aria-label="LinkedIn"
+                  >
+                    <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <svg className="relative w-3.5 h-3.5 text-white/50 group-hover:text-[#01458f] transition-colors duration-500" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                     </svg>
                   </a>
-                  <a href="#" className="w-9 h-9 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center hover:bg-white/20 hover:scale-110 transition-all duration-200" aria-label="Twitter">
-                    <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <a
+                    href="#"
+                    className="group relative w-10 h-10 rounded-full border border-white/10 bg-white/[0.02] backdrop-blur-sm flex items-center justify-center overflow-hidden transition-all duration-500 hover:scale-105 hover:border-white/30"
+                    aria-label="Twitter"
+                  >
+                    <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <svg className="relative w-3.5 h-3.5 text-white/50 group-hover:text-[#01458f] transition-colors duration-500" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                  </a>
+                  <a
+                    href="#"
+                    className="group relative w-10 h-10 rounded-full border border-white/10 bg-white/[0.02] backdrop-blur-sm flex items-center justify-center overflow-hidden transition-all duration-500 hover:scale-105 hover:border-white/30"
+                    aria-label="Instagram"
+                  >
+                    <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <svg className="relative w-3.5 h-3.5 text-white/50 group-hover:text-[#01458f] transition-colors duration-500" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                  </a>
+                  <a
+                    href="#"
+                    className="group relative w-10 h-10 rounded-full border border-white/10 bg-white/[0.02] backdrop-blur-sm flex items-center justify-center overflow-hidden transition-all duration-500 hover:scale-105 hover:border-white/30"
+                    aria-label="TikTok"
+                  >
+                    <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <svg className="relative w-3.5 h-3.5 text-white/50 group-hover:text-[#01458f] transition-colors duration-500" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
                     </svg>
                   </a>
                 </div>
@@ -217,47 +281,63 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Partner Logos */}
-          <div className="border-t border-white/10 pt-10 pb-10">
-            <p className="text-xs text-white/60 uppercase tracking-wider text-center mb-8 font-medium">
-              Seamless Integration With
-            </p>
-            <div className="flex items-center justify-center gap-10 md:gap-14 flex-wrap">
-              <img src="https://vectorwiki.com/images/D6yvF__sage-accounting.svg" alt="Sage" className="h-7 brightness-0 invert opacity-50 hover:opacity-90 transition-opacity duration-300" />
-              <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Xero_software_logo.svg" alt="Xero" className="h-6 brightness-0 invert opacity-50 hover:opacity-90 transition-opacity duration-300" />
-              <img src="https://seeklogo.com/images/Q/quickbooks-logo-15BADDEFBA-seeklogo.com.png" alt="QuickBooks" className="h-7 brightness-0 invert opacity-50 hover:opacity-90 transition-opacity duration-300" />
-              <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/FreeAgent_logo.svg" alt="FreeAgent" className="h-5 brightness-0 invert opacity-50 hover:opacity-90 transition-opacity duration-300" />
+          {/* Premium Divider */}
+          <div className="relative h-px my-4">
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+          </div>
+
+          {/* Address Section - Single Line */}
+          <div className="py-8">
+            <div className="flex flex-wrap items-center justify-center gap-x-2 text-sm text-white/50 font-light">
+              <span className="text-white/60">1190A-1194 Stratford Road, Hall Green, Birmingham, B28 8AB, United Kingdom</span>
+              <span className="mx-2">•</span>
+              <a href="tel:01217771200" className="text-white/70 hover:text-white transition-colors duration-300">
+                0121 777 1200
+              </a>
+              <span className="mx-2">•</span>
+              <a href="mailto:info@rus.co.uk" className="text-white/70 hover:text-white transition-colors duration-300">
+                info@rus.co.uk
+              </a>
             </div>
           </div>
 
-          {/* Bottom Bar */}
-          <div className="border-t border-white/10 pt-10 pb-2">
-            {/* Legal Links */}
-            <div className="flex flex-wrap items-center justify-center gap-5 mb-6">
-              <Link href="/privacy" className="text-xs text-white/60 hover:text-white/90 transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:bg-white/60 hover:after:w-full after:transition-all after:duration-300">
-                Privacy Policy
-              </Link>
-              <span className="text-white/30">•</span>
-              <Link href="/terms" className="text-xs text-white/60 hover:text-white/90 transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:bg-white/60 hover:after:w-full after:transition-all after:duration-300">
-                Terms & Conditions
-              </Link>
-              <span className="text-white/30">•</span>
-              <Link href="/cookies" className="text-xs text-white/60 hover:text-white/90 transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:bg-white/60 hover:after:w-full after:transition-all after:duration-300">
-                Cookie Policy
-              </Link>
-            </div>
-
-            {/* Copyright */}
-            <p className="text-xs text-white/60 text-center mb-5">
-              © {currentYear} RUS & Company (UK) Ltd. • Company No: 3833778 • VAT Reg: GB 754 1385 28
-            </p>
-
-            {/* ICAEW Notice */}
-            <p className="text-xs text-white/50 text-center leading-relaxed max-w-3xl mx-auto">
-              Registered to carry out company Audit work in the UK by The Institute of Chartered Accountants in England & Wales (ICAEW).
-              RUS & Company is committed to providing professional, reliable, and transparent accounting services.
-            </p>
+          {/* Premium Divider */}
+          <div className="relative h-px my-4">
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
           </div>
+
+          {/* Footer Bottom */}
+          <div className="pt-8 pb-32">
+            <div className="flex flex-col items-center text-center gap-6">
+
+              {/* Copyright & Company Details */}
+              <div className="space-y-1.5">
+                <p className="text-xs text-white/70 font-light">
+                  © {currentYear} RUS & Company (UK) Ltd.
+                </p>
+                <p className="text-xs text-white/60 font-light">
+                  Company No: 3833778 • VAT Reg: GB 754 1385 28
+                </p>
+                <p className="text-[10px] text-white/50 font-light max-w-2xl leading-relaxed pt-0.5 mx-auto">
+                  Registered to carry out company Audit work in the UK by The Institute of Chartered Accountants in England & Wales (ICAEW)
+                </p>
+              </div>
+
+              {/* Back to Top Link */}
+              <a
+                href="#"
+                onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+                className="group flex items-center gap-3 text-[10px] text-white/30 hover:text-white/70 transition-all duration-500 uppercase tracking-[0.3em] font-light"
+              >
+                <span>Back to top</span>
+                <div className="flex flex-col gap-0.5">
+                  <span className="w-5 h-px bg-white/20 group-hover:w-8 group-hover:bg-white/50 transition-all duration-500"></span>
+                  <span className="w-5 h-px bg-white/20 group-hover:w-8 group-hover:bg-white/50 transition-all duration-500 delay-75"></span>
+                </div>
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
     </footer>

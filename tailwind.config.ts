@@ -7,7 +7,14 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        // "Logo Match" font for headings - matches RUS logo condensed style
+        sans: ['"Fira Sans Condensed"', '"Barlow Condensed"', 'sans-serif'],
+        // Wider font for body text readability
+        body: ['"Inter"', 'system-ui', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 };

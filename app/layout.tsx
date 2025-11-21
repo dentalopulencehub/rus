@@ -5,6 +5,22 @@ import { Footer } from '@/components/layout/Footer';
 import { BottomBar } from '@/components/layout/BottomBar';
 import { ContactFormProvider } from '@/components/contact/ContactFormContext';
 import { ContactModal } from '@/components/contact/ContactModal';
+import { Fira_Sans_Condensed, Inter } from 'next/font/google';
+
+// Logo-matching font for headings (condensed, professional)
+const firaSansCondensed = Fira_Sans_Condensed({
+  subsets: ['latin'],
+  weight: ['200', '300', '400', '500', '600', '700'],
+  variable: '--font-fira-sans-condensed',
+  display: 'swap',
+});
+
+// Body text font (wider, more readable)
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: 'RUS Chartered Accountants | Birmingham',
@@ -25,8 +41,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className="overflow-x-hidden">
-      <body suppressHydrationWarning className="overflow-x-hidden">
+    <html lang="en" suppressHydrationWarning className={`overflow-x-hidden ${firaSansCondensed.variable} ${inter.variable}`}>
+      <body suppressHydrationWarning className="overflow-x-hidden font-sans antialiased">
         <ContactFormProvider>
           <Header />
           <main className="pb-16 overflow-x-hidden">{children}</main>

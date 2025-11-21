@@ -40,8 +40,30 @@ body {
   overflow-x: hidden;
   color: var(--foreground);
   background: var(--background);
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: var(--font-fira-sans-condensed), system-ui, -apple-system, sans-serif;
   position: relative;
+}
+
+/* Typography System - Match RUS Logo Style */
+
+/* Section Headers (H2, H3) - "Chartered Accountants" style from logo */
+h1, h2, h3 {
+  font-family: var(--font-fira-sans-condensed), sans-serif;
+  font-weight: 400; /* Normal */
+  letter-spacing: -0.025em; /* tracking-tight */
+  color: #111;
+}
+
+/* Subtitles and body - "Registered Auditors" style */
+h4, h5, h6, p {
+  font-family: var(--font-fira-sans-condensed), sans-serif;
+  font-weight: 400; /* Normal */
+  /* No uppercase, normal spacing */
+}
+
+/* Body text can optionally use Inter for better readability */
+.font-body, body p {
+  font-family: var(--font-inter), sans-serif;
 }
 
 a {
