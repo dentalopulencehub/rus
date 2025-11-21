@@ -15,7 +15,7 @@ export function ServiceBenefits({ title, items }: ServiceBenefitsProps) {
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-light italic text-gray-900 mb-3 tracking-tight">
+          <h2 className="text-3xl md:text-4xl text-gray-900 tracking-tight">
             {title}
           </h2>
         </div>
@@ -28,7 +28,7 @@ export function ServiceBenefits({ title, items }: ServiceBenefitsProps) {
               className="relative flex flex-col items-center justify-center text-center p-4 md:p-8 rounded-xl border border-gray-200/50 bg-[#BBDEFB] transition-all duration-200 hover:shadow-lg hover:border-[#01458f]/30 min-h-[280px] md:min-h-[320px]"
             >
               {/* Icon - Large and Centered */}
-              <div className="mb-4 md:mb-8 text-[#01458f]">
+              <div className="w-12 h-12 md:w-16 md:h-16 mb-4 md:mb-8 text-[#01458f]">
                 {item.icon}
               </div>
 

@@ -23,7 +23,7 @@ export function WhoWeHelp({
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3 tracking-tight">
+          <h2 className="text-3xl md:text-4xl text-gray-900 mb-3 tracking-tight">
             {title}
           </h2>
           <p className="text-base text-gray-600 max-w-2xl mx-auto">

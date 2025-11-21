@@ -20,7 +20,7 @@ export function ServiceOverview({ leftContent, rightContent }: ServiceOverviewPr
           <div className="space-y-8 pl-2">
             {/* Main Title - No Icon */}
             <div className="space-y-4">
-              <h2 className="text-4xl font-bold text-gray-900 leading-tight">
+              <h2 className="text-3xl md:text-4xl text-gray-900 tracking-tight">
                 {leftContent.title}
               </h2>
               {/* Accent Line */}
