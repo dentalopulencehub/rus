@@ -25,20 +25,29 @@ export function ExpertiseGrid({ title, items }: ExpertiseGridProps) {
           {items.map((item, index) => (
             <div
               key={index}
-              className="relative flex flex-col items-center justify-start text-center p-6 rounded-xl border border-gray-200/50 bg-white transition-all duration-200 hover:shadow-lg hover:border-[#01458f]/30"
+              className="relative flex flex-col items-center justify-start text-center p-6 rounded-xl border-2 border-gray-200/50 hover:border-[#01458f]/60 transition-all duration-300 group overflow-hidden"
             >
+              {/* Layer 1: Glassmorphic backdrop */}
+              <div className="absolute inset-0 -z-10 opacity-0 group-hover:opacity-100 transition-all duration-300 before:absolute before:inset-0 before:backdrop-blur-md before:backdrop-saturate-150" />
+
+              {/* Layer 2: Colored gradient background */}
+              <div className="absolute inset-0 -z-20 bg-gradient-to-br from-[#01458f]/20 via-[#0052cc]/10 to-[#01458f]/20 rounded-xl opacity-0 group-hover:opacity-30 transition-all duration-300" />
+
+              {/* Layer 3: Solid background base */}
+              <div className="absolute inset-0 -z-30 bg-white rounded-xl transition-all duration-300 group-hover:bg-white/80" />
+
               {/* Icon */}
-              <div className="mb-4 text-[#01458f]">
+              <div className="relative z-10 mb-4 text-[#01458f]">
                 {item.icon}
               </div>
 
               {/* Title */}
-              <h3 className="text-xs md:text-sm font-bold text-gray-900 mb-2 tracking-wide uppercase leading-tight">
+              <h3 className="relative z-10 text-xs md:text-sm font-bold text-gray-900 mb-2 tracking-wide uppercase leading-tight">
                 {item.title}
               </h3>
 
               {/* Description */}
-              <p className="text-xs text-gray-600 leading-relaxed">
+              <p className="relative z-10 text-xs text-gray-600 leading-relaxed">
                 {item.description}
               </p>
             </div>

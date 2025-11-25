@@ -8,6 +8,9 @@ import { ServiceBenefits } from '@/components/services/ServiceBenefits';
 import { ServiceTestimonials } from '@/components/services/ServiceTestimonials';
 import { CTASimple } from '@/components/home/CTASimple';
 import { ServiceFAQ } from '@/components/services/ServiceFAQ';
+import { TaxationBenefits } from '@/components/services/TaxationBenefits';
+import { InsightsPreview } from '@/components/home/InsightsPreview';
+import { StickyMiniNav } from '@/components/services/StickyMiniNav';
 
 export const metadata: Metadata = {
   title: 'Taxation Services | Expert Tax Advice & Compliance | RUS Chartered Accountants',
@@ -296,6 +299,14 @@ const clientTypes = [
   },
 ];
 
+const miniNavLinks = [
+  { label: 'Business', href: '#business-tax' },
+  { label: 'Personal', href: '#personal-tax' },
+  { label: 'Inheritance', href: '#inheritance-tax' },
+  { label: 'FAQs', href: '#faqs' },
+  { label: 'Contact', href: '/contact' },
+];
+
 export default function TaxationServicesPage() {
   return (
     <>
@@ -303,6 +314,21 @@ export default function TaxationServicesPage() {
         title="Taxation Services"
         subtitle="Expert tax advice and compliance support for individuals and businesses across the UK"
         description="Managing tax efficiently is essential for maintaining compliance, reducing liabilities and protecting long-term financial wellbeing. Our specialist Taxation Services provide clear, strategic guidance across all major UK tax areas, helping you stay fully compliant with HMRC whilst making the most of available allowances and planning opportunities."
+      />
+
+      <div id="business-tax">
+        <SubcategoriesGrid
+          title="Our Taxation Services"
+          subtitle="Explore our dedicated tax service pages below"
+          items={subcategories}
+          basePath="/services/taxation-services"
+        />
+      </div>
+
+      <WhoWeHelp
+        title="Who We Help"
+        subtitle="Tailored tax support for diverse clients across the UK"
+        clientTypes={clientTypes}
       />
 
       <ServiceOverview
@@ -318,23 +344,67 @@ export default function TaxationServicesPage() {
         }}
       />
 
-      <SubcategoriesGrid
-        title="Our Taxation Services"
-        subtitle="Explore our dedicated tax service pages below"
-        items={subcategories}
-        basePath="/services/taxation-services"
-      />
+      <div id="personal-tax">
+        <TaxationBenefits
+          title="Comprehensive Tax Support"
+        />
+      </div>
 
-      <WhoWeHelp
-        title="Who We Help"
-        subtitle="Tailored tax support for diverse clients across the UK"
-        clientTypes={clientTypes}
-      />
+      {/* CTA after Comprehensive Tax Support */}
+      <section className="w-full flex items-center justify-center bg-white px-4 py-24">
+        <div className="max-w-6xl mx-auto w-full">
+          <div className="relative bg-gradient-to-br from-[#01458f] to-[#0052cc] rounded-3xl overflow-hidden px-8 md:px-16 py-20 md:py-28">
+            {/* Geometric Pattern Background */}
+            <svg
+              className="absolute inset-0 w-full h-full opacity-20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M 600 -100 Q 800 100 850 300" stroke="white" strokeWidth="2" fill="none" />
+              <circle cx="750" cy="150" r="80" stroke="white" strokeWidth="1.5" fill="none" />
+              <path d="M 700 50 L 850 80 L 820 200" stroke="white" strokeWidth="1.5" fill="none" />
+              <path d="M 650 120 L 750 100 L 730 180 L 640 190 Z" stroke="white" strokeWidth="1" fill="none" />
+              <path d="M -50 400 Q 100 450 200 480" stroke="white" strokeWidth="2" fill="none" />
+              <circle cx="100" cy="420" r="60" stroke="white" strokeWidth="1.5" fill="none" />
+              <path d="M 50 380 L 180 400 L 160 480" stroke="white" strokeWidth="1.5" fill="none" />
+              <line x1="400" y1="50" x2="500" y2="80" stroke="white" strokeWidth="1" opacity="0.5" />
+              <line x1="300" y1="400" x2="400" y2="420" stroke="white" strokeWidth="1" opacity="0.5" />
+              <circle cx="500" cy="60" r="30" stroke="white" strokeWidth="1" fill="none" opacity="0.4" />
+            </svg>
 
-      <ExpertiseGrid
-        title="Our Taxation Expertise"
-        items={expertiseItems}
-      />
+            {/* Content */}
+            <div className="relative z-10 flex flex-col items-center text-center space-y-8">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight">
+                Ready to take control of your tax affairs?
+              </h2>
+              <a
+                href="/contact"
+                className="relative inline-flex items-center justify-center px-12 py-3 bg-white text-gray-900 rounded-full text-base md:text-lg font-semibold hover:shadow-2xl hover:shadow-white/30 transition-all duration-300 overflow-hidden border-2 border-white/20 group"
+              >
+                {/* Layer 1: Glassmorphic backdrop */}
+                <div className="absolute inset-0 -z-10 opacity-0 group-hover:opacity-100 transition-all duration-300 before:absolute before:inset-0 before:backdrop-blur-md before:backdrop-saturate-150" />
+
+                {/* Layer 2: Gradient shimmer */}
+                <div className="absolute inset-0 -z-20 bg-gradient-to-br from-white/30 via-white/10 to-white/30 rounded-full opacity-0 group-hover:opacity-40 transition-all duration-300" />
+
+                {/* Layer 3: Solid background */}
+                <div className="absolute inset-0 -z-30 bg-white rounded-full transition-all duration-300 group-hover:bg-white/95" />
+
+                <span className="relative z-10">Get in Touch</span>
+              </a>
+              <p className="text-white/90 text-sm md:text-base">
+                Expert tax advice tailored to your needs
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="inheritance-tax">
+        <ExpertiseGrid
+          title="Our Taxation Expertise"
+          items={expertiseItems}
+        />
+      </div>
 
       <ServiceBenefits
         title="Why Choose Our Tax Services?"
@@ -349,11 +419,17 @@ export default function TaxationServicesPage() {
 
       <CTASimple />
 
-      <ServiceFAQ
-        title="Taxation FAQs"
-        subtitle="Common questions about our taxation services"
-        faqs={faqs}
-      />
+      <div id="faqs">
+        <ServiceFAQ
+          title="Taxation FAQs"
+          subtitle="Common questions about our taxation services"
+          faqs={faqs}
+        />
+      </div>
+
+      <InsightsPreview />
+
+      <StickyMiniNav links={miniNavLinks} />
     </>
   );
 }

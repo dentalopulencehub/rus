@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 interface SubcategoryItem {
@@ -34,9 +33,8 @@ export function SubcategoriesGrid({ title, subtitle, items, basePath }: Subcateg
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {items.map((item) => (
-            <Link
+            <div
               key={item.slug}
-              href={`${basePath}/${item.slug}`}
               className="group relative overflow-hidden flex flex-col items-center justify-center text-center p-4 rounded-xl border border-gray-200 bg-white transition-all duration-200 hover:shadow-sm aspect-square"
             >
               {/* Background Image - Fades in on Hover */}
@@ -56,7 +54,7 @@ export function SubcategoriesGrid({ title, subtitle, items, basePath }: Subcateg
               <h3 className="relative z-10 text-sm font-medium text-gray-900 group-hover:text-[#01458f] transition-colors duration-200">
                 {item.name}
               </h3>
-            </Link>
+            </div>
           ))}
         </div>
       </div>

@@ -32,44 +32,22 @@ export function ServiceOverview({ leftContent, rightContent }: ServiceOverviewPr
               {leftContent.description}
             </p>
 
-            {/* Divider Line */}
-            <div className="w-full h-[1px] bg-gray-200"></div>
+            {/* Benefits - Inside Container - Minimal Clean */}
+            <div className="bg-white rounded-xl border border-gray-200 p-6">
+              <div className="space-y-0">
+                <div className="group cursor-pointer py-3 border-b border-gray-100">
+                  <h3 className="text-sm font-medium text-gray-900">Proactive Tax Planning</h3>
+                  <p className="text-xs text-gray-500 mt-0.5">We identify opportunities before they pass</p>
+                </div>
 
-            {/* Sub-services / Benefits */}
-            <div className="space-y-6 pt-4">
-              <div className="flex items-start gap-4 group cursor-pointer pb-6 border-b border-gray-200">
-                <div className="w-8 h-8 rounded-lg bg-gray-100 flex items-center justify-center flex-shrink-0 group-hover:bg-[#01458f] transition-colors duration-300">
-                  <svg className="w-5 h-5 text-gray-600 group-hover:text-white transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                  </svg>
+                <div className="group cursor-pointer py-3 border-b border-gray-100">
+                  <h3 className="text-sm font-medium text-gray-900">HMRC Compliance</h3>
+                  <p className="text-xs text-gray-500 mt-0.5">Stay fully compliant with all deadlines</p>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-base font-semibold text-gray-900 mb-1 group-hover:text-[#01458f] transition-colors duration-300">Business Tax Compliance</h3>
-                  <p className="text-sm text-gray-600">Corporation tax, VAT, and strategic planning for businesses</p>
-                </div>
-              </div>
 
-              <div className="flex items-start gap-4 group cursor-pointer pb-6 border-b border-gray-200">
-                <div className="w-8 h-8 rounded-lg bg-gray-100 flex items-center justify-center flex-shrink-0 group-hover:bg-[#01458f] transition-colors duration-300">
-                  <svg className="w-5 h-5 text-gray-600 group-hover:text-white transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                  </svg>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-base font-semibold text-gray-900 mb-1 group-hover:text-[#01458f] transition-colors duration-300">Personal Tax Planning</h3>
-                  <p className="text-sm text-gray-600">Self-assessment and tax-efficient strategies for individuals</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4 group cursor-pointer">
-                <div className="w-8 h-8 rounded-lg bg-gray-100 flex items-center justify-center flex-shrink-0 group-hover:bg-[#01458f] transition-colors duration-300">
-                  <svg className="w-5 h-5 text-gray-600 group-hover:text-white transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                  </svg>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-base font-semibold text-gray-900 mb-1 group-hover:text-[#01458f] transition-colors duration-300">Inheritance Tax Strategy</h3>
-                  <p className="text-sm text-gray-600">Estate planning and wealth transfer optimisation</p>
+                <div className="group cursor-pointer py-3">
+                  <h3 className="text-sm font-medium text-gray-900">Clear Communication</h3>
+                  <p className="text-xs text-gray-500 mt-0.5">No jargon, just straightforward advice</p>
                 </div>
               </div>
             </div>

@@ -70,7 +70,11 @@ export function BottomBar() {
     <>
       {/* Bottom Navigation Bar */}
       <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-40 w-auto">
-        <div className="bg-[#01458f] rounded-full shadow-lg border border-white/10 px-5 py-1.5 flex items-center justify-center gap-5">
+        <div className="relative bg-[#01458f]/90 backdrop-blur-xl rounded-full shadow-lg border border-white/20 px-5 py-1.5 flex items-center justify-center gap-5 overflow-hidden">
+          {/* Glassmorphic Overlay Layer */}
+          <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-white/5 pointer-events-none" />
+          {/* Content Layer */}
+          <div className="relative z-10 flex items-center justify-center gap-5 w-full">
           {/* Home - Desktop only */}
           <Link
             href="/"
@@ -114,6 +118,7 @@ export function BottomBar() {
             </svg>
             <span className="text-[8px] font-medium mt-0.5">Enquiry</span>
           </ContactTrigger>
+          </div>
         </div>
       </div>
 
@@ -170,26 +175,43 @@ export function BottomBar() {
                     <Link
                       href={item.href}
                       onClick={handleClose}
-                      className="flex items-center justify-between px-4 py-3.5 bg-white rounded-xl border border-gray-100 hover:border-[#01458f]/30 hover:bg-[#01458f]/5 active:scale-98 transition-all duration-200 shadow-sm group"
+                      className="relative flex items-center justify-between px-4 py-3.5 rounded-xl border-2 border-gray-200/50 hover:border-[#01458f]/60 hover:shadow-[#01458f]/20 hover:shadow-lg active:scale-98 transition-all duration-300 group overflow-hidden"
                     >
-                      <span className="text-sm font-medium text-gray-900 group-hover:text-[#01458f] transition-colors">
+                      {/* Layer 1: Glassmorphic backdrop with blur and saturation */}
+                      <div className="absolute inset-0 -z-10 opacity-0 group-hover:opacity-100 transition-all duration-300 before:absolute before:inset-0 before:backdrop-blur-md before:backdrop-saturate-150" />
+
+                      {/* Layer 2: Colored gradient background */}
+                      <div className="absolute inset-0 -z-20 bg-gradient-to-br from-[#01458f]/30 via-[#0052cc]/20 to-[#01458f]/30 rounded-xl opacity-0 group-hover:opacity-30 transition-all duration-300" />
+
+                      {/* Layer 3: Solid background base */}
+                      <div className="absolute inset-0 -z-30 bg-white rounded-xl transition-all duration-300 group-hover:bg-white/80" />
+                      <span className="relative z-10 text-sm font-medium text-gray-900 group-hover:text-[#01458f] transition-colors">
                         {item.label}
                       </span>
-                      <svg className="w-4 h-4 text-gray-400 group-hover:text-[#01458f] transition-all group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="relative z-10 w-4 h-4 text-gray-400 group-hover:text-[#01458f] transition-all group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
                     </Link>
                   ) : (
-                    <div className="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+                    <div className="relative rounded-xl border-2 border-gray-200/50 hover:border-[#01458f]/60 hover:shadow-[#01458f]/20 hover:shadow-lg shadow-sm overflow-hidden transition-all duration-300 group">
+                      {/* Layer 1: Glassmorphic backdrop */}
+                      <div className="absolute inset-0 -z-10 opacity-0 group-hover:opacity-100 transition-all duration-300 before:absolute before:inset-0 before:backdrop-blur-md before:backdrop-saturate-150" />
+
+                      {/* Layer 2: Colored gradient background */}
+                      <div className="absolute inset-0 -z-20 bg-gradient-to-br from-[#01458f]/30 via-[#0052cc]/20 to-[#01458f]/30 rounded-xl opacity-0 group-hover:opacity-30 transition-all duration-300" />
+
+                      {/* Layer 3: Solid background base */}
+                      <div className="absolute inset-0 -z-30 bg-white rounded-xl transition-all duration-300 group-hover:bg-white/80" />
+
                       {/* Item with Submenu */}
                       <button
                         onClick={() => toggleExpanded(item.label)}
-                        className="w-full flex items-center justify-between px-4 py-3.5 hover:bg-gray-50 active:bg-gray-100 transition-colors group"
+                        className="relative w-full flex items-center justify-between px-4 py-3.5 transition-colors overflow-hidden"
                       >
-                        <span className="text-sm font-medium text-gray-900 group-hover:text-[#01458f] transition-colors">
+                        <span className="relative z-10 text-sm font-medium text-gray-900 group-hover:text-[#01458f] transition-colors">
                           {item.label}
                         </span>
-                        <div className="flex items-center gap-2">
+                        <div className="relative z-10 flex items-center gap-2">
                           <span className="text-xs text-gray-400 font-medium">
                             {item.submenu?.length}
                           </span>
@@ -219,10 +241,18 @@ export function BottomBar() {
                                 key={subitem.href}
                                 href={subitem.href}
                                 onClick={handleClose}
-                                className="flex items-center px-3 py-2.5 rounded-lg hover:bg-white hover:shadow-sm border border-transparent hover:border-[#01458f]/20 active:bg-[#01458f]/10 transition-all duration-200 group"
+                                className="relative flex items-center px-3 py-2.5 rounded-lg border-2 border-transparent hover:border-[#01458f]/40 hover:shadow-sm transition-all duration-300 group overflow-hidden"
                               >
-                                <div className="w-1.5 h-1.5 rounded-full bg-[#01458f]/40 group-hover:bg-[#01458f] mr-3 transition-colors" />
-                                <span className="text-sm text-gray-700 group-hover:text-[#01458f] font-medium transition-colors">
+                                {/* Layer 1: Glassmorphic backdrop */}
+                                <div className="absolute inset-0 -z-10 opacity-0 group-hover:opacity-100 transition-all duration-300 before:absolute before:inset-0 before:backdrop-blur-md before:backdrop-saturate-150" />
+
+                                {/* Layer 2: Colored gradient background */}
+                                <div className="absolute inset-0 -z-20 bg-gradient-to-br from-[#01458f]/20 via-[#0052cc]/10 to-[#01458f]/20 rounded-lg opacity-0 group-hover:opacity-30 transition-all duration-300" />
+
+                                {/* Layer 3: Solid background base */}
+                                <div className="absolute inset-0 -z-30 bg-white rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300" />
+                                <div className="relative z-10 w-1.5 h-1.5 rounded-full bg-[#01458f]/40 group-hover:bg-[#01458f] mr-3 transition-colors" />
+                                <span className="relative z-10 text-sm text-gray-700 group-hover:text-[#01458f] font-medium transition-colors">
                                   {subitem.label}
                                 </span>
                               </Link>

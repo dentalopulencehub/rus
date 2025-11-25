@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Command } from 'cmdk';
 import { useRouter } from 'next/navigation';
 
@@ -44,8 +44,17 @@ export function CommandMenu() {
       {open && (
         <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm" onClick={() => setOpen(false)}>
           <div className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[calc(100%-2rem)] sm:w-full max-w-2xl mx-4" onClick={(e) => e.stopPropagation()}>
-            <Command className="bg-white rounded-xl shadow-2xl border border-gray-200 overflow-hidden">
-              <div className="flex items-center border-b border-gray-200 px-4">
+            <Command className="relative rounded-xl shadow-2xl border-2 border-gray-200/50 overflow-hidden isolate">
+              {/* Layer 3: Solid background (bottom layer) */}
+              <div className="absolute inset-0 bg-white rounded-xl" />
+
+              {/* Layer 2: Gradient shimmer */}
+              <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-white/5 rounded-xl" />
+
+              {/* Layer 1: Glassmorphic backdrop */}
+              <div className="absolute inset-0 before:absolute before:inset-0 before:backdrop-blur-xl before:backdrop-saturate-150" />
+
+              <div className="relative z-10 flex items-center border-b border-gray-200 px-4">
                 <svg className="w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
@@ -54,7 +63,7 @@ export function CommandMenu() {
                   className="flex-1 px-3 py-4 text-sm sm:text-base bg-transparent outline-none placeholder:text-gray-400"
                 />
               </div>
-              <Command.List className="max-h-[60vh] sm:max-h-[400px] overflow-y-auto p-2">
+              <Command.List className="relative z-10 max-h-[60vh] sm:max-h-[400px] overflow-y-auto p-2">
                 <Command.Empty className="py-6 text-center text-sm text-gray-500">No results found.</Command.Empty>
 
                 <Command.Group heading="Services" className="text-sm font-bold text-gray-900 px-2 py-3 pt-2">
@@ -147,17 +156,31 @@ export function CommandMenu() {
 }
 
 function CommandItem({ href, onSelect, children }: { href: string; onSelect: (href: string) => void; children: React.ReactNode }) {
+  // Extract text content from children for search filtering
+  let textContent = '';
+  if (typeof children === 'string') {
+    textContent = children;
+  } else if (React.isValidElement(children)) {
+    const props = children.props as { children?: unknown };
+    if (typeof props.children === 'string') {
+      textContent = props.children;
+    }
+  }
+
   return (
     <Command.Item
-      value={href}
+      value={textContent}
       onSelect={() => onSelect(href)}
-      className="group relative overflow-hidden flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm cursor-pointer hover:bg-gray-50 hover:shadow-sm aria-selected:bg-gray-50 transition-all duration-200"
+      className="group relative overflow-hidden flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm cursor-pointer border-2 border-transparent hover:border-[#01458f]/40 hover:shadow-sm aria-selected:border-[#01458f]/60 aria-selected:shadow-lg transition-all duration-300"
     >
-      {/* Background Image - Fades in on Hover */}
-      <div
-        className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-300 pointer-events-none bg-cover bg-center"
-        style={{ backgroundImage: 'url(https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/5ee11fdf-aac0-4c26-0f5e-026a2df87900/public)' }}
-      />
+      {/* Layer 1: Glassmorphic backdrop */}
+      <div className="absolute inset-0 -z-10 opacity-0 group-hover:opacity-100 aria-selected:opacity-100 transition-all duration-300 before:absolute before:inset-0 before:backdrop-blur-md before:backdrop-saturate-150" />
+
+      {/* Layer 2: Colored gradient background */}
+      <div className="absolute inset-0 -z-20 bg-gradient-to-br from-[#01458f]/20 via-[#0052cc]/10 to-[#01458f]/20 rounded-lg opacity-0 group-hover:opacity-30 aria-selected:opacity-40 transition-all duration-300" />
+
+      {/* Layer 3: Solid background base */}
+      <div className="absolute inset-0 -z-30 bg-white rounded-lg opacity-0 group-hover:opacity-100 aria-selected:opacity-100 transition-all duration-300" />
 
       <div className="relative z-10 text-gray-900 group-hover:text-[#01458f] transition-colors duration-200 font-medium">
         {children}

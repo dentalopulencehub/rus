@@ -52,9 +52,18 @@ export function CTASimple() {
             {/* CTA Button */}
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-8 py-4 bg-white text-gray-900 rounded-full text-base md:text-lg font-semibold hover:bg-gray-50 transition-all duration-200"
+              className="relative inline-flex items-center justify-center px-12 py-3 bg-white text-gray-900 rounded-full text-base md:text-lg font-semibold hover:shadow-2xl hover:shadow-white/30 transition-all duration-300 overflow-hidden border-2 border-white/20 group"
             >
-              Book Your Free Consultation
+              {/* Layer 1: Glassmorphic backdrop */}
+              <div className="absolute inset-0 -z-10 opacity-0 group-hover:opacity-100 transition-all duration-300 before:absolute before:inset-0 before:backdrop-blur-md before:backdrop-saturate-150" />
+
+              {/* Layer 2: Gradient shimmer */}
+              <div className="absolute inset-0 -z-20 bg-gradient-to-br from-white/30 via-white/10 to-white/30 rounded-full opacity-0 group-hover:opacity-40 transition-all duration-300" />
+
+              {/* Layer 3: Solid background */}
+              <div className="absolute inset-0 -z-30 bg-white rounded-full transition-all duration-300 group-hover:bg-white/95" />
+
+              <span className="relative z-10">Book Your Free Consultation</span>
             </Link>
 
             {/* Supporting Text */}

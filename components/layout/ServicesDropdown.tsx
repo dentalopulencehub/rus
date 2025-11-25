@@ -108,41 +108,31 @@ export function ServicesDropdown() {
 
       {/* Dropdown Menu */}
       {isOpen && (
-        <div className="dropdown-menu absolute top-full left-0 mt-4 w-[620px] rounded-xl shadow-xl border border-gray-200/50 bg-white/95 backdrop-blur-lg overflow-hidden z-50">
-          <div className="p-3 grid grid-cols-2 gap-2">
+        <div className="dropdown-menu absolute top-full left-0 mt-4 w-[620px] rounded-xl shadow-xl border-2 border-gray-200/50 overflow-hidden z-50 isolate">
+          {/* Layer 3: Solid background (bottom layer) */}
+          <div className="absolute inset-0 bg-white rounded-xl" />
+
+          {/* Layer 2: Gradient shimmer */}
+          <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-white/5 rounded-xl" />
+
+          {/* Layer 1: Glassmorphic backdrop */}
+          <div className="absolute inset-0 before:absolute before:inset-0 before:backdrop-blur-xl before:backdrop-saturate-150" />
+
+          <div className="relative z-10 p-3 grid grid-cols-2 gap-2">
             {services.map((service, index) => (
               <Link
                 key={service.slug}
                 href={`/services/${service.slug}`}
-                className="dropdown-item relative block px-3 py-2.5 rounded group overflow-hidden"
+                className="dropdown-item relative block px-3 py-2.5 rounded-lg border-2 border-transparent hover:border-[#01458f]/60 transition-all duration-300 group overflow-hidden"
               >
-                {/* Background Image - Fades in on Hover */}
-                <div
-                  className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-100 pointer-events-none bg-cover bg-center"
-                  style={{ backgroundImage: 'url(https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/5ee11fdf-aac0-4c26-0f5e-026a2df87900/public)' }}
-                />
+                {/* Layer 1: Glassmorphic backdrop with blur and saturation */}
+                <div className="absolute inset-0 -z-10 opacity-0 group-hover:opacity-100 transition-all duration-300 before:absolute before:inset-0 before:backdrop-blur-md before:backdrop-saturate-150" />
 
-                {/* Blue Glass Prism Background - Fades in on Hover */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-100 pointer-events-none">
-                  <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" preserveAspectRatio="none">
-                    <defs>
-                      <linearGradient id={`prism-gradient-${index}`} x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stopColor="#01458f" stopOpacity="0.08" />
-                        <stop offset="50%" stopColor="#0052cc" stopOpacity="0.12" />
-                        <stop offset="100%" stopColor="#2684ff" stopOpacity="0.06" />
-                      </linearGradient>
-                      <filter id={`glass-blur-${index}`}>
-                        <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
-                      </filter>
-                    </defs>
-                    {/* Prism Shapes */}
-                    <polygon points="0,0 80,0 40,100" fill={`url(#prism-gradient-${index})`} filter={`url(#glass-blur-${index})`} opacity="0.7" />
-                    <polygon points="80,0 160,0 120,100 40,100" fill={`url(#prism-gradient-${index})`} filter={`url(#glass-blur-${index})`} opacity="0.5" />
-                    <polygon points="160,0 200,0 200,100 120,100" fill={`url(#prism-gradient-${index})`} filter={`url(#glass-blur-${index})`} opacity="0.6" />
-                    {/* Glass shine overlay */}
-                    <rect x="0" y="0" width="200" height="30" fill="white" opacity="0.1" />
-                  </svg>
-                </div>
+                {/* Layer 2: Colored gradient background */}
+                <div className="absolute inset-0 -z-20 bg-gradient-to-br from-[#01458f]/30 via-[#0052cc]/20 to-[#01458f]/30 rounded-lg opacity-0 group-hover:opacity-30 transition-all duration-300" />
+
+                {/* Layer 3: Solid background base */}
+                <div className="absolute inset-0 -z-30 bg-white rounded-lg transition-all duration-300 group-hover:bg-white/80" />
 
                 <div className="relative z-10 font-medium text-sm text-gray-900">
                   {service.name}
@@ -153,7 +143,7 @@ export function ServicesDropdown() {
               </Link>
             ))}
           </div>
-          <div className="border-t border-gray-100 bg-gray-50/50">
+          <div className="relative z-10 border-t border-gray-100 bg-gray-50/50">
             {/* Contact Options */}
             <div className="px-3 pt-2.5 pb-2">
               <Link

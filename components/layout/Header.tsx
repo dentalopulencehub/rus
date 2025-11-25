@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
 import { ServicesDropdown } from './ServicesDropdown';
 import { SectorsDropdown } from './SectorsDropdown';
 import { CommandMenu } from '@/components/ui/command-menu';
@@ -15,10 +14,19 @@ export function Header() {
   return (
     <header className={cn(
       "fixed left-0 right-0 top-0 z-50 transition-all duration-300 ease-out",
-      isScrolled ? "py-2 px-4" : "py-6 px-4"
+      isScrolled ? "py-2 px-4" : "py-4 px-4"
     )}>
-      <nav className="h-[75px] max-w-6xl mx-auto px-8 rounded-xl transition-all duration-300 ease-out flex items-center header-glass border border-gray-200/50 shadow-sm">
-        <div className="w-full grid grid-cols-[auto_1fr_auto] items-center gap-4">
+      <nav className="relative h-[75px] max-w-6xl mx-auto px-8 rounded-xl border-2 border-white/20 shadow-lg transition-all duration-300 ease-out flex items-center">
+        {/* Layer 1: Glassmorphic backdrop with blur and saturation */}
+        <div className="absolute inset-0 -z-10 rounded-xl overflow-hidden before:absolute before:inset-0 before:backdrop-blur-xl before:backdrop-saturate-150" />
+
+        {/* Layer 2: Colored gradient background */}
+        <div className="absolute inset-0 -z-20 bg-gradient-to-br from-white/10 via-transparent to-white/5 rounded-xl overflow-hidden" />
+
+        {/* Layer 3: Solid background base */}
+        <div className="absolute inset-0 -z-30 bg-white/70 rounded-xl overflow-hidden" />
+
+        <div className="relative z-10 w-full grid grid-cols-[auto_1fr_auto] items-center gap-4">
           {/* Logo */}
           <Link
             href="/"
@@ -68,7 +76,6 @@ export function Header() {
             </a>
           </div>
         </div>
-
       </nav>
     </header>
   );
