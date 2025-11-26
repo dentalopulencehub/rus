@@ -18,24 +18,38 @@ export function StickyMiniNav({ links }: StickyMiniNavProps) {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Show after scrolling 600px (past hero section)
-      setIsVisible(window.scrollY > 600);
+      // Show as soon as user starts scrolling
+      setIsVisible(window.scrollY > 50);
 
-      // Determine active section
-      const sections = links.map(link => link.href.replace('#', ''));
-      for (const section of sections) {
+      // Determine active section - find the section closest to the top of viewport
+      const sections = links
+        .map(link => link.href.replace('#', ''))
+        .filter(href => href); // Filter out non-hash links
+
+      let closestSection = '';
+      let closestDistance = Infinity;
+
+      sections.forEach(section => {
         const element = document.getElementById(section);
         if (element) {
           const rect = element.getBoundingClientRect();
-          if (rect.top <= 150 && rect.bottom >= 150) {
-            setActiveSection(section);
-            break;
+          // Calculate distance from top of viewport (accounting for header)
+          const distance = Math.abs(rect.top - 100);
+
+          // If this section is in viewport and closer than previous
+          if (rect.top <= window.innerHeight && rect.bottom >= 0 && distance < closestDistance) {
+            closestDistance = distance;
+            closestSection = section;
           }
         }
+      });
+
+      if (closestSection) {
+        setActiveSection(closestSection);
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll(); // Check initial state
     return () => window.removeEventListener('scroll', handleScroll);
   }, [links]);
@@ -51,9 +65,12 @@ export function StickyMiniNav({ links }: StickyMiniNavProps) {
 
   return (
     <nav
-      className={`fixed right-6 top-1/2 -translate-y-1/2 z-40 transition-all duration-300 ${
-        isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-4 pointer-events-none'
+      className={`fixed right-6 top-1/2 -translate-y-1/2 z-40 transition-all duration-500 ease-out ${
+        isVisible ? 'opacity-100 translate-x-0 scale-100' : 'opacity-0 translate-x-12 scale-95 pointer-events-none'
       }`}
+      style={{
+        transitionTimingFunction: isVisible ? 'cubic-bezier(0.34, 1.56, 0.64, 1)' : 'ease-out'
+      }}
       aria-label="Table of contents"
     >
       <div
@@ -89,7 +106,7 @@ export function StickyMiniNav({ links }: StickyMiniNavProps) {
               }`}
             />
           </div>
-          {isExpanded && <span className="text-xs">Sections</span>}
+          {isExpanded && <span className="text-xs">Navigate</span>}
         </button>
 
         {/* Navigation Links - Minimal */}

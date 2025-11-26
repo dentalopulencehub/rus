@@ -1,3 +1,17 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Terms of Use | RUS Chartered Accountants',
+  description: 'Terms of use for the RUS Chartered Accountants website. Read our website terms, conditions, and legal information.',
+  robots: {
+    index: true,
+    follow: false,
+  },
+  alternates: {
+    canonical: 'https://rus.co.uk/terms',
+  },
+};
+
 export default function TermsPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">

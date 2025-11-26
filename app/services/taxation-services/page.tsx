@@ -1,13 +1,14 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import { ServiceHero } from '@/components/services/ServiceHero';
 import { ServiceOverview } from '@/components/services/ServiceOverview';
 import { SubcategoriesGrid } from '@/components/services/SubcategoriesGrid';
 import { WhoWeHelp } from '@/components/services/WhoWeHelp';
-import { ExpertiseGrid } from '@/components/services/ExpertiseGrid';
 import { ServiceBenefits } from '@/components/services/ServiceBenefits';
 import { ServiceTestimonials } from '@/components/services/ServiceTestimonials';
 import { CTASimple } from '@/components/home/CTASimple';
 import { ServiceFAQ } from '@/components/services/ServiceFAQ';
+import { FAQSchema } from '@/components/seo/FAQSchema';
 import { TaxationBenefits } from '@/components/services/TaxationBenefits';
 import { InsightsPreview } from '@/components/home/InsightsPreview';
 import { StickyMiniNav } from '@/components/services/StickyMiniNav';
@@ -73,7 +74,7 @@ const expertiseItems = [
     title: 'Business Tax Compliance',
     description: 'Accurate tax returns and strategic planning for businesses',
     icon: (
-      <svg className="w-16 h-16 md:w-20 md:h-20" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1">
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
         <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
       </svg>
     ),
@@ -82,7 +83,7 @@ const expertiseItems = [
     title: 'Personal Tax Planning',
     description: 'Self-assessment and strategic tax efficiency for individuals',
     icon: (
-      <svg className="w-16 h-16 md:w-20 md:h-20" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1">
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
         <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
       </svg>
     ),
@@ -91,7 +92,7 @@ const expertiseItems = [
     title: 'Inheritance Tax Strategy',
     description: 'Estate planning and wealth transfer optimisation',
     icon: (
-      <svg className="w-16 h-16 md:w-20 md:h-20" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1">
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
         <path strokeLinecap="round" strokeLinejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
       </svg>
     ),
@@ -100,7 +101,7 @@ const expertiseItems = [
     title: 'Capital Gains Tax',
     description: 'CGT planning for property, investments and disposals',
     icon: (
-      <svg className="w-16 h-16 md:w-20 md:h-20" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1">
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
         <path strokeLinecap="round" strokeLinejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
       </svg>
     ),
@@ -109,7 +110,7 @@ const expertiseItems = [
     title: 'Corporation Tax Services',
     description: 'Complete corporation tax compliance and advisory',
     icon: (
-      <svg className="w-16 h-16 md:w-20 md:h-20" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1">
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
         <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
       </svg>
     ),
@@ -118,7 +119,7 @@ const expertiseItems = [
     title: 'VAT Advice',
     description: 'Digital VAT filing and Making Tax Digital compliance',
     icon: (
-      <svg className="w-16 h-16 md:w-20 md:h-20" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1">
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
         <path strokeLinecap="round" strokeLinejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
       </svg>
     ),
@@ -127,7 +128,7 @@ const expertiseItems = [
     title: 'HMRC Support',
     description: 'Correspondence, enquiries and investigation assistance',
     icon: (
-      <svg className="w-16 h-16 md:w-20 md:h-20" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1">
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
         <path strokeLinecap="round" strokeLinejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
       </svg>
     ),
@@ -136,7 +137,7 @@ const expertiseItems = [
     title: 'Tax-Efficient Structuring',
     description: 'Strategic structuring for companies and individuals',
     icon: (
-      <svg className="w-16 h-16 md:w-20 md:h-20" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1">
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
         <path strokeLinecap="round" strokeLinejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
       </svg>
     ),
@@ -198,11 +199,19 @@ const faqs = [
   },
   {
     question: "Do I need an accountant for my tax return?",
-    answer: "Whilst simple tax returns can be completed yourself, an accountant ensures accuracy, maximises tax efficiency, and provides peace of mind. For self-employed individuals, landlords, or anyone with complex affairs, professional support typically saves more in tax than the accountant's fee."
+    answer: (
+      <>
+        Whilst simple tax returns can be completed yourself, an accountant ensures accuracy, maximises tax efficiency, and provides peace of mind. For self-employed individuals, <Link href="/sectors/property-services" className="text-[#01458f] underline hover:text-[#013a75] transition-colors">landlords</Link>, or anyone with complex affairs, professional support typically saves more in tax than the accountant's fee.
+      </>
+    ),
   },
   {
     question: "What happens if HMRC investigates my tax affairs?",
-    answer: "HMRC enquiries can be stressful and time-consuming. Our HMRC investigation support service provides professional representation, handles all correspondence, and ensures your interests are protected throughout the process. We work to resolve matters efficiently whilst minimising any potential liabilities."
+    answer: (
+      <>
+        HMRC enquiries can be stressful and time-consuming. Our <Link href="/services/hmrc-nca-investigations" className="text-[#01458f] underline hover:text-[#013a75] transition-colors">HMRC investigation support service</Link> provides professional representation, handles all correspondence, and ensures your interests are protected throughout the process. We work to resolve matters efficiently whilst minimising any potential liabilities.
+      </>
+    ),
   },
   {
     question: "How far back can I claim tax relief?",
@@ -300,23 +309,25 @@ const clientTypes = [
 ];
 
 const miniNavLinks = [
-  { label: 'Business', href: '#business-tax' },
-  { label: 'Personal', href: '#personal-tax' },
-  { label: 'Inheritance', href: '#inheritance-tax' },
+  { label: 'Services', href: '#services' },
+  { label: 'Expertise', href: '#expertise' },
+  { label: 'Benefits', href: '#benefits' },
+  { label: 'Testimonials', href: '#testimonials' },
   { label: 'FAQs', href: '#faqs' },
-  { label: 'Contact', href: '/contact' },
+  { label: 'Insights', href: '#insights' },
 ];
 
 export default function TaxationServicesPage() {
   return (
     <>
+      <FAQSchema faqs={faqs} />
       <ServiceHero
         title="Taxation Services"
         subtitle="Expert tax advice and compliance support for individuals and businesses across the UK"
         description="Managing tax efficiently is essential for maintaining compliance, reducing liabilities and protecting long-term financial wellbeing. Our specialist Taxation Services provide clear, strategic guidance across all major UK tax areas, helping you stay fully compliant with HMRC whilst making the most of available allowances and planning opportunities."
       />
 
-      <div id="business-tax">
+      <div id="services">
         <SubcategoriesGrid
           title="Our Taxation Services"
           subtitle="Explore our dedicated tax service pages below"
@@ -326,9 +337,9 @@ export default function TaxationServicesPage() {
       </div>
 
       <WhoWeHelp
-        title="Who We Help"
-        subtitle="Tailored tax support for diverse clients across the UK"
-        clientTypes={clientTypes}
+        title="Our Taxation Expertise"
+        subtitle=""
+        clientTypes={expertiseItems}
       />
 
       <ServiceOverview
@@ -344,7 +355,7 @@ export default function TaxationServicesPage() {
         }}
       />
 
-      <div id="personal-tax">
+      <div id="benefits">
         <TaxationBenefits
           title="Comprehensive Tax Support"
         />
@@ -372,50 +383,66 @@ export default function TaxationServicesPage() {
             </svg>
 
             {/* Content */}
-            <div className="relative z-10 flex flex-col items-center text-center space-y-8">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight">
-                Ready to take control of your tax affairs?
+            <div className="relative z-10 flex flex-col items-center text-center space-y-6">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight">
+                Stay one step ahead of HMRC
               </h2>
-              <a
-                href="/contact"
-                className="relative inline-flex items-center justify-center px-12 py-3 bg-white text-gray-900 rounded-full text-base md:text-lg font-semibold hover:shadow-2xl hover:shadow-white/30 transition-all duration-300 overflow-hidden border-2 border-white/20 group"
-              >
-                {/* Layer 1: Glassmorphic backdrop */}
-                <div className="absolute inset-0 -z-10 opacity-0 group-hover:opacity-100 transition-all duration-300 before:absolute before:inset-0 before:backdrop-blur-md before:backdrop-saturate-150" />
 
-                {/* Layer 2: Gradient shimmer */}
-                <div className="absolute inset-0 -z-20 bg-gradient-to-br from-white/30 via-white/10 to-white/30 rounded-full opacity-0 group-hover:opacity-40 transition-all duration-300" />
-
-                {/* Layer 3: Solid background */}
-                <div className="absolute inset-0 -z-30 bg-white rounded-full transition-all duration-300 group-hover:bg-white/95" />
-
-                <span className="relative z-10">Get in Touch</span>
-              </a>
-              <p className="text-white/90 text-sm md:text-base">
-                Expert tax advice tailored to your needs
+              <p className="text-white/90 text-base md:text-lg -mb-2">
+                Activate your tax investigation cover
               </p>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-col md:flex-row items-center gap-4">
+                <a
+                  href="/contact"
+                  className="relative inline-flex items-center justify-center px-20 py-1.5 bg-white text-gray-900 rounded-full text-sm md:text-base font-semibold hover:shadow-2xl hover:shadow-white/30 transition-all duration-300 overflow-hidden group"
+                >
+                  {/* Layer 1: Glassmorphic backdrop */}
+                  <div className="absolute inset-0 -z-10 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 backdrop-blur-md backdrop-saturate-150" />
+
+                  {/* Layer 2: Gradient shimmer */}
+                  <div className="absolute inset-0 -z-20 bg-gradient-to-br from-white/30 via-white/10 to-white/30 rounded-full opacity-0 group-hover:opacity-40 transition-all duration-300" />
+
+                  {/* Layer 3: Solid background */}
+                  <div className="absolute inset-0 -z-30 bg-white rounded-full transition-all duration-300 group-hover:bg-white/95" />
+
+                  <span className="relative z-10">Enquire Now</span>
+                </a>
+
+                <a
+                  href="/who-we-are"
+                  className="relative inline-flex items-center justify-center px-20 py-1.5 bg-gray-900 text-white rounded-full text-sm md:text-base font-semibold hover:shadow-2xl hover:shadow-gray-900/30 transition-all duration-300 overflow-hidden group"
+                >
+                  {/* Layer 1: Glassmorphic backdrop */}
+                  <div className="absolute inset-0 -z-10 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 backdrop-blur-md backdrop-saturate-150" />
+
+                  {/* Layer 2: Gradient shimmer */}
+                  <div className="absolute inset-0 -z-20 bg-gradient-to-br from-gray-800/30 via-gray-700/10 to-gray-800/30 rounded-full opacity-0 group-hover:opacity-40 transition-all duration-300" />
+
+                  {/* Layer 3: Solid background */}
+                  <div className="absolute inset-0 -z-30 bg-gray-900 rounded-full transition-all duration-300 group-hover:bg-gray-800" />
+
+                  <span className="relative z-10">Learn More</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
-      <div id="inheritance-tax">
-        <ExpertiseGrid
-          title="Our Taxation Expertise"
-          items={expertiseItems}
-        />
-      </div>
 
       <ServiceBenefits
         title="Why Choose Our Tax Services?"
         items={benefits}
       />
 
-      <ServiceTestimonials
-        title="Client Testimonials"
-        subtitle="Hear from businesses and individuals we've supported across the UK"
-        testimonials={testimonials}
-      />
+      <div id="testimonials">
+        <ServiceTestimonials
+          title="Client Testimonials"
+          subtitle="Hear from businesses and individuals we've supported across the UK"
+          testimonials={testimonials}
+        />
+      </div>
 
       <CTASimple />
 
@@ -427,7 +454,9 @@ export default function TaxationServicesPage() {
         />
       </div>
 
-      <InsightsPreview />
+      <div id="insights">
+        <InsightsPreview />
+      </div>
 
       <StickyMiniNav links={miniNavLinks} />
     </>

@@ -97,7 +97,7 @@ export default function WhoWeArePage() {
             </motion.p>
 
             {/* Magic text with blur effect */}
-            <div className="flex flex-wrap gap-x-3 gap-y-3 mb-16">
+            <h1 className="flex flex-wrap gap-x-3 gap-y-3 mb-16">
               {heroText.map((segment, index) => (
                 <motion.span
                   key={index}
@@ -121,7 +121,7 @@ export default function WhoWeArePage() {
                   {segment.text}
                 </motion.span>
               ))}
-            </div>
+            </h1>
 
             {/* Subtle line */}
             <motion.div

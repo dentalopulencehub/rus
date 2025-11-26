@@ -16,7 +16,7 @@ export function Header() {
       "fixed left-0 right-0 top-0 z-50 transition-all duration-300 ease-out",
       isScrolled ? "py-2 px-4" : "py-4 px-4"
     )}>
-      <nav className="relative h-[75px] max-w-6xl mx-auto px-8 rounded-xl border-2 border-white/20 shadow-lg transition-all duration-300 ease-out flex items-center">
+      <nav className="relative h-[75px] max-w-6xl mx-auto px-8 rounded-xl shadow-lg transition-all duration-300 ease-out flex items-center">
         {/* Layer 1: Glassmorphic backdrop with blur and saturation */}
         <div className="absolute inset-0 -z-10 rounded-xl overflow-hidden before:absolute before:inset-0 before:backdrop-blur-xl before:backdrop-saturate-150" />
 

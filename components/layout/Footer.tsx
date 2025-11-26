@@ -120,7 +120,11 @@ export function Footer() {
                     { name: 'Accounting', href: '/services/accounting-bookkeeping' },
                     { name: 'Audit', href: '/services/audit-assurance' },
                     { name: 'Advisory', href: '/services/business-advisory' },
+                    { name: 'Secretarial', href: '/services/company-secretarial' },
+                    { name: 'Company Formation', href: '/services/company-formation' },
                     { name: 'Payroll', href: '/services/payroll' },
+                    { name: 'HMRC Investigations', href: '/services/hmrc-nca-investigations' },
+                    { name: 'Forensic Accounting', href: '/services/forensic-accounting' },
                   ].map((item) => (
                     <li key={item.href}>
                       <Link

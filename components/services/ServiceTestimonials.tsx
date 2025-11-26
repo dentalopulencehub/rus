@@ -3,11 +3,13 @@
 import { useRef, useState, useEffect } from 'react';
 
 interface Testimonial {
-  id: number;
+  id?: number;
   name: string;
   role: string;
   company?: string;
-  quote: string;
+  quote?: string;
+  content?: string;
+  rating?: number;
   featured?: boolean;
 }
 
@@ -106,9 +108,9 @@ export function ServiceTestimonials({
             ref={scrollContainerRef}
             className="flex gap-6 overflow-x-auto overflow-y-visible py-12 px-1 scroll-smooth snap-x snap-mandatory hide-scrollbar"
           >
-            {testimonials.map((testimonial) => (
+            {testimonials.map((testimonial, index) => (
               <div
-                key={testimonial.id}
+                key={testimonial.id || `testimonial-${index}`}
                 className="group flex-none w-[420px] snap-start"
               >
                 <div className="h-full min-h-[400px] rounded-2xl border border-gray-200 bg-white hover:shadow-2xl hover:border-[#01458f] transition-all duration-300 flex flex-col p-8">
@@ -122,7 +124,7 @@ export function ServiceTestimonials({
                   {/* Quote Text */}
                   <div className="flex-grow mb-6">
                     <p className="text-sm text-gray-700 leading-relaxed line-clamp-[12]">
-                      {testimonial.quote}
+                      {testimonial.content || testimonial.quote}
                     </p>
                   </div>
 

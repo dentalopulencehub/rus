@@ -3,6 +3,8 @@ import './globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { BottomBar } from '@/components/layout/BottomBar';
+import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
+import { OrganizationSchema } from '@/components/seo/OrganizationSchema';
 import { ContactFormProvider } from '@/components/contact/ContactFormContext';
 import { ContactModal } from '@/components/contact/ContactModal';
 import { Fira_Sans_Condensed, Inter } from 'next/font/google';
@@ -43,6 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className={`overflow-x-hidden ${firaSansCondensed.variable} ${inter.variable}`}>
       <body suppressHydrationWarning className="overflow-x-hidden font-sans antialiased">
+        <OrganizationSchema />
         <ContactFormProvider>
           <Header />
           <main className="pb-16 overflow-x-hidden">{children}</main>

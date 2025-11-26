@@ -3,7 +3,9 @@
 import { motion } from 'framer-motion';
 
 interface ClientType {
-  name: string;
+  name?: string;
+  title?: string;
+  description?: string;
   icon: React.ReactNode;
 }
 
@@ -19,11 +21,11 @@ export function WhoWeHelp({
   clientTypes
 }: WhoWeHelpProps) {
   return (
-    <section className="py-24 px-4 bg-white">
+    <section id="expertise" className="py-24 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3 tracking-tight">
+          <h2 className="text-3xl md:text-4xl font-light italic text-gray-900 mb-3 tracking-tight">
             {title}
           </h2>
           <p className="text-base text-gray-600 max-w-2xl mx-auto">
@@ -32,7 +34,7 @@ export function WhoWeHelp({
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4">
           {clientTypes.map((client, index) => (
             <motion.div
               key={index}
@@ -57,7 +59,7 @@ export function WhoWeHelp({
               </motion.div>
 
               <h3 className="relative z-10 text-xs font-medium text-gray-900 group-hover:text-[#01458f] transition-colors duration-200">
-                {client.name}
+                {client.title || client.name}
               </h3>
             </motion.div>
           ))}

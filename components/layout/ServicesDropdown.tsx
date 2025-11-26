@@ -125,11 +125,33 @@ export function ServicesDropdown() {
                 href={`/services/${service.slug}`}
                 className="dropdown-item relative block px-3 py-2.5 rounded-lg border-2 border-transparent hover:border-[#01458f]/60 transition-all duration-300 group overflow-hidden"
               >
+                {/* Blue Glass Prism Background - Fades in on Hover */}
+                <div className="absolute inset-0 z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                  <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" preserveAspectRatio="none">
+                    <defs>
+                      <linearGradient id={`prism-gradient-${index}`} x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stopColor="#01458f" stopOpacity="0.08" />
+                        <stop offset="50%" stopColor="#0052cc" stopOpacity="0.12" />
+                        <stop offset="100%" stopColor="#2684ff" stopOpacity="0.06" />
+                      </linearGradient>
+                      <filter id={`glass-blur-${index}`}>
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
+                      </filter>
+                    </defs>
+                    {/* Prism Shapes */}
+                    <polygon points="0,0 80,0 40,100" fill={`url(#prism-gradient-${index})`} filter={`url(#glass-blur-${index})`} opacity="0.7" />
+                    <polygon points="80,0 160,0 120,100 40,100" fill={`url(#prism-gradient-${index})`} filter={`url(#glass-blur-${index})`} opacity="0.5" />
+                    <polygon points="160,0 200,0 200,100 120,100" fill={`url(#prism-gradient-${index})`} filter={`url(#glass-blur-${index})`} opacity="0.6" />
+                    {/* Glass shine overlay */}
+                    <rect x="0" y="0" width="200" height="30" fill="white" opacity="0.1" />
+                  </svg>
+                </div>
+
                 {/* Layer 1: Glassmorphic backdrop with blur and saturation */}
                 <div className="absolute inset-0 -z-10 opacity-0 group-hover:opacity-100 transition-all duration-300 before:absolute before:inset-0 before:backdrop-blur-md before:backdrop-saturate-150" />
 
                 {/* Layer 2: Colored gradient background */}
-                <div className="absolute inset-0 -z-20 bg-gradient-to-br from-[#01458f]/30 via-[#0052cc]/20 to-[#01458f]/30 rounded-lg opacity-0 group-hover:opacity-30 transition-all duration-300" />
+                <div className="absolute inset-0 -z-20 bg-gradient-to-br from-[#01458f]/15 via-[#0052cc]/10 to-[#01458f]/15 rounded-lg opacity-0 group-hover:opacity-30 transition-all duration-300" />
 
                 {/* Layer 3: Solid background base */}
                 <div className="absolute inset-0 -z-30 bg-white rounded-lg transition-all duration-300 group-hover:bg-white/80" />

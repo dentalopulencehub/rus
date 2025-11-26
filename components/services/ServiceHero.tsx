@@ -1,3 +1,9 @@
+'use client';
+
+import { usePathname } from 'next/navigation';
+import Link from 'next/link';
+import { useMemo } from 'react';
+
 interface ServiceHeroProps {
   title: string;
   subtitle: string;
@@ -5,8 +11,45 @@ interface ServiceHeroProps {
 }
 
 export function ServiceHero({ title, subtitle, description }: ServiceHeroProps) {
+  const pathname = usePathname();
+
+  const breadcrumbs = useMemo(() => {
+    const segments = pathname.split('/').filter(Boolean);
+    const items = [{ label: 'Home', href: '/' }];
+
+    let currentPath = '';
+    segments.forEach((segment) => {
+      currentPath += `/${segment}`;
+      const label = segment
+        .split('-')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+      items.push({ label, href: currentPath });
+    });
+
+    return items;
+  }, [pathname]);
+
+  // Generate schema markup
+  const schemaMarkup = useMemo(() => ({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: breadcrumbs.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.label,
+      item: `https://rus.co.uk${item.href}`
+    }))
+  }), [breadcrumbs]);
+
   return (
     <section className="relative w-full bg-[#F0F7FF] overflow-hidden">
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
+      />
+
       {/* Background Pattern */}
       <div
         className="absolute inset-0 opacity-10 bg-cover bg-center"
@@ -17,6 +60,29 @@ export function ServiceHero({ title, subtitle, description }: ServiceHeroProps) 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center min-h-screen py-32">
           {/* Left - Text Content */}
           <div className="space-y-8 pl-2">
+            {/* Breadcrumbs - Minimal */}
+            <nav aria-label="Breadcrumb" className="flex items-center space-x-2 text-sm">
+              {breadcrumbs.map((item, index) => {
+                const isLast = index === breadcrumbs.length - 1;
+                return (
+                  <div key={item.href} className="flex items-center">
+                    {index > 0 && (
+                      <svg className="w-4 h-4 text-gray-400 mx-1" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+                      </svg>
+                    )}
+                    {isLast ? (
+                      <span className="text-gray-600 font-medium">{item.label}</span>
+                    ) : (
+                      <Link href={item.href} className="text-[#01458f] hover:underline">
+                        {item.label}
+                      </Link>
+                    )}
+                  </div>
+                );
+              })}
+            </nav>
+
             {/* Main Title */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight tracking-tight uppercase">
               {title}
@@ -41,10 +107,10 @@ export function ServiceHero({ title, subtitle, description }: ServiceHeroProps) 
                 Get Tax Advice
               </a>
               <a
-                href="#services"
+                href="#expertise"
                 className="inline-flex items-center justify-center px-8 py-3 bg-white text-gray-900 rounded-full text-sm font-medium border border-gray-200 hover:border-gray-300 transition-all duration-200 w-48"
               >
-                View Services
+                Our Expertise
               </a>
             </div>
           </div>

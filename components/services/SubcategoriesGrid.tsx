@@ -54,6 +54,19 @@ export function SubcategoriesGrid({ title, subtitle, items, basePath }: Subcateg
               <h3 className="relative z-10 text-sm font-medium text-gray-900 group-hover:text-[#01458f] transition-colors duration-200">
                 {item.name}
               </h3>
+
+              {/* Small curvy arrow - bottom right corner, south-east pointing */}
+              <svg
+                className="absolute bottom-4 right-4 z-10 w-4 h-4 text-gray-400 group-hover:text-[#01458f] opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1 group-hover:translate-y-1"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M7 7l10 10M17 7v10H7" />
+              </svg>
             </div>
           ))}
         </div>
