@@ -15,7 +15,7 @@ export function ServiceBenefits({ title, items }: ServiceBenefitsProps) {
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-light italic text-gray-900 mb-3 tracking-tight">
+          <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-3 tracking-tight">
             {title}
           </h2>
         </div>

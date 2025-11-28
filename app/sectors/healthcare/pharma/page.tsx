@@ -1,0 +1,283 @@
+import { Metadata } from 'next';
+import Link from 'next/link';
+import { ServiceHero } from '@/components/services/ServiceHero';
+import { WhoWeHelp } from '@/components/services/WhoWeHelp';
+import { ServiceOverview } from '@/components/services/ServiceOverview';
+import { ServiceBenefits } from '@/components/services/ServiceBenefits';
+import { ServiceTestimonials } from '@/components/services/ServiceTestimonials';
+import { ServiceFAQ } from '@/components/services/ServiceFAQ';
+import { FAQSchema } from '@/components/seo/FAQSchema';
+import { InsightsPreview } from '@/components/home/InsightsPreview';
+import { StickyMiniNav } from '@/components/services/StickyMiniNav';
+
+export const metadata: Metadata = {
+  title: 'Pharmacy Accountants Birmingham | Pharmacy Accounting Services | RUS',
+  description: 'Specialist accountants for pharmacies and pharmacists. Pharmacy practice accounts, NHS contract compliance, pharmacy valuations, locum pharmacist accounting. 30+ years pharmacy expertise.',
+  keywords: [
+    'pharmacy accountants Birmingham',
+    'pharmacist accountants UK',
+    'community pharmacy accounting',
+    'pharmacy valuations',
+    'NHS pharmacy contract accounting',
+    'locum pharmacist accountant',
+    'superintendent pharmacist accounting',
+  ],
+  openGraph: {
+    title: 'Pharmacy Accountants | RUS Chartered Accountants',
+    description: 'Specialist accountants for pharmacies and pharmacists with over 30 years experience.',
+    type: 'website',
+  },
+  alternates: {
+    canonical: 'https://rus.co.uk/sectors/healthcare/pharma',
+  },
+};
+
+const pharmaServices = [
+  {
+    title: 'Pharmacy Accounting',
+    description: 'Complete accounting services for community pharmacies including year-end accounts, bookkeeping, payroll and compliance support',
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+      </svg>
+    ),
+  },
+  {
+    title: 'NHS Contract Compliance',
+    description: 'Expert support with NHS pharmacy contract requirements, prescription dispensing income tracking and regulatory compliance',
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Pharmacy Valuations & Sales',
+    description: 'Professional pharmacy valuations, due diligence support and strategic advice for buying and selling community pharmacies',
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Locum Pharmacist Accounting',
+    description: 'Tailored accounting and tax services for locum pharmacists including self-assessment, expense claims and tax planning',
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Stock & Inventory Management',
+    description: 'Accounting support for pharmacy stock management, stock valuations and controlled drug register reconciliation',
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Multiple Pharmacy Ownership',
+    description: 'Strategic support for pharmacy groups and multiple pharmacy owners including consolidation, expansion planning and efficiency optimization',
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Tax Planning',
+    description: 'Strategic tax planning for pharmacy owners including remuneration optimization, pension contributions and capital allowances',
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Regulatory & GPhC Compliance',
+    description: 'Support with GPhC regulatory requirements, superintendent pharmacist compliance and pharmacy-specific regulations',
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+      </svg>
+    ),
+  },
+];
+
+const benefits = [
+  {
+    title: '30+ Years Pharmacy Expertise',
+    description: 'Three decades supporting community pharmacies, pharmacy groups and pharmacists across the UK',
+    icon: (
+      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+      </svg>
+    ),
+  },
+  {
+    title: 'NHS Contract Specialists',
+    description: 'Deep understanding of NHS pharmacy contracts and prescription dispensing compliance',
+    icon: (
+      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Pharmacy Valuation Experience',
+    description: 'Proven track record with pharmacy valuations and successful practice transactions',
+    icon: (
+      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Regulatory Knowledge',
+    description: 'Pharmacy-specific regulatory understanding and GPhC compliance support',
+    icon: (
+      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+      </svg>
+    ),
+  },
+];
+
+const testimonials = [
+  {
+    name: 'Pharmacy Owner',
+    role: 'Community Pharmacy, Birmingham',
+    content: 'RUS has been our accountant for over 10 years. Their knowledge of pharmacy accounting, NHS contracts and regulatory requirements is excellent. They provide clear advice and always respond quickly when we need support.',
+    rating: 5,
+  },
+];
+
+const faqs = [
+  {
+    question: 'Do you specialise in pharmacy accounting?',
+    answer: 'Yes. We have over 30 years of experience supporting community pharmacies with accounts preparation, tax planning, NHS contract compliance and pharmacy valuations. Our sector knowledge covers stock management, regulatory requirements and business structure planning.',
+  },
+  {
+    question: 'Can you help with buying or selling a pharmacy?',
+    answer: (
+      <>
+        Absolutely. We provide <Link href="/services/business-advisory" className="text-[#01458f] underline hover:text-[#013a75] transition-colors">pharmacy valuations</Link>, due diligence, negotiation support and structured exit planning. Whether you are buying or selling a pharmacy, we guide you through the financial and regulatory implications.
+      </>
+    ),
+  },
+  {
+    question: 'Do you support locum pharmacists with accounting and tax?',
+    answer: 'Yes. We help locum pharmacists with self-assessment tax returns, expense claims, allowable deductions and tax planning. Our tailored approach ensures you maximize tax efficiency whilst meeting all compliance requirements.',
+  },
+  {
+    question: 'Can you help with multiple pharmacy ownership?',
+    answer: 'Yes. We support pharmacy groups and multiple pharmacy owners with consolidated accounts, expansion planning, efficiency optimization and strategic business advice tailored to the pharmacy sector.',
+  },
+];
+
+const miniNavLinks = [
+  { label: 'Services', href: '#services' },
+  { label: 'Benefits', href: '#benefits' },
+  { label: 'Testimonials', href: '#testimonials' },
+  { label: 'FAQs', href: '#faqs' },
+  { label: 'Insights', href: '#insights' },
+];
+
+export default function PharmaAccountingPage() {
+  return (
+    <>
+      <FAQSchema faqs={faqs} />
+      <ServiceHero
+        title="Accountants for Pharmacies"
+        subtitle="Expert support for pharmacy owners and pharmacists"
+        description="For over 30 years, we have provided specialist accounting, tax and advisory services to pharmacy owners, superintendent pharmacists and locum pharmacists across the UK. Our deep understanding of NHS pharmacy contracts and regulatory requirements ensures you receive expert guidance tailored to the pharmacy sector."
+      />
+
+      <div id="services">
+        <WhoWeHelp
+          title="Specialist Pharmacy Accounting Services"
+          subtitle="Community pharmacies face unique financial and regulatory challenges. Our experienced team provides comprehensive support across all aspects of pharmacy accounting and tax planning."
+          clientTypes={pharmaServices}
+        />
+      </div>
+
+      <ServiceOverview
+        leftContent={{
+          title: 'Supporting Pharmacy Professionals With Confidence',
+          description: 'Whether you are a community pharmacy owner, superintendent pharmacist, locum pharmacist or managing multiple pharmacies, we understand the financial complexities you face. Our specialist team provides clear, practical guidance to help you stay compliant, maximize profitability and plan for growth.',
+        }}
+        rightContent={{
+          stats: [
+            { value: '30+', label: 'Years Experience' },
+            { value: '100+', label: 'Pharmacy Clients' },
+          ],
+        }}
+      />
+
+      <div id="benefits">
+        <ServiceBenefits title="Why Pharmacy Professionals Choose Us" items={benefits} />
+      </div>
+
+      <div id="testimonials">
+        <ServiceTestimonials
+          title="Client Testimonials"
+          subtitle="Hear from pharmacy professionals we support across the UK"
+          testimonials={testimonials}
+        />
+      </div>
+
+      <section className="w-full flex items-center justify-center bg-white px-4 py-24">
+        <div className="max-w-6xl mx-auto w-full">
+          <div className="relative bg-gradient-to-br from-[#01458f] to-[#0052cc] rounded-3xl overflow-hidden px-8 md:px-16 py-20 md:py-28">
+            <svg className="absolute inset-0 w-full h-full opacity-20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M 600 -100 Q 800 100 850 300" stroke="white" strokeWidth="2" fill="none" />
+              <circle cx="750" cy="150" r="80" stroke="white" strokeWidth="1.5" fill="none" />
+              <path d="M 700 50 L 850 80 L 820 200" stroke="white" strokeWidth="1.5" fill="none" />
+              <path d="M 650 120 L 750 100 L 730 180 L 640 190 Z" stroke="white" strokeWidth="1" fill="none" />
+              <path d="M -50 400 Q 100 450 200 480" stroke="white" strokeWidth="2" fill="none" />
+              <circle cx="100" cy="420" r="60" stroke="white" strokeWidth="1.5" fill="none" />
+              <path d="M 50 380 L 180 400 L 160 480" stroke="white" strokeWidth="1.5" fill="none" />
+              <line x1="400" y1="50" x2="500" y2="80" stroke="white" strokeWidth="1" opacity="0.5" />
+              <line x1="300" y1="400" x2="400" y2="420" stroke="white" strokeWidth="1" opacity="0.5" />
+              <circle cx="500" cy="60" r="30" stroke="white" strokeWidth="1" fill="none" opacity="0.4" />
+            </svg>
+
+            <div className="relative z-10 flex flex-col items-center text-center space-y-6">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight">
+                Ready to work with<br />specialist pharmacy accountants?
+              </h2>
+
+              <a href="/contact" className="relative inline-flex items-center justify-center px-32 py-2 bg-white text-gray-900 rounded-full text-base md:text-lg font-semibold hover:shadow-2xl hover:shadow-white/30 transition-all duration-300 overflow-hidden group">
+                <div className="absolute inset-0 -z-10 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 backdrop-blur-md backdrop-saturate-150" />
+                <div className="absolute inset-0 -z-20 bg-gradient-to-br from-white/30 via-white/10 to-white/30 rounded-full opacity-0 group-hover:opacity-40 transition-all duration-300" />
+                <div className="absolute inset-0 -z-30 bg-white rounded-full transition-all duration-300 group-hover:bg-white/95" />
+                <span className="relative z-10">Get Started</span>
+              </a>
+
+              <p className="text-white/90 text-sm md:text-base">
+                Three decades of pharmacy sector expertise
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="faqs">
+        <ServiceFAQ
+          title="Pharmacy Accounting FAQs"
+          subtitle="Common questions about our pharmacy accounting services"
+          faqs={faqs}
+        />
+      </div>
+
+      <div id="insights">
+        <InsightsPreview />
+      </div>
+
+      <StickyMiniNav links={miniNavLinks} />
+    </>
+  );
+}

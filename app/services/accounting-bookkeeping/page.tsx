@@ -262,10 +262,10 @@ export default function AccountingBookkeepingPage() {
         }}
       />
 
-      <div className="bg-gray-50 py-16">
+      <div className="bg-gray-50 py-24">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-light italic text-gray-900 mb-3 tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-3 tracking-tight">
               Explore Our Dedicated Service Pages
             </h2>
             <p className="text-base text-gray-600">

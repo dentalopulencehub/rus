@@ -6,7 +6,6 @@ import { SectorsDropdown } from './SectorsDropdown';
 import { CommandMenu } from '@/components/ui/command-menu';
 import { useScrollPosition } from '@/hooks/useScrollPosition';
 import { cn } from '@/lib/utils';
-import { ContactTrigger } from '@/components/contact/ContactTrigger';
 
 export function Header() {
   const isScrolled = useScrollPosition(50);
@@ -34,9 +33,9 @@ export function Header() {
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/Rus Accountancy Logo .svg"
+              src="/RUS logo.svg"
               alt="RUS Chartered Accountants"
-              className="h-[75px] w-auto"
+              className="h-[60px] w-auto"
             />
           </Link>
 
@@ -57,9 +56,17 @@ export function Header() {
               </Link>
             </li>
             <li>
-              <ContactTrigger className="nav-link">
+              <Link
+                href="/insights"
+                className="nav-link"
+              >
+                Insights
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact" className="nav-link">
                 Contact
-              </ContactTrigger>
+              </Link>
             </li>
           </ul>
 

@@ -52,7 +52,7 @@ export function CTASimple() {
             {/* CTA Button */}
             <Link
               href="/contact"
-              className="relative inline-flex items-center justify-center px-32 py-2 bg-white text-gray-900 rounded-full text-base md:text-lg font-semibold hover:shadow-2xl hover:shadow-white/30 transition-all duration-300 overflow-hidden group"
+              className="relative inline-flex items-center justify-center px-8 py-3 bg-white text-gray-900 rounded-full text-sm font-medium hover:shadow-2xl hover:shadow-white/30 transition-all duration-300 overflow-hidden group"
             >
               {/* Layer 1: Glassmorphic backdrop */}
               <div className="absolute inset-0 -z-10 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 backdrop-blur-md backdrop-saturate-150" />

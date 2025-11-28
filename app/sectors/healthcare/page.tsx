@@ -10,6 +10,51 @@ import { FAQSchema } from '@/components/seo/FAQSchema';
 import { InsightsPreview } from '@/components/home/InsightsPreview';
 import { StickyMiniNav } from '@/components/services/StickyMiniNav';
 
+// Healthcare Subcategories
+const healthcareSubcategories = [
+  {
+    name: 'Medical',
+    slug: 'medical',
+    description: 'Specialist accountancy for GPs, consultants, locums and medical practitioners',
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+      </svg>
+    ),
+  },
+  {
+    name: 'Dental',
+    slug: 'dental',
+    description: 'Tailored accounting services for dental practices, associates and orthodontists',
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    ),
+  },
+  {
+    name: 'Pharma',
+    slug: 'pharma',
+    description: 'Comprehensive support for pharmacy owners, superintendents and locum pharmacists',
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+      </svg>
+    ),
+  },
+  {
+    name: 'Optical',
+    slug: 'optical',
+    description: 'Expert accounting for opticians, optometrists and optical practice owners',
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+      </svg>
+    ),
+  },
+];
+
 export const metadata: Metadata = {
   title: 'Healthcare Accountants Birmingham | GP, Dental & Medical Practice Accounting | RUS',
   description: 'Specialist accountants for healthcare professionals. GP practice accounts, NHS pensions, dental practice accounting, medical tax planning. 30+ years healthcare expertise. Birmingham based.',
@@ -214,6 +259,7 @@ const faqs = [
 
 // Mini navigation links
 const miniNavLinks = [
+  { label: 'Subcategories', href: '#subcategories' },
   { label: 'Services', href: '#services' },
   { label: 'Benefits', href: '#benefits' },
   { label: 'Testimonials', href: '#testimonials' },
@@ -226,10 +272,63 @@ export default function HealthcareSectorPage() {
     <>
       <FAQSchema faqs={faqs} />
       <ServiceHero
-        title="Healthcare Sector Accountancy"
-        subtitle="Trusted accountants for healthcare professionals for over 30 years"
+        title="Accountants for Healthcare Professionals"
+        subtitle="Over 30 years supporting medical professionals"
         description="For more than three decades, we have developed a strong specialist interest in the healthcare sector, supporting medical professionals and healthcare businesses with tailored accountancy, tax and advisory services. Our in-depth understanding of the financial, regulatory and commercial challenges faced by healthcare providers allows us to deliver precise guidance and long-standing value to our clients."
       />
+
+      {/* Healthcare Subcategories Section */}
+      <section id="subcategories" className="py-24 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          {/* Section Header */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-light italic text-gray-900 mb-3 tracking-tight">
+              Our Healthcare Services
+            </h2>
+            <p className="text-base text-gray-600 max-w-2xl mx-auto">
+              Explore our dedicated healthcare service pages below
+            </p>
+          </div>
+
+          {/* Cards Grid - 4 columns */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {healthcareSubcategories.map((item) => (
+              <Link
+                key={item.slug}
+                href={`/sectors/healthcare/${item.slug}`}
+                className="group relative overflow-hidden flex flex-col items-center justify-center text-center p-8 rounded-xl border border-gray-200 bg-white transition-all duration-200 hover:shadow-sm aspect-square"
+              >
+                {/* Background Image - Fades in on Hover */}
+                <div
+                  className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-300 pointer-events-none bg-cover bg-center"
+                  style={{ backgroundImage: 'url(https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/5ee11fdf-aac0-4c26-0f5e-026a2df87900/public)' }}
+                />
+
+                <div className="relative z-10 text-gray-700 group-hover:text-[#01458f] mb-4 transition-colors duration-200">
+                  {item.icon}
+                </div>
+
+                <h3 className="relative z-10 text-sm font-medium text-gray-900 group-hover:text-[#01458f] transition-colors duration-200">
+                  {item.name}
+                </h3>
+
+                {/* Small curvy arrow - bottom right corner */}
+                <svg
+                  className="absolute bottom-4 right-4 z-10 w-4 h-4 text-gray-400 group-hover:text-[#01458f] opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1 group-hover:translate-y-1"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M7 7l10 10M17 7v10H7" />
+                </svg>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <div id="services">
         <WhoWeHelp

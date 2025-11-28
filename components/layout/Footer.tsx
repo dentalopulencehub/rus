@@ -60,9 +60,9 @@ export function Footer() {
               <div className="space-y-3 flex flex-col items-start">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/Rus Accountancy Logo .svg"
+                  src="/Footer logo final.svg"
                   alt="RUS Chartered Accountants"
-                  className="h-12 w-auto"
+                  className="h-20 w-auto -ml-4"
                 />
 
                 {/* Since Badge */}
@@ -292,14 +292,14 @@ export function Footer() {
 
           {/* Address Section - Single Line */}
           <div className="py-8">
-            <div className="flex flex-wrap items-center justify-center gap-x-2 text-sm text-white/50 font-light">
-              <span className="text-white/60">1190A-1194 Stratford Road, Hall Green, Birmingham, B28 8AB, United Kingdom</span>
+            <div className="flex flex-wrap items-center justify-center gap-x-2 text-sm text-white/80 font-light">
+              <span className="text-white/90">1190A-1194 Stratford Road, Hall Green, Birmingham, B28 8AB, United Kingdom</span>
               <span className="mx-2">•</span>
-              <a href="tel:01217771200" className="text-white/70 hover:text-white transition-colors duration-300">
+              <a href="tel:01217771200" className="text-white hover:text-white/80 transition-colors duration-300">
                 0121 777 1200
               </a>
               <span className="mx-2">•</span>
-              <a href="mailto:info@rus.co.uk" className="text-white/70 hover:text-white transition-colors duration-300">
+              <a href="mailto:info@rus.co.uk" className="text-white hover:text-white/80 transition-colors duration-300">
                 info@rus.co.uk
               </a>
             </div>
@@ -316,13 +316,13 @@ export function Footer() {
 
               {/* Copyright & Company Details */}
               <div className="space-y-1.5">
-                <p className="text-xs text-white/70 font-light">
+                <p className="text-xs text-white font-light">
                   © {currentYear} RUS & Company (UK) Ltd.
                 </p>
-                <p className="text-xs text-white/60 font-light">
+                <p className="text-xs text-white/90 font-light">
                   Company No: 3833778 • VAT Reg: GB 754 1385 28
                 </p>
-                <p className="text-[10px] text-white/50 font-light max-w-2xl leading-relaxed pt-0.5 mx-auto">
+                <p className="text-[10px] text-white/80 font-light max-w-2xl leading-relaxed pt-0.5 mx-auto">
                   Registered to carry out company Audit work in the UK by The Institute of Chartered Accountants in England & Wales (ICAEW)
                 </p>
               </div>
@@ -331,7 +331,7 @@ export function Footer() {
               <a
                 href="#"
                 onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                className="group flex items-center gap-3 text-[10px] text-white/30 hover:text-white/70 transition-all duration-500 uppercase tracking-[0.3em] font-light"
+                className="group flex items-center gap-3 text-[10px] text-white/60 hover:text-white transition-all duration-500 uppercase tracking-[0.3em] font-light"
               >
                 <span>Back to top</span>
                 <div className="flex flex-col gap-0.5">

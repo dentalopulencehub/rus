@@ -269,14 +269,14 @@ export default function PayrollPage() {
               </p>
 
               <div className="flex flex-col md:flex-row items-center gap-4">
-                <a href="/contact" className="relative inline-flex items-center justify-center px-20 py-1.5 bg-white text-gray-900 rounded-full text-sm md:text-base font-semibold hover:shadow-2xl hover:shadow-white/30 transition-all duration-300 overflow-hidden group">
+                <a href="/contact" className="relative inline-flex items-center justify-center px-32 py-2 bg-white text-gray-900 rounded-full text-base md:text-lg font-semibold hover:shadow-2xl hover:shadow-white/30 transition-all duration-300 overflow-hidden group">
                   <div className="absolute inset-0 -z-10 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 backdrop-blur-md backdrop-saturate-150" />
                   <div className="absolute inset-0 -z-20 bg-gradient-to-br from-white/30 via-white/10 to-white/30 rounded-full opacity-0 group-hover:opacity-40 transition-all duration-300" />
                   <div className="absolute inset-0 -z-30 bg-white rounded-full transition-all duration-300 group-hover:bg-white/95" />
                   <span className="relative z-10">Get a Quote</span>
                 </a>
 
-                <a href="/who-we-are" className="relative inline-flex items-center justify-center px-20 py-1.5 bg-gray-900 text-white rounded-full text-sm md:text-base font-semibold hover:shadow-2xl hover:shadow-gray-900/30 transition-all duration-300 overflow-hidden group">
+                <a href="/who-we-are" className="relative inline-flex items-center justify-center px-8 py-3 bg-gray-900 text-white rounded-full text-sm font-medium hover:shadow-2xl hover:shadow-gray-900/30 transition-all duration-300 overflow-hidden group">
                   <div className="absolute inset-0 -z-10 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 backdrop-blur-md backdrop-saturate-150" />
                   <div className="absolute inset-0 -z-20 bg-gradient-to-br from-gray-800/30 via-gray-700/10 to-gray-800/30 rounded-full opacity-0 group-hover:opacity-40 transition-all duration-300" />
                   <div className="absolute inset-0 -z-30 bg-gray-900 rounded-full transition-all duration-300 group-hover:bg-gray-800" />

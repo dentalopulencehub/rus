@@ -21,7 +21,12 @@ export function ServiceOverview({ leftContent, rightContent }: ServiceOverviewPr
             {/* Main Title - No Icon */}
             <div className="space-y-4">
               <h2 className="text-4xl font-bold text-gray-900 leading-tight">
-                {leftContent.title}
+                {leftContent.title.split('\n').map((line, index, array) => (
+                  <span key={index}>
+                    {line}
+                    {index < array.length - 1 && <br />}
+                  </span>
+                ))}
               </h2>
               {/* Accent Line */}
               <div className="w-16 h-[3px] bg-[#01458f]"></div>

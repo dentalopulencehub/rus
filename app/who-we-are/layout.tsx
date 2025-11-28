@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Who We Are | Meet Our Team | RUS Chartered Accountants Birmingham',
-  description: 'Meet the team at RUS Chartered Accountants. Founded in 1995 by Raza Samar FCA, we bring over 30 years of expertise serving businesses across Birmingham and the UK.',
+  title: 'Who We Are | About Us | RUS Chartered Accountants Birmingham',
+  description: 'Established in 1995, RUS Chartered Accountants are a trusted team of Chartered Accountants, Registered Auditors and Tax Advisors based in Birmingham with over 30 years of experience.',
   keywords: [
     'RUS Chartered Accountants team',
     'chartered accountants Birmingham',
@@ -14,8 +14,8 @@ export const metadata: Metadata = {
     'chartered accountant founder',
   ],
   openGraph: {
-    title: 'Who We Are | Meet Our Team | RUS Chartered Accountants',
-    description: 'Meet the qualified team at RUS Chartered Accountants, serving Birmingham since 1995.',
+    title: 'Who We Are | About Us | RUS Chartered Accountants',
+    description: 'Established in 1995, RUS Chartered Accountants are a trusted team of Chartered Accountants, Registered Auditors and Tax Advisors based in Birmingham.',
     type: 'website',
   },
   alternates: {

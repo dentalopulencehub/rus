@@ -50,7 +50,7 @@ export function WhyChooseUs() {
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-light italic text-gray-900 mb-3 tracking-tight">
+          <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-3 tracking-tight">
             Why Choose RUS Chartered Accountants
           </h2>
           <p className="text-base text-gray-600 max-w-2xl mx-auto">

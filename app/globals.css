@@ -2,6 +2,79 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ===== BLOG TYPOGRAPHY SYSTEM ===== */
+
+/* Premium Typography for Blog Content */
+.prose {
+  @apply text-gray-800;
+  font-family: 'Frutiger 57Cn', var(--font-fira-sans-condensed), system-ui, -apple-system, sans-serif;
+}
+
+.prose h2 {
+  @apply text-3xl font-bold mt-12 mb-6 text-gray-900;
+  font-family: 'Frutiger 57Cn', var(--font-fira-sans-condensed), sans-serif;
+  font-feature-settings: "liga" 1, "calt" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
+  line-height: 1.3;
+}
+
+.prose h3 {
+  @apply text-2xl font-semibold mt-8 mb-4 text-gray-900;
+  font-family: 'Frutiger 57Cn', var(--font-fira-sans-condensed), sans-serif;
+  font-feature-settings: "liga" 1, "calt" 1;
+  line-height: 1.4;
+}
+
+.prose p {
+  @apply text-base text-gray-700 leading-relaxed mb-6;
+  font-family: 'Frutiger 57Cn', var(--font-fira-sans-condensed), system-ui, -apple-system, sans-serif;
+  text-rendering: optimizeLegibility;
+  line-height: 1.8;
+}
+
+.prose ul,
+.prose ol {
+  @apply my-6 pl-6 space-y-3;
+}
+
+.prose li {
+  @apply text-gray-700 leading-relaxed;
+  font-family: 'Frutiger 57Cn', var(--font-fira-sans-condensed), system-ui, -apple-system, sans-serif;
+  line-height: 1.7;
+}
+
+.prose strong {
+  @apply text-gray-900 font-semibold;
+  font-family: 'Frutiger 57Cn', var(--font-fira-sans-condensed), sans-serif;
+}
+
+.prose a {
+  @apply text-[#01458f] no-underline hover:underline transition-all;
+  font-family: 'Frutiger 57Cn', var(--font-fira-sans-condensed), system-ui, -apple-system, sans-serif;
+}
+
+.prose ul {
+  @apply list-disc;
+}
+
+.prose ol {
+  @apply list-decimal;
+}
+
+/* Improve readability for body text */
+p {
+  text-rendering: optimizeLegibility;
+}
+
+/* Premium font smoothing */
+h1, h2, h3 {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
+}
+
 /* Custom Fonts - Frutiger 57 Condensed */
 @font-face {
   font-family: 'Frutiger 57Cn';

@@ -239,7 +239,7 @@ export default function BusinessAdvisoryPage() {
       />
 
       {/* Company Formation Link */}
-      <div className="bg-gray-50 py-16">
+      <div className="bg-gray-50 py-24">
         <div className="max-w-6xl mx-auto px-4">
           <div className="bg-white rounded-2xl border border-gray-200 p-8 md:p-12">
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
