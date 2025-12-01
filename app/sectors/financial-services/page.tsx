@@ -211,9 +211,8 @@ export default function FinancialServicesPage() {
       />
 
       <ServiceOverview
-        title="Expert Support for the Financial Services Sector"
         leftContent={{
-          heading: 'Financial Services Sector Expertise',
+          title: 'Financial Services\nSector Expertise',
           description: 'The financial services sector operates in a highly regulated environment with unique compliance requirements, commission structures and tax considerations. Our specialist accountants understand the FCA framework, regulatory reporting obligations and the specific challenges faced by insurance firms, brokers and advisers. We combine technical accounting expertise with deep sector knowledge to provide practical, proactive support that helps your business thrive whilst remaining fully compliant.',
         }}
         rightContent={{
