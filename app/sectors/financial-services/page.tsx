@@ -194,19 +194,13 @@ export default function FinancialServicesPage() {
       ]} />
 
       <ServiceHero
-        badge="Financial Services"
-        title="Specialist Accountants for Financial Services Professionals"
+        title="Specialist Accountants for Financial Services"
+        subtitle="Expert Support for Insurance, Brokerage & Financial Advisers"
         description="Expert accounting, tax and compliance support for insurance firms, brokers, IFAs and financial services businesses across the UK."
-        stats={[
-          { label: 'Years Experience', value: '30+' },
-          { label: 'ICAEW', value: 'Chartered' },
-        ]}
       />
 
       <WhoWeHelp
-        id="services"
         title="Comprehensive Accounting for Financial Services"
-        description="We provide specialist accounting services designed specifically for the financial services sector—from FCA compliance and regulatory reporting to strategic tax planning and business growth advisory."
         services={financialServices}
       />
 
@@ -290,13 +284,11 @@ export default function FinancialServicesPage() {
       </section>
 
       <ServiceBenefits
-        id="benefits"
         title="Why Financial Services Firms Choose RUS"
         benefits={benefits}
       />
 
       <ServiceTestimonials
-        id="testimonials"
         title="Trusted by Financial Services Professionals"
         testimonials={testimonials}
       />
@@ -342,7 +334,6 @@ export default function FinancialServicesPage() {
       </section>
 
       <ServiceFAQ
-        id="faqs"
         title="Financial Services Accounting FAQs"
         faqs={faqs}
       />
