@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { Award, Shield, TrendingUp, BarChart } from 'lucide-react';
 import { ServiceHero } from '@/components/services/ServiceHero';
 import { WhoWeHelp } from '@/components/services/WhoWeHelp';
 import { ServiceOverview } from '@/components/services/ServiceOverview';
@@ -112,18 +113,22 @@ const financialServices = [
 // Benefits - EXACTLY 4
 const benefits = [
   {
+    icon: <Award className="w-6 h-6" />,
     title: 'Sector Expertise',
     description: 'Deep understanding of financial services sector regulations, FCA requirements and industry-specific tax planning opportunities',
   },
   {
+    icon: <Shield className="w-6 h-6" />,
     title: 'Regulatory Knowledge',
     description: 'Comprehensive knowledge of compliance obligations, client money rules and regulatory reporting requirements for financial services firms',
   },
   {
+    icon: <TrendingUp className="w-6 h-6" />,
     title: 'Proactive Tax Planning',
     description: 'Strategic tax advice tailored to commission-based income, profit extraction and the unique structure of financial services businesses',
   },
   {
+    icon: <BarChart className="w-6 h-6" />,
     title: 'Business Growth Support',
     description: 'Practical support for scaling your practice, improving profitability and planning for long-term success in the financial services sector',
   },
