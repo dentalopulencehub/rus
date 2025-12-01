@@ -285,7 +285,7 @@ export default function FinancialServicesPage() {
 
       <ServiceBenefits
         title="Why Financial Services Firms Choose RUS"
-        benefits={benefits}
+        items={benefits}
       />
 
       <ServiceTestimonials
