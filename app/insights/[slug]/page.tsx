@@ -112,16 +112,6 @@ export default async function InsightPostPage({ params }: InsightPostPageProps) 
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
 
-      {/* Hero Image */}
-      <section className="relative w-full h-[400px] bg-gray-900">
-        <img
-          src={post.featuredImage}
-          alt={post.featuredImageAlt}
-          className="w-full h-full object-cover opacity-60"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-      </section>
-
       {/* Blog Post Content with TOC Sidebar */}
       <BlogPostContent post={post} fullUrl={fullUrl} />
 

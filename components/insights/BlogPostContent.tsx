@@ -37,38 +37,10 @@ export function BlogPostContent({ post, fullUrl }: BlogPostContentProps) {
               </span>
             </div>
 
-            {/* Tags */}
-            {post.tags.length > 0 && (
-              <div className="mb-6 flex flex-wrap gap-2">
-                {post.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="inline-flex items-center px-3 py-1 bg-gray-100 text-gray-700 rounded-md text-xs font-medium hover:bg-gray-200 transition-colors"
-                  >
-                    <svg className="w-3 h-3 mr-1.5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
-                    </svg>
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            )}
-
             {/* Title */}
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight break-words">
               {post.title}
             </h1>
-
-            {/* Meta Info - Author Only */}
-            <div className="flex items-center gap-3 pb-6 border-b border-gray-200">
-              <div className="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center font-medium text-gray-600 flex-shrink-0">
-                {post.author.name.split(' ').map(n => n[0]).join('')}
-              </div>
-              <div>
-                <p className="font-medium text-gray-900">{post.author.name}</p>
-                <p className="text-sm text-gray-500">{post.author.role}</p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -93,23 +65,6 @@ export function BlogPostContent({ post, fullUrl }: BlogPostContentProps) {
               >
                 <div dangerouslySetInnerHTML={{ __html: post.content }} />
               </div>
-
-              {/* Tags */}
-              {post.tags.length > 0 && (
-                <div className="mt-12 pt-8 border-t border-gray-200">
-                  <h3 className="text-sm font-medium text-gray-700 mb-4">Related Topics:</h3>
-                  <div className="flex flex-wrap gap-2">
-                    {post.tags.map((tag) => (
-                      <span
-                        key={tag}
-                        className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-gray-200 transition-colors"
-                      >
-                        #{tag}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              )}
 
               {/* Author Bio */}
               <div className="mt-12 p-8 bg-gray-50 rounded-xl">
