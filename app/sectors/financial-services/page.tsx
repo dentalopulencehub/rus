@@ -201,7 +201,7 @@ export default function FinancialServicesPage() {
 
       <WhoWeHelp
         title="Comprehensive Accounting for Financial Services"
-        services={financialServices}
+        clientTypes={financialServices}
       />
 
       <ServiceOverview
