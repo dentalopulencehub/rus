@@ -232,7 +232,7 @@ export default function CompanySecretarialPage() {
         rightContent={{
           stats: [
             { value: '30+', label: 'Years Experience' },
-            { value: 'ICAEW', label: 'Certified' },
+            { value: 'ICAEW', label: 'Chartered' },
           ],
         }}
       />

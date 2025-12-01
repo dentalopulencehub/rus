@@ -7,6 +7,7 @@ import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { OrganizationSchema } from '@/components/seo/OrganizationSchema';
 import { ContactFormProvider } from '@/components/contact/ContactFormContext';
 import { ContactModal } from '@/components/contact/ContactModal';
+import { CookieConsent } from '@/components/layout/CookieConsent';
 import { Fira_Sans_Condensed, Inter } from 'next/font/google';
 
 // Logo-matching font for headings (condensed, professional)
@@ -52,6 +53,7 @@ export default function RootLayout({
           <Footer />
           <BottomBar />
           <ContactModal />
+          <CookieConsent />
         </ContactFormProvider>
       </body>
     </html>

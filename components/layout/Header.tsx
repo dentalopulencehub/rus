@@ -35,7 +35,7 @@ export function Header() {
             <img
               src="/RUS logo.svg"
               alt="RUS Chartered Accountants"
-              className="h-[60px] w-auto"
+              className="h-[57px] w-auto"
             />
           </Link>
 
@@ -60,7 +60,7 @@ export function Header() {
                 href="/insights"
                 className="nav-link"
               >
-                Insights
+                Insight
               </Link>
             </li>
             <li>

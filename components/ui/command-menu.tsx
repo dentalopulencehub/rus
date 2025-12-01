@@ -112,6 +112,9 @@ export function CommandMenu() {
                   <CommandItem href="/sectors/education-academies" onSelect={handleNavigate}>
                     <span>Education & Academies</span>
                   </CommandItem>
+                  <CommandItem href="/sectors/financial-services" onSelect={handleNavigate}>
+                    <span>Financial Services</span>
+                  </CommandItem>
                   <CommandItem href="/sectors/healthcare" onSelect={handleNavigate}>
                     <span>Healthcare</span>
                   </CommandItem>
@@ -130,9 +133,6 @@ export function CommandMenu() {
                   <CommandItem href="/sectors/solicitors" onSelect={handleNavigate}>
                     <span>Solicitors</span>
                   </CommandItem>
-                  <CommandItem href="/sectors/other" onSelect={handleNavigate}>
-                    <span>Other</span>
-                  </CommandItem>
                 </Command.Group>
 
                 <Command.Group heading="Pages" className="text-sm font-bold text-gray-900 px-2 py-3 mt-4">
@@ -140,7 +140,7 @@ export function CommandMenu() {
                     <span>Who We Are</span>
                   </CommandItem>
                   <CommandItem href="/insights" onSelect={handleNavigate}>
-                    <span>Insights</span>
+                    <span>Insight</span>
                   </CommandItem>
                   <CommandItem href="/contact" onSelect={handleNavigate}>
                     <span>Contact</span>

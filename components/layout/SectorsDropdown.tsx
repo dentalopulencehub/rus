@@ -30,6 +30,11 @@ const sectors = [
     description: 'Schools and educational institutions',
   },
   {
+    name: 'Financial Services',
+    slug: 'financial-services',
+    description: 'Insurance, brokerage and financial firms',
+  },
+  {
     name: 'Healthcare',
     slug: 'healthcare',
     description: 'Medical practices and healthcare providers',
@@ -58,11 +63,6 @@ const sectors = [
     name: 'Solicitors',
     slug: 'solicitors',
     description: 'Legal practices and law firms',
-  },
-  {
-    name: 'Other',
-    slug: 'other',
-    description: 'Other industries and sectors',
   },
 ];
 

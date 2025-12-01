@@ -62,7 +62,7 @@ export function Footer() {
                 <img
                   src="/Footer logo final.svg"
                   alt="RUS Chartered Accountants"
-                  className="h-20 w-auto -ml-4"
+                  className="h-20 w-auto"
                 />
 
                 {/* Since Badge */}
@@ -80,7 +80,7 @@ export function Footer() {
                     Established accountants providing expert<br />
                     financial guidance for over<span className="text-white font-normal"> 30 years</span>.
                   </h2>
-                  <p className="text-base text-white/50 leading-relaxed font-light">
+                  <p className="text-base text-white/70 leading-relaxed font-light">
                     Birmingham-based, serving businesses across the UK<br />
                     with precision, integrity, and forward-thinking solutions.
                   </p>
@@ -92,7 +92,7 @@ export function Footer() {
                   <img
                     src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/6b872cbc-f4ae-4919-7a00-5c64cea80f00/public"
                     alt="ICAEW Chartered Accountants"
-                    className="h-16 w-auto brightness-0 invert opacity-70 hover:opacity-90 transition-opacity duration-500"
+                    className="h-48 w-auto brightness-0 invert opacity-80 hover:opacity-95 transition-opacity duration-500"
                   />
                 </div>
               </div>
@@ -109,27 +109,27 @@ export function Footer() {
           <div className="py-12">
             <div className="grid grid-cols-2 md:grid-cols-5 gap-x-12 gap-y-10 max-w-6xl mx-auto">
 
-              {/* Services */}
+              {/* Services - Alphabetically ordered */}
               <div className="space-y-4">
                 <h4 className="text-[10px] font-bold text-white/60 uppercase tracking-[0.4em]">
                   Services
                 </h4>
                 <ul className="space-y-2.5">
                   {[
-                    { name: 'Taxation Services', href: '/services/taxation-services' },
-                    { name: 'Accounting', href: '/services/accounting-bookkeeping' },
-                    { name: 'Audit', href: '/services/audit-assurance' },
-                    { name: 'Advisory', href: '/services/business-advisory' },
-                    { name: 'Secretarial', href: '/services/company-secretarial' },
+                    { name: 'Accounting & Bookkeeping', href: '/services/accounting-bookkeeping' },
+                    { name: 'Audit & Assurance', href: '/services/audit-assurance' },
+                    { name: 'Business Advisory', href: '/services/business-advisory' },
                     { name: 'Company Formation', href: '/services/company-formation' },
-                    { name: 'Payroll', href: '/services/payroll' },
-                    { name: 'HMRC Investigations', href: '/services/hmrc-nca-investigations' },
+                    { name: 'Company Secretarial', href: '/services/company-secretarial' },
                     { name: 'Forensic Accounting', href: '/services/forensic-accounting' },
+                    { name: 'HMRC & NCA Investigations', href: '/services/hmrc-nca-investigations' },
+                    { name: 'Payroll Services', href: '/services/payroll' },
+                    { name: 'Taxation Services', href: '/services/taxation-services' },
                   ].map((item) => (
                     <li key={item.href}>
                       <Link
                         href={item.href}
-                        className="text-sm text-white/40 hover:text-white transition-colors duration-300 font-light block"
+                        className="text-sm text-white/60 hover:text-white transition-colors duration-300 font-light block"
                       >
                         {item.name}
                       </Link>
@@ -138,23 +138,30 @@ export function Footer() {
                 </ul>
               </div>
 
-              {/* Sectors */}
+              {/* Sectors - Alphabetically ordered */}
               <div className="space-y-4">
                 <h4 className="text-[10px] font-bold text-white/60 uppercase tracking-[0.4em]">
                   Sectors
                 </h4>
                 <ul className="space-y-2.5">
                   {[
+                    { name: 'Charities & Not-for-profit', href: '/sectors/charities-not-for-profit' },
+                    { name: 'Construction', href: '/sectors/construction' },
+                    { name: 'Contractors & Professional Services', href: '/sectors/contractors-professional-services' },
+                    { name: 'Creative & Media', href: '/sectors/creative-media' },
+                    { name: 'Education & Academies', href: '/sectors/education-academies' },
+                    { name: 'Financial Services', href: '/sectors/financial-services' },
                     { name: 'Healthcare', href: '/sectors/healthcare' },
-                    { name: 'Property', href: '/sectors/property-services' },
+                    { name: 'Hospitality & Leisure', href: '/sectors/hospitality-leisure' },
+                    { name: 'Information Technology', href: '/sectors/information-technology' },
+                    { name: 'Property Services', href: '/sectors/property-services' },
                     { name: 'Retail', href: '/sectors/retail' },
-                    { name: 'Hospitality', href: '/sectors/hospitality-leisure' },
-                    { name: 'Technology', href: '/sectors/information-technology' },
+                    { name: 'Solicitors', href: '/sectors/solicitors' },
                   ].map((item) => (
                     <li key={item.href}>
                       <Link
                         href={item.href}
-                        className="text-sm text-white/40 hover:text-white transition-colors duration-300 font-light block"
+                        className="text-sm text-white/60 hover:text-white transition-colors duration-300 font-light block"
                       >
                         {item.name}
                       </Link>
@@ -182,7 +189,7 @@ export function Footer() {
                       href="/insights"
                       className="text-sm text-white/40 hover:text-white transition-colors duration-300 font-light block"
                     >
-                      Insights
+                      Insight
                     </Link>
                   </li>
                   <li>
@@ -234,22 +241,12 @@ export function Footer() {
                 </ul>
               </div>
 
-              {/* Social - 2x2 Grid */}
+              {/* Social - Single Row */}
               <div className="space-y-4">
                 <h4 className="text-[10px] font-bold text-white/60 uppercase tracking-[0.4em]">
                   Follow
                 </h4>
-                <div className="grid grid-cols-2 gap-2.5">
-                  <a
-                    href="#"
-                    className="group relative w-10 h-10 rounded-full border border-white/10 bg-white/[0.02] backdrop-blur-sm flex items-center justify-center overflow-hidden transition-all duration-500 hover:scale-105 hover:border-white/30"
-                    aria-label="LinkedIn"
-                  >
-                    <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    <svg className="relative w-3.5 h-3.5 text-white/50 group-hover:text-[#01458f] transition-colors duration-500" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                    </svg>
-                  </a>
+                <div className="flex gap-2.5">
                   <a
                     href="#"
                     className="group relative w-10 h-10 rounded-full border border-white/10 bg-white/[0.02] backdrop-blur-sm flex items-center justify-center overflow-hidden transition-all duration-500 hover:scale-105 hover:border-white/30"

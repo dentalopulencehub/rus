@@ -21,7 +21,7 @@ export function Hero() {
 
             {/* Subtitle */}
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto">
-              Trusted chartered accountants serving Birmingham businesses since 1995.
+              Est. 1995
             </p>
 
             {/* CTA Buttons - Vercel Style */}
@@ -30,7 +30,7 @@ export function Hero() {
                 href="/contact"
                 className="inline-flex items-center justify-center px-8 py-2 bg-gray-900 text-white rounded-full text-sm font-medium hover:bg-gray-800 transition-all duration-200 shadow-sm w-40"
               >
-                Enquire Now
+                Contact Us
               </a>
               <a
                 href="/services"

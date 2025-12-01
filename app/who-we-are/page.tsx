@@ -61,7 +61,7 @@ export default function WhoWeArePage() {
             <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4 tracking-tight">
               Message from Our Founder
             </h2>
-            <p className="text-xl text-[#01458f] font-light">Raza Hussain, FCA MBA</p>
+            <p className="text-xl text-[#01458f] font-light">Raza Samar BA(Hons) MBA BFP FCA</p>
             <p className="text-sm text-gray-600">Founder & Managing Director</p>
           </div>
 
@@ -69,26 +69,42 @@ export default function WhoWeArePage() {
             <p>
               When I founded RUS Chartered Accountants in 1995, I wanted to create more than just another
               accountancy firm. I aimed to build a practice that genuinely guided clients towards long-term
-              financial success.
+              financial success—one shaped by real experience, hard-earned insight, and a deep understanding of
+              what businesses need to thrive.
             </p>
 
             <p>
               My own career began as a graduate, moving on to Articled Clerk in a medium-to-large firm of
               Chartered Accountants and Registered Auditors, which has since become part of one of the Big Four
-              global accountancy practices. I started in the Audit department and gained experience auditing
-              large listed and non-listed PLC companies with turnovers in excess of £100m.
+              global accountancy practices. I started in the Audit department and gained experience auditing large
+              listed and non-listed PLC companies with turnovers in excess of £100m. Those early years were
+              instrumental, teaching me the value of precision, professional discipline, and strategic thinking at
+              the highest level. Later, I moved to a smaller, three-partner firm of Chartered Accountants, where I
+              worked with SME businesses from a compliance and audit perspective. I also completed my
+              postgraduate Master's in Business Administration, in addition to becoming a Fellow member of the
+              Institute of Chartered Accountants in England & Wales. This further strengthened my understanding
+              of how financial decisions shape organisations, growth, and leadership.
             </p>
 
             <p>
-              Those early years were instrumental, teaching me the value of precision, professional discipline,
-              and strategic thinking at the highest level. Later, I moved to a smaller, three-partner firm of
-              Chartered Accountants, where I worked with SME businesses from a compliance and audit perspective.
+              RUS Chartered Accountants, as a firm, is, in many ways, a reflection of that journey. Our success
+              story is built on dedication, resilience, and a commitment to doing things properly—qualities that
+              now form the blueprint we use to support our clients. We understand the obstacles businesses face
+              because we've overcome many of them ourselves. That experience allows us to guide clients with
+              clarity, confidence, and practical solutions that create meaningful results.
             </p>
 
             <p>
-              I also completed my postgraduate Master's in Business Administration, in addition to becoming a
-              Fellow member of the Institute of Chartered Accountants in England & Wales. This further
-              strengthened my understanding of how financial decisions shape organizations, growth, and leadership.
+              Today, our substantial team—including a group of qualified accountants—brings together specialist
+              knowledge, sector expertise, and a modern, digital approach that ensures our clients remain fully
+              supported in an ever-changing financial landscape. We are proud to be a trusted partner to
+              businesses and individuals across the UK, helping them make informed decisions and achieve
+              sustainable growth.
+            </p>
+
+            <p>
+              Thank you for taking the time to learn more about us. I hope my story inspires confidence in the
+              support and guidance RUS Chartered Accountants can offer you on your own financial journey.
             </p>
           </div>
         </div>

@@ -47,6 +47,25 @@ export function InsightCard({ post }: InsightCardProps) {
           {post.excerpt}
         </p>
 
+        {/* Tags */}
+        {post.tags.length > 0 && (
+          <div className="flex flex-wrap gap-1.5 mb-4">
+            {post.tags.slice(0, 3).map((tag) => (
+              <span
+                key={tag}
+                className="inline-flex items-center px-2 py-0.5 bg-gray-50 text-gray-600 rounded text-[10px] font-medium"
+              >
+                #{tag}
+              </span>
+            ))}
+            {post.tags.length > 3 && (
+              <span className="inline-flex items-center px-2 py-0.5 text-gray-400 text-[10px]">
+                +{post.tags.length - 3} more
+              </span>
+            )}
+          </div>
+        )}
+
         {/* Meta */}
         <div className="flex items-center justify-between pt-4 border-t border-gray-100">
           <div className="flex items-center gap-3">

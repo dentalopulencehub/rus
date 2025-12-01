@@ -73,7 +73,7 @@ export function IntegrationSection() {
                   href="/contact"
                   className="w-full inline-flex items-center justify-center px-8 py-3 bg-white text-black rounded-full text-sm font-medium border border-[#01458f] hover:bg-gray-50 transition-all duration-200"
                 >
-                  Enquire Now
+                  Contact Us
                 </Link>
               </div>
             </div>
@@ -109,7 +109,7 @@ export function IntegrationSection() {
                   href="/contact"
                   className="inline-flex items-center justify-center px-8 py-2 bg-white text-black rounded-full text-sm font-medium border border-[#01458f] hover:bg-gray-50 transition-all duration-200"
                 >
-                  Enquire Now
+                  Contact Us
                 </Link>
               </div>
             </div>

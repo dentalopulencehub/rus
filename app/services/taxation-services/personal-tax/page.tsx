@@ -90,15 +90,6 @@ const personalTaxServices = [
     ),
   },
   {
-    title: 'Pensions & Retirement Planning',
-    description: 'Strategic pension tax planning, annual allowance advice and tax-efficient retirement income strategies',
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-      </svg>
-    ),
-  },
-  {
     title: 'HMRC Investigations Support',
     description: 'Professional representation during HMRC enquiries, self-assessment checks and tax dispute resolution',
     icon: (
@@ -179,7 +170,7 @@ const faqs = [
   },
   {
     question: 'When is the self-assessment deadline?',
-    answer: 'The deadline for online self-assessment returns is 31 January following the end of the tax year (5 April). For example, the 2023/24 tax year runs from 6 April 2023 to 5 April 2024, with the filing deadline of 31 January 2025. Payment of any tax due is also required by 31 January. We ensure your return is filed on time and help you plan for tax payments in advance.',
+    answer: 'The deadline for online self-assessment returns is 31 January following the end of the tax year (5 April). For example, the 2024/25 tax year runs from 6 April 2024 to 5 April 2025, with the filing deadline of 31 January 2026. Payment of any tax due is also required by 31 January. We ensure your return is filed on time and help you plan for tax payments in advance.',
   },
   {
     question: 'Can you help reduce my personal tax liability?',
@@ -197,7 +188,7 @@ const faqs = [
     question: 'What is your fee for preparing a self-assessment return?',
     answer: (
       <>
-        Our fees are fixed and agreed upfront based on the complexity of your tax affairs. A straightforward employed/self-employed return typically starts from £250 + VAT. More complex returns involving rental income, capital gains, foreign income or multiple income sources are priced individually. We provide a clear quote before commencing work. For more information, please <Link href="/contact" className="text-[#01458f] underline hover:text-[#013a75] transition-colors">contact us</Link> for a no-obligation discussion.
+        Our fees are fixed and agreed upfront based on the complexity of your tax affairs. A straightforward self-assessment return typically starts from as little as £120 + VAT. More complex returns involving rental income, capital gains, foreign income or multiple income sources are priced individually. We provide a clear quote before commencing work. For more information, please <Link href="/contact" className="text-[#01458f] underline hover:text-[#013a75] transition-colors">contact us</Link> for a no-obligation discussion.
       </>
     ),
   },

@@ -63,7 +63,7 @@ export function CTASimple() {
               {/* Layer 3: Solid background */}
               <div className="absolute inset-0 -z-30 bg-white rounded-full transition-all duration-300 group-hover:bg-white/95" />
 
-              <span className="relative z-10">Enquire Now</span>
+              <span className="relative z-10">Contact Us</span>
             </Link>
 
             {/* Supporting Text */}
@@ -102,7 +102,7 @@ export function CTASimple() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <span>1190A-1194 Stratford Road, Hall Green, Birmingham, B28 8AB</span>
+                <span>1190A-1192 Stratford Road, Hall Green, Birmingham, B28 8AB</span>
               </div>
             </div>
           </div>

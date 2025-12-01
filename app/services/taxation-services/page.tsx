@@ -350,7 +350,7 @@ export default function TaxationServicesPage() {
         rightContent={{
           stats: [
             { value: "30+", label: "Years Experience" },
-            { value: "ICAEW", label: "Certified" },
+            { value: "ICAEW", label: "Chartered" },
           ]
         }}
       />
@@ -407,7 +407,7 @@ export default function TaxationServicesPage() {
                   {/* Layer 3: Solid background */}
                   <div className="absolute inset-0 -z-30 bg-white rounded-full transition-all duration-300 group-hover:bg-white/95" />
 
-                  <span className="relative z-10">Enquire Now</span>
+                  <span className="relative z-10">Contact Us</span>
                 </a>
 
                 <a

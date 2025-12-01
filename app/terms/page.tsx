@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Terms of Use | RUS Chartered Accountants',
@@ -16,10 +17,10 @@ export default function TermsPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-[#01458f] to-[#0052cc] text-white py-20">
+      <div className="bg-gradient-to-br from-[#01458f] to-[#0052cc] text-white pt-32 pb-20">
         <div className="max-w-4xl mx-auto px-6">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Terms of Use</h1>
-          <p className="text-lg text-white/90">Last updated: November 2024</p>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">Terms of Use</h1>
+          <p className="text-lg text-white/90">Last updated: December 2025</p>
         </div>
       </div>
 
@@ -291,12 +292,12 @@ export default function TermsPage() {
             <p className="text-gray-600 mb-6">
               Our team is here to help clarify any questions you may have.
             </p>
-            <a
-              href="mailto:info@rus.co.uk"
+            <Link
+              href="/contact"
               className="inline-flex items-center justify-center px-8 py-3 bg-[#01458f] text-white font-medium rounded-full hover:bg-[#0052cc] transition-colors duration-200"
             >
               Contact Us
-            </a>
+            </Link>
           </div>
         </div>
       </div>
