@@ -285,7 +285,7 @@ export default function PharmaAccountingPage() {
         subtitle="Specialist support throughout the entire process"
         faqs={[
           {
-            question: 'If You're Buying a Pharmacy',
+            question: "If You're Buying a Pharmacy",
             answer: (
               <>
                 <p className="mb-2">We can assist with:</p>
@@ -302,7 +302,7 @@ export default function PharmaAccountingPage() {
             ),
           },
           {
-            question: 'If You're Selling a Pharmacy',
+            question: "If You're Selling a Pharmacy",
             answer: (
               <>
                 <p className="mb-2">We support sellers by:</p>
