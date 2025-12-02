@@ -33,7 +33,7 @@ export function ServiceBenefits({ title, items }: ServiceBenefitsProps) {
               </div>
 
               {/* Title */}
-              <h3 className="text-xs md:text-sm font-bold text-gray-900 mb-2 tracking-wide uppercase">
+              <h3 className="text-xs md:text-sm font-bold text-gray-900 mb-2 tracking-wide uppercase whitespace-pre-line">
                 {item.title}
               </h3>
 

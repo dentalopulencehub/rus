@@ -217,6 +217,87 @@ export default function OpticalAccountingPage() {
         }}
       />
 
+      <ServiceFAQ
+        title="Who We Support"
+        subtitle="Specialized accounting support for optical professionals at every stage"
+        faqs={[
+          {
+            question: 'Locum Optometrists',
+            answer: (
+              <>
+                <p className="mb-4">Locum optometrists often work across multiple practices and income streams, making accurate financial management essential. We support locums with:</p>
+                <ul className="space-y-2 mb-4">
+                  <li>• Setup advice including Limited Vs Self-Employed comparisons</li>
+                  <li>• Company formations and advice on share structures</li>
+                  <li>• Self-assessment tax returns</li>
+                  <li>• Accounts preparation</li>
+                  <li>• Remuneration (salary/dividend) advice for company users</li>
+                  <li>• Digital accounting solutions - to get you MTD Ready</li>
+                  <li>• Guidance on allowable expenses, equipment and travel</li>
+                  <li>• VAT considerations for locum work</li>
+                </ul>
+                <p>Our aim is to simplify your financial obligations and help you maximise the benefits of locum work.</p>
+              </>
+            ),
+          },
+          {
+            question: 'Optical Practices',
+            answer: (
+              <>
+                <p className="mb-4">Independent optician practices face the dual complexity of clinical services and retail operations. We provide comprehensive support, including:</p>
+                <ul className="space-y-2 mb-6">
+                  <li>• Year-end accounts and tax returns</li>
+                  <li>• Digital accounting systems and bookkeeping</li>
+                  <li>• Payroll for clinical and retail staff</li>
+                  <li>• Cashflow forecasting and budgeting</li>
+                  <li>• Stock, sales and margin analysis</li>
+                  <li>• Advice on managing mixed NHS and private income</li>
+                  <li>• Strategic planning for growth, expansion or incorporation</li>
+                  <li>• VAT compliance services</li>
+                </ul>
+                <h4 className="font-bold text-lg mb-2">Specialist VAT Advice — Partial Exemption</h4>
+                <p className="mb-2">VAT for opticians is uniquely complex due to the combination of:</p>
+                <ul className="space-y-2 mb-4">
+                  <li>• VAT-exempt eye examinations</li>
+                  <li>• VAT-able dispensing and retail sales</li>
+                  <li>• GOS income, private fees and product sales</li>
+                </ul>
+                <p className="mb-2">We offer specialist guidance on:</p>
+                <ul className="space-y-2 mb-4">
+                  <li>• Partial exemption methods</li>
+                  <li>• Apportionment calculations</li>
+                  <li>• HMRC compliance</li>
+                  <li>• Reviewing or improving your current VAT treatment</li>
+                  <li>• Optimising VAT recovery where possible</li>
+                </ul>
+                <p>Our expertise helps practices stay compliant while ensuring their VAT position is as efficient as possible.</p>
+              </>
+            ),
+          },
+          {
+            question: 'Buying or Selling an Opticians Practice',
+            answer: (
+              <>
+                <p className="mb-4">When it comes to planning for the future of your optical practice, we're here to help. Whether you need a detailed business plan, a professional valuation, or guidance through the acquisition or sale of a practice, our team of experienced ophthalmic accountants and business advisors will support you at every stage.</p>
+                <p className="mb-4">If you're looking to purchase a practice, we can support you with securing finance, preparing lending packs and sourcing funding to help turn your plans into reality. If you're preparing to sell, we can work with you well in advance to ensure your practice is structured, valued and presented in a way that maximises your outcome when the time is right.</p>
+                <p className="mb-2">Our services include:</p>
+                <ul className="space-y-2 mb-4">
+                  <li>• Financial due diligence</li>
+                  <li>• Practice valuation guidance</li>
+                  <li>• Cashflow forecasting and business modelling for finance applications</li>
+                  <li>• Reviewing NHS GOS income and retail performance</li>
+                  <li>• Assessing staffing and overhead costs</li>
+                  <li>• Tax-efficient structuring of the acquisition or sale</li>
+                  <li>• Capital allowances and equipment considerations</li>
+                  <li>• Exit planning and Business Asset Disposal Relief (where qualifying)</li>
+                </ul>
+                <p>Our role is to provide clarity, reduce risk and ensure you make informed decisions at every stage of the transaction.</p>
+              </>
+            ),
+          },
+        ]}
+      />
+
       <div id="benefits">
         <ServiceBenefits title="Why Optical Professionals Choose Us" items={benefits} />
       </div>

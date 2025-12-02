@@ -32,7 +32,7 @@ export function SubcategoriesGrid({ title, subtitle, items, basePath }: Subcateg
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className={`grid grid-cols-1 gap-6 ${items.length === 4 ? 'md:grid-cols-4' : 'md:grid-cols-3'}`}>
           {items.map((item) => (
             <Link
               key={item.slug}

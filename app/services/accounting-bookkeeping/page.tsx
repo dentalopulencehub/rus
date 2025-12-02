@@ -7,6 +7,7 @@ import { ServiceOverview } from '@/components/services/ServiceOverview';
 import { ServiceBenefits } from '@/components/services/ServiceBenefits';
 import { ServiceTestimonials } from '@/components/services/ServiceTestimonials';
 import { ServiceFAQ } from '@/components/services/ServiceFAQ';
+import { TaxationBenefits } from '@/components/services/TaxationBenefits';
 import { InsightsPreview } from '@/components/home/InsightsPreview';
 import { StickyMiniNav } from '@/components/services/StickyMiniNav';
 
@@ -262,6 +263,61 @@ export default function AccountingBookkeepingPage() {
         }}
       />
 
+      <ServiceFAQ
+        title="Comprehensive Accounting & Bookkeeping Support"
+        subtitle="Our service is built to meet the everyday financial needs of UK businesses"
+        faqs={[
+          {
+            question: 'Bookkeeping Services',
+            answer: (
+              <>
+                <p>Day-to-day bookkeeping support including bank reconciliations, sales and purchase ledger management, expense processing and accurate maintenance of your financial records. We ensure everything is kept organised, up to date and compliant with HMRC requirements.</p>
+              </>
+            ),
+          },
+          {
+            question: 'Annual Accounts Preparation',
+            answer: (
+              <>
+                <p>Clear and compliant year-end accounts prepared by qualified accountants. We ensure your accounts meet statutory obligations and provide a reliable foundation for tax filing, financial planning and business decision-making.</p>
+              </>
+            ),
+          },
+          {
+            question: 'Management Accounts',
+            answer: (
+              <>
+                <p>Regular monthly or quarterly management reports tailored to your business needs. These include profit and loss analysis, balance sheets, cashflow reporting and performance insights to help you track progress and plan ahead.</p>
+              </>
+            ),
+          },
+          {
+            question: 'VAT Returns & Compliance',
+            answer: (
+              <>
+                <p>Preparation and submission of VAT returns, advice on VAT schemes and full support in maintaining VAT-compliant digital records.</p>
+              </>
+            ),
+          },
+          {
+            question: 'Accounts Review & Health Checks',
+            answer: (
+              <>
+                <p>If you already have an internal process in place, we can review your existing bookkeeping systems, correct errors and recommend improvements that boost efficiency and accuracy.</p>
+              </>
+            ),
+          },
+          {
+            question: 'Cloud Accounting and Digital Bookkeeping',
+            answer: (
+              <>
+                <p>We use leading software such as Xero, QuickBooks, Sage and FreeAgent to streamline processes, improve accuracy and give you instant access to your financial information.</p>
+              </>
+            ),
+          },
+        ]}
+      />
+
       <div className="bg-gray-50 py-24">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
@@ -280,6 +336,8 @@ export default function AccountingBookkeepingPage() {
           />
         </div>
       </div>
+
+      <TaxationBenefits title="Comprehensive Accounting Support" />
 
       {/* First CTA - Before Benefits */}
       <section className="w-full flex items-center justify-center bg-white px-4 py-24 pt-32">

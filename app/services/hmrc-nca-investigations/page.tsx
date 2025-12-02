@@ -33,11 +33,11 @@ export const metadata: Metadata = {
   },
 };
 
-// Our HMRC & NCA Investigation Services - EXACTLY 8 for design consistency
+// Our HMRC & NCA Investigation Services - 6 services from source document
 const investigationServices = [
   {
     title: 'HMRC Enquiries & Compliance Checks',
-    description: 'Full support for self-assessment investigations, Corporation Tax enquiries, VAT inspections, PAYE compliance checks and CIS verification reviews',
+    description: 'We handle all types of HMRC enquiries, including Self-assessment investigations, Corporation Tax enquiries, VAT inspections, PAYE and payroll compliance checks, CIS verification reviews and Director and shareholder enquiries. We manage correspondence, provide responses, gather evidence and negotiate directly with HMRC on your behalf, ensuring the most efficient and favourable outcome',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -46,7 +46,7 @@ const investigationServices = [
   },
   {
     title: 'Tax Irregularity & Disclosure Support',
-    description: 'Expert guidance through HMRC disclosure facilities including Digital Disclosure Service (DDS), Let Property Campaign, offshore and voluntary disclosures',
+    description: 'If historical irregularities exist, we guide clients through HMRC disclosure facilities such as The Digital Disclosure Service (DDS), The Let Property Campaign, Offshore disclosures and Voluntary disclosures. We help you make a clear, accurate and complete disclosure, minimising penalties and demonstrating cooperation',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -55,7 +55,7 @@ const investigationServices = [
   },
   {
     title: 'VAT, PAYE & CIS Disputes',
-    description: 'Professional representation during disputes over VAT reclaims, PAYE/NIC discrepancies, CIS deduction issues and worker misclassification',
+    description: 'We support clients during disputes over VAT reclaims or assessments, PAYE/NIC discrepancies, CIS deduction issues, Misclassification of workers and Penalty appeals. We provide representation, review HMRC findings and present evidence to defend your position',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
@@ -64,7 +64,7 @@ const investigationServices = [
   },
   {
     title: 'Director & Shareholder Investigations',
-    description: 'Strategic guidance for directors under scrutiny for tax, remuneration or dividend issues, ensuring compliance and protecting personal interests',
+    description: 'We provide strategic guidance for directors under scrutiny for tax, remuneration or dividend issues, ensuring compliance and protecting personal interests',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
@@ -72,8 +72,8 @@ const investigationServices = [
     ),
   },
   {
-    title: 'NCA Financial Crime Investigations',
-    description: 'Specialist support for NCA enquiries involving money laundering, suspicious activity reports (SARs), Unexplained Wealth Orders (UWOs) and proceeds of crime investigations',
+    title: 'Assistance With NCA Financial Crime Investigations',
+    description: 'NCA enquiries can involve serious financial allegations such as Money laundering, Suspicious activity reports (SARs), Unexplained Wealth Orders (UWOs), Proceeds of crime investigations and Fraud and tax evasion connections. We work with specialist legal partners where necessary to ensure coordinated, accurate and robust representation, guiding clients through every stage of the process',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
@@ -82,28 +82,10 @@ const investigationServices = [
   },
   {
     title: 'Tax Investigation Cover (Insurance)',
-    description: 'Comprehensive insurance protection covering our professional fees during HMRC enquiries, including self-assessment, Corporation Tax, PAYE, VAT, CIS and IR35 investigations',
+    description: 'Insurance protection covering professional fees during HMRC enquiries. This includes cover for self-assessment, Corporation Tax, PAYE, VAT, CIS and IR35 investigations. Our fees are fully covered during an investigation, with no unexpected costs and immediate expert support available',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-      </svg>
-    ),
-  },
-  {
-    title: 'Penalty Appeals & Negotiation',
-    description: 'Expert representation in penalty appeals and negotiations with HMRC to minimise financial impact and achieve favourable resolutions',
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>
-    ),
-  },
-  {
-    title: 'Strategic Representation',
-    description: 'Coordinated, accurate and robust representation throughout every stage of HMRC and NCA investigations, with specialist legal partnerships where necessary',
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
       </svg>
     ),
   },

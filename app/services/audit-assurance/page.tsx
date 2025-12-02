@@ -34,11 +34,11 @@ export const metadata: Metadata = {
   },
 };
 
-// Our Key Audit Services - EXACTLY 8 for design consistency
+// Our Key Audit Services - EXACTLY 6 services from source document
 const auditServices = [
   {
     title: 'Statutory Audits',
-    description: 'Meticulous and compliant audits that meet all legal and regulatory standards for companies required to meet statutory audit thresholds',
+    description: 'For companies required to meet statutory audit thresholds, we deliver a meticulous and compliant audit that meets all legal and regulatory standards. Our approach is efficient, transparent and designed to minimise disruption to your operations',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -46,8 +46,8 @@ const auditServices = [
     ),
   },
   {
-    title: 'Charity Audits',
-    description: 'Specialist audits and independent examinations for charities, trusts and not-for-profit organisations in compliance with Charity Commission requirements',
+    title: 'Charity Audits & Independent Examinations',
+    description: 'We specialise in audits and independent examinations for charities, trusts and not-for-profit organisations. Our service ensures compliance with the Charities Act, Charity Commission requirements and applicable accounting frameworks such as SORP (FRS 102)',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -55,8 +55,8 @@ const auditServices = [
     ),
   },
   {
-    title: 'SRA Audits',
-    description: 'SRA Accounts Rules audits for solicitors, legal practices and law firms, ensuring client money handling procedures meet regulatory obligations',
+    title: 'Solicitors Regulation Authority (SRA) Audits',
+    description: 'We undertake SRA Accounts Rules audits for solicitors, legal practices and law firms. Our specialist knowledge ensures your client money handling procedures meet regulatory obligations, with a focus on accuracy, risk management and efficient process controls',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
@@ -64,17 +64,8 @@ const auditServices = [
     ),
   },
   {
-    title: 'Academy Audits',
-    description: 'Specialist audits for academy trusts and educational institutions, ensuring full compliance with funding body and regulatory requirements',
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-      </svg>
-    ),
-  },
-  {
     title: 'Assurance Reviews',
-    description: 'Reliable, independent assessment of financial information including limited assurance reports and agreed-upon procedures',
+    description: 'For organisations not requiring a full audit, we offer assurance reviews that provide a reliable, independent assessment of financial information. This includes limited assurance reports, internal controls reviews and agreed-upon procedures tailored to your needs',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
@@ -82,8 +73,8 @@ const auditServices = [
     ),
   },
   {
-    title: 'Internal Controls',
-    description: 'Assessment of the effectiveness of your financial systems, identifying vulnerabilities and offering practical improvements',
+    title: 'Internal Controls & Systems Evaluation',
+    description: 'Our auditors assess the effectiveness of your financial systems, identifying vulnerabilities and offering practical improvements to strengthen internal control environments',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
@@ -91,17 +82,8 @@ const auditServices = [
     ),
   },
   {
-    title: 'Grant Audits',
-    description: 'Verification and compliance audits for grant-funded projects, ensuring proper use of funds and adherence to funder requirements',
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-      </svg>
-    ),
-  },
-  {
-    title: 'Stakeholder Reporting',
-    description: 'Clear, concise and informative reports that give stakeholders confidence in your financial position and governance',
+    title: 'Reporting for Stakeholders',
+    description: 'We provide clear, concise and informative reports that give stakeholders confidence in your financial position, governance and compliance frameworks',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />

@@ -32,11 +32,11 @@ export const metadata: Metadata = {
   },
 };
 
-// Company Formation Services - EXACTLY 8
+// Company Formation Services - 8 services from source document
 const formationServices = [
   {
-    title: 'Company Registration',
-    description: 'Complete incorporation process including all filings, statutory documents, Articles of Association and shareholder records',
+    title: 'Company Registration With Companies House',
+    description: 'We manage the full incorporation process on your behalf, including all filings, statutory documents, Articles of Association and shareholder records. This ensures your business is correctly registered and compliant from the very beginning',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -44,8 +44,8 @@ const formationServices = [
     ),
   },
   {
-    title: 'Registered Office',
-    description: 'Registered Office Address Facility to keep your home address confidential and protected from the public register',
+    title: 'Registered Office Address Facility',
+    description: 'When incorporating through us, clients can use our Registered Office Address Facility, allowing you to keep your home address confidential and protected from the public register. This helps maintain privacy, present a professional business address, and ensure all statutory and HMRC correspondence is handled promptly',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
@@ -53,17 +53,8 @@ const formationServices = [
     ),
   },
   {
-    title: 'Share Structures',
-    description: 'Expert guidance on alphabetical share classes, voting rights, dividend entitlements and founder protection',
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-      </svg>
-    ),
-  },
-  {
-    title: 'Business Structure',
-    description: 'Advice on whether to operate as a limited company, LLP or partnership based on your commercial aims and tax position',
+    title: 'Choosing the Right Business Structure',
+    description: 'We advise on whether to operate as a limited company, LLP or partnership based on your commercial aims, tax position and long-term strategy',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
@@ -71,8 +62,26 @@ const formationServices = [
     ),
   },
   {
+    title: 'Share Structures, Share Rights & Alphabetical Share Classes',
+    description: 'Setting up your share structure correctly is essential during company formation. We provide expert guidance on alphabetical share classes (A, B, C etc.), voting & non-voting shares, growth shares, founder protection and future-proofing for investment',
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Shareholder Agreements & Founders Arrangements',
+    description: 'Working alongside legal partners where required, we help ensure shareholder expectations are clearly documented, protecting relationships and providing long-term certainty',
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+      </svg>
+    ),
+  },
+  {
     title: 'HMRC Registrations',
-    description: 'Complete post-incorporation registrations including Corporation Tax, VAT, PAYE and CIS where applicable',
+    description: 'We complete all necessary post-incorporation registrations including Corporation Tax, VAT, PAYE and CIS (where applicable). This ensures your company is fully compliant with UK tax obligations from the outset',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
@@ -80,8 +89,8 @@ const formationServices = [
     ),
   },
   {
-    title: 'Digital Accounting',
-    description: 'Cloud-based accounting setup with Xero, Sage, QuickBooks or FreeAgent for a compliant, modern financial framework',
+    title: 'Digital Accounting & Bookkeeping Setup',
+    description: 'We set up cloud-based systems such as Xero, Sage, QuickBooks or FreeAgent, ensuring your business begins with a compliant, efficient and modern financial framework',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
@@ -89,17 +98,8 @@ const formationServices = [
     ),
   },
   {
-    title: 'Financial Planning',
-    description: 'Early-stage budgets, forecasts, profit projections and start-up financial models for clear visibility',
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
-      </svg>
-    ),
-  },
-  {
-    title: 'Shareholder Agreements',
-    description: 'Support with shareholder expectations documentation, protecting relationships and providing long-term certainty',
+    title: 'Early Financial Planning for Start-Ups',
+    description: 'We help you understand funding needs and cashflow requirements with budgets, forecasts, profit projections and start-up financial models. This gives you visibility and confidence as you plan your next steps',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />

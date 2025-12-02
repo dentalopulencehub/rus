@@ -217,6 +217,110 @@ export default function PharmaAccountingPage() {
         }}
       />
 
+      <ServiceFAQ
+        title="Who We Support"
+        subtitle="Dedicated accountancy support for pharmacy professionals"
+        faqs={[
+          {
+            question: 'Independent Pharmacies',
+            answer: (
+              <>
+                <p className="mb-4">Independent pharmacy owners must balance clinical services with retail operations and regulatory requirements. We provide end-to-end financial support, including:</p>
+                <ul className="space-y-2 mb-4">
+                  <li>• Year-end accounts and tax compliance</li>
+                  <li>• Digital bookkeeping and stock tracking support</li>
+                  <li>• Payroll and staff cost management</li>
+                  <li>• NHS income reconciliation and FP34 analysis</li>
+                  <li>• Cashflow forecasting, budgeting and financial planning</li>
+                  <li>• Profitability reviews and margin analysis</li>
+                  <li>• Advice on service expansion and commissioning opportunities</li>
+                  <li>• Business structure planning and incorporation</li>
+                </ul>
+                <p>Our aim is to strengthen financial stability and help you run a compliant, profitable and sustainable pharmacy business.</p>
+              </>
+            ),
+          },
+          {
+            question: 'Multi-Site Pharmacy Operators',
+            answer: (
+              <>
+                <p className="mb-4">For pharmacy groups and multi-branch operators, we offer more advanced financial and strategic support, including:</p>
+                <ul className="space-y-2 mb-4">
+                  <li>• Consolidated accounts and group reporting</li>
+                  <li>• Management accounts and performance dashboards</li>
+                  <li>• Financial modelling and scenario planning</li>
+                  <li>• Governance, internal controls and process improvement</li>
+                  <li>• Payroll and HR budgeting across larger teams</li>
+                  <li>• VAT and tax advice for group structures</li>
+                  <li>• Assistance with mergers, acquisitions and restructuring</li>
+                </ul>
+                <p>We help growing pharmacy groups maintain efficiency, stability and strong financial oversight across all locations.</p>
+              </>
+            ),
+          },
+          {
+            question: 'Locum Pharmacists',
+            answer: (
+              <>
+                <p className="mb-4">Locum pharmacists often work across multiple pharmacies and income streams, making accurate record-keeping and tax planning essential. We support locums with:</p>
+                <ul className="space-y-2 mb-4">
+                  <li>• Setup advice including Limited Vs Self-Employed comparisons</li>
+                  <li>• Company formations and advice on share structures</li>
+                  <li>• Self-assessment tax returns</li>
+                  <li>• Accounts preparation</li>
+                  <li>• Remuneration (salary/dividend) advice for company users</li>
+                  <li>• Digital accounting solutions - to get you MTD Ready</li>
+                  <li>• Guidance on allowable expenses</li>
+                  <li>• VAT considerations where applicable</li>
+                </ul>
+                <p>Our service simplifies the financial side of locum work and ensures full compliance with HMRC.</p>
+              </>
+            ),
+          },
+        ]}
+      />
+
+      <ServiceFAQ
+        title="Buying or Selling a Pharmacy"
+        subtitle="Specialist support throughout the entire process"
+        faqs={[
+          {
+            question: 'If You're Buying a Pharmacy',
+            answer: (
+              <>
+                <p className="mb-2">We can assist with:</p>
+                <ul className="space-y-2 mb-4">
+                  <li>• Financial due diligence (NHS income, retail performance, staffing costs, stock levels)</li>
+                  <li>• Pharmacy valuations and goodwill assessments</li>
+                  <li>• Cashflow forecasts and lender-ready business plans</li>
+                  <li>• Raising finance and supporting funding applications</li>
+                  <li>• Reviewing NHS contract income and service provision</li>
+                  <li>• Structuring the acquisition in a tax-efficient way</li>
+                </ul>
+                <p>Our goal is to help you understand the true financial picture and secure a sustainable investment.</p>
+              </>
+            ),
+          },
+          {
+            question: 'If You're Selling a Pharmacy',
+            answer: (
+              <>
+                <p className="mb-2">We support sellers by:</p>
+                <ul className="space-y-2 mb-4">
+                  <li>• Preparing the business for sale and tidying financial records</li>
+                  <li>• Valuation guidance and performance benchmarking</li>
+                  <li>• Tax planning ahead of the sale</li>
+                  <li>• Ensuring eligibility for Business Asset Disposal Relief (BADR) where relevant</li>
+                  <li>• Transition planning and succession support</li>
+                  <li>• Working alongside legal and commercial agents during due diligence</li>
+                </ul>
+                <p>We ensure you are well-prepared and positioned for the best possible outcome.</p>
+              </>
+            ),
+          },
+        ]}
+      />
+
       <div id="benefits">
         <ServiceBenefits title="Why Pharmacy Professionals Choose Us" items={benefits} />
       </div>

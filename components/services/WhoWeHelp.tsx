@@ -13,22 +13,26 @@ interface WhoWeHelpProps {
   title?: string;
   subtitle?: string;
   clientTypes: ClientType[];
+  bgColor?: string;
+  darkMode?: boolean;
 }
 
 export function WhoWeHelp({
   title = "Who We Help",
   subtitle = "Tailored tax support for diverse clients",
-  clientTypes
+  clientTypes,
+  bgColor = "bg-white",
+  darkMode = false
 }: WhoWeHelpProps) {
   return (
-    <section id="expertise" className="py-24 px-4 bg-white">
+    <section id="expertise" className={`py-24 px-4 ${bgColor}`}>
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-light italic text-gray-900 mb-3 tracking-tight">
+          <h2 className={`text-3xl md:text-4xl font-light italic mb-3 tracking-tight ${darkMode ? 'text-white' : 'text-gray-900'}`}>
             {title}
           </h2>
-          <p className="text-base text-gray-600 max-w-2xl mx-auto">
+          <p className={`text-base max-w-2xl mx-auto ${darkMode ? 'text-white/90' : 'text-gray-600'}`}>
             {subtitle}
           </p>
         </div>
@@ -42,7 +46,11 @@ export function WhoWeHelp({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.05 }}
-              className="group relative overflow-hidden flex flex-col items-center justify-center text-center p-4 rounded-xl border border-gray-200 bg-white transition-all duration-200 hover:shadow-sm aspect-square"
+              className={`group relative overflow-hidden flex flex-col items-center justify-center text-center p-4 rounded-xl transition-all duration-200 aspect-square ${
+                darkMode
+                  ? 'bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/15'
+                  : 'border border-gray-200 bg-white hover:shadow-sm'
+              }`}
             >
               {/* Background Image - Fades in on Hover */}
               <div
@@ -51,14 +59,22 @@ export function WhoWeHelp({
               />
 
               <motion.div
-                className="relative z-10 text-gray-700 group-hover:text-[#01458f] mb-3 transition-colors duration-200"
+                className={`relative z-10 mb-3 transition-colors duration-200 ${
+                  darkMode
+                    ? 'text-white group-hover:text-white'
+                    : 'text-gray-700 group-hover:text-[#01458f]'
+                }`}
                 whileHover={{ scale: 1.05, y: -2 }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
               >
                 {client.icon}
               </motion.div>
 
-              <h3 className="relative z-10 text-xs font-medium text-gray-900 group-hover:text-[#01458f] transition-colors duration-200">
+              <h3 className={`relative z-10 text-xs font-medium transition-colors duration-200 ${
+                darkMode
+                  ? 'text-white group-hover:text-white'
+                  : 'text-gray-900 group-hover:text-[#01458f]'
+              }`}>
                 {client.title || client.name}
               </h3>
             </motion.div>

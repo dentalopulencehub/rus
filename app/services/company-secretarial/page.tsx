@@ -32,11 +32,11 @@ export const metadata: Metadata = {
   },
 };
 
-// Company Secretarial Services - EXACTLY 8 for design consistency
+// Company Secretarial Services - EXACTLY 8 services from source document
 const secretarialServices = [
   {
-    title: 'Statutory Registers',
-    description: 'Maintenance of all required company registers including Members, Directors, PSCs, Allotments and Charges',
+    title: 'Statutory Register Maintenance',
+    description: 'We maintain all required company registers including Members, Directors, PSCs (Persons with Significant Control), Allotments & Share Transfers, and Charges. These records must be accurate and up to date at all times',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
@@ -44,8 +44,8 @@ const secretarialServices = [
     ),
   },
   {
-    title: 'Confirmation Statements',
-    description: 'Annual Confirmation Statement preparation and filing with Companies House, ensuring all company data is correct',
+    title: 'Confirmation Statement Filing',
+    description: 'We prepare and file your annual Confirmation Statement with Companies House, ensuring all company data is correct, including shareholdings, SIC codes, registered office address and PSC details',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -54,7 +54,7 @@ const secretarialServices = [
   },
   {
     title: 'Director & Shareholder Changes',
-    description: 'Complete management of appointments, resignations, share transfers and allotments with statutory deadlines',
+    description: 'We handle the full process for changes including appointment or resignation of directors, changes to director details, share transfers and allotments, variations to share rights, and updates to registered office or service addresses. Every update is filed promptly and accurately',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
@@ -62,8 +62,8 @@ const secretarialServices = [
     ),
   },
   {
-    title: 'Share Structure',
-    description: 'Management of share classes, voting rights, dividend entitlements and capital reorganisations',
+    title: 'Share Structure Amendments & New Share Classes',
+    description: 'If your company needs to introduce new share classes (A, B, C etc.), update voting rights, alter dividend entitlements or reorganise capital, we manage the entire process including drafting required resolutions, updating statutory registers, preparing supporting documentation and filing the relevant Companies House forms',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
@@ -71,8 +71,8 @@ const secretarialServices = [
     ),
   },
   {
-    title: 'Registered Office',
-    description: 'Secure Registered Office Address Facility to protect privacy and handle all statutory correspondence professionally',
+    title: 'Registered Office Address Facility',
+    description: 'We provide a secure Registered Office Address Facility, allowing you to keep your home address off the public register. This service ensures privacy and ensures that all statutory and HMRC correspondence is handled professionally and forwarded to you promptly',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
@@ -80,8 +80,8 @@ const secretarialServices = [
     ),
   },
   {
-    title: 'Board Minutes',
-    description: 'Preparation of formal board minutes, shareholder resolutions and supporting documentation',
+    title: 'Preparation of Board Minutes & Resolutions',
+    description: 'We prepare formal board minutes, shareholder resolutions and supporting documentation for important company decisions, including changes in ownership, restructuring, appointments and other legal actions',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -89,8 +89,8 @@ const secretarialServices = [
     ),
   },
   {
-    title: 'Company Dormancy',
-    description: 'Management of dormancy filings and reactivation support, ensuring compliance during inactive periods',
+    title: 'Company Dormancy & Reactivation Support',
+    description: 'For companies that need to cease trading temporarily or reactivate later, we manage all necessary filings, ensuring compliance during dormant periods',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
@@ -98,8 +98,8 @@ const secretarialServices = [
     ),
   },
   {
-    title: 'Dissolution & Strike-Off',
-    description: 'Complete oversight of voluntary strike-off process and guidance on tax, assets and post-closure obligations',
+    title: 'Company Dissolution & Strike-Off',
+    description: 'If you wish to close a company, we oversee the voluntary strike-off process and ensure all Companies House requirements are met. We also provide guidance on tax, distribution of remaining assets and post-closure obligations',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />

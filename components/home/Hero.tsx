@@ -19,11 +19,6 @@ export function Hero() {
               in a Sea of Complexity.
             </h1>
 
-            {/* Subtitle */}
-            <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto">
-              Est. 1995
-            </p>
-
             {/* CTA Buttons - Vercel Style */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-4">
               <a

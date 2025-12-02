@@ -25,14 +25,6 @@ export function InsightCard({ post }: InsightCardProps) {
             {post.category.name}
           </span>
         </div>
-        {/* Featured/Trending Badges */}
-        {post.featured && (
-          <div className="absolute top-4 right-4">
-            <span className="px-3 py-1 rounded-full text-xs font-medium bg-amber-500 text-white">
-              Featured
-            </span>
-          </div>
-        )}
       </div>
 
       {/* Content */}

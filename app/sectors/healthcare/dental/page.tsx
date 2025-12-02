@@ -223,6 +223,127 @@ export default function DentalAccountingPage() {
         }}
       />
 
+      <ServiceFAQ
+        title="Who We Support"
+        subtitle="Comprehensive accounting support tailored to every stage of your dental career"
+        faqs={[
+          {
+            question: 'Principal Dentists',
+            answer: (
+              <>
+                <p className="mb-4">Managing the financial side of a dental practice can be demanding, especially when balancing clinical responsibilities and patient care. At RUS, we specialise in dental accountancy, offering a comprehensive and proactive service that takes care of your practice's financial wellbeing while you focus on delivering exceptional dentistry. Our services include:</p>
+                <ul className="space-y-2 mb-4">
+                  <li>• Year-end accounts and partner/shareholder tax returns</li>
+                  <li>• Drawings planning and remuneration strategies</li>
+                  <li>• Cashflow forecasting, budgeting and financial planning</li>
+                  <li>• Associate pay calculations and compliance</li>
+                  <li>• Bookkeeping, payroll and digital accounting systems</li>
+                  <li>• VAT advice for mixed NHS/private practices</li>
+                  <li>• NHS contract income, UDA/UOA claims and private fee structures</li>
+                  <li>• Benchmarking against national and regional performance</li>
+                  <li>• Succession, incorporation and long-term planning</li>
+                </ul>
+                <p>Our aim is to provide stability and clarity, supporting both daily operations and long-term objectives.</p>
+              </>
+            ),
+          },
+          {
+            question: 'Associate Dentists',
+            answer: (
+              <>
+                <p className="mb-4">With decades of experience, we provide specialist support for dentists progressing into the next stage of their careers as Associates. Our guidance covers everything from tax and accountancy to practice planning, giving you the clarity and confidence needed to grow. By leaving the financial matters to us, you can focus fully on your clinical work — helping you become a true super associate and maximise your potential in modern dentistry. Our services include:</p>
+                <ul className="space-y-2 mb-4">
+                  <li>• Setup advice including Limited Vs Self-Employed comparisons</li>
+                  <li>• Company formations and advice on share structures</li>
+                  <li>• Self-assessment tax returns</li>
+                  <li>• Accounts preparation</li>
+                  <li>• Remuneration (salary/dividend) advice for company users</li>
+                  <li>• Digital accounting solutions - to get you MTD Ready</li>
+                  <li>• Bookkeeping setup and ongoing support</li>
+                  <li>• Allowable expense guidance</li>
+                  <li>• Support for associates working across NHS and private settings</li>
+                  <li>• National Insurance planning</li>
+                  <li>• Pension and investment considerations</li>
+                  <li>• Advice for associates preparing to buy into or acquire a practice</li>
+                </ul>
+                <p>We simplify your financial responsibilities so you can focus on your clinical work.</p>
+              </>
+            ),
+          },
+          {
+            question: 'Dental Hygienists & Dental Therapists',
+            answer: (
+              <>
+                <p className="mb-4">We offer dedicated support for hygienists and therapists operating on a self-employed basis or within mixed practices. Our services include:</p>
+                <ul className="space-y-2 mb-4">
+                  <li>• Self-assessment tax returns</li>
+                  <li>• Guidance on allowable expenses and consumables</li>
+                  <li>• Bookkeeping and digital accounting setup</li>
+                  <li>• Advice on contracts, income structures and sessional work</li>
+                  <li>• Planning for savings, pensions and tax liabilities</li>
+                </ul>
+                <p>Whether you split your time across multiple practices or work independently, we ensure your finances are managed smoothly and efficiently.</p>
+              </>
+            ),
+          },
+          {
+            question: 'Foundation Dentists (DFT) — Supporting Your Transition',
+            answer: (
+              <>
+                <p className="mb-4">Transitioning from Foundation Training to becoming an associate is a key milestone. We offer friendly, practical guidance to help you start your career confidently. Our support includes:</p>
+                <ul className="space-y-2 mb-4">
+                  <li>• Becoming self-employed and registering correctly</li>
+                  <li>• Setting up bookkeeping and record-keeping systems</li>
+                  <li>• Advice on allowable expenses in your first year</li>
+                  <li>• Digital accounting software setup</li>
+                  <li>• First-year tax planning and budgeting</li>
+                  <li>• Preparation for your first tax return</li>
+                </ul>
+                <p>We help you build strong financial habits from the very beginning.</p>
+              </>
+            ),
+          },
+          {
+            question: 'Buying and Selling Dental Practices',
+            answer: (
+              <>
+                <p className="mb-4">When it comes to buying or selling a dental practice, you need advisors who understand the financial, operational and regulatory complexities of the dental sector. We provide comprehensive support throughout the entire process — from preparing detailed business plans and assessing financial viability, to valuing your practice accurately and negotiating the terms of a sale or acquisition.</p>
+                <p className="mb-4">Our experienced dental accountants and business advisors guide you through every stage, including due diligence, funding applications, cashflow forecasting, tax structuring and post-completion planning. Whether you're acquiring your first practice, expanding your portfolio or preparing for a profitable exit, we ensure you make well-informed decisions with confidence and clarity.</p>
+                <p className="mb-2">We offer specialist advice for both buyers and sellers of dental practices, including:</p>
+                <ul className="space-y-2 mb-4">
+                  <li>• Financial due diligence</li>
+                  <li>• Practice valuation support</li>
+                  <li>• Cashflow projections for bank lending</li>
+                  <li>• Structuring the acquisition tax-efficiently</li>
+                  <li>• Reviewing NHS contracts and private income streams</li>
+                  <li>• Staff cost analysis and associate agreements</li>
+                  <li>• Capital allowances and equipment tax relief</li>
+                  <li>• Exit planning and utilisation of Business Asset Disposal Relief (BADR where eligible)</li>
+                </ul>
+                <p>Our insight ensures smoother transactions, clearer valuations and informed decision-making.</p>
+              </>
+            ),
+          },
+          {
+            question: 'Setting Up a Squat Practice',
+            answer: (
+              <>
+                <p className="mb-4">Launching a squat practice is an exciting opportunity, but it requires careful planning, strong financial foundations and a clear strategy from day one. We specialise in guiding dentists through every stage of setting up a new practice, ensuring you begin with the stability, structure and confidence needed to succeed. Our support includes:</p>
+                <ul className="space-y-2 mb-4">
+                  <li>• Financial viability declarations for CQC applications</li>
+                  <li>• Business plans for lenders and investors</li>
+                  <li>• Forecasting, budgeting and breakeven analysis</li>
+                  <li>• Cashflow planning for the first 12–36 months</li>
+                  <li>• Digital accounting and practice management system setup</li>
+                  <li>• Payroll, staffing cost planning and operational budgeting</li>
+                </ul>
+                <p>Our experience helps new practice owners establish a successful, sustainable dental business from day one.</p>
+              </>
+            ),
+          },
+        ]}
+      />
+
       <div id="benefits">
         <ServiceBenefits title="Why Dental Professionals Choose Us" items={benefits} />
       </div>

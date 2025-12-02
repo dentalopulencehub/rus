@@ -1,12 +1,14 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { ServiceHero } from '@/components/services/ServiceHero';
+import { SubcategoriesGrid } from '@/components/services/SubcategoriesGrid';
 import { WhoWeHelp } from '@/components/services/WhoWeHelp';
 import { ServiceOverview } from '@/components/services/ServiceOverview';
 import { ServiceBenefits } from '@/components/services/ServiceBenefits';
 import { ServiceTestimonials } from '@/components/services/ServiceTestimonials';
 import { ServiceFAQ } from '@/components/services/ServiceFAQ';
 import { FAQSchema } from '@/components/seo/FAQSchema';
+import { TaxationBenefits } from '@/components/services/TaxationBenefits';
 import { InsightsPreview } from '@/components/home/InsightsPreview';
 import { StickyMiniNav } from '@/components/services/StickyMiniNav';
 
@@ -158,7 +160,7 @@ const healthcareServices = [
 // Benefits - EXACTLY 4 for design consistency
 const benefits = [
   {
-    title: 'Over 30 Years Healthcare Expertise',
+    title: 'Over 30 Years\nHealthcare Expertise',
     description: 'Three decades supporting medical, dental, optical and pharmacy professionals across the UK',
     icon: (
       <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -171,7 +173,7 @@ const benefits = [
     description: 'Deep understanding of NHS structures, private practice models and mixed-income environments',
     icon: (
       <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
       </svg>
     ),
   },
@@ -185,8 +187,8 @@ const benefits = [
     ),
   },
   {
-    title: 'Regulatory & Compliance Knowledge',
-    description: 'Sector-specific regulatory understanding for medical, dental, optical and pharmacy compliance',
+    title: 'Tailored Tax Planning for Medical Professionals',
+    description: 'Customised tax strategies designed specifically for healthcare practitioners across all sectors',
     icon: (
       <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -277,66 +279,24 @@ export default function HealthcareSectorPage() {
         description="For more than three decades, we have developed a strong specialist interest in the healthcare sector, supporting medical professionals and healthcare businesses with tailored accountancy, tax and advisory services. Our in-depth understanding of the financial, regulatory and commercial challenges faced by healthcare providers allows us to deliver precise guidance and long-standing value to our clients."
       />
 
-      {/* Healthcare Subcategories Section */}
-      <section id="subcategories" className="py-24 px-4 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          {/* Section Header */}
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-light italic text-gray-900 mb-3 tracking-tight">
-              Our Healthcare Services
-            </h2>
-            <p className="text-base text-gray-600 max-w-2xl mx-auto">
-              Explore our dedicated healthcare service pages below
-            </p>
-          </div>
-
-          {/* Cards Grid - 4 columns */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {healthcareSubcategories.map((item) => (
-              <Link
-                key={item.slug}
-                href={`/sectors/healthcare/${item.slug}`}
-                className="group relative overflow-hidden flex flex-col items-center justify-center text-center p-8 rounded-xl border border-gray-200 bg-white transition-all duration-200 hover:shadow-sm aspect-square"
-              >
-                {/* Background Image - Fades in on Hover */}
-                <div
-                  className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-300 pointer-events-none bg-cover bg-center"
-                  style={{ backgroundImage: 'url(https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/5ee11fdf-aac0-4c26-0f5e-026a2df87900/public)' }}
-                />
-
-                <div className="relative z-10 text-gray-700 group-hover:text-[#01458f] mb-4 transition-colors duration-200">
-                  {item.icon}
-                </div>
-
-                <h3 className="relative z-10 text-sm font-medium text-gray-900 group-hover:text-[#01458f] transition-colors duration-200">
-                  {item.name}
-                </h3>
-
-                {/* Small curvy arrow - bottom right corner */}
-                <svg
-                  className="absolute bottom-4 right-4 z-10 w-4 h-4 text-gray-400 group-hover:text-[#01458f] opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1 group-hover:translate-y-1"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M7 7l10 10M17 7v10H7" />
-                </svg>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <div id="services">
         <WhoWeHelp
-          title="Specialist Accountants for Healthcare Professionals"
-          subtitle="The healthcare industry has unique accounting, compliance and tax considerations. With over 30 years of experience, we help clients navigate these complexities with clarity and confidence."
+          title="Specialist Healthcare Accounting Services"
+          subtitle="Healthcare professionals face unique financial challenges. Our experienced team provides comprehensive support across all aspects of healthcare accounting and tax planning."
           clientTypes={healthcareServices}
         />
       </div>
+
+      <div id="subcategories">
+        <SubcategoriesGrid
+          title="Our Healthcare Services"
+          subtitle="Explore our dedicated healthcare service pages below"
+          items={healthcareSubcategories}
+          basePath="/sectors/healthcare"
+        />
+      </div>
+
+      <TaxationBenefits title="Comprehensive Healthcare Accounting Support" />
 
       <ServiceOverview
         leftContent={{
