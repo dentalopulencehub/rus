@@ -94,7 +94,7 @@ const healthcareServices = [
   },
   {
     title: 'NHS Pensions & Superannuation',
-    description: 'Expert support with NHS Pension Scheme guidance, annual superannuation certificates, Type 1 and Type 2 forms and pension tax charge planning',
+    description: 'Expert support with Locum form A & B guidance, annual superannuation certificates, Type 1 and Type 2 forms and pension tax charge planning',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -223,21 +223,21 @@ const testimonials = [
 const faqs = [
   {
     question: 'Do you specialise in NHS pension and superannuation support?',
-    answer: 'Yes. We provide expert NHS Pension Scheme guidance, including annual superannuation certificates, Type 1 and Type 2 forms, pension contribution calculations and pension tax charge planning. Our team ensures your contributions are correct, deadlines are met and your pension position is fully understood, reducing errors and avoiding unnecessary tax issues.',
+    answer: 'Yes. We provide expert NHS Pension Scheme guidance, including annual superannuation certificates, Type 1 and Type 2 forms, pension contribution calculations, assistance with locum form A & B and pension tax charge planning. Our team ensures your contributions are correct, deadlines are met and your pension position is fully understood.',
   },
   {
     question: 'Can you support GP practices with partnership changes and mergers?',
     answer: 'Absolutely. We provide strategic advice on partner admissions and retirements, profit-sharing arrangements, partnership agreements, practice mergers and incorporations. Our experience with GP partnerships ensures smooth transitions, clear documentation and tax-efficient structures that protect all parties involved.',
   },
   {
-    question: 'Do you work with locum doctors and private practitioners?',
-    answer: 'Yes. We support locum GPs, consultants and private practitioners with accounts preparation, self-assessment tax returns, expense claims, allowable deductions, limited company vs self-employed comparisons and remuneration planning. Whether you work as a locum or run a private practice, we provide tailored financial support designed for your working model.',
+    question: 'Do you provide accountancy services for private clinics?',
+    answer: 'Yes. We provide comprehensive accountancy and tax services for private medical clinics, including accounts preparation, VAT compliance, payroll management for clinic staff, business structure advice, financial forecasting and budgeting, regulatory compliance support and strategic tax planning. Our expertise covers independent clinics, specialist treatment centres and multi-location private healthcare facilities, ensuring your clinic operates efficiently and remains fully compliant with all financial and regulatory requirements.',
   },
   {
-    question: 'Can you help with Primary Care Network (PCN) accounting?',
+    question: 'Do you provide guidance on what expenditure I can claim for as a medic?',
     answer: (
       <>
-        Yes. We provide PCN financial statements, income tracking and allocation, claim management, budgeting and forecasting, ARRS employment and <Link href="/services/payroll" className="text-[#01458f] underline hover:text-[#013a75] transition-colors">payroll support</Link> and governance advice. Our expertise helps PCNs maintain financial clarity, strong accountability and compliance with funding requirements.
+        Yes. We provide comprehensive guidance on allowable expenditure for medical professionals, including professional subscriptions and indemnity insurance, medical equipment and instruments, uniform and protective clothing, continuing professional development and training courses, professional journals and reference materials, home office expenses and mileage claims. Our team ensures you claim all eligible expenses whilst remaining fully compliant with <Link href="/services/hmrc-nca-investigations" className="text-[#01458f] underline hover:text-[#013a75] transition-colors">HMRC regulations</Link>, maximising your tax efficiency and avoiding unnecessary queries.
       </>
     ),
   },

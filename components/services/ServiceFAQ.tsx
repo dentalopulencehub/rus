@@ -69,9 +69,9 @@ export function ServiceFAQ({ title = "Frequently Asked Questions", subtitle, faq
 
               {/* Answer */}
               <div
-                className={`transition-all duration-200 ease-in-out ${
+                className={`transition-all duration-300 ease-in-out ${
                   openIndex === index
-                    ? 'max-h-96 opacity-100'
+                    ? 'max-h-[2000px] opacity-100'
                     : 'max-h-0 opacity-0'
                 }`}
                 style={{ overflow: 'hidden' }}

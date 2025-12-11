@@ -272,11 +272,11 @@ export function CompanyIntro() {
             {/* Trustpilot Badge */}
             <div className="relative z-10 w-full flex flex-col items-center justify-center">
               <Image
-                src="/43074c_f7f8d6f304bf4ed280fc5c3a2c796db3~mv2.png"
+                src="/Frame 5.svg"
                 alt="Trustpilot - Rated Excellent"
-                width={200}
-                height={80}
-                className="w-full max-w-[180px] h-auto"
+                width={300}
+                height={120}
+                className="w-full max-w-[280px] h-auto"
                 priority
               />
             </div>

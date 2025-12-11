@@ -18,7 +18,7 @@ export function BlogPostContent({ post, fullUrl }: BlogPostContentProps) {
   return (
     <>
       {/* Article Header */}
-      <section className="relative -mt-32 px-4 pb-8">
+      <section className="relative pt-32 px-4 pb-8">
         <div className="max-w-6xl mx-auto">
           <div className="bg-white rounded-2xl shadow-xl p-6 md:p-12">
             {/* Breadcrumbs */}

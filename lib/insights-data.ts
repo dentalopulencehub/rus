@@ -139,208 +139,134 @@ export const insightAuthors: InsightAuthor[] = [
 export const insightPosts: InsightPost[] = [
   {
     id: '1',
-    slug: 'spring-budget-2025-key-takeaways-for-businesses',
-    title: 'Spring Budget 2025: Key Takeaways for UK Businesses',
-    excerpt: 'Our expert analysis of the Chancellor\'s Spring Budget 2025 and what it means for your business. Corporation tax changes, capital allowances and more.',
+    slug: 'ir35-status-key-factors',
+    title: 'The Key Factors Which Determine Your IR35 Status',
+    excerpt: 'Understanding control, substitution, mutuality of obligation, and other crucial factors that establish whether your contract work is caught by IR35.',
     category: insightCategories[0], // Tax Insights
     author: insightAuthors[1], // Tax Director
-    publishedAt: '2025-03-15',
-    updatedAt: '2025-03-16',
-    readTime: 15,
-    featuredImage: 'https://images.unsplash.com/photo-1554224311-beee460c201a?w=1200&h=630&fit=crop',
-    featuredImageAlt: 'UK Parliament and budget documents representing Spring Budget 2025',
+    publishedAt: '2025-12-11',
+    readTime: 12,
+    featuredImage: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&h=630&fit=crop',
+    featuredImageAlt: 'Business professional working on IR35 compliance documentation',
     featured: true,
     trending: true,
-    views: 2341,
-    tags: ['spring budget', 'corporation tax', 'capital allowances', 'HMRC', 'tax planning'],
-    relatedServices: ['/services/taxation-services', '/services/taxation-services/business-tax'],
+    views: 2500,
+    tags: ['IR35', 'contractor tax', 'employment status', 'HMRC', 'off payroll', 'limited company'],
+    relatedServices: ['/services/taxation-services', '/sectors/contractors-professional-services'],
     seo: {
-      metaTitle: 'Spring Budget 2025 Analysis for UK Businesses | RUS Chartered Accountants',
-      metaDescription: 'Expert analysis of Spring Budget 2025 tax changes. What UK businesses need to know about corporation tax, allowances and new measures.',
-      canonicalUrl: 'https://rus.co.uk/insights/tax-insights/spring-budget-2024-key-takeaways-for-businesses'
+      metaTitle: 'IR35 Status: Key Factors for Contractors | RUS Chartered Accountants',
+      metaDescription: 'Expert guide to IR35 status determination. Understand control, substitution, and mutuality of obligation for contractors and limited companies.',
+      canonicalUrl: 'https://rus.co.uk/insights/tax-insights/ir35-status-key-factors'
     },
-    content: `
-      <h2>Spring Budget 2025: What Changed?</h2>
-      <p>The Chancellor's Spring Budget 2025 introduced several significant measures affecting UK businesses across all sectors. Our specialist tax team has conducted a comprehensive analysis of every key change and their practical implications for our clients. This detailed guide breaks down each major announcement, providing actionable insights to help you maximise available reliefs whilst ensuring full compliance.</p>
+    content: `      <h2>What is IR35?</h2>
+      <p>The Intermediaries Legislation (IR35) was created in 2000 to clampdown on 'disguised employment' via the use of 'personal service companies'. A traditional 'employee' would leave their job one day, only to return to work in the same or a similar role shortly afterwards, but work via a limited company structure.</p>
 
-      <p>From corporation tax adjustments to enhanced capital allowances, R&D incentives to environmental investments, the Spring Budget 2025 presents both challenges and substantial opportunities for strategic tax planning. Understanding these changes is crucial for businesses of all sizes looking to optimise their tax position in the coming financial year.</p>
+      <p>The IR35 rules aim to tax 'disguised employees' who enjoy the favourable tax treatment of their own companies but still work in a similar manner to normal employees.</p>
 
-      <h2>Corporation Tax: The Complete Picture</h2>
-      <p>The main rate of corporation tax remains at 25% for profits exceeding £250,000, maintaining stability for medium and large businesses. However, the Spring Budget 2025 introduced important new measures designed to support small businesses through enhanced capital allowances and targeted tax reliefs.</p>
+      <h2>Off Payroll Rules</h2>
+      <p>Off Payroll rules were implemented in 2017 (public sector) and 2021 (private sector). This major change places the responsibility for working out whether a person is caught by IR35 or not into the hands of the end-client. Originally, limited company contractors self-certified their IR35 status.</p>
 
-      <h3>Small Profits Rate and Marginal Relief</h3>
-      <p>The small profits rate of 19% continues to apply for companies with profits up to £50,000. For businesses with profits between £50,000 and £250,000, marginal relief ensures a gradual transition between the two rates. The effective tax rate increases progressively rather than jumping directly to 25%, preventing cliff-edge tax charges as profits grow.</p>
+      <h2>Contract Wording and Working Practices</h2>
+      <p>Importantly, the big picture of how an assignment or contract is carried out in practice is taken into account. This means that both the terms of any contracts as well as an individual's working practices must all demonstrate that the person is in business on their own account in order to escape IR35.</p>
 
-      <p>This marginal relief calculation can be complex, particularly for companies with associated companies or short accounting periods. Our tax team can model your effective corporation tax rate and identify opportunities to minimise your liability through timing strategies and profit extraction planning.</p>
+      <p>There is little point in having a watertight, 'IR35 free' contract between a contractor and the agency unless the terms of the contract match the individual's working practices.</p>
 
-      <h3>Key Corporation Tax Changes for 2025/26</h3>
+      <h2>The Key IR35 Factors</h2>
+      <p>Here are the key factors HMRC considers when establishing whether or not an assignment would be deemed to be IR35 caught or not. The first three (control, substitution and mutuality of obligation) are acknowledged by industry experts to be the most important factors.</p>
+
+      <h3>1. Control & Direction</h3>
+      <p>One of the most important determinants of IR35 status revolves around the extent to which a client controls where, when and how an individual performs their work.</p>
+
+      <p>In most cases where professional services are provided, it is important that a contractor can demonstrate a certain amount of autonomy in the way they undertake a project. Employees are typically under the direct supervision and control of their employers, however the truly self-employed will have more influence over how they complete their work.</p>
+
+      <p>For a contractor to successfully demonstrate that they are not under the direct supervision and control of the client, both the written contract and working practices must show that the client has no influence over how the contractor performs their services.</p>
+
+      <h4>Control – Things to Look Out For</h4>
+      <p>Contractual pointers towards a classic 'employment scenario' include:</p>
       <ul>
-        <li><strong>Full Expensing Extended:</strong> The super-deduction replacement has been extended to 31 March 2026, allowing 100% first-year relief on qualifying plant and machinery investments</li>
-        <li><strong>Annual Investment Allowance (AIA):</strong> Permanently maintained at £1 million, providing long-term certainty for business investment planning and capital expenditure decisions</li>
-        <li><strong>Enhanced R&D Tax Credits:</strong> SME R&D relief rates increased to 27% for loss-making companies, with the enhanced deduction rate providing effective relief of 46.5p per £1 invested in qualifying research</li>
-        <li><strong>Digital Economy Support:</strong> New enhanced allowances specifically for investment in artificial intelligence, machine learning, and automation technologies</li>
-        <li><strong>Green Investment Incentives:</strong> Accelerated allowances for environmental equipment, renewable energy installations, and carbon reduction technologies</li>
+        <li>Indicating that the contractor will be supervised by a line manager or similar company employee</li>
+        <li>Including work start and end times, and even break times in the contract</li>
+        <li>Including any 'staff' perks, including provisions for holidays or sickness</li>
+        <li>Any clauses that specify any rights of control or supervision over the contractor</li>
       </ul>
 
-      <h2>Capital Allowances: Maximising Your Tax Relief</h2>
-      <p>Capital allowances remain one of the most valuable and frequently underutilised tax reliefs available to UK businesses. The Spring Budget 2025 reinforced the Government's commitment to supporting business investment through generous allowances that can deliver immediate tax relief.</p>
+      <h3>2. Personal Service / Substitution</h3>
+      <p>The right to provide a substitute in a contractual agreement has long been deemed to be an important factor when demonstrating that a contract assignment falls outside the scope of IR35.</p>
 
-      <h3>Full Expensing Explained</h3>
-      <p>Companies investing in new plant and machinery can claim 100% relief in the year of purchase for main pool assets. This applies to most equipment, machinery, vehicles (excluding cars), and computer hardware. The relief provides immediate tax savings worth 25p for every £1 invested for companies paying the main corporation tax rate.</p>
+      <p>An employee provides their personal services to an employer (client), whereas a business would provide its services to a client, rather than the exclusive services of an individual. As a result, all professionally drawn-up 'IR35 friendly' contracts will include a substitution clause.</p>
 
-      <p>For example, a manufacturing business investing £100,000 in new production equipment would receive a corporation tax deduction of £100,000 in year one, generating a tax saving of £25,000. This significantly improves cash flow compared to the previous system of annual writing-down allowances spread over many years.</p>
-
-      <h3>50% First-Year Allowance for Special Rate Assets</h3>
-      <p>Special rate assets, including integral features like heating and cooling systems, electrical installations, and water systems, qualify for a 50% first-year allowance. This represents a substantial improvement over the previous 6% writing-down allowance and can generate significant tax savings on major refurbishments or new builds.</p>
-
-      <h3>Annual Investment Allowance Strategy</h3>
-      <p>With the AIA permanently set at £1 million, businesses can plan larger investments with confidence. The AIA covers most capital expenditure, making it accessible to businesses of all sizes. Strategic considerations include:</p>
+      <h4>The Right of Substitution – Important Points</h4>
       <ul>
-        <li>Timing purchases to maximise tax efficiency, particularly if approaching the £1 million threshold</li>
-        <li>Planning for multiple group companies, as each company receives its own AIA (subject to anti-avoidance rules)</li>
-        <li>Coordinating purchases with accounting period changes to potentially claim multiple years' allowances</li>
-        <li>Reviewing lease versus purchase decisions, as only purchased assets qualify for capital allowances</li>
+        <li>The right to supply a substitute must be a genuine one, otherwise HMRC may conclude that the clause is a 'sham'</li>
+        <li>An 'unfettered' right of substitution means that a client must accept a substitute if the contracted worker is unavailable</li>
+        <li>If a substitute has actually been used during the course of an assignment, this is a strong pointer towards self-employment</li>
+        <li>Your company should always pay for any costs relating to providing a substitute worker</li>
+        <li>End clients will often maintain a veto to accepting a substitute, on reasonable grounds</li>
       </ul>
 
-      <h2>Impact on Small and Medium Enterprises</h2>
-      <p>SMEs form the backbone of the UK economy, employing over 16 million people. The Spring Budget 2025 included several measures specifically designed to support smaller businesses navigating challenging economic conditions whilst encouraging growth and investment.</p>
+      <h3>3. Mutuality of Obligation</h3>
+      <p>A mutuality of obligation exists when an employer expects a worker to undertake work when asked to do so, and the worker expects to be given work on a constant basis. For self-employed people, they would expect a client to hire them to undertake a specific task, with no expectation of further work being provided after the initial task expires.</p>
 
-      <h3>Cash Flow Support Through Tax Reliefs</h3>
-      <p>The combination of the 19% small profits rate and enhanced capital allowances provides significant cash flow advantages for growing businesses. A company with £40,000 profit investing £50,000 in qualifying equipment could reduce its corporation tax liability to zero in year one, with losses available to carry forward or back against other profits.</p>
+      <p>The mutuality of obligation question arises not during the course of the initial contract, but what happens when this contract expires. It is possible that, by having an IT contract renewed many times, then this could be a pointer towards 'employment'.</p>
 
-      <h3>Employment Allowance Increase</h3>
-      <p>The Employment Allowance increased to £5,000 for the 2025/26 tax year, allowing eligible employers to reduce their Class 1 secondary National Insurance contributions. This change particularly benefits small businesses with modest payroll costs, effectively exempting the first £5,000 of employer NI from liability.</p>
+      <h3>4. Provision of Equipment</h3>
+      <p>Does the individual use equipment provided by the client, or do they use their own?</p>
 
-      <p>To qualify, your business must have had employer NI liabilities of less than £100,000 in the previous tax year. Single-director companies and those providing personal services are excluded, but most trading businesses with employees can claim this valuable relief.</p>
+      <h3>5. Financial Risk</h3>
+      <p>How much financial risk does the individual undertake in their work? If all the risk lies with the client, then this is an indicator of 'employment' rather than 'self-employment'.</p>
 
-      <h3>Business Rates Relief Extended</h3>
-      <p>Retail, hospitality, and leisure businesses continue to receive 75% business rates relief for 2025/26, capped at £110,000 per business. This provides crucial support for high-street businesses facing challenging trading conditions and increased cost pressures.</p>
+      <h3>6. Basis of Payment</h3>
+      <p>The regularity of payment may have some influence on IR35 status. Self-employed people are often paid by the job, rather than a fixed hourly/daily rate.</p>
 
-      <h2>Research and Development Tax Relief</h2>
-      <p>The R&D tax credit regime underwent further refinement in the Spring Budget 2025, with enhanced rates, simplified claims processes, and increased HMRC scrutiny. Understanding the rules and maintaining proper documentation is essential for successful claims.</p>
+      <h3>7. Part & Parcel</h3>
+      <p>To what extent has the individual become part of the organisation? Do they have access to staff facilities, attend staff meetings, attend staff social events or receive staff benefits?</p>
 
-      <h3>SME R&D Scheme</h3>
-      <p>The SME R&D relief now provides a 27% tax credit for loss-making companies engaged in qualifying R&D activities. For profitable companies, the enhanced deduction remains at 186% of qualifying expenditure, providing effective relief of 46.5p per £1 spent on R&D after accounting for the corporation tax saving.</p>
+      <h3>8. Exclusive Service</h3>
+      <p>Does the individual work for just one client, and have their contracts been renewed many times? The self-employed typically work for a number of clients at once.</p>
 
-      <p>Qualifying expenditure includes staff costs, consumables, software, subcontractor costs (certain restrictions apply), and externally provided workers directly engaged in R&D. Many businesses undertake qualifying R&D without realising they can claim relief for product development, process improvements, or technical problem-solving.</p>
+      <h3>9. The Intention of the Parties</h3>
+      <p>Even if no formal written contract exists, HMRC would want to determine what the true status of the relationship between the parties is – one of employment or self-employment.</p>
 
-      <h3>RDEC (Research and Development Expenditure Credit)</h3>
-      <p>The RDEC rate increased to 20% of qualifying R&D expenditure, benefiting larger companies and those unable to claim under the SME scheme. The credit is treated as taxable income, giving an effective benefit of 15% after corporation tax. This change makes UK R&D investment more competitive internationally whilst maintaining support for innovation.</p>
-
-      <h3>Claiming R&D Relief Successfully</h3>
-      <p>HMRC has significantly tightened compliance requirements for R&D claims following concerns about fraudulent and speculative claims. To ensure your claim succeeds:</p>
+      <h3>10. In Business On Your Own Account</h3>
+      <p>Here are some typical pointers to behaving and acting like a 'real business' for IR35 purposes:</p>
       <ul>
-        <li>Maintain detailed technical explanations of each project, demonstrating scientific or technological uncertainty</li>
-        <li>Document the systematic investigation or experimental development undertaken</li>
-        <li>Keep contemporaneous records of time spent, costs incurred, and technical decisions made</li>
-        <li>Ensure advance notification is submitted to HMRC where required (first-time claimants and certain other situations)</li>
-        <li>Consider obtaining specialist advice before submitting claims, particularly for complex technical projects</li>
+        <li>Do you have multiple clients? This is a strong pointer towards self-employment</li>
+        <li>Does your company have any income from non-contracting sources?</li>
+        <li>Do you have your own business website and company email address?</li>
+        <li>Do you have company stationery, letterheads, a logo, and customised invoices?</li>
+        <li>Do you use any of your own equipment for contract purposes?</li>
+        <li>Is your company registered for Value Added Tax (VAT)?</li>
+        <li>Has your company ever employed anyone else or used sub-contractors?</li>
+        <li>Do you have business liability and professional indemnity insurance in place?</li>
+        <li>Has your company invested in training, or improving its marketability?</li>
+        <li>Does your contracting business ever advertise its services?</li>
+        <li>Do you have dedicated office space for contract-related work?</li>
+        <li>Do you regularly tender for contract work or apply for contract positions?</li>
+        <li>Is your company registered under the Data Protection Act?</li>
       </ul>
 
-      <p>Our specialist R&D team includes qualified scientists and engineers who can review your projects, prepare technically robust claims, and liaise with HMRC enquiries to maximise your relief whilst ensuring full compliance.</p>
+      <h2>IR35 Factors – Final Thoughts</h2>
+      <p>These factors will be used to paint an overall picture of your employment status, and therefore whether an assignment is caught by IR35 or not.</p>
 
-      <h2>Environmental and Green Investment Incentives</h2>
-      <p>The Spring Budget 2025 introduced enhanced support for businesses investing in environmental improvements and sustainable practices, aligning tax policy with the UK's net-zero commitments.</p>
-
-      <h3>Enhanced Capital Allowances for Green Equipment</h3>
-      <p>Businesses investing in energy-efficient equipment qualify for 100% first-year allowances. Qualifying technologies include:</p>
+      <p><strong>Our recommendations:</strong></p>
       <ul>
-        <li>Solar photovoltaic panels and wind turbines for on-site renewable energy generation</li>
-        <li>Air source and ground source heat pumps for heating and cooling</li>
-        <li>Electric vehicle charging infrastructure for business and employee use</li>
-        <li>Battery storage systems for renewable energy</li>
-        <li>Energy-efficient refrigeration and air conditioning systems</li>
-        <li>LED lighting and intelligent lighting control systems</li>
-        <li>Building management systems for energy optimisation</li>
+        <li>Always consult an IR35 contract review specialist to examine each new contract you take on</li>
+        <li>Consider taking out IR35 insurance in case you are selected for investigation by HMRC</li>
+        <li>Maintain clear evidence of your self-employed status through business practices</li>
+        <li>Keep detailed records of all contracts and working arrangements</li>
       </ul>
-
-      <h3>Zero-Emission Vehicle Benefits</h3>
-      <p>Company car tax rates for zero-emission vehicles remain at 2% of list price for 2025/26, rising gradually to just 5% by 2027/28. This makes electric vehicles increasingly attractive for business fleets compared to petrol or diesel alternatives taxed at rates up to 37%.</p>
-
-      <p>Businesses purchasing zero-emission vehicles can also claim 100% first-year allowances, providing immediate corporation tax relief. When combined with low benefit-in-kind rates for employees, electric vehicles offer substantial tax advantages for company car fleets.</p>
-
-      <h2>VAT and Indirect Tax Changes</h2>
-      <p>While the standard VAT rate remains at 20%, the Spring Budget 2025 introduced important changes to registration thresholds and compliance requirements.</p>
-
-      <h3>VAT Registration Threshold</h3>
-      <p>The VAT registration threshold increased to £90,000 for 2025/26, providing relief for growing businesses and reducing administrative burdens for smaller enterprises. This change affects businesses approaching the threshold and those with seasonal trading patterns who previously faced registration purely due to temporary sales spikes.</p>
-
-      <p>The deregistration threshold increased to £88,000, providing a buffer zone to prevent businesses repeatedly registering and deregistering due to minor fluctuations in turnover.</p>
-
-      <h3>Making Tax Digital for VAT</h3>
-      <p>All VAT-registered businesses must now maintain digital records and submit VAT returns using MTD-compatible software. HMRC's compliance checks have intensified significantly, with penalty points issued for late submissions and substantial fines for non-compliance.</p>
-
-      <p>Ensure your systems include proper digital links between all stages of VAT accounting. Manual data entry or spreadsheet transfers may breach the digital links requirement, even if you use MTD-compatible software for final submission.</p>
-
-      <h2>What This Means for Your Business</h2>
-      <p>The Spring Budget 2025 presents both challenges and opportunities requiring strategic planning to maximise available reliefs whilst minimising tax liabilities.</p>
-
-      <h3>Investment Planning Strategies</h3>
-      <p>With full expensing available until March 2026, businesses should carefully consider the timing of capital investments. Major equipment purchases, technology upgrades, or facility improvements planned for the next few years could generate immediate and substantial tax relief if accelerated before the deadline.</p>
-
-      <p>However, don't let the tax tail wag the commercial dog. Investment decisions should always be driven primarily by business need and commercial return, with tax relief treated as an additional benefit rather than the primary justification.</p>
-
-      <h3>Structure and Profit Extraction Review</h3>
-      <p>The varying corporation tax rates make business structure increasingly important for tax efficiency. Companies with profits fluctuating around £50,000 or £250,000 should consider:</p>
-      <ul>
-        <li>Restructuring options to separate different trading activities</li>
-        <li>Profit extraction strategies balancing salary, dividends, and pension contributions</li>
-        <li>Group planning for businesses with multiple companies</li>
-        <li>Timing of major transactions or asset disposals</li>
-      </ul>
-
-      <h3>R&D Opportunities</h3>
-      <p>Many businesses undertake qualifying R&D without realising they can claim substantial tax relief. Product development, process improvements, software development, and technical problem-solving often qualify, even if you don't consider your business to be conducting "research".</p>
-
-      <p>Our specialists can review your activities and identify previously unclaimed relief going back two years, potentially generating significant unexpected tax refunds.</p>
-
-      <h2>Sector-Specific Implications</h2>
-
-      <h3>Manufacturing and Production</h3>
-      <p>Manufacturing businesses benefit significantly from full expensing on production equipment and enhanced capital allowances. Investment in automation, robotics, and efficiency improvements should be prioritised before the March 2026 deadline. Consider also whether process improvements or new product development qualify for R&D relief.</p>
-
-      <h3>Professional Services</h3>
-      <p>Professional service firms should focus on optimising the small profits rate and consider equipment investments qualifying for AIA. Technology infrastructure investments, including cloud services, cybersecurity improvements, and AI-powered tools, may qualify for enhanced allowances.</p>
-
-      <h3>Retail and Hospitality</h3>
-      <p>Continued business rates relief provides crucial support for retail, hospitality, and leisure businesses. Consider investments in point-of-sale systems, refrigeration equipment, customer-facing technology, and energy-efficient lighting to improve efficiency whilst claiming valuable tax relief.</p>
-
-      <h3>Healthcare and Medical</h3>
-      <p>Healthcare businesses should review medical equipment purchases and facility improvements for capital allowances. GP practices may benefit from reviewing NHS pension tax planning in light of continuing annual allowance complications.</p>
-
-      <h2>Action Points for Business Owners</h2>
-      <ol>
-        <li><strong>Review your capital expenditure plans:</strong> Identify investments that could be accelerated to benefit from full expensing before March 2026</li>
-        <li><strong>Assess your R&D activities:</strong> Many qualifying projects go unclaimed. Our team can review your operations and identify opportunities</li>
-        <li><strong>Check your VAT compliance:</strong> Ensure MTD software is properly configured, all digital links are maintained, and submissions are timely</li>
-        <li><strong>Consider profit extraction strategies:</strong> With varying corporation tax rates, how you extract profits significantly impacts overall tax liability</li>
-        <li><strong>Review employment structures:</strong> The increased Employment Allowance may benefit businesses using PAYE rather than dividends for owner remuneration</li>
-        <li><strong>Plan for 2026 and beyond:</strong> With full expensing ending in March 2026, develop a long-term investment and tax planning strategy</li>
-        <li><strong>Consider environmental investments:</strong> Enhanced allowances for green technology can deliver tax savings alongside cost reductions</li>
-        <li><strong>Review your business structure:</strong> Ensure your corporate structure remains tax-efficient under the current rates</li>
-      </ol>
 
       <h2>How RUS Can Help</h2>
-      <p>Our specialist tax team provides comprehensive Spring Budget planning services tailored to your specific circumstances:</p>
+      <p>Our specialist tax team has extensive experience in IR35 compliance and contractor taxation. We can help you:</p>
       <ul>
-        <li><strong>Corporation Tax Optimisation:</strong> Structure reviews, profit extraction planning, and tax rate modelling</li>
-        <li><strong>Capital Allowances:</strong> Claims preparation, qualifying expenditure reviews, and maximisation strategies</li>
-        <li><strong>R&D Tax Credits:</strong> Technical reviews, claim preparation, and HMRC enquiry support</li>
-        <li><strong>VAT Compliance:</strong> MTD implementation, digital links reviews, and penalty mitigation</li>
-        <li><strong>Investment Appraisal:</strong> Tax-efficient investment planning and timing strategies</li>
-        <li><strong>Sector-Specific Planning:</strong> Industry-focused tax strategies for healthcare, retail, manufacturing, and professional services</li>
+        <li>Review your contracts for IR35 compliance</li>
+        <li>Assess your employment status and working practices</li>
+        <li>Structure your business to demonstrate genuine self-employment</li>
+        <li>Defend HMRC investigations with professional representation</li>
+        <li>Plan tax-efficient remuneration strategies</li>
       </ul>
 
-      <h2>Next Steps and Free Consultation</h2>
-      <p>The Spring Budget 2025 changes affect every UK business, whether through new opportunities for tax relief or additional compliance requirements. Don't miss valuable tax planning opportunities or inadvertently fall foul of new compliance rules.</p>
-
-      <p>Contact our tax team today for a complimentary Spring Budget review. We'll analyse your specific circumstances, identify opportunities for tax savings, and develop a tailored strategy to minimise your liabilities whilst ensuring full compliance with all HMRC requirements.</p>
-
-      <p><strong>Book your free consultation today:</strong></p>
-      <p>Call our Birmingham office on 0121 XXX XXXX or email <a href="mailto:tax@rus.co.uk">tax@rus.co.uk</a> to arrange your personal Spring Budget planning meeting with one of our qualified Chartered Tax Advisers.</p>
-
-      <p>Don't let tax planning opportunities slip away. Contact RUS today and discover how the Spring Budget 2025 changes can benefit your business.</p>
-    `
+      <p>Contact our team today for expert guidance on IR35 and contractor taxation matters.</p>`
   },
   {
     id: '2',
@@ -349,7 +275,7 @@ export const insightPosts: InsightPost[] = [
     excerpt: 'Everything you need to know about MTD for VAT compliance. Software requirements, penalties and how to prepare your business for digital record-keeping.',
     category: insightCategories[2], // Accounting Updates
     author: insightAuthors[0], // Senior Partner
-    publishedAt: '2025-03-10',
+    publishedAt: '2025-12-08',
     readTime: 6,
     featuredImage: 'https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=1200&h=630&fit=crop',
     featuredImageAlt: 'Digital accounting software showing VAT compliance dashboard',
@@ -392,7 +318,7 @@ export const insightPosts: InsightPost[] = [
     excerpt: 'Comprehensive guide to NHS pension planning for GPs. Annual allowance, lifetime allowance and tax-efficient strategies for medical practitioners.',
     category: insightCategories[3], // Sector Specific
     author: insightAuthors[2], // Healthcare Specialist
-    publishedAt: '2025-03-05',
+    publishedAt: '2025-12-08',
     readTime: 10,
     featuredImage: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&h=630&fit=crop',
     featuredImageAlt: 'Medical stethoscope and financial documents representing GP pension planning',
@@ -435,7 +361,7 @@ export const insightPosts: InsightPost[] = [
     excerpt: 'Expert strategies to minimize inheritance tax and protect your family wealth. Lifetime gifts, trusts, business property relief and more.',
     category: insightCategories[0], // Tax Insights
     author: insightAuthors[1], // Tax Director
-    publishedAt: '2025-02-28',
+    publishedAt: '2025-11-20',
     readTime: 12,
     featuredImage: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&h=630&fit=crop',
     featuredImageAlt: 'Estate planning documents and family home representing inheritance tax planning',
@@ -487,7 +413,7 @@ export const insightPosts: InsightPost[] = [
     excerpt: 'Unlock thousands in R&D tax relief. What qualifies, how to claim and maximizing your innovation tax credits under the new merged scheme.',
     category: insightCategories[0], // Tax Insights
     author: insightAuthors[1], // Tax Director
-    publishedAt: '2025-02-20',
+    publishedAt: '2025-11-20',
     readTime: 9,
     featuredImage: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&h=630&fit=crop',
     featuredImageAlt: 'Innovation and technology representing R&D tax credits for SMEs',
@@ -540,7 +466,7 @@ export const insightPosts: InsightPost[] = [
     excerpt: 'Introducing RUS Insights - expert advice, industry updates and practical guidance from Birmingham\'s trusted chartered accountants. Stay informed with our specialist team.',
     category: insightCategories[5], // Firm News
     author: insightAuthors[0], // Senior Partner
-    publishedAt: '2025-02-15',
+    publishedAt: '2025-11-20',
     readTime: 4,
     featuredImage: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=630&fit=crop',
     featuredImageAlt: 'RUS Chartered Accountants Birmingham office and team',

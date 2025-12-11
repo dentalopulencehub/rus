@@ -1,24 +1,28 @@
 "use client";
 
 import Link from 'next/link';
-import { FinancePartnerIcons } from '@/components/icons/finance-partners';
+import Image from 'next/image';
 
 const partners = [
   {
     name: 'Sage',
-    icon: <FinancePartnerIcons.sage />,
+    logo: '/Sage (2).svg',
+    size: 'small',
   },
   {
     name: 'Xero',
-    icon: <FinancePartnerIcons.xero />,
+    logo: '/Xero (1).svg',
+    size: 'small',
   },
   {
     name: 'QuickBooks',
-    icon: <FinancePartnerIcons.quickbooks />,
+    logo: '/Quickbooks (2).svg',
+    size: 'normal',
   },
   {
     name: 'FreeAgent',
-    icon: <FinancePartnerIcons.freeagent />,
+    logo: '/Freeagent (3).svg',
+    size: 'normal',
   },
 ];
 
@@ -45,13 +49,21 @@ export function IntegrationSection() {
               </h2>
 
               {/* Logos - Mobile Priority */}
-              <div className="grid grid-cols-2 gap-4 mb-6">
-                {partners.map((partner) => (
+              <div className="grid grid-cols-2 gap-x-2 gap-y-1 mb-6">
+                {partners.map((partner, index) => (
                   <div
                     key={partner.name}
-                    className="flex items-center justify-center w-full h-16"
+                    className={`flex items-center justify-center w-full h-24 ${
+                      index < 2 ? 'mt-3' : '-mt-3'
+                    }`}
                   >
-                    {partner.icon}
+                    <Image
+                      src={partner.logo}
+                      alt={`${partner.name} logo`}
+                      width={partner.size === 'small' ? 140 : 180}
+                      height={partner.size === 'small' ? 70 : 90}
+                      className={`object-contain ${partner.size === 'small' ? 'w-3/4 h-3/4' : 'w-full h-full'}`}
+                    />
                   </div>
                 ))}
               </div>
@@ -115,13 +127,21 @@ export function IntegrationSection() {
             </div>
 
             {/* Right Side - Partner Logos (Desktop Only) */}
-            <div className="hidden lg:grid grid-cols-2 gap-6 items-center justify-items-center">
-              {partners.map((partner) => (
+            <div className="hidden lg:grid grid-cols-2 gap-x-2 gap-y-1 items-center justify-items-center">
+              {partners.map((partner, index) => (
                 <div
                   key={partner.name}
-                  className="flex items-center justify-center w-32 h-20"
+                  className={`flex items-center justify-center w-48 h-32 ${
+                    index < 2 ? 'mt-4' : '-mt-4'
+                  }`}
                 >
-                  {partner.icon}
+                  <Image
+                    src={partner.logo}
+                    alt={`${partner.name} logo`}
+                    width={partner.size === 'small' ? 150 : 192}
+                    height={partner.size === 'small' ? 100 : 128}
+                    className={`object-contain ${partner.size === 'small' ? 'w-3/4 h-3/4' : 'w-full h-full'}`}
+                  />
                 </div>
               ))}
             </div>

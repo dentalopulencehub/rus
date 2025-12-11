@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 interface TaxationBenefitsProps {
   title: string;
 }
@@ -45,14 +47,42 @@ export function TaxationBenefits({ title }: TaxationBenefitsProps) {
           {benefits.slice(0, 2).map((benefit, index) => (
             <div
               key={index}
-              className="md:col-span-3 bg-[#F6F6F6] rounded-lg border border-gray-200/50 p-16 min-h-[420px] flex flex-col hover:shadow-xl transition-all duration-300"
+              className="md:col-span-3 bg-[#F6F6F6] rounded-lg border border-gray-200/50 p-16 min-h-[420px] flex flex-col hover:shadow-xl transition-all duration-300 relative overflow-hidden"
             >
-              <h3 className="text-xl font-semibold text-gray-900 mb-4 leading-tight">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4 leading-tight relative z-10">
                 {benefit.title}
               </h3>
-              <p className="text-base text-gray-600 leading-relaxed">
+              <p className="text-base text-gray-600 leading-relaxed relative z-10">
                 {benefit.description}
               </p>
+
+              {/* Add Cloudflare Image to first card only - positioned absolutely */}
+              {index === 0 && (
+                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 w-3/4">
+                  <Image
+                    src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/48bb38ad-6bb4-4e51-d30d-859e9b038100/public"
+                    alt="Financial Records Management"
+                    width={500}
+                    height={500}
+                    unoptimized
+                    className="w-full h-auto rounded-lg opacity-80"
+                  />
+                </div>
+              )}
+
+              {/* Add Cloudflare Image to second card - positioned absolutely */}
+              {index === 1 && (
+                <div className="absolute bottom-0 left-0 right-0">
+                  <Image
+                    src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/68b34bed-31a7-42a9-b4f5-4a06533beb00/public"
+                    alt="Monitor Filing and Payment Deadlines"
+                    width={800}
+                    height={800}
+                    unoptimized
+                    className="w-full h-auto rounded-lg opacity-80"
+                  />
+                </div>
+              )}
             </div>
           ))}
 
