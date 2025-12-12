@@ -358,6 +358,7 @@ export default function TaxationServicesPage() {
       <div id="benefits">
         <TaxationBenefits
           title="Comprehensive Tax Support"
+          description="Our taxation services provide clear, strategic guidance across all major UK tax areas, helping you stay fully compliant with HMRC while making the most of available allowances and planning opportunities."
         />
       </div>
 

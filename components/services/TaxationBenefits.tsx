@@ -2,9 +2,10 @@ import Image from 'next/image';
 
 interface TaxationBenefitsProps {
   title: string;
+  description: string;
 }
 
-export function TaxationBenefits({ title }: TaxationBenefitsProps) {
+export function TaxationBenefits({ title, description }: TaxationBenefitsProps) {
   const benefits = [
     {
       title: "Maintain Accurate, Real-Time Financial Records on Their Behalf",
@@ -37,7 +38,7 @@ export function TaxationBenefits({ title }: TaxationBenefitsProps) {
             {title}
           </h2>
           <p className="text-base md:text-lg text-white/80 max-w-2xl mx-auto">
-            Services provide clear, strategic guidance across all major UK tax areas, helping you stay fully compliant with HMRC while making the most of available allowances and planning opportunities.
+            {description}
           </p>
         </div>
 
@@ -65,21 +66,24 @@ export function TaxationBenefits({ title }: TaxationBenefitsProps) {
                     width={500}
                     height={500}
                     unoptimized
-                    className="w-full h-auto rounded-lg opacity-80"
+                    className="w-full h-auto rounded-lg"
                   />
                 </div>
               )}
 
               {/* Add Cloudflare Image to second card - positioned absolutely */}
               {index === 1 && (
-                <div className="absolute bottom-0 left-0 right-0">
-                  <Image
-                    src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/68b34bed-31a7-42a9-b4f5-4a06533beb00/public"
+                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20">
+                  <img
+                    src="/deadlines-image.svg"
                     alt="Monitor Filing and Payment Deadlines"
-                    width={800}
-                    height={800}
-                    unoptimized
-                    className="w-full h-auto rounded-lg opacity-80"
+                    width="601"
+                    height="195"
+                    className="rounded-lg"
+                    style={{
+                      maxWidth: '100%',
+                      height: 'auto'
+                    }}
                   />
                 </div>
               )}

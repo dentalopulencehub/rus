@@ -337,7 +337,10 @@ export default function AccountingBookkeepingPage() {
         </div>
       </div>
 
-      <TaxationBenefits title="Comprehensive Accounting Support" />
+      <TaxationBenefits
+        title="Comprehensive Accounting Support"
+        description="Our accounting and bookkeeping services provide accurate financial record-keeping, strategic insights, and reliable support to help you manage your finances efficiently and make informed business decisions."
+      />
 
       {/* First CTA - Before Benefits */}
       <section className="w-full flex items-center justify-center bg-white px-4 py-24 pt-32">

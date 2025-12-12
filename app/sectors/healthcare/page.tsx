@@ -296,7 +296,10 @@ export default function HealthcareSectorPage() {
         />
       </div>
 
-      <TaxationBenefits title="Comprehensive Healthcare Accounting Support" />
+      <TaxationBenefits
+        title="Comprehensive Healthcare Accounting Support"
+        description="Our healthcare accounting services provide specialist support tailored to medical professionals, ensuring accurate financial management, NHS compliance, and strategic guidance to help your practice thrive."
+      />
 
       <ServiceOverview
         leftContent={{
