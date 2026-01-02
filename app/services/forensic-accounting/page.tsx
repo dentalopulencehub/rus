@@ -228,6 +228,7 @@ export default function ForensicAccountingPage() {
             { value: '100%', label: 'Confidential Service' },
           ],
         }}
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/289db112-1643-4a40-d628-cd123d435e00/public"
       />
 
       {/* First CTA - Expert Support */}
