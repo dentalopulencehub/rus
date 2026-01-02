@@ -242,7 +242,7 @@ export default function PayrollPage() {
 
       <ServiceOverview
         leftContent={{
-          title: 'A Complete Payroll Solution You Can Rely On',
+          title: 'A Complete Payroll Solution\nYou Can Rely On',
           description: 'Our Payroll Services are designed to make your payroll operation smooth, modern and fully compliant. Whether you need weekly payroll, CIS returns, P11D reporting or automated payment processing, we provide a dependable solution that supports your team and protects your business.',
         }}
         rightContent={{
