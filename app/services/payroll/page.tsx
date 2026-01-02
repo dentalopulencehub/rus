@@ -228,6 +228,7 @@ export default function PayrollPage() {
         title="Payroll Services"
         subtitle="Accurate, compliant and fully managed payroll services for UK businesses, delivered with modern technology and expert support"
         description="Managing payroll correctly is essential for maintaining compliance with HMRC, paying employees accurately and on time, and protecting your business from penalties. Our Payroll Services provide a complete, hassle-free solution that combines modern technology with expert guidance, giving you confidence that your payroll is in safe hands."
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/a069be03-e2c0-478d-543c-f94ce72c8f00/public"
       />
 
       <div id="services">
