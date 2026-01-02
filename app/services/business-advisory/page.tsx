@@ -75,9 +75,9 @@ const advisoryServices = [
     title: 'Cashflow Management',
     description: 'Strategies to improve liquidity, manage working capital and maintain financial stability throughout the business cycle',
     icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <circle cx="12" cy="12" r="9" strokeWidth={1.5} />
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.5 9h3.5c1.1 0 2 .9 2 2s-.9 2-2 2H9.5m0-4v4m0-4V8m0 5h4c1.1 0 2 .9 2 2s-.9 2-2 2H9.5m0-4v4m0 0v1" />
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+        <circle cx="12" cy="12" r="9" />
+        <text x="12" y="17" fontSize="12" fill="currentColor" stroke="none" textAnchor="middle" fontWeight="bold">£</text>
       </svg>
     ),
   },
