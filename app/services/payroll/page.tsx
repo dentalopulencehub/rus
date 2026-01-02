@@ -236,6 +236,7 @@ export default function PayrollPage() {
           title="Our Comprehensive Payroll Services"
           subtitle="Complete payroll management from processing to compliance"
           clientTypes={payrollServices}
+          columns={9}
         />
       </div>
 
