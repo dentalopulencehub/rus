@@ -236,6 +236,7 @@ export default function CompanySecretarialPage() {
             { value: 'ICAEW', label: 'Chartered' },
           ],
         }}
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/d2be3801-5f26-4663-58d6-f54d78e33a00/public"
       />
 
       {/* Company Formation Link */}
