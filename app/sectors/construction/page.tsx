@@ -253,18 +253,15 @@ export default function ConstructionSectorPage() {
       <section className="w-full flex items-center justify-center bg-white px-4 py-24 pt-32">
         <div className="max-w-6xl mx-auto w-full">
           <div className="relative bg-gradient-to-br from-[#01458f] to-[#0052cc] rounded-3xl overflow-hidden px-8 md:px-16 py-20 md:py-28">
-            <svg className="absolute inset-0 w-full h-full opacity-20" xmlns="http://www.w3.org/2000/svg">
-              <path d="M 600 -100 Q 800 100 850 300" stroke="white" strokeWidth="2" fill="none" />
-              <circle cx="750" cy="150" r="80" stroke="white" strokeWidth="1.5" fill="none" />
-              <path d="M 700 50 L 850 80 L 820 200" stroke="white" strokeWidth="1.5" fill="none" />
-              <path d="M 650 120 L 750 100 L 730 180 L 640 190 Z" stroke="white" strokeWidth="1" fill="none" />
-              <path d="M -50 400 Q 100 450 200 480" stroke="white" strokeWidth="2" fill="none" />
-              <circle cx="100" cy="420" r="60" stroke="white" strokeWidth="1.5" fill="none" />
-              <path d="M 50 380 L 180 400 L 160 480" stroke="white" strokeWidth="1.5" fill="none" />
-              <line x1="400" y1="50" x2="500" y2="80" stroke="white" strokeWidth="1" opacity="0.5" />
-              <line x1="300" y1="400" x2="400" y2="420" stroke="white" strokeWidth="1" opacity="0.5" />
-              <circle cx="500" cy="60" r="30" stroke="white" strokeWidth="1" fill="none" opacity="0.4" />
-            </svg>
+            {/* Abstract Minimalist Background */}
+            <div className="absolute inset-0 w-full h-full opacity-20">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/abstract-minimalist-background-for-professional-ac 1.svg"
+                alt=""
+                className="w-full h-full object-cover"
+              />
+            </div>
 
             <div className="relative z-10 flex flex-col items-center text-center space-y-6">
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight">
@@ -282,7 +279,7 @@ export default function ConstructionSectorPage() {
                 Specialist CIS compliance, construction VAT and cashflow management for contractors
               </p>
 
-              <div className="flex flex-col items-center justify-center gap-3 text-white/70 text-sm mt-4">
+              <div className="flex flex-col items-center justify-center gap-3 text-white/90 text-sm mt-4">
                 <div className="flex flex-col md:flex-row items-center gap-3 md:gap-6">
                   <a href="tel:01217771200" className="flex items-center gap-2 hover:text-white transition-colors duration-200">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -290,7 +287,6 @@ export default function ConstructionSectorPage() {
                     </svg>
                     <span>0121 777 1200</span>
                   </a>
-                  <span className="hidden md:inline">•</span>
                   <a href="mailto:info@rus.co.uk" className="flex items-center gap-2 hover:text-white transition-colors duration-200">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
