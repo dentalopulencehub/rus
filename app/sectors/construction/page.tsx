@@ -248,6 +248,7 @@ export default function ConstructionSectorPage() {
             { value: '300+', label: 'Construction Clients' },
           ],
         }}
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/bf2160d4-2054-4888-5415-24252e676c00/public"
       />
 
       {/* First CTA */}
