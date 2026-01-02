@@ -213,6 +213,7 @@ export default function ContractorsProfessionalServicesPage() {
         title="Contractors & Professional Services Accountancy"
         subtitle="Specialist accountants for contractors, consultants and professional service providers"
         description="The contracting and professional services sector has grown significantly in recent years, with more individuals choosing flexible working arrangements across IT, engineering, finance, consultancy and other specialist areas. But with this shift comes complexity — from IR35 considerations and varied income streams to managing expenses, VAT and the administrative demands of running your own limited company."
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/61083dd0-5911-4ccc-b5e5-2af3ee32ad00/public"
       />
 
       <div id="services">
