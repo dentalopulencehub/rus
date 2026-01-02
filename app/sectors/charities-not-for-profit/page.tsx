@@ -235,6 +235,7 @@ export default function CharitiesNotForProfitPage() {
             { value: '200+', label: 'Charity Clients' },
           ],
         }}
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/1eb712cc-bfc2-46e1-7315-3233835f9000/public"
       />
 
       {/* First CTA */}
