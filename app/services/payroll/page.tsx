@@ -250,6 +250,7 @@ export default function PayrollPage() {
             { value: 'RTI', label: 'Compliant' },
           ],
         }}
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/a2641ac8-a030-421f-e25d-caed0e036300/public"
       />
 
       {/* First CTA */}
