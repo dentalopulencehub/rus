@@ -231,6 +231,7 @@ export default function HMRCNCAInvestigationsPage() {
             { value: '100%', label: 'Confidential Service' },
           ],
         }}
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/ffa9cf17-855e-4b72-e6c3-35e22a92ab00/public"
       />
 
       {/* First CTA - Tax Investigation Cover Quote */}
