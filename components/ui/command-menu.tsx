@@ -140,7 +140,7 @@ export function CommandMenu() {
                     <span>Who We Are</span>
                   </CommandItem>
                   <CommandItem href="/insights" onSelect={handleNavigate}>
-                    <span>Insight</span>
+                    <span>Insights</span>
                   </CommandItem>
                   <CommandItem href="/contact" onSelect={handleNavigate}>
                     <span>Contact</span>

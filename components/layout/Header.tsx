@@ -60,7 +60,7 @@ export function Header() {
                 href="/insights"
                 className="nav-link"
               >
-                Insight
+                Insights
               </Link>
             </li>
             <li>

@@ -189,7 +189,7 @@ export function Footer() {
                       href="/insights"
                       className="text-sm text-white/40 hover:text-white transition-colors duration-300 font-light block"
                     >
-                      Insight
+                      Insights
                     </Link>
                   </li>
                   <li>
