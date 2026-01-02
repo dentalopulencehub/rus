@@ -15,6 +15,7 @@ interface WhoWeHelpProps {
   clientTypes: ClientType[];
   bgColor?: string;
   darkMode?: boolean;
+  columns?: number;
 }
 
 export function WhoWeHelp({
@@ -22,7 +23,8 @@ export function WhoWeHelp({
   subtitle = "Tailored tax support for diverse clients",
   clientTypes,
   bgColor = "bg-white",
-  darkMode = false
+  darkMode = false,
+  columns = 8
 }: WhoWeHelpProps) {
   return (
     <section id="expertise" className={`py-24 px-4 ${bgColor}`}>
@@ -38,7 +40,7 @@ export function WhoWeHelp({
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4">
+        <div className={`grid grid-cols-2 md:grid-cols-4 gap-4 ${columns === 9 ? 'lg:grid-cols-9' : 'lg:grid-cols-8'}`}>
           {clientTypes.map((client, index) => (
             <motion.div
               key={index}

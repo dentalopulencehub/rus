@@ -232,6 +232,7 @@ export default function BusinessAdvisoryPage() {
           title="Our Business Advisory Services"
           subtitle="Comprehensive support to help you strengthen commercial performance and plan for future growth"
           clientTypes={advisoryServices}
+          columns={9}
         />
       </div>
 
