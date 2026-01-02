@@ -239,7 +239,7 @@ export default function ConstructionSectorPage() {
 
       <ServiceOverview
         leftContent={{
-          title: 'Building Strong Financial Foundations for Construction',
+          title: 'Building Strong Financial\nFoundations for Construction',
           description: 'From sole subcontractors to large contractors, we provide dependable accounting expertise that supports compliance, profitability and growth. With specialist knowledge in CIS, construction VAT and cashflow management, we help you navigate the sector with confidence.',
         }}
         rightContent={{
