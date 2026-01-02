@@ -225,7 +225,7 @@ export default function ContractorsProfessionalServicesPage() {
 
       <ServiceOverview
         leftContent={{
-          title: 'Supporting Contractors to Maximise Take-Home Pay',
+          title: 'Supporting Contractors to\nMaximise Take-Home Pay',
           description: 'From IT contractors to financial consultants, we provide dependable accounting expertise that supports IR35 compliance, tax efficiency and growth. With specialist knowledge in limited company structures, VAT and contractor tax planning, we help you navigate the sector with confidence.',
         }}
         rightContent={{
