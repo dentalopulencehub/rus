@@ -235,6 +235,7 @@ export default function CompanyFormationPage() {
             { value: 'Expert', label: 'Guidance' },
           ],
         }}
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/e4fbc641-7cad-4640-4403-da9347af0e00/public"
       />
 
       {/* Related Services Links */}
