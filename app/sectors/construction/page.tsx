@@ -226,6 +226,7 @@ export default function ConstructionSectorPage() {
         title="Construction Sector Accountancy"
         subtitle="Specialist accountants for contractors, subcontractors and construction businesses"
         description="The construction industry faces unique financial, commercial and regulatory challenges — from managing cashflow and project-based costs to navigating CIS compliance, complex VAT rules and fluctuating labour requirements. With over 30 years of experience supporting construction businesses of all sizes, we provide clear, reliable and industry-focused accountancy services that help you stay compliant, profitable and in control."
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/0b8ccbe2-13e3-4d02-7c97-863de3764b00/public"
       />
 
       <div id="services">
