@@ -214,6 +214,7 @@ export default function CompanyFormationPage() {
         title="Company Formation"
         subtitle="Expert company formation services that ensure your new business is correctly structured, fully compliant and ready for growth from day one"
         description="Forming a limited company involves a number of important decisions that influence how your business operates, how tax-efficient it will be and how well-protected you are as a director or shareholder. We provide complete company formation support, helping you set up your business correctly from the outset and giving you clarity and confidence throughout the incorporation process."
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/914a8ef6-62d1-4e39-610d-bd8157ef1a00/public"
       />
 
       <div id="services">
