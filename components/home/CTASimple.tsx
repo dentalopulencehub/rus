@@ -6,40 +6,51 @@ export function CTASimple() {
   return (
     <section className="w-full flex items-center justify-center bg-white px-4 py-24 pt-32">
       <div className="max-w-6xl mx-auto w-full">
-        {/* Blue gradient card with geometric pattern */}
+        {/* Blue gradient card with growth curves */}
         <div className="relative bg-gradient-to-br from-[#01458f] to-[#0052cc] rounded-3xl overflow-hidden px-8 md:px-16 py-20 md:py-28">
-          {/* Geometric Pattern Background */}
+          {/* SVG Background - Converging Growth (5 Curves with Depth) */}
           <svg
-            className="absolute inset-0 w-full h-full opacity-20"
+            className="absolute top-0 left-0 w-full h-full pointer-events-none"
+            viewBox="0 0 1000 500"
+            preserveAspectRatio="none"
             xmlns="http://www.w3.org/2000/svg"
+            style={{ zIndex: 0, opacity: 0.12 }}
           >
-            {/* Top right circular arc */}
+            {/* Curve 1 (Bottom) - Thickest, deepest swoop */}
             <path
-              d="M 600 -100 Q 800 100 850 300"
-              stroke="white"
+              d="M 0,490 Q 320,600 1000,90"
+              stroke="#FFFFFF"
               strokeWidth="2"
               fill="none"
             />
-            <circle cx="750" cy="150" r="80" stroke="white" strokeWidth="1.5" fill="none" />
-
-            {/* Angular geometric shapes - top right */}
-            <path d="M 700 50 L 850 80 L 820 200" stroke="white" strokeWidth="1.5" fill="none" />
-            <path d="M 650 120 L 750 100 L 730 180 L 640 190 Z" stroke="white" strokeWidth="1" fill="none" />
-
-            {/* Bottom left abstract shapes */}
+            {/* Curve 2 - Second layer */}
             <path
-              d="M -50 400 Q 100 450 200 480"
-              stroke="white"
-              strokeWidth="2"
+              d="M 0,410 Q 380,520 1000,85"
+              stroke="#FFFFFF"
+              strokeWidth="1.75"
               fill="none"
             />
-            <circle cx="100" cy="420" r="60" stroke="white" strokeWidth="1.5" fill="none" />
-            <path d="M 50 380 L 180 400 L 160 480" stroke="white" strokeWidth="1.5" fill="none" />
-
-            {/* Additional geometric accents */}
-            <line x1="400" y1="50" x2="500" y2="80" stroke="white" strokeWidth="1" opacity="0.5" />
-            <line x1="300" y1="400" x2="400" y2="420" stroke="white" strokeWidth="1" opacity="0.5" />
-            <circle cx="500" cy="60" r="30" stroke="white" strokeWidth="1" fill="none" opacity="0.4" />
+            {/* Curve 3 (Middle) - Medium weight */}
+            <path
+              d="M 0,330 Q 440,420 1000,80"
+              stroke="#FFFFFF"
+              strokeWidth="1.5"
+              fill="none"
+            />
+            {/* Curve 4 - Second from top */}
+            <path
+              d="M 0,250 Q 500,320 1000,75"
+              stroke="#FFFFFF"
+              strokeWidth="1.25"
+              fill="none"
+            />
+            {/* Curve 5 (Top) - Thinnest, gentlest curve */}
+            <path
+              d="M 0,170 Q 560,220 1000,70"
+              stroke="#FFFFFF"
+              strokeWidth="1"
+              fill="none"
+            />
           </svg>
 
           {/* Content */}

@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
-import { Globe } from '@/components/ui/globe';
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 
@@ -305,29 +304,16 @@ export function CompanyIntro() {
             </div>
           </div>
 
-          {/* Card 3 - 30+ Years with Globe - UK Focused */}
+          {/* Card 3 - 30+ Years */}
           <div className="relative overflow-hidden bg-white rounded-xl p-6 border border-gray-200/50 hover:border-[#01458f]/30 hover:shadow-lg transition-all duration-300 group">
-            {/* UK-focused pulsating glow effects - Multiple layers for depth */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-[#01458f]/10 rounded-full blur-3xl animate-pulse-slow"></div>
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-[#01458f]/15 rounded-full blur-2xl animate-pulse-slow" style={{ animationDelay: '0.5s' }}></div>
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-[#01458f]/20 rounded-full blur-xl animate-pulse-slow" style={{ animationDelay: '1s' }}></div>
+            {/* Decorative circles */}
+            <div className="absolute -top-10 -right-10 w-32 h-32 bg-[#01458f]/5 rounded-full blur-2xl group-hover:bg-[#01458f]/8 transition-all duration-500"></div>
+            <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-[#01458f]/3 rounded-full blur-xl"></div>
 
-            {/* Corner accents */}
-            <div className="absolute top-0 right-0 w-24 h-24 bg-[#01458f]/5 rounded-full blur-2xl animate-pulse-slow" style={{ animationDelay: '1.5s' }}></div>
-            <div className="absolute bottom-0 left-0 w-24 h-24 bg-[#01458f]/5 rounded-full blur-2xl animate-pulse-slow" style={{ animationDelay: '0.75s' }}></div>
-
-            {/* Text at top */}
-            <div className="relative z-10 text-center">
+            <div className="relative z-10 flex flex-col items-center justify-center h-full text-center">
               <div className="text-5xl font-bold text-[#01458f] mb-2 tracking-tight">30+</div>
               <div className="text-sm font-semibold text-gray-700 tracking-wide mb-1">Years of Excellence</div>
               <div className="text-xs font-medium text-[#01458f] tracking-wide">Specialists in UK Accounting & Tax Law</div>
-            </div>
-
-            {/* Globe below - half cut off, absolutely positioned */}
-            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 z-0">
-              <div className="w-[400px] h-[400px]">
-                <Globe />
-              </div>
             </div>
           </div>
         </div>

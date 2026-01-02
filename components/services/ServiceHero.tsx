@@ -8,9 +8,10 @@ interface ServiceHeroProps {
   title: string;
   subtitle: string;
   description: string;
+  imageUrl?: string;
 }
 
-export function ServiceHero({ title, subtitle, description }: ServiceHeroProps) {
+export function ServiceHero({ title, subtitle, description, imageUrl }: ServiceHeroProps) {
   const pathname = usePathname();
 
   const breadcrumbs = useMemo(() => {
@@ -115,18 +116,19 @@ export function ServiceHero({ title, subtitle, description }: ServiceHeroProps) 
             </div>
           </div>
 
-          {/* Right - Tall Image Placeholder */}
-          <div className="relative h-[600px] lg:h-[700px] pr-8">
-            <div className="absolute inset-0 rounded-2xl overflow-hidden bg-gray-200 flex items-center justify-center">
-              {/* Placeholder - Will be replaced with actual image */}
-              <div className="text-center space-y-2">
-                <svg className="w-16 h-16 mx-auto text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-                <p className="text-sm text-gray-500">Image Placeholder</p>
+          {/* Right - Hero Image */}
+          {imageUrl && (
+            <div className="relative h-[600px] lg:h-[700px] pr-8">
+              <div className="absolute inset-0 rounded-2xl overflow-hidden bg-white shadow-lg border border-gray-200/50">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={imageUrl}
+                  alt={title}
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
     </section>

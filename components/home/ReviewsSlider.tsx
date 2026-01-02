@@ -117,7 +117,7 @@ export function ReviewsSlider() {
         </div>
 
         {/* Horizontal Scrolling Reviews Container */}
-        <div className="relative -mx-4 px-4">
+        <div className="relative -mx-4 px-4 pb-4">
           {/* Left Scroll Button */}
           {canScrollLeft && (
             <button
@@ -146,14 +146,14 @@ export function ReviewsSlider() {
 
           <div
             ref={scrollContainerRef}
-            className="flex gap-6 overflow-x-auto py-6 scroll-smooth snap-x snap-mandatory hide-scrollbar"
+            className="flex gap-6 overflow-x-auto py-4 scroll-smooth snap-x snap-mandatory hide-scrollbar"
           >
             {placeholderReviews.map((review, index) => (
               <div
                 key={index}
-                className="flex-none w-[380px] snap-start"
+                className="flex-none w-[380px] snap-start p-2"
               >
-                <div className="h-full min-h-[280px] p-8 rounded-2xl border border-gray-200 bg-gradient-to-br from-white to-gray-50 hover:shadow-xl hover:border-gray-300 transition-all duration-300 flex flex-col">
+                <div className="h-full min-h-[280px] p-8 rounded-2xl border border-gray-200 bg-gradient-to-br from-white to-gray-50 hover:shadow-md hover:border-gray-300 transition-all duration-300 flex flex-col">
                   {/* Quote Icon */}
                   <div className="mb-4">
                     <svg className="w-8 h-8 text-[#01458f]/20" fill="currentColor" viewBox="0 0 24 24">

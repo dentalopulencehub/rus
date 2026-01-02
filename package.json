@@ -10,17 +10,20 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "@types/three": "^0.182.0",
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",
     "cobe": "^0.6.5",
     "framer-motion": "^12.23.24",
+    "globe.gl": "^2.45.0",
     "lucide-react": "^0.554.0",
     "next": "^16.0.8",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-globe.gl": "^2.37.0",
     "recharts": "^3.4.1",
-    "tailwind-merge": "^3.4.0"
+    "tailwind-merge": "^3.4.0",
+    "three": "^0.182.0"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",

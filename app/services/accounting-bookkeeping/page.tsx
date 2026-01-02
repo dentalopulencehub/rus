@@ -240,6 +240,7 @@ export default function AccountingBookkeepingPage() {
         title="Accounting & Bookkeeping"
         subtitle="Reliable, accurate and fully compliant accounting and bookkeeping services for businesses across the UK"
         description="Accurate financial records are essential for making informed decisions, maintaining compliance and supporting the long-term success of your business. Our Accounting & Bookkeeping service provides clear, professional and timely support designed to keep your finances organised and your business running smoothly."
+        imageUrl="/premium-abstract-editorial-vector-illustration-wit (3) 1.svg"
       />
 
       <div id="services">
@@ -261,6 +262,7 @@ export default function AccountingBookkeepingPage() {
             { value: 'ICAEW', label: 'Chartered' },
           ],
         }}
+        imageUrl="/premium-abstract-editorial-vector-illustration-wit (2) 1.svg"
       />
 
       <ServiceFAQ

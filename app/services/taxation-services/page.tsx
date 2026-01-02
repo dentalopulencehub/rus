@@ -325,6 +325,7 @@ export default function TaxationServicesPage() {
         title="Taxation Services"
         subtitle="Expert tax advice and compliance support for individuals and businesses across the UK"
         description="Managing tax efficiently is essential for maintaining compliance, reducing liabilities and protecting long-term financial wellbeing. Our specialist Taxation Services provide clear, strategic guidance across all major UK tax areas, helping you stay fully compliant with HMRC whilst making the most of available allowances and planning opportunities."
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/834d3fab-5d69-44d5-7a7a-2c136b27b400/public"
       />
 
       <div id="services">
@@ -353,6 +354,7 @@ export default function TaxationServicesPage() {
             { value: "ICAEW", label: "Chartered" },
           ]
         }}
+        imageUrl="/premium-abstract-editorial-vector-illustration-wit (6) 1.svg"
       />
 
       <div id="benefits">
@@ -366,22 +368,15 @@ export default function TaxationServicesPage() {
       <section className="w-full flex items-center justify-center bg-white px-4 py-24">
         <div className="max-w-6xl mx-auto w-full">
           <div className="relative bg-gradient-to-br from-[#01458f] to-[#0052cc] rounded-3xl overflow-hidden px-8 md:px-16 py-20 md:py-28">
-            {/* Geometric Pattern Background */}
-            <svg
-              className="absolute inset-0 w-full h-full opacity-20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M 600 -100 Q 800 100 850 300" stroke="white" strokeWidth="2" fill="none" />
-              <circle cx="750" cy="150" r="80" stroke="white" strokeWidth="1.5" fill="none" />
-              <path d="M 700 50 L 850 80 L 820 200" stroke="white" strokeWidth="1.5" fill="none" />
-              <path d="M 650 120 L 750 100 L 730 180 L 640 190 Z" stroke="white" strokeWidth="1" fill="none" />
-              <path d="M -50 400 Q 100 450 200 480" stroke="white" strokeWidth="2" fill="none" />
-              <circle cx="100" cy="420" r="60" stroke="white" strokeWidth="1.5" fill="none" />
-              <path d="M 50 380 L 180 400 L 160 480" stroke="white" strokeWidth="1.5" fill="none" />
-              <line x1="400" y1="50" x2="500" y2="80" stroke="white" strokeWidth="1" opacity="0.5" />
-              <line x1="300" y1="400" x2="400" y2="420" stroke="white" strokeWidth="1" opacity="0.5" />
-              <circle cx="500" cy="60" r="30" stroke="white" strokeWidth="1" fill="none" opacity="0.4" />
-            </svg>
+            {/* SVG Background */}
+            <div className="absolute inset-0 w-full h-full opacity-20">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/minimal-modern-hero-background-with-deep-royal-blu 1.svg"
+                alt=""
+                className="w-full h-full object-cover"
+              />
+            </div>
 
             {/* Content */}
             <div className="relative z-10 flex flex-col items-center text-center space-y-6">

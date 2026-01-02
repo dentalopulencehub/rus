@@ -25,20 +25,35 @@ export function ServiceBenefits({ title, items }: ServiceBenefitsProps) {
           {items.map((item, index) => (
             <div
               key={index}
-              className="relative flex flex-col items-center justify-center text-center p-4 md:p-8 rounded-xl border border-gray-200/50 bg-[#BBDEFB] transition-all duration-200 hover:shadow-lg hover:border-[#01458f]/30 min-h-[280px] md:min-h-[320px]"
+              className={`relative flex flex-col items-center justify-center text-center p-4 md:p-8 rounded-xl border border-gray-200/50 transition-all duration-200 hover:shadow-lg hover:border-[#01458f]/30 min-h-[280px] md:min-h-[320px] ${
+                index === 3 ? 'bg-[#0047AB]' : 'bg-[#BBDEFB]'
+              }`}
             >
               {/* Icon - Large and Centered */}
               <div className="mb-4 md:mb-8 text-[#01458f]">
-                {item.icon}
+                {index === 3 ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src="/wallet-with-coins--clean-minimal-fintech-design--r 1.svg"
+                    alt="Transparent Fees"
+                    className="w-16 h-16 md:w-20 md:h-20"
+                  />
+                ) : (
+                  item.icon
+                )}
               </div>
 
               {/* Title */}
-              <h3 className="text-xs md:text-sm font-bold text-gray-900 mb-2 tracking-wide uppercase whitespace-pre-line">
+              <h3 className={`text-xs md:text-sm font-bold mb-2 tracking-wide uppercase whitespace-pre-line ${
+                index === 3 ? 'text-white' : 'text-gray-900'
+              }`}>
                 {item.title}
               </h3>
 
               {/* Description */}
-              <p className="text-xs text-gray-700 leading-relaxed">
+              <p className={`text-xs leading-relaxed ${
+                index === 3 ? 'text-white/90' : 'text-gray-700'
+              }`}>
                 {item.description}
               </p>
             </div>

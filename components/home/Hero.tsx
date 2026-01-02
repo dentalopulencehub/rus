@@ -38,12 +38,12 @@ export function Hero() {
 
           {/* Bottom - Hero Image */}
           <div className="relative w-full max-w-4xl">
-            <div className="relative w-full aspect-[16/6] rounded-xl border border-gray-200/50 shadow-lg overflow-hidden">
+            <div className="relative w-full aspect-[16/6] rounded-xl border border-gray-200/50 shadow-lg overflow-hidden bg-white">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/775191b2-9e3a-4ad1-ddbc-4922cd4cf600/public"
-                alt="RUS Accountancy Services"
-                className="w-full h-full object-cover"
+                src="/Rus Office.svg"
+                alt="RUS Accountancy Office"
+                className="w-full h-full object-contain"
               />
             </div>
           </div>

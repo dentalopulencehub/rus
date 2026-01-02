@@ -38,3 +38,14 @@ I’m truly grateful for the support, understanding and kindness I’ve received
 I highly recommend them to anyone needing reliable, compassionate and efficient help with taxes, whether you’re a small business or a larger one, within the health industry or out of. They will help you amongst many things, comply and I think that's the biggest thing for peace of mind. I’m very happy to continue my journey with them.
 
 Mrs Tracy Achieng
+
+--
+
+Testimonial - healthcare
+
+RUS Accountants have been invaluable in supporting my GP business. They are proactive, knowledgeable, and always quick to respond with clear, practical advice. Their understanding of medical sector finances has made a real difference — from tax planning to business structure. I feel fully supported knowing they’re in my corner. Highly recommend. I’ve now also chosen to use them for my new property business.
+
+— Dr. Jethro Turner, GP & Business Owner
+
+-- 
+

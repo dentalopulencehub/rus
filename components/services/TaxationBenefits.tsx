@@ -8,11 +8,11 @@ interface TaxationBenefitsProps {
 export function TaxationBenefits({ title, description }: TaxationBenefitsProps) {
   const benefits = [
     {
-      title: "Maintain Accurate, Real-Time Financial Records on Their Behalf",
+      title: "Maintain Accurate, Real-Time Financial\nRecords on Their Behalf",
       description: "By managing and reconciling their accounts throughout the year, you ensure every figure is correct, every receipt is captured, and their tax position is always clear and compliant.",
     },
     {
-      title: "Proactively Monitor Key Filing and Payment Deadlines",
+      title: "Proactively Monitor Key Filing\nand Payment Deadlines",
       description: "You keep track of all HMRC dates—self-assessment, corporation tax, VAT and PAYE—making sure nothing is missed and clients avoid unnecessary penalties or last-minute stress.",
     },
     {
@@ -34,7 +34,7 @@ export function TaxationBenefits({ title, description }: TaxationBenefitsProps) 
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl text-white mb-3 tracking-tight">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">
             {title}
           </h2>
           <p className="text-base md:text-lg text-white/80 max-w-2xl mx-auto">
@@ -50,40 +50,33 @@ export function TaxationBenefits({ title, description }: TaxationBenefitsProps) 
               key={index}
               className="md:col-span-3 bg-[#F6F6F6] rounded-lg border border-gray-200/50 p-16 min-h-[420px] flex flex-col hover:shadow-xl transition-all duration-300 relative overflow-hidden"
             >
-              <h3 className="text-xl font-semibold text-gray-900 mb-4 leading-tight relative z-10">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 leading-tight relative z-10 whitespace-pre-line">
                 {benefit.title}
               </h3>
-              <p className="text-base text-gray-600 leading-relaxed relative z-10">
+              <p className="text-sm text-gray-600 leading-relaxed relative z-10">
                 {benefit.description}
               </p>
 
-              {/* Add Cloudflare Image to first card only - positioned absolutely */}
+              {/* Add SVG Illustration to first card only - positioned absolutely */}
               {index === 0 && (
-                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 w-3/4">
-                  <Image
-                    src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/48bb38ad-6bb4-4e51-d30d-859e9b038100/public"
+                <div className="absolute bottom-4 left-16 w-1/2">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/minimal-fintech-interface-illustration--clean-dash 1 (1).svg"
                     alt="Financial Records Management"
-                    width={500}
-                    height={500}
-                    unoptimized
                     className="w-full h-auto rounded-lg"
                   />
                 </div>
               )}
 
-              {/* Add Cloudflare Image to second card - positioned absolutely */}
+              {/* Add SVG Image to second card - positioned absolutely */}
               {index === 1 && (
-                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20">
+                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 w-3/4">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src="/deadlines-image.svg"
+                    src="/Frame 8.svg"
                     alt="Monitor Filing and Payment Deadlines"
-                    width="601"
-                    height="195"
-                    className="rounded-lg"
-                    style={{
-                      maxWidth: '100%',
-                      height: 'auto'
-                    }}
+                    className="w-full h-auto rounded-lg"
                   />
                 </div>
               )}
@@ -96,10 +89,10 @@ export function TaxationBenefits({ title, description }: TaxationBenefitsProps) 
               key={index + 2}
               className="md:col-span-2 bg-[#F6F6F6] rounded-lg border border-gray-200/50 p-16 min-h-[420px] flex flex-col hover:shadow-xl transition-all duration-300"
             >
-              <h3 className="text-xl font-semibold text-gray-900 mb-4 leading-tight">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 leading-tight">
                 {benefit.title}
               </h3>
-              <p className="text-base text-gray-600 leading-relaxed">
+              <p className="text-sm text-gray-600 leading-relaxed">
                 {benefit.description}
               </p>
             </div>
