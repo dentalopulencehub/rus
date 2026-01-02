@@ -213,6 +213,7 @@ export default function CharitiesNotForProfitPage() {
         title="Charities & Not-for-Profit Sector Accountancy"
         subtitle="Specialist accountancy, audit and advisory services for charities, social enterprises and not-for-profit organisations"
         description="Charities and not-for-profit organisations operate under distinct financial, governance and reporting requirements. With over 30 years of experience supporting charitable bodies, community organisations, trusts and not-for-profit entities, we understand the unique challenges you face — from regulatory compliance and trustee reporting to managing restricted funds and preparing statutory accounts in line with SORP."
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/5e31adbb-9e22-4216-29fd-72e071c3c600/public"
       />
 
       <div id="services">
