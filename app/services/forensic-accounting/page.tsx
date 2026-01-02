@@ -206,6 +206,7 @@ export default function ForensicAccountingPage() {
         title="Forensic Accounting"
         subtitle="Specialist forensic accounting services designed to investigate financial irregularities, support legal cases and provide clear, independent expert analysis"
         description="Forensic accounting plays a crucial role in uncovering financial discrepancies, identifying fraud, supporting disputes and providing evidence-based clarity in complex situations. Whether you are facing a commercial dispute, suspected wrongdoing, matrimonial proceedings or require an expert report, our forensic accounting service offers meticulous analysis, precise reporting and independent expertise."
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/b2dfd98d-b1eb-409f-38cb-a52fba2f6d00/public"
       />
 
       <div id="services">
