@@ -209,6 +209,7 @@ export default function HMRCNCAInvestigationsPage() {
         title="HMRC & NCA Investigations"
         subtitle="Expert support and representation for individuals and businesses facing HMRC or National Crime Agency (NCA) investigations"
         description="An enquiry from HMRC or the NCA can be stressful, time-consuming and potentially costly. Whether it's a routine compliance check, a full-scale tax investigation or a criminal enquiry, having professional guidance is essential. We provide comprehensive support, ensuring that your rights are protected, your position is clearly represented and the investigation is handled efficiently and accurately."
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/a9758f88-317f-47b2-6460-bb13aefa2f00/public"
       />
 
       <div id="services">
