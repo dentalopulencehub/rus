@@ -383,7 +383,7 @@ export default function TaxationServicesPage() {
             <div className="absolute inset-0 w-full h-full opacity-20">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/834d3fab-5d69-44d5-7a7a-2c136b27b400/public"
+                src="/minimal-modern-hero-background-with-deep-royal-blu 1.svg"
                 alt=""
                 className="w-full h-full object-cover"
               />
