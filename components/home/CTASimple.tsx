@@ -3,8 +3,8 @@
 import Link from 'next/link';
 
 interface CTASimpleProps {
-  heading: string;
-  supportingText: string;
+  heading?: string;
+  supportingText?: string;
   buttonText?: string;
   buttonHref?: string;
 }
