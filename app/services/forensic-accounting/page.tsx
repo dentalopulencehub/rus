@@ -214,6 +214,8 @@ export default function ForensicAccountingPage() {
           title="Comprehensive Forensic Accounting Services"
           subtitle="Reliable, confidential and objective forensic work for individuals, businesses, legal professionals and regulatory bodies"
           clientTypes={forensicServices}
+          bgColor="bg-gradient-to-br from-[#01458f] to-[#0052cc]"
+          darkMode={true}
         />
       </div>
 
@@ -269,7 +271,7 @@ export default function ForensicAccountingPage() {
       </section>
 
       <div id="benefits">
-        <ServiceBenefits title="Why Choose Our Forensic Accounting Services?" items={benefits} />
+        <ServiceBenefits title="Why Choose Our Forensic Accounting Services?" items={benefits} knowledgeIconUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/3323978e-14d0-4f56-668d-332badb0ce00/public" knowledgeIconIndex={0} />
       </div>
 
       <div id="testimonials">

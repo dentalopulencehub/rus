@@ -222,6 +222,8 @@ export default function CompanySecretarialPage() {
           title="Our Company Secretarial Services"
           subtitle="Complete statutory compliance and professional company administration"
           clientTypes={secretarialServices}
+          bgColor="bg-gradient-to-br from-[#01458f] to-[#0052cc]"
+          darkMode={true}
         />
       </div>
 
@@ -313,7 +315,7 @@ export default function CompanySecretarialPage() {
       </section>
 
       <div id="benefits">
-        <ServiceBenefits title="Why Choose Our Company Secretarial Services?" items={benefits} />
+        <ServiceBenefits title="Why Choose Our Company Secretarial Services?" items={benefits} knowledgeIconUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/f9011462-d707-49f5-82f3-4af3fa191400/public" knowledgeIconIndex={2} />
       </div>
 
       <div id="testimonials">

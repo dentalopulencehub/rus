@@ -248,6 +248,8 @@ export default function AccountingBookkeepingPage() {
           title="Our Core Services"
           subtitle="Comprehensive accounting and bookkeeping support tailored to your business needs"
           clientTypes={coreServices}
+          bgColor="bg-gradient-to-br from-[#01458f] to-[#0052cc]"
+          darkMode={true}
         />
       </div>
 
@@ -408,7 +410,7 @@ export default function AccountingBookkeepingPage() {
       </section>
 
       <div id="benefits">
-        <ServiceBenefits title="Why Choose Our Accounting & Bookkeeping Services?" items={benefits} />
+        <ServiceBenefits title="Why Choose Our Accounting & Bookkeeping Services?" items={benefits} knowledgeIconUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/3323978e-14d0-4f56-668d-332badb0ce00/public" knowledgeIconIndex={0} />
       </div>
 
       <div id="testimonials">

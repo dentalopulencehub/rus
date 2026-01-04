@@ -221,6 +221,8 @@ export default function OtherSectorPage() {
           title="Specialist Accountants for All Business Types"
           subtitle="From start-ups to established businesses, sole traders to limited companies, we provide comprehensive accounting support tailored to your specific needs and industry sector."
           clientTypes={otherServices}
+          bgColor="bg-gradient-to-br from-[#01458f] to-[#0052cc]"
+          darkMode={true}
         />
       </div>
 

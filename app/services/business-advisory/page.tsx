@@ -234,6 +234,8 @@ export default function BusinessAdvisoryPage() {
           subtitle="Comprehensive support to help you strengthen commercial performance and plan for future growth"
           clientTypes={advisoryServices}
           columns={9}
+          bgColor="bg-gradient-to-br from-[#01458f] to-[#0052cc]"
+          darkMode={true}
         />
       </div>
 

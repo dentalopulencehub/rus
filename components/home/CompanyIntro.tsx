@@ -311,9 +311,9 @@ export function CompanyIntro() {
             <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-[#01458f]/3 rounded-full blur-xl"></div>
 
             <div className="relative z-10 flex flex-col items-center justify-center h-full text-center">
-              <div className="text-5xl font-bold text-[#01458f] mb-2 tracking-tight">30+</div>
-              <div className="text-sm font-semibold text-gray-700 tracking-wide mb-1">Years of Excellence</div>
-              <div className="text-xs font-medium text-[#01458f] tracking-wide">Specialists in UK Accounting & Tax Law</div>
+              <div className="text-5xl font-bold text-[#01458f] mb-2 tracking-tight">10,000+</div>
+              <div className="text-sm font-semibold text-gray-700 tracking-wide mb-1">Businesses Helped</div>
+              <div className="text-xs font-medium text-[#01458f] tracking-wide">Across the UK Since 1995</div>
             </div>
           </div>
         </div>

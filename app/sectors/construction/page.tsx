@@ -234,6 +234,8 @@ export default function ConstructionSectorPage() {
           title="Specialist Accountants for the Construction Sector"
           subtitle="Whether you are a sole trader subcontractor, a growing contractor, or a multi-site construction business, our specialist support ensures your finances are managed efficiently and accurately, leaving you free to focus on delivering projects"
           clientTypes={constructionServices}
+          bgColor="bg-gradient-to-br from-[#01458f] to-[#0052cc]"
+          darkMode={true}
         />
       </div>
 
@@ -310,7 +312,7 @@ export default function ConstructionSectorPage() {
       </section>
 
       <div id="benefits">
-        <ServiceBenefits title="Why Construction Businesses Choose Us" items={benefits} />
+        <ServiceBenefits title="Why Construction Businesses Choose Us" items={benefits} knowledgeIconUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/f9011462-d707-49f5-82f3-4af3fa191400/public" knowledgeIconIndex={0} />
       </div>
 
       <div id="testimonials">

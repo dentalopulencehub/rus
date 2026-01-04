@@ -194,6 +194,7 @@ export default function PharmaAccountingPage() {
         title="Accountants for Pharmacies"
         subtitle="Expert support for pharmacy owners and pharmacists"
         description="For over 30 years, we have provided specialist accounting, tax and advisory services to pharmacy owners, superintendent pharmacists and locum pharmacists across the UK. Our deep understanding of NHS pharmacy contracts and regulatory requirements ensures you receive expert guidance tailored to the pharmacy sector."
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/4154119c-1db7-42d5-f984-5ac46de58700/public"
       />
 
       <div id="services">
@@ -201,13 +202,15 @@ export default function PharmaAccountingPage() {
           title="Specialist Pharmacy Accounting Services"
           subtitle="Community pharmacies face unique financial and regulatory challenges. Our experienced team provides comprehensive support across all aspects of pharmacy accounting and tax planning."
           clientTypes={pharmaServices}
+          bgColor="bg-gradient-to-br from-[#01458f] to-[#0052cc]"
+          darkMode={true}
         />
       </div>
 
       <ServiceOverview
         leftContent={{
-          title: 'Supporting Pharmacy Professionals With Confidence',
-          description: 'Whether you are a community pharmacy owner, superintendent pharmacist, locum pharmacist or managing multiple pharmacies, we understand the financial complexities you face. Our specialist team provides clear, practical guidance to help you stay compliant, maximize profitability and plan for growth.',
+          title: 'Supporting Pharmacy Professionals\nWith Confidence',
+          description: 'Whether you are a community pharmacy owner, superintendent pharmacist, locum pharmacist or managing multiple pharmacies, we understand the financial complexities you face. Our specialist team provides clear, practical guidance to help you stay compliant, maximise profitability and plan for growth.',
         }}
         rightContent={{
           stats: [
@@ -215,6 +218,7 @@ export default function PharmaAccountingPage() {
             { value: '100+', label: 'Pharmacy Clients' },
           ],
         }}
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/1ca0f44b-68c1-48e0-363a-52272db0cf00/public"
       />
 
       <ServiceFAQ

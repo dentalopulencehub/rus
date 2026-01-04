@@ -86,7 +86,7 @@ export function ServiceOverview({ leftContent, rightContent, imageUrl, benefits 
                 <img
                   src={imageUrl}
                   alt="Professional illustration"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover scale-110"
                 />
               ) : (
                 <div className="w-full h-full bg-gray-100 flex flex-col items-center justify-center">

@@ -213,6 +213,7 @@ export default function CreativeMediaSectorPage() {
         title="Creative & Media Sector Accountancy"
         subtitle="Specialist accountants for creatives, digital professionals and modern content-driven businesses"
         description="The creative and digital media landscape has changed dramatically in recent years. With huge growth in online content creation, digital marketing, streaming platforms, social media monetisation and freelance creative work, income sources are more diverse — and more complex — than ever before. We understand the financial challenges and unique tax considerations facing today\'s creative professionals."
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/d8ac846b-3ce1-4c86-4e7a-9c02f4c9fd00/public"
       />
 
       <div id="services">
@@ -220,12 +221,14 @@ export default function CreativeMediaSectorPage() {
           title="Specialist Accountants for Creative & Media Professionals"
           subtitle="Whether you're generating revenue through brand partnerships, advertising, royalties, digital sales or multiple freelance contracts, we provide tailored, industry-specific support designed to bring clarity and confidence to your finances"
           clientTypes={creativeServices}
+          bgColor="bg-gradient-to-br from-[#01458f] to-[#0052cc]"
+          darkMode={true}
         />
       </div>
 
       <ServiceOverview
         leftContent={{
-          title: 'Supporting Creative Success in the Digital Age',
+          title: 'Supporting Creative Success\nin the Digital Age',
           description: 'From individual content creators to creative agencies, we provide dependable accounting expertise that supports compliance, tax efficiency and growth. With specialist knowledge in multi-platform income, digital media tax and international earnings, we help you navigate the creative sector with confidence.',
         }}
         rightContent={{
@@ -234,6 +237,7 @@ export default function CreativeMediaSectorPage() {
             { value: '250+', label: 'Creative Clients' },
           ],
         }}
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/7a567794-826a-4d1a-2091-8ff96bdaee00/public"
       />
 
       {/* First CTA */}
@@ -299,7 +303,7 @@ export default function CreativeMediaSectorPage() {
       </section>
 
       <div id="benefits">
-        <ServiceBenefits title="Why Creative Professionals Choose Us" items={benefits} />
+        <ServiceBenefits title="Why Creative Professionals Choose Us" items={benefits} knowledgeIconUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/c5cea02a-0117-439d-07d1-4ca5e4d1c400/public" knowledgeIconIndex={0} />
       </div>
 
       <div id="testimonials">

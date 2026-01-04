@@ -221,6 +221,8 @@ export default function CharitiesNotForProfitPage() {
           title="Specialist Accountants for Charities & Not-for-Profit Organisations"
           subtitle="Our dedicated team provides clear, accurate and sector-specific support, helping you maintain strong financial governance, demonstrate transparency to stakeholders and focus on delivering impact"
           clientTypes={charityServices}
+          bgColor="bg-gradient-to-br from-[#01458f] to-[#0052cc]"
+          darkMode={true}
         />
       </div>
 
@@ -301,7 +303,7 @@ export default function CharitiesNotForProfitPage() {
       </section>
 
       <div id="benefits">
-        <ServiceBenefits title="Why Charities Choose Us" items={benefits} />
+        <ServiceBenefits title="Why Charities Choose Us" items={benefits} knowledgeIconUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/fa680a4f-c411-4da7-5327-e2eab6fe3e00/public" knowledgeIconIndex={0} />
       </div>
 
       <div id="testimonials">

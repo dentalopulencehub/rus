@@ -202,11 +202,14 @@ export default function FinancialServicesPage() {
         title="Specialist Accountants for Financial Services"
         subtitle="Expert Support for Insurance, Brokerage & Financial Advisers"
         description="Expert accounting, tax and compliance support for insurance firms, brokers, IFAs and financial services businesses across the UK."
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/9e051910-8058-4d35-2654-77c7b4ed7c00/public"
       />
 
       <WhoWeHelp
         title="Comprehensive Accounting for Financial Services"
         clientTypes={financialServices}
+        bgColor="bg-gradient-to-br from-[#01458f] to-[#0052cc]"
+        darkMode={true}
       />
 
       <ServiceOverview
@@ -220,6 +223,7 @@ export default function FinancialServicesPage() {
             { value: 'ICAEW', label: 'Chartered' },
           ],
         }}
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/12f0415a-1c65-48d0-2e61-ba8da028cf00/public"
       />
 
       {/* CTA #1 - Blue gradient with contact details */}
@@ -291,6 +295,8 @@ export default function FinancialServicesPage() {
       <ServiceBenefits
         title="Why Financial Services Firms Choose RUS"
         items={benefits}
+        knowledgeIconUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/fa680a4f-c411-4da7-5327-e2eab6fe3e00/public"
+        knowledgeIconIndex={0}
       />
 
       <ServiceTestimonials

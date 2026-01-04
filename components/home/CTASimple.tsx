@@ -2,7 +2,19 @@
 
 import Link from 'next/link';
 
-export function CTASimple() {
+interface CTASimpleProps {
+  heading: string;
+  supportingText: string;
+  buttonText?: string;
+  buttonHref?: string;
+}
+
+export function CTASimple({
+  heading = "Ready to take control of your tax affairs?",
+  supportingText = "Expert tax advice tailored to your needs",
+  buttonText = "Contact Us",
+  buttonHref = "/contact"
+}: CTASimpleProps) {
   return (
     <section className="w-full flex items-center justify-center bg-white px-4 py-24 pt-32">
       <div className="max-w-6xl mx-auto w-full">
@@ -57,12 +69,12 @@ export function CTASimple() {
           <div className="relative z-10 flex flex-col items-center text-center space-y-6">
             {/* Main Heading */}
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight">
-              Ready to take control<br />of your tax affairs?
+              {heading}
             </h2>
 
             {/* CTA Button */}
             <Link
-              href="/contact"
+              href={buttonHref}
               className="relative inline-flex items-center justify-center px-8 py-3 bg-white text-gray-900 rounded-full text-sm font-medium hover:shadow-2xl hover:shadow-white/30 transition-all duration-300 overflow-hidden group"
             >
               {/* Layer 1: Glassmorphic backdrop */}
@@ -74,12 +86,12 @@ export function CTASimple() {
               {/* Layer 3: Solid background */}
               <div className="absolute inset-0 -z-30 bg-white rounded-full transition-all duration-300 group-hover:bg-white/95" />
 
-              <span className="relative z-10">Contact Us</span>
+              <span className="relative z-10">{buttonText}</span>
             </Link>
 
             {/* Supporting Text */}
             <p className="text-white/90 text-sm md:text-base">
-              Expert tax advice tailored to your needs
+              {supportingText}
             </p>
 
             {/* Contact Details */}

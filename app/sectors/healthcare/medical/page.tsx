@@ -92,8 +92,9 @@ const medicalServices = [
     title: 'Private Practice Support',
     description: 'Accounts, tax planning and business structure advice for private medical practitioners and independent clinics',
     icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+        <circle cx="12" cy="12" r="9" />
+        <text x="12" y="17" fontSize="12" fill="currentColor" stroke="none" textAnchor="middle" fontWeight="bold">£</text>
       </svg>
     ),
   },
@@ -215,8 +216,9 @@ const nhsPensions = [
     title: 'Pension Tax Charge Planning',
     description: 'Strategic planning to minimize annual and lifetime allowance tax charges',
     icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+        <circle cx="12" cy="12" r="9" />
+        <text x="12" y="17" fontSize="12" fill="currentColor" stroke="none" textAnchor="middle" fontWeight="bold">£</text>
       </svg>
     ),
   },
@@ -352,6 +354,7 @@ export default function MedicalAccountingPage() {
         title="Accountants for Medical Professionals"
         subtitle="Expert support for GPs, consultants and locum doctors"
         description="For over 30 years, we have provided specialist accounting, tax and advisory services to medical professionals across the UK. Our deep understanding of NHS structures, pension schemes and medical practice finances ensures you receive expert guidance tailored to your specific needs."
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/0f6563c9-faf5-46dc-f2d5-d89871d54e00/public"
       />
 
       <div id="services">
@@ -359,12 +362,14 @@ export default function MedicalAccountingPage() {
           title="Specialist Medical Accounting Services"
           subtitle="Medical professionals face unique financial challenges. Our experienced team provides comprehensive support across all aspects of medical accounting and tax planning."
           clientTypes={medicalServices}
+          bgColor="bg-gradient-to-br from-[#01458f] to-[#0052cc]"
+          darkMode={true}
         />
       </div>
 
       <ServiceOverview
         leftContent={{
-          title: 'Supporting Medical Professionals With Confidence',
+          title: 'Supporting Medical Professionals\nWith Confidence',
           description: 'Whether you are a GP partner, hospital consultant, locum doctor or running a private practice, we understand the financial complexities you face. Our specialist team provides clear, practical guidance to help you stay compliant, maximize tax efficiency and plan for the future.',
         }}
         rightContent={{
@@ -373,6 +378,7 @@ export default function MedicalAccountingPage() {
             { value: '500+', label: 'Medical Clients' },
           ],
         }}
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/48004466-5bc2-4e04-27a5-f4c326009e00/public"
       />
 
       <WhoWeHelp

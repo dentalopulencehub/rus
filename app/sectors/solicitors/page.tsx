@@ -226,6 +226,7 @@ export default function SolicitorsSectorPage() {
         title="Solicitors Sector Accountancy"
         subtitle="Specialist accountants for solicitors, law firms and legal professionals"
         description="With over 30 years of experience supporting legal practices, we provide tailored accountancy, audit and advisory services designed specifically for solicitors and law firms. The legal sector faces unique regulatory, financial and operational demands — from strict compliance with the Solicitors Regulation Authority (SRA) Accounts Rules to managing client money, partner remuneration and fluctuating case-income streams."
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/5229bc88-da6f-46d2-25ed-4dfa6f9f0700/public"
       />
 
       <div id="services">
@@ -233,12 +234,14 @@ export default function SolicitorsSectorPage() {
           title="Specialist Accountants for Legal Practices"
           subtitle="Our deep understanding of the legal profession allows us to deliver precise, compliant and commercially focused support, helping firms strengthen governance, manage financial risk and operate with full confidence"
           clientTypes={solicitorServices}
+          bgColor="bg-gradient-to-br from-[#01458f] to-[#0052cc]"
+          darkMode={true}
         />
       </div>
 
       <ServiceOverview
         leftContent={{
-          title: 'Supporting Legal Practices With Clarity and Compliance',
+          title: 'Supporting Legal Practices\nWith Clarity and Compliance',
           description: 'From sole practitioners to multi-partner LLPs, we provide dependable accounting and audit expertise that supports SRA compliance, governance and long-term success. With specialist knowledge in SRA Accounts Rules audits and client money handling, we help you navigate the legal sector with confidence.',
         }}
         rightContent={{
@@ -247,6 +250,7 @@ export default function SolicitorsSectorPage() {
             { value: '150+', label: 'Legal Clients' },
           ],
         }}
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/a4805ea0-8130-4be9-67cd-ecabb0043800/public"
       />
 
       {/* First CTA */}

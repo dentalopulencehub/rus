@@ -46,8 +46,9 @@ const opticalServices = [
     title: 'NHS & Private Income',
     description: 'Specialist support for mixed NHS and private optical practices including GOS contract tracking and private fee optimization',
     icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+        <circle cx="12" cy="12" r="9" />
+        <text x="12" y="17" fontSize="12" fill="currentColor" stroke="none" textAnchor="middle" fontWeight="bold">£</text>
       </svg>
     ),
   },
@@ -194,20 +195,23 @@ export default function OpticalAccountingPage() {
         title="Accountants for Optical Practices"
         subtitle="Expert support for opticians and practice owners"
         description="For over 30 years, we have provided specialist accounting, tax and advisory services to optical practice owners, optometrists and dispensing opticians across the UK. Our deep understanding of NHS optical contracts and regulatory requirements ensures you receive expert guidance tailored to the optical sector."
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/e2bc1309-876a-4074-842e-599b666cc900/public"
       />
 
       <div id="services">
         <WhoWeHelp
           title="Specialist Optical Accounting Services"
-          subtitle="Optical practices face unique financial and regulatory challenges. Our experienced team provides comprehensive support across all aspects of optical accounting and tax planning."
+          subtitle="Optical practices face unique financial and regulatory challenges.\nOur experienced team provides comprehensive support across all aspects of optical accounting and tax planning."
           clientTypes={opticalServices}
+          bgColor="bg-gradient-to-br from-[#01458f] to-[#0052cc]"
+          darkMode={true}
         />
       </div>
 
       <ServiceOverview
         leftContent={{
-          title: 'Supporting Optical Professionals With Confidence',
-          description: 'Whether you are an optical practice owner, optometrist, dispensing optician or managing multiple practices, we understand the financial complexities you face. Our specialist team provides clear, practical guidance to help you stay compliant, maximize profitability and plan for growth.',
+          title: 'Supporting Optical Professionals\nWith Confidence',
+          description: 'Whether you are an optical practice owner, optometrist, dispensing optician or managing multiple practices, we understand the financial complexities you face. Our specialist team provides clear, practical guidance to help you stay compliant, maximise profitability and plan for growth.',
         }}
         rightContent={{
           stats: [
@@ -215,6 +219,7 @@ export default function OpticalAccountingPage() {
             { value: '80+', label: 'Optical Clients' },
           ],
         }}
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/898991f7-cb47-467e-b6fa-5aa89153ee00/public"
       />
 
       <ServiceFAQ

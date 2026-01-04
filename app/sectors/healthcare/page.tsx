@@ -277,6 +277,7 @@ export default function HealthcareSectorPage() {
         title="Accountants for Healthcare Professionals"
         subtitle="Over 30 years supporting medical professionals"
         description="For more than three decades, we have developed a strong specialist interest in the healthcare sector, supporting medical professionals and healthcare businesses with tailored accountancy, tax and advisory services. Our in-depth understanding of the financial, regulatory and commercial challenges faced by healthcare providers allows us to deliver precise guidance and long-standing value to our clients."
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/36dca29e-efa0-4cbe-90ff-4ddd5e461f00/public"
       />
 
       <div id="services">
@@ -284,6 +285,8 @@ export default function HealthcareSectorPage() {
           title="Specialist Healthcare Accounting Services"
           subtitle="Healthcare professionals face unique financial challenges. Our experienced team provides comprehensive support across all aspects of healthcare accounting and tax planning."
           clientTypes={healthcareServices}
+          bgColor="bg-gradient-to-br from-[#01458f] to-[#0052cc]"
+          darkMode={true}
         />
       </div>
 
@@ -303,7 +306,7 @@ export default function HealthcareSectorPage() {
 
       <ServiceOverview
         leftContent={{
-          title: 'Supporting Healthcare Providers With Confidence',
+          title: 'Supporting Healthcare Providers\nWith Confidence',
           description: 'The healthcare sector is constantly evolving, and so are the challenges that come with it. Our long-standing experience means we understand the pressures faced by clinicians, practice owners and healthcare businesses — and we provide the financial insight needed to stay compliant, profitable and well-prepared for the future.',
         }}
         rightContent={{
@@ -312,6 +315,7 @@ export default function HealthcareSectorPage() {
             { value: '1000+', label: 'Healthcare Clients' },
           ],
         }}
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/e00c5ddd-40d4-4ab3-cc27-b53db06cc000/public"
       />
 
       {/* First CTA - Before Benefits */}
@@ -377,7 +381,7 @@ export default function HealthcareSectorPage() {
       </section>
 
       <div id="benefits">
-        <ServiceBenefits title="Why Healthcare Professionals Choose Us" items={benefits} />
+        <ServiceBenefits title="Why Healthcare Professionals Choose Us" items={benefits} knowledgeIconUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/f9011462-d707-49f5-82f3-4af3fa191400/public" knowledgeIconIndex={0} />
       </div>
 
       <div id="testimonials">

@@ -213,6 +213,7 @@ export default function RetailSectorPage() {
         title="Retail Sector Accountancy"
         subtitle="Specialist accountants for online retailers, high street shops and multi-channel retail businesses"
         description="The retail sector has transformed dramatically in recent years, with rapid growth in e-commerce, multi-platform selling and hybrid business models. Whether you run an online store, operate through platforms like Amazon and eBay, or manage a physical shop on the high street, you face unique financial and operational challenges — from managing stock and margins to dealing with complex VAT rules and fast-moving customer demands."
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/14930fda-2bd9-481b-f9f8-78cdd5a32f00/public"
       />
 
       <div id="services">
@@ -220,6 +221,8 @@ export default function RetailSectorPage() {
           title="Specialist Accountants for Retail Businesses"
           subtitle="With over 30 years of experience supporting retail businesses, we provide clear, reliable and sector-specific accountancy services designed to help you stay profitable, compliant and able to grow with confidence"
           clientTypes={retailServices}
+          bgColor="bg-gradient-to-br from-[#01458f] to-[#0052cc]"
+          darkMode={true}
         />
       </div>
 
@@ -234,6 +237,7 @@ export default function RetailSectorPage() {
             { value: '400+', label: 'Retail Clients' },
           ],
         }}
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/99027bab-8cb6-489b-06de-67309f025700/public"
       />
 
       {/* First CTA */}
@@ -299,7 +303,7 @@ export default function RetailSectorPage() {
       </section>
 
       <div id="benefits">
-        <ServiceBenefits title="Why Retail Businesses Choose Us" items={benefits} />
+        <ServiceBenefits title="Why Retail Businesses Choose Us" items={benefits} knowledgeIconUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/f9011462-d707-49f5-82f3-4af3fa191400/public" knowledgeIconIndex={0} />
       </div>
 
       <div id="testimonials">

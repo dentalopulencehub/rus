@@ -55,8 +55,9 @@ const dentalServices = [
     title: 'NHS & Private Income',
     description: 'Specialist support for mixed NHS and private dental practices including UDA tracking, contract compliance and private fee optimization',
     icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+        <circle cx="12" cy="12" r="9" />
+        <text x="12" y="17" fontSize="12" fill="currentColor" stroke="none" textAnchor="middle" fontWeight="bold">£</text>
       </svg>
     ),
   },
@@ -200,6 +201,7 @@ export default function DentalAccountingPage() {
         title="Accountants for Dental Practices"
         subtitle="Expert support for dentists and practice owners"
         description="For over 30 years, we have provided specialist accounting, tax and advisory services to dental professionals across the UK. From practice owners and associates to orthodontists and squat practice start-ups, we deliver expert guidance tailored to the dental sector."
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/5ab18624-2b25-4161-789c-acfb06f1e600/public"
       />
 
       <div id="services">
@@ -207,12 +209,14 @@ export default function DentalAccountingPage() {
           title="Specialist Dental Accounting Services"
           subtitle="Dental practices face unique financial challenges. Our experienced team provides comprehensive support across all aspects of dental accounting and tax planning."
           clientTypes={dentalServices}
+          bgColor="bg-gradient-to-br from-[#01458f] to-[#0052cc]"
+          darkMode={true}
         />
       </div>
 
       <ServiceOverview
         leftContent={{
-          title: 'Supporting Dental Professionals With Confidence',
+          title: 'Supporting Dental Professionals\nWith Confidence',
           description: 'Whether you are a dental practice owner, associate, orthodontist or starting a new practice, we understand the financial complexities you face. Our specialist team provides clear, practical guidance to help you stay compliant, maximize tax efficiency and plan for growth.',
         }}
         rightContent={{
@@ -221,6 +225,7 @@ export default function DentalAccountingPage() {
             { value: '200+', label: 'Dental Clients' },
           ],
         }}
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/82e4541a-2b0f-46b5-5b5f-14a5ff82ab00/public"
       />
 
       <ServiceFAQ

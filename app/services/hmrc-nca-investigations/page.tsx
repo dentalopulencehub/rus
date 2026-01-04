@@ -217,6 +217,8 @@ export default function HMRCNCAInvestigationsPage() {
           title="Our HMRC & NCA Investigation Services"
           subtitle="Experienced assistance across a wide range of HMRC and NCA matters, delivered with clarity, discretion and confidence"
           clientTypes={investigationServices}
+          bgColor="bg-gradient-to-br from-[#01458f] to-[#0052cc]"
+          darkMode={true}
         />
       </div>
 

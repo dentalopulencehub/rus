@@ -82,8 +82,9 @@ const educationServices = [
     title: 'Funding & Grant Reporting',
     description: 'Support with restricted funds, ESFA reporting, grant accounting compliance, funding submissions and financial reporting to education authorities and regulators',
     icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+        <circle cx="12" cy="12" r="9" />
+        <text x="12" y="17" fontSize="12" fill="currentColor" stroke="none" textAnchor="middle" fontWeight="bold">£</text>
       </svg>
     ),
   },
@@ -213,6 +214,7 @@ export default function EducationAcademiesSectorPage() {
         title="Education & Academies Sector Accountancy"
         subtitle="Specialist accountants for schools, academies, training providers and education-focused organisations"
         description="The education and training sector is undergoing rapid change — from evolving VAT rules on private tuition to the growth of online learning, private colleges and professional development platforms. With increasing regulation, varied income models, funding requirements and complex tax considerations, strong financial management has never been more important."
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/4ec66efb-b81c-41ba-d304-6c6de0a94c00/public"
       />
 
       <div id="services">
@@ -220,12 +222,14 @@ export default function EducationAcademiesSectorPage() {
           title="Specialist Accountants for Educational Institutions"
           subtitle="With over 30 years of experience supporting educational organisations, we provide sector-specific accountancy, tax and advisory services to help you stay compliant, financially stable and well prepared for future growth"
           clientTypes={educationServices}
+          bgColor="bg-gradient-to-br from-[#01458f] to-[#0052cc]"
+          darkMode={true}
         />
       </div>
 
       <ServiceOverview
         leftContent={{
-          title: 'Supporting Education Providers to Deliver Excellence',
+          title: 'Supporting Education Providers\nto Deliver Excellence',
           description: 'From academies to online training platforms, we provide dependable accounting expertise that supports ESFA compliance, VAT planning and sustainable growth. With specialist knowledge in education funding, tuition income and academy regulations, we help you navigate the sector with confidence.',
         }}
         rightContent={{
@@ -234,24 +238,22 @@ export default function EducationAcademiesSectorPage() {
             { value: '180+', label: 'Education Clients' },
           ],
         }}
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/a324d777-dda3-485e-7a1d-e506019f5b00/public"
       />
 
       {/* First CTA */}
       <section className="w-full flex items-center justify-center bg-white px-4 py-24 pt-32">
         <div className="max-w-6xl mx-auto w-full">
           <div className="relative bg-gradient-to-br from-[#01458f] to-[#0052cc] rounded-3xl overflow-hidden px-8 md:px-16 py-20 md:py-28">
-            <svg className="absolute inset-0 w-full h-full opacity-20" xmlns="http://www.w3.org/2000/svg">
-              <path d="M 600 -100 Q 800 100 850 300" stroke="white" strokeWidth="2" fill="none" />
-              <circle cx="750" cy="150" r="80" stroke="white" strokeWidth="1.5" fill="none" />
-              <path d="M 700 50 L 850 80 L 820 200" stroke="white" strokeWidth="1.5" fill="none" />
-              <path d="M 650 120 L 750 100 L 730 180 L 640 190 Z" stroke="white" strokeWidth="1" fill="none" />
-              <path d="M -50 400 Q 100 450 200 480" stroke="white" strokeWidth="2" fill="none" />
-              <circle cx="100" cy="420" r="60" stroke="white" strokeWidth="1.5" fill="none" />
-              <path d="M 50 380 L 180 400 L 160 480" stroke="white" strokeWidth="1.5" fill="none" />
-              <line x1="400" y1="50" x2="500" y2="80" stroke="white" strokeWidth="1" opacity="0.5" />
-              <line x1="300" y1="400" x2="400" y2="420" stroke="white" strokeWidth="1" opacity="0.5" />
-              <circle cx="500" cy="60" r="30" stroke="white" strokeWidth="1" fill="none" opacity="0.4" />
-            </svg>
+            {/* Abstract Educational Background */}
+            <div className="absolute inset-0 w-full h-full opacity-20">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/abstract-editorial-vector-illustration-of-a-minima (2).svg"
+                alt=""
+                className="w-full h-full object-cover"
+              />
+            </div>
 
             <div className="relative z-10 flex flex-col items-center text-center space-y-6">
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight">
@@ -265,11 +267,11 @@ export default function EducationAcademiesSectorPage() {
                 <span className="relative z-10">Get Started</span>
               </a>
 
-              <p className="text-white/90 text-sm md:text-base">
+              <p className="text-white text-sm md:text-base">
                 Specialist ESFA compliance, academy accounting and education VAT support
               </p>
 
-              <div className="flex flex-col items-center justify-center gap-3 text-white/70 text-sm mt-4">
+              <div className="flex flex-col items-center justify-center gap-3 text-white text-sm mt-4">
                 <div className="flex flex-col md:flex-row items-center gap-3 md:gap-6">
                   <a href="tel:01217771200" className="flex items-center gap-2 hover:text-white transition-colors duration-200">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -299,7 +301,7 @@ export default function EducationAcademiesSectorPage() {
       </section>
 
       <div id="benefits">
-        <ServiceBenefits title="Why Education Providers Choose Us" items={benefits} />
+        <ServiceBenefits title="Why Education Providers Choose Us" items={benefits} knowledgeIconUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/3323978e-14d0-4f56-668d-332badb0ce00/public" knowledgeIconIndex={0} />
       </div>
 
       <div id="testimonials">

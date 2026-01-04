@@ -226,6 +226,7 @@ export default function PropertyServicesSectorPage() {
         title="Property Services Accountancy"
         subtitle="Specialist accountants for estate agents, landlords, property managers and investment companies"
         description="The property sector is one of the most diverse and fast-moving industries in the UK, with complex tax rules, regulatory requirements and financial structures that demand expert guidance. Whether you are managing a portfolio, running an estate agency, operating a property management business or investing through a Special Purpose Vehicle (SPV), strong financial oversight is essential."
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/3a91b8bb-5b8a-4ef2-7e58-7d87cb014f00/public"
       />
 
       <div id="services">
@@ -233,12 +234,14 @@ export default function PropertyServicesSectorPage() {
           title="Specialist Accountants for Property Professionals"
           subtitle="With over 30 years of experience supporting property professionals, we provide clear, sector-specific advice designed to help you stay compliant, maximise returns and plan confidently for long-term success"
           clientTypes={propertyServices}
+          bgColor="bg-gradient-to-br from-[#01458f] to-[#0052cc]"
+          darkMode={true}
         />
       </div>
 
       <ServiceOverview
         leftContent={{
-          title: 'Building Stronger Property Investments With Confidence',
+          title: 'Building Stronger Property\nInvestments With Confidence',
           description: "Whether you're an estate agent, landlord, property manager or investment company, we provide dependable financial expertise that supports long-term stability, compliance and growth. With specialist knowledge in both residential and commercial property, we help you navigate the sector with clarity and confidence.",
         }}
         rightContent={{
@@ -247,6 +250,7 @@ export default function PropertyServicesSectorPage() {
             { value: '500+', label: 'Property Clients' },
           ],
         }}
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/930408ea-1abd-4bb2-1815-71eefe665800/public"
       />
 
       {/* First CTA */}
@@ -312,7 +316,7 @@ export default function PropertyServicesSectorPage() {
       </section>
 
       <div id="benefits">
-        <ServiceBenefits title="Why Property Professionals Choose Us" items={benefits} />
+        <ServiceBenefits title="Why Property Professionals Choose Us" items={benefits} knowledgeIconUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/fa680a4f-c411-4da7-5327-e2eab6fe3e00/public" knowledgeIconIndex={0} />
       </div>
 
       <div id="testimonials">

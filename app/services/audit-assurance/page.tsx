@@ -98,9 +98,12 @@ const benefits = [
     title: 'Sector Expertise',
     description: 'Experienced auditors with sector-specific expertise across all industries',
     icon: (
-      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-      </svg>
+      // eslint-disable-next-line @next/next/no-img-element
+      <img
+        src="/transform-to-two-interlocking-puzzle-pieces-icon-w (2).svg"
+        alt="Sector expertise"
+        className="w-20 h-20 md:w-24 md:h-24"
+      />
     ),
   },
   {
@@ -117,16 +120,19 @@ const benefits = [
     title: 'Risk-Focused Approach',
     description: 'A risk-focused approach that enhances financial governance and controls',
     icon: (
-      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-      </svg>
+      // eslint-disable-next-line @next/next/no-img-element
+      <img
+        src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/8edebfff-e521-427e-be26-660492fa6700/public"
+        alt="Risk-focused approach"
+        className="w-20 h-20 md:w-24 md:h-24"
+      />
     ),
   },
   {
     title: 'Efficient Process',
     description: 'Efficient processes designed to minimise disruption to your operations',
     icon: (
-      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-16 h-16 md:w-20 md:h-20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
       </svg>
     ),
@@ -207,6 +213,7 @@ export default function AuditAssurancePage() {
         title="Audit & Assurance"
         subtitle="Independent, accurate and trusted audit and assurance services designed to strengthen financial credibility and support regulatory compliance"
         description="A robust audit provides far more than a statutory requirement—it offers valuable insight into the health, integrity and resilience of your organisation. Our Audit & Assurance services deliver a clear and independent view of your financial position, ensuring transparency, compliance and confidence for stakeholders."
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/2f5663c0-137b-4c3b-2f1a-10ebae6f5600/public"
       />
 
       <div id="services">
@@ -214,6 +221,8 @@ export default function AuditAssurancePage() {
           title="Our Key Audit Services"
           subtitle="Comprehensive audit and assurance solutions carried out by qualified and experienced auditors"
           clientTypes={auditServices}
+          bgColor="bg-gradient-to-br from-[#01458f] to-[#0052cc]"
+          darkMode={true}
         />
       </div>
 
@@ -228,10 +237,11 @@ export default function AuditAssurancePage() {
             { value: 'ICAEW', label: 'Registered Auditors' },
           ],
         }}
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/a8663433-46ee-44c9-e6e7-7a36928c8200/public"
       />
 
       <div id="benefits">
-        <ServiceBenefits title="Why Choose Our Audit & Assurance Services?" items={benefits} />
+        <ServiceBenefits title="Why Choose Our Audit & Assurance Services?" items={benefits} knowledgeIconUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/5ba000e9-3677-4be6-8d08-4cc8b5086b00/public" knowledgeIconIndex={1} />
       </div>
 
       <div id="testimonials">
@@ -242,7 +252,10 @@ export default function AuditAssurancePage() {
         />
       </div>
 
-      <CTASimple />
+      <CTASimple
+        heading="Ready to strengthen your financial integrity?"
+        supportingText="Independent audit and assurance services you can trust"
+      />
 
       <div id="faqs">
         <ServiceFAQ

@@ -7,9 +7,11 @@ interface BenefitItem {
 interface ServiceBenefitsProps {
   title: string;
   items: BenefitItem[];
+  knowledgeIconUrl?: string;
+  knowledgeIconIndex?: number; // Which card index (0-2) should get the knowledge icon
 }
 
-export function ServiceBenefits({ title, items }: ServiceBenefitsProps) {
+export function ServiceBenefits({ title, items, knowledgeIconUrl, knowledgeIconIndex }: ServiceBenefitsProps) {
   return (
     <section className="py-24 px-4 bg-gray-100">
       <div className="max-w-6xl mx-auto">
@@ -25,18 +27,23 @@ export function ServiceBenefits({ title, items }: ServiceBenefitsProps) {
           {items.map((item, index) => (
             <div
               key={index}
-              className={`relative flex flex-col items-center justify-center text-center p-4 md:p-8 rounded-xl border border-gray-200/50 transition-all duration-200 hover:shadow-lg hover:border-[#01458f]/30 min-h-[280px] md:min-h-[320px] ${
-                index === 3 ? 'bg-[#0047AB]' : 'bg-[#BBDEFB]'
-              }`}
+              className="relative flex flex-col items-center justify-center text-center p-4 md:p-8 rounded-xl border border-gray-200/50 transition-all duration-200 hover:shadow-lg hover:border-[#01458f]/30 min-h-[280px] md:min-h-[320px] bg-[#0047AB]"
             >
               {/* Icon - Large and Centered */}
-              <div className="mb-4 md:mb-8 text-[#01458f]">
+              <div className="mb-4 md:mb-8 bg-transparent">
                 {index === 3 ? (
                   // eslint-disable-next-line @next/next/no-img-element
                   <img
                     src="/wallet-with-coins--clean-minimal-fintech-design--r 1.svg"
                     alt="Transparent Fees"
-                    className="w-16 h-16 md:w-20 md:h-20"
+                    className="w-20 h-20 md:w-24 md:h-24 bg-transparent"
+                  />
+                ) : knowledgeIconUrl && index === knowledgeIconIndex ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={knowledgeIconUrl}
+                    alt={item.title}
+                    className="w-20 h-20 md:w-24 md:h-24 bg-transparent"
                   />
                 ) : (
                   item.icon
@@ -44,16 +51,12 @@ export function ServiceBenefits({ title, items }: ServiceBenefitsProps) {
               </div>
 
               {/* Title */}
-              <h3 className={`text-xs md:text-sm font-bold mb-2 tracking-wide uppercase whitespace-pre-line ${
-                index === 3 ? 'text-white' : 'text-gray-900'
-              }`}>
+              <h3 className="text-xs md:text-sm font-bold mb-2 tracking-wide uppercase whitespace-pre-line text-white">
                 {item.title}
               </h3>
 
               {/* Description */}
-              <p className={`text-xs leading-relaxed ${
-                index === 3 ? 'text-white/90' : 'text-gray-700'
-              }`}>
+              <p className="text-xs leading-relaxed text-white/90">
                 {item.description}
               </p>
             </div>

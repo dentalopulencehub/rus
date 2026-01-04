@@ -222,6 +222,8 @@ export default function ContractorsProfessionalServicesPage() {
           title="Specialist Accountants for Contractors & Consultants"
           subtitle="With over 30 years of experience supporting contractors and professional consultants, we provide clear, compliant and sector-specific accountancy services that help you focus on your work while we handle the financial side with accuracy and care"
           clientTypes={contractorServices}
+          bgColor="bg-gradient-to-br from-[#01458f] to-[#0052cc]"
+          darkMode={true}
         />
       </div>
 
@@ -236,6 +238,7 @@ export default function ContractorsProfessionalServicesPage() {
             { value: '400+', label: 'Contractor Clients' },
           ],
         }}
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/aee523d6-a6e2-41e2-5d74-88d3053f1600/public"
       />
 
       {/* First CTA */}

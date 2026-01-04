@@ -222,6 +222,8 @@ export default function CompanyFormationPage() {
           title="Comprehensive Company Formation Services"
           subtitle="Complete incorporation support with expert guidance at every step"
           clientTypes={formationServices}
+          bgColor="bg-gradient-to-br from-[#01458f] to-[#0052cc]"
+          darkMode={true}
         />
       </div>
 
@@ -335,7 +337,7 @@ export default function CompanyFormationPage() {
       </section>
 
       <div id="benefits">
-        <ServiceBenefits title="Why Choose Our Company Formation Service?" items={benefits} />
+        <ServiceBenefits title="Why Choose Our Company Formation Service?" items={benefits} knowledgeIconUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/c5cea02a-0117-439d-07d1-4ca5e4d1c400/public" knowledgeIconIndex={1} />
       </div>
 
       <div id="testimonials">

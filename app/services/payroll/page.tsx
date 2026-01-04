@@ -237,6 +237,8 @@ export default function PayrollPage() {
           subtitle="Complete payroll management from processing to compliance"
           clientTypes={payrollServices}
           columns={9}
+          bgColor="bg-gradient-to-br from-[#01458f] to-[#0052cc]"
+          darkMode={true}
         />
       </div>
 

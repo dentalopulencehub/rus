@@ -213,6 +213,7 @@ export default function HospitalityLeisurePage() {
         title="Hospitality & Leisure Sector Accountancy"
         subtitle="Specialist accountants for restaurants, cafés, hotels, bars, leisure businesses and hospitality operators"
         description="The hospitality and leisure industry is one of the most dynamic and fast-moving sectors in the UK — but it also faces intense financial pressures. Rising costs, fluctuating demand, staffing challenges, stock control, multi-stream revenue and strict regulatory compliance all make strong financial management essential."
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/5df867d0-d40c-4737-e407-1ac682f2ae00/public"
       />
 
       <div id="services">
@@ -220,12 +221,14 @@ export default function HospitalityLeisurePage() {
           title="Specialist Accountants for Hospitality & Leisure Businesses"
           subtitle="With over 30 years of experience supporting hospitality businesses, we understand the realities of day-to-day operations and the strategic demands of running a successful venue. Whether you manage a single site, multiple locations or a growing leisure brand, we provide clear, practical and sector-focused financial support"
           clientTypes={hospitalityServices}
+          bgColor="bg-gradient-to-br from-[#01458f] to-[#0052cc]"
+          darkMode={true}
         />
       </div>
 
       <ServiceOverview
         leftContent={{
-          title: 'Supporting Hospitality Success Across All Venues',
+          title: 'Supporting Hospitality Success\nAcross All Venues',
           description: 'From independent restaurants to multi-site hotel groups, we provide dependable accounting expertise that supports profitability, compliance and growth. With specialist knowledge in EPOS integration, stock control and hospitality-specific VAT, we help you navigate the sector with confidence.',
         }}
         rightContent={{
@@ -234,6 +237,7 @@ export default function HospitalityLeisurePage() {
             { value: '350+', label: 'Hospitality Clients' },
           ],
         }}
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/ba91546f-931f-4f2e-a712-8d1b4c89bf00/public"
       />
 
       {/* First CTA */}
@@ -299,7 +303,7 @@ export default function HospitalityLeisurePage() {
       </section>
 
       <div id="benefits">
-        <ServiceBenefits title="Why Hospitality Businesses Choose Us" items={benefits} />
+        <ServiceBenefits title="Why Hospitality Businesses Choose Us" items={benefits} knowledgeIconUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/c5cea02a-0117-439d-07d1-4ca5e4d1c400/public" knowledgeIconIndex={0} />
       </div>
 
       <div id="testimonials">

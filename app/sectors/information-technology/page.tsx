@@ -213,6 +213,7 @@ export default function InformationTechnologySectorPage() {
         title="Information Technology Sector Accountancy"
         subtitle="Specialist accountants for IT professionals, tech start-ups and fast-growing digital businesses"
         description="The IT and technology sector has expanded rapidly in recent years, driven by innovation, digital transformation and the rise of remote and cloud-based solutions. With this growth comes increasing financial complexity — from subscription-based revenue models and R&D tax relief to contractor regulations, international income and scaling challenges."
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/c1a56891-5cce-4e12-59a6-6a8c84b77d00/public"
       />
 
       <div id="services">
@@ -220,12 +221,14 @@ export default function InformationTechnologySectorPage() {
           title="Specialist Accountants for Technology Businesses"
           subtitle="With over 30 years of experience supporting technology businesses and IT professionals, we offer specialist accountancy and advisory services designed to meet the needs of a fast-paced, highly competitive industry. Whether you're a freelance developer, a SaaS start-up or a multi-site tech company, we provide clear, strategic and compliant financial guidance"
           clientTypes={itServices}
+          bgColor="bg-gradient-to-br from-[#01458f] to-[#0052cc]"
+          darkMode={true}
         />
       </div>
 
       <ServiceOverview
         leftContent={{
-          title: 'Supporting Tech Innovation With Financial Clarity',
+          title: 'Supporting Tech Innovation\nWith Financial Clarity',
           description: 'From IT contractors to SaaS scale-ups, we provide dependable accounting expertise that supports R&D tax relief, subscription revenue management and rapid growth. With specialist knowledge in digital services VAT, innovation funding and tech business models, we help you navigate the sector with confidence.',
         }}
         rightContent={{
@@ -234,6 +237,7 @@ export default function InformationTechnologySectorPage() {
             { value: '350+', label: 'Tech Clients' },
           ],
         }}
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/f5263711-e524-4b96-559c-d1792e659a00/public"
       />
 
       {/* First CTA */}
@@ -299,7 +303,7 @@ export default function InformationTechnologySectorPage() {
       </section>
 
       <div id="benefits">
-        <ServiceBenefits title="Why Technology Businesses Choose Us" items={benefits} />
+        <ServiceBenefits title="Why Technology Businesses Choose Us" items={benefits} knowledgeIconUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/3323978e-14d0-4f56-668d-332badb0ce00/public" knowledgeIconIndex={0} />
       </div>
 
       <div id="testimonials">
