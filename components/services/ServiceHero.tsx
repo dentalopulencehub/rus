@@ -57,10 +57,10 @@ export function ServiceHero({ title, subtitle, description, imageUrl }: ServiceH
         style={{ backgroundImage: 'url(https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/5ee11fdf-aac0-4c26-0f5e-026a2df87900/public)' }}
       />
 
-      <div className="relative z-10 max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center min-h-screen py-32">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 md:px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start md:items-center md:min-h-screen pt-24 pb-16 md:py-32">
           {/* Left - Text Content */}
-          <div className="space-y-8 pl-2">
+          <div className="space-y-8 order-1 lg:order-1">
             {/* Breadcrumbs - Minimal */}
             <nav aria-label="Breadcrumb" className="flex items-center space-x-2 text-sm">
               {breadcrumbs.map((item, index) => {
@@ -99,26 +99,38 @@ export function ServiceHero({ title, subtitle, description, imageUrl }: ServiceH
               {description}
             </p>
 
+            {/* Hero Image - Mobile Only (appears here between description and buttons) */}
+            {imageUrl && (
+              <div className="relative h-[300px] lg:hidden rounded-2xl overflow-hidden bg-white shadow-lg border border-gray-200/50">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={imageUrl}
+                  alt={title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            )}
+
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row items-start gap-4 pt-4">
+            <div className="flex flex-col md:flex-row items-stretch md:items-start gap-3 md:gap-4 pt-4">
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center px-8 py-3 bg-gray-900 text-white rounded-full text-sm font-medium hover:bg-gray-800 transition-all duration-200 shadow-sm w-48"
+                className="inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-3 bg-gray-900 text-white rounded-full text-sm md:text-sm font-medium hover:bg-gray-800 transition-all duration-200 shadow-sm w-full md:w-48 min-h-[48px] md:min-h-[44px]"
               >
                 Get Tax Advice
               </a>
               <a
                 href="#expertise"
-                className="inline-flex items-center justify-center px-8 py-3 bg-white text-gray-900 rounded-full text-sm font-medium border border-gray-200 hover:border-gray-300 transition-all duration-200 w-48"
+                className="inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-3 bg-white text-gray-900 rounded-full text-sm md:text-sm font-medium border border-gray-200 hover:border-gray-300 transition-all duration-200 w-full md:w-48 min-h-[48px] md:min-h-[44px]"
               >
                 Our Expertise
               </a>
             </div>
           </div>
 
-          {/* Right - Hero Image */}
+          {/* Right - Hero Image - Desktop/Tablet Only */}
           {imageUrl && (
-            <div className="relative h-[600px] lg:h-[700px] pr-8">
+            <div className="hidden lg:block relative md:h-[600px] lg:h-[700px] pr-0 md:pr-8 order-2 lg:order-2">
               <div className="absolute inset-0 rounded-2xl overflow-hidden bg-white shadow-lg border border-gray-200/50">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img

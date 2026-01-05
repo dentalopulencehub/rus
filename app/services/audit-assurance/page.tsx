@@ -241,7 +241,7 @@ export default function AuditAssurancePage() {
       />
 
       <div id="benefits">
-        <ServiceBenefits title="Why Choose Our Audit & Assurance Services?" items={benefits} knowledgeIconUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/5ba000e9-3677-4be6-8d08-4cc8b5086b00/public" knowledgeIconIndex={1} />
+        <ServiceBenefits title="Why Choose Our Audit\n& Assurance Services?" items={benefits} knowledgeIconUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/5ba000e9-3677-4be6-8d08-4cc8b5086b00/public" knowledgeIconIndex={1} />
       </div>
 
       <div id="testimonials">
