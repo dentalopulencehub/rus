@@ -50,7 +50,7 @@ export default function PrivacyPage() {
               <p><strong>Registered Address:</strong> 1190A-1192 Stratford Road, Hall Green, Birmingham, B28 8AB</p>
               <p><strong>Email:</strong> <a href="mailto:info@rus.co.uk" className="text-[#01458f] hover:underline">info@rus.co.uk</a></p>
               <p><strong>Phone:</strong> <a href="tel:01217771200" className="text-[#01458f] hover:underline">0121 777 1200</a></p>
-              <p><strong>ICO Registration:</strong> We are registered with the Information Commissioner's Office (ICO)</p>
+              <p><strong>ICO Registration Number:</strong> Z9265066</p>
             </div>
           </div>
 
@@ -123,7 +123,7 @@ export default function PrivacyPage() {
               <p>We process your personal data under the following legal bases:</p>
               <ul className="space-y-3 ml-6">
                 <li className="flex gap-2"><span className="text-[#01458f] font-bold">•</span><span><strong>Contract:</strong> Processing is necessary to perform our professional services</span></li>
-                <li className="flex gap-2"><span className="text-[#01458f] font-bold">•</span><span><strong>Legal Obligation:</strong> To comply with statutory requirements including HMRC, Companies House, FCA, and ICAEW</span></li>
+                <li className="flex gap-2"><span className="text-[#01458f] font-bold">•</span><span><strong>Legal Obligation:</strong> To comply with statutory requirements including HMRC, Companies House, and ICAEW</span></li>
                 <li className="flex gap-2"><span className="text-[#01458f] font-bold">•</span><span><strong>Legitimate Interests:</strong> To maintain client relationships, improve services, and prevent fraud</span></li>
                 <li className="flex gap-2"><span className="text-[#01458f] font-bold">•</span><span><strong>Consent:</strong> For marketing communications (where applicable)</span></li>
               </ul>
@@ -141,7 +141,6 @@ export default function PrivacyPage() {
               <ul className="space-y-2 ml-6">
                 <li className="flex gap-2"><span className="text-[#01458f]">•</span> HM Revenue & Customs (HMRC)</li>
                 <li className="flex gap-2"><span className="text-[#01458f]">•</span> Companies House</li>
-                <li className="flex gap-2"><span className="text-[#01458f]">•</span> Financial Conduct Authority (FCA)</li>
                 <li className="flex gap-2"><span className="text-[#01458f]">•</span> Professional indemnity insurers</li>
                 <li className="flex gap-2"><span className="text-[#01458f]">•</span> IT and cloud service providers</li>
                 <li className="flex gap-2"><span className="text-[#01458f]">•</span> Legal and professional advisers (where necessary)</li>

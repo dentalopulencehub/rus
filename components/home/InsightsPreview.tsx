@@ -5,25 +5,25 @@ import Link from 'next/link';
 
 const insights = [
   {
-    id: 1,
+    slug: 'inheritance-tax-planning-strategies-2024',
     category: 'Tax Planning',
-    title: 'Maximizing Your Tax Efficiency for 2025',
-    excerpt: 'Discover strategic approaches to optimize your tax position and take advantage of new allowances.',
+    title: 'Inheritance Tax Planning Strategies 2024',
+    excerpt: 'Discover strategic approaches to optimize your tax position and protect your estate for future generations.',
     readTime: '5 min read',
     date: 'Dec 2024',
     svgType: 'tax',
   },
   {
-    id: 2,
+    slug: 'r-and-d-tax-credits-complete-guide-for-smes',
     category: 'Business Growth',
-    title: 'Scaling Your Business: Financial Strategies',
-    excerpt: 'Key financial planning strategies to support sustainable business growth and expansion.',
+    title: 'R&D Tax Credits: Complete Guide for SMEs',
+    excerpt: 'Key financial planning strategies to support sustainable business growth through R&D tax relief.',
     readTime: '7 min read',
     date: 'Nov 2024',
     svgType: 'growth',
   },
   {
-    id: 3,
+    slug: 'making-tax-digital-vat-what-you-need-to-know',
     category: 'Compliance',
     title: 'Making Tax Digital: What You Need to Know',
     excerpt: 'Stay compliant with HMRC\'s digital requirements and streamline your reporting processes.',
@@ -32,19 +32,19 @@ const insights = [
     svgType: 'digital',
   },
   {
-    id: 4,
-    category: 'Financial Planning',
-    title: 'Cash Flow Management Best Practices',
-    excerpt: 'Essential techniques for maintaining healthy cash flow and avoiding common pitfalls.',
+    slug: 'gp-practice-accounting-nhs-pension-planning-guide',
+    category: 'Healthcare',
+    title: 'GP Practice Accounting & NHS Pension Planning',
+    excerpt: 'Essential guidance for GP practices on accounting requirements and NHS pension optimization.',
     readTime: '6 min read',
     date: 'Oct 2024',
     svgType: 'cashflow',
   },
   {
-    id: 5,
-    category: 'Investment',
-    title: 'Smart Investment Strategies for 2025',
-    excerpt: 'Navigate market volatility with proven investment approaches tailored for your business.',
+    slug: 'ir35-status-key-factors',
+    category: 'Tax Insights',
+    title: 'IR35 Status: Key Factors for Contractors',
+    excerpt: 'Navigate IR35 legislation with confidence and understand the key factors affecting your employment status.',
     readTime: '8 min read',
     date: 'Oct 2024',
     svgType: 'investment',
@@ -342,8 +342,8 @@ export function InsightsPreview() {
           >
             {insights.map((insight) => (
               <Link
-                key={insight.id}
-                href={`/insights/${insight.id}`}
+                key={insight.slug}
+                href={`/insights/${insight.slug}`}
                 className="group flex-none w-[420px] snap-start"
               >
                 <div className="h-full min-h-[480px] rounded-2xl border border-gray-200 bg-white hover:shadow-2xl hover:border-[#01458f] transition-all duration-300 overflow-hidden flex flex-col">

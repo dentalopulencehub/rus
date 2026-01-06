@@ -269,7 +269,7 @@ export function CompanyIntro() {
             <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-green-500/3 rounded-full blur-xl"></div>
 
             {/* Trustpilot Badge */}
-            <div className="relative z-10 w-full flex flex-col items-center justify-center">
+            <div className="relative z-10 w-full flex flex-col items-center justify-center gap-2">
               <Image
                 src="/Frame 5.svg"
                 alt="Trustpilot - Rated Excellent"
@@ -278,6 +278,10 @@ export function CompanyIntro() {
                 className="w-full max-w-[280px] h-auto"
                 priority
               />
+              <div className="text-center">
+                <div className="text-lg font-bold text-gray-900">Excellent</div>
+                <div className="text-sm text-gray-600">Rated 5.0 out of 5</div>
+              </div>
             </div>
           </div>
 
@@ -311,8 +315,8 @@ export function CompanyIntro() {
             <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-[#01458f]/3 rounded-full blur-xl"></div>
 
             <div className="relative z-10 flex flex-col items-center justify-center h-full text-center">
-              <div className="text-5xl font-bold text-[#01458f] mb-2 tracking-tight">10,000+</div>
-              <div className="text-sm font-semibold text-gray-700 tracking-wide mb-1">Businesses Helped</div>
+              <div className="text-5xl font-bold text-[#01458f] mb-2 tracking-tight">7,000+</div>
+              <div className="text-sm font-semibold text-gray-700 tracking-wide mb-1">Businesses & Individuals Helped</div>
               <div className="text-xs font-medium text-[#01458f] tracking-wide">Across the UK Since 1995</div>
             </div>
           </div>

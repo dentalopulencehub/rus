@@ -23,13 +23,13 @@ export function Hero() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-4">
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center px-8 py-2 bg-gray-900 text-white rounded-full text-sm font-medium hover:bg-gray-800 transition-all duration-200 shadow-sm w-40"
+                className="inline-flex items-center justify-center px-8 py-2 bg-[#01458f]/90 backdrop-blur-xl backdrop-saturate-150 text-white rounded-full text-sm font-medium hover:bg-[#01458f] hover:shadow-lg transition-all duration-200 shadow-sm w-40 border border-white/20"
               >
                 Contact Us
               </a>
               <a
                 href="/services"
-                className="inline-flex items-center justify-center px-8 py-2 bg-white text-gray-900 rounded-full text-sm font-medium border border-gray-200 hover:border-gray-300 transition-all duration-200 w-40"
+                className="inline-flex items-center justify-center px-8 py-2 bg-white text-[#01458f] rounded-full text-sm font-medium border border-[#01458f]/20 hover:border-[#01458f]/40 hover:shadow-md transition-all duration-200 w-40"
               >
                 Our Services
               </a>

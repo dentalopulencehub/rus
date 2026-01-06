@@ -4,46 +4,74 @@ import { useRef, useState, useEffect } from 'react';
 
 const placeholderReviews = [
   {
-    name: 'John Smith',
+    name: 'tabrazerasul',
     rating: 5,
-    date: '2 weeks ago',
-    text: 'Excellent service! The team at RUS Accountants provided expert guidance on our tax planning. Highly professional and responsive.',
-    avatar: 'JS',
+    date: 'a month ago',
+    text: 'I have been with RUS for the last several years and they have gone above and beyond. I feel completely reassured by their proactiveness and advice. I would fully endorse them to anyone who requires a professional and knowledgeable accountant firm.',
+    avatar: 'TR',
   },
   {
-    name: 'Sarah Johnson',
+    name: 'Zam Zam',
     rating: 5,
-    date: '1 month ago',
-    text: 'Been using RUS for 5 years now. They handle everything from bookkeeping to year-end accounts. Couldn\'t recommend them more highly.',
-    avatar: 'SJ',
+    date: '7 months ago',
+    text: 'RUS Accountants have been an absolute game-changer for my finances. Their team are professional, responsive, and incredibly knowledgeable. Raza, Adam, Hassan and Shams have helped me navigate complex tax matters with ease.',
+    avatar: 'ZZ',
   },
   {
-    name: 'Michael Brown',
+    name: 'Dilly H',
     rating: 5,
-    date: '3 months ago',
-    text: 'Very knowledgeable team. They helped us navigate complex VAT issues and saved us a significant amount. Great value for money.',
-    avatar: 'MB',
+    date: '7 months ago',
+    text: 'It has been absolutely fantastic working with the team at RUS Chartered Accounting. The team are very efficient, very helpful and with always go above & beyond to make sure you have what you need and offer so much support! Thank you for all your hard work!',
+    avatar: 'DH',
   },
   {
-    name: 'Emma Wilson',
+    name: 'Yaseen Malik',
     rating: 5,
-    date: '1 month ago',
-    text: 'Professional, efficient, and always available when we need advice. RUS has been instrumental in our business growth.',
-    avatar: 'EW',
+    date: '9 months ago',
+    text: 'I have been using RUS Accountancy for the past five years for both my property company and locum GP work, and I couldn\'t be more satisfied with their service. Their team is incredibly knowledgeable and always willing to offer helpful advice.',
+    avatar: 'YM',
   },
   {
-    name: 'David Lee',
+    name: 'Mo Karim',
     rating: 5,
-    date: '2 months ago',
-    text: 'Outstanding accountancy firm. They go above and beyond to ensure everything is compliant and optimized for our business.',
-    avatar: 'DL',
+    date: 'a year ago',
+    text: 'Having been a client for more than 10 years, Raza and Adam have been fantastic in supporting the growth of my business and the advice second to none in all the different scenarios good and bad you can experience and navigating the ups and downs. Cannot recommend enough.',
+    avatar: 'MK',
   },
   {
-    name: 'Rachel Green',
+    name: 'Stevan Gill',
     rating: 5,
-    date: '3 weeks ago',
-    text: 'Switched to RUS last year and haven\'t looked back. Clear communication and proactive advice that actually saves us money.',
-    avatar: 'RG',
+    date: 'a year ago',
+    text: 'Absolutely brilliant service and support, always prompt with information and constantly making improvements to how they provide their services, right down to the receptionist and call backs, always given sound business advice and best business practices.',
+    avatar: 'SG',
+  },
+  {
+    name: 'Asim Khan',
+    rating: 5,
+    date: 'a year ago',
+    text: 'I have found Adam, Tahmina and the rest of team always very helpful with all my queries. I have always had a fantastic service.',
+    avatar: 'AK',
+  },
+  {
+    name: 'yameen malik',
+    rating: 5,
+    date: 'a year ago',
+    text: 'I have a voip tele communications business and I have been with RUS since 1998. I can only recommend them as they have provided an outstanding service. Even when I have found tax challenging RUS have explained it in a simple way making it easy for me.',
+    avatar: 'YM',
+  },
+  {
+    name: 'mohammed nazir',
+    rating: 5,
+    date: 'a year ago',
+    text: 'Raza Samar and his team have always provided us with an exceptional service for our supermarket. Keep up the great work!',
+    avatar: 'MN',
+  },
+  {
+    name: 'Rashid Mahmood',
+    rating: 5,
+    date: 'a year ago',
+    text: 'If you want an accountant who has the time to call you and discuss issues regarding your business then look no further than RUS Accountants. RUS gives you the time and care your business needs to flourish, a win for both parties.',
+    avatar: 'RM',
   },
 ];
 
@@ -106,13 +134,13 @@ export function ReviewsSlider() {
           <div className="flex items-center gap-2 mb-1">
             <div className="flex">
               {[...Array(5)].map((_, i) => (
-                <svg key={i} className="w-5 h-5 text-yellow-400 fill-current">
+                <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24">
                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                 </svg>
               ))}
             </div>
             <span className="text-gray-700 text-sm font-semibold">5.0</span>
-            <span className="text-gray-500 text-sm">· 50+ reviews</span>
+            <span className="text-gray-500 text-sm">· 75+ reviews</span>
           </div>
         </div>
 
@@ -185,7 +213,7 @@ export function ReviewsSlider() {
                     {/* Rating */}
                     <div className="flex gap-0.5">
                       {[...Array(review.rating)].map((_, i) => (
-                        <svg key={i} className="w-4 h-4 text-yellow-400 fill-current">
+                        <svg key={i} className="w-4 h-4 text-yellow-400 fill-current" viewBox="0 0 24 24">
                           <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                         </svg>
                       ))}

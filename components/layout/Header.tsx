@@ -75,7 +75,7 @@ export function Header() {
             <CommandMenu />
             <a
               href="#"
-              className="hidden md:inline-flex items-center justify-center px-6 py-1.5 rounded-full text-sm font-medium text-white bg-gray-900 hover:bg-gray-800 transition-all duration-200 shadow-sm"
+              className="hidden md:inline-flex items-center justify-center px-6 py-1.5 rounded-full text-sm font-medium text-white bg-[#01458f] hover:bg-[#01458f]/90 hover:shadow-md transition-all duration-200 shadow-sm"
               target="_blank"
               rel="noopener noreferrer"
             >

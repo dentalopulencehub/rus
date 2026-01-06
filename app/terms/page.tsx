@@ -294,7 +294,7 @@ export default function TermsPage() {
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-8 py-3 bg-[#01458f] text-white font-medium rounded-full hover:bg-[#0052cc] transition-colors duration-200"
+              className="inline-flex items-center justify-center px-8 py-3 bg-[#01458f] text-white font-semibold rounded-full hover:bg-[#0052cc] transition-all duration-200 shadow-md hover:shadow-lg"
             >
               Contact Us
             </Link>

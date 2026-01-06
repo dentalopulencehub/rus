@@ -110,9 +110,9 @@ const benefits = [
     title: 'Independent Reporting',
     description: 'Independent, transparent and insightful reporting you can trust',
     icon: (
-      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+      <svg className="w-20 h-20 md:w-24 md:h-24" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
       </svg>
     ),
   },
@@ -132,8 +132,8 @@ const benefits = [
     title: 'Efficient Process',
     description: 'Efficient processes designed to minimise disruption to your operations',
     icon: (
-      <svg className="w-16 h-16 md:w-20 md:h-20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+      <svg className="w-20 h-20 md:w-24 md:h-24" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
       </svg>
     ),
   },
@@ -241,7 +241,7 @@ export default function AuditAssurancePage() {
       />
 
       <div id="benefits">
-        <ServiceBenefits title="Why Choose Our Audit\n& Assurance Services?" items={benefits} knowledgeIconUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/5ba000e9-3677-4be6-8d08-4cc8b5086b00/public" knowledgeIconIndex={1} />
+        <ServiceBenefits title="Why Choose Our Audit and Assurance Services?" items={benefits} knowledgeIconUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/5ba000e9-3677-4be6-8d08-4cc8b5086b00/public" knowledgeIconIndex={1} />
       </div>
 
       <div id="testimonials">
