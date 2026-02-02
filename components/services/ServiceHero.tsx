@@ -3,6 +3,7 @@
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { useMemo } from 'react';
+import { useContactForm } from '@/components/contact/ContactFormContext';
 
 interface ServiceHeroProps {
   title: string;
@@ -28,6 +29,7 @@ export function ServiceHero({
   secondaryCta = { text: 'About Us', href: '/who-we-are' }
 }: ServiceHeroProps) {
   const pathname = usePathname();
+  const { openModal } = useContactForm();
 
   const breadcrumbs = useMemo(() => {
     const segments = pathname.split('/').filter(Boolean);
@@ -128,12 +130,12 @@ export function ServiceHero({
 
             {/* CTA Buttons */}
             <div className="flex flex-col md:flex-row items-stretch md:items-start gap-3 md:gap-4 pt-4">
-              <a
-                href={primaryCta.href}
+              <button
+                onClick={openModal}
                 className="inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-3 bg-gray-900 text-white rounded-full text-sm md:text-sm font-medium hover:bg-gray-800 transition-all duration-200 shadow-sm w-full md:w-48 min-h-[48px] md:min-h-[44px]"
               >
                 {primaryCta.text}
-              </a>
+              </button>
               <a
                 href={secondaryCta.href}
                 className="inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-3 bg-white text-gray-900 rounded-full text-sm md:text-sm font-medium border border-gray-200 hover:border-gray-300 transition-all duration-200 w-full md:w-48 min-h-[48px] md:min-h-[44px]"
