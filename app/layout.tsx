@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Suspense } from 'react';
 import './globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
@@ -60,7 +61,9 @@ export default function RootLayout({
         </noscript>
 
         <OrganizationSchema />
-        <GTMPageView />
+        <Suspense fallback={null}>
+          <GTMPageView />
+        </Suspense>
         <ContactFormProvider>
           <Header />
           <main className="pb-16 overflow-x-hidden">{children}</main>
