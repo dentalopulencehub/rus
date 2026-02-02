@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { useContactForm } from '@/components/contact/ContactFormContext';
 
 interface CTASimpleProps {
   heading?: string;
@@ -15,6 +16,8 @@ export function CTASimple({
   buttonText = "Contact Us",
   buttonHref = "/contact"
 }: CTASimpleProps) {
+  const { openModal } = useContactForm();
+
   return (
     <section className="w-full flex items-center justify-center bg-white px-4 py-24 pt-32">
       <div className="max-w-6xl mx-auto w-full">
@@ -73,8 +76,8 @@ export function CTASimple({
             </h2>
 
             {/* CTA Button */}
-            <Link
-              href={buttonHref}
+            <button
+              onClick={openModal}
               className="relative inline-flex items-center justify-center px-6 py-2.5 sm:px-8 sm:py-3 bg-white text-gray-900 rounded-full text-base sm:text-sm font-medium hover:shadow-2xl hover:shadow-white/30 transition-all duration-300 overflow-hidden group"
             >
               {/* Layer 1: Glassmorphic backdrop */}
@@ -87,7 +90,7 @@ export function CTASimple({
               <div className="absolute inset-0 -z-30 bg-white rounded-full transition-all duration-300 group-hover:bg-white/95" />
 
               <span className="relative z-10">{buttonText}</span>
-            </Link>
+            </button>
 
             {/* Supporting Text */}
             <p className="text-white/90 text-sm md:text-base">
