@@ -9,9 +9,24 @@ interface ServiceHeroProps {
   subtitle: string;
   description: string;
   imageUrl?: string;
+  primaryCta?: {
+    text: string;
+    href: string;
+  };
+  secondaryCta?: {
+    text: string;
+    href: string;
+  };
 }
 
-export function ServiceHero({ title, subtitle, description, imageUrl }: ServiceHeroProps) {
+export function ServiceHero({
+  title,
+  subtitle,
+  description,
+  imageUrl,
+  primaryCta = { text: 'Get Started', href: '/contact' },
+  secondaryCta = { text: 'About Us', href: '/who-we-are' }
+}: ServiceHeroProps) {
   const pathname = usePathname();
 
   const breadcrumbs = useMemo(() => {
@@ -114,16 +129,16 @@ export function ServiceHero({ title, subtitle, description, imageUrl }: ServiceH
             {/* CTA Buttons */}
             <div className="flex flex-col md:flex-row items-stretch md:items-start gap-3 md:gap-4 pt-4">
               <a
-                href="/contact"
+                href={primaryCta.href}
                 className="inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-3 bg-gray-900 text-white rounded-full text-sm md:text-sm font-medium hover:bg-gray-800 transition-all duration-200 shadow-sm w-full md:w-48 min-h-[48px] md:min-h-[44px]"
               >
-                Get Tax Advice
+                {primaryCta.text}
               </a>
               <a
-                href="#expertise"
+                href={secondaryCta.href}
                 className="inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-3 bg-white text-gray-900 rounded-full text-sm md:text-sm font-medium border border-gray-200 hover:border-gray-300 transition-all duration-200 w-full md:w-48 min-h-[48px] md:min-h-[44px]"
               >
-                Our Expertise
+                {secondaryCta.text}
               </a>
             </div>
           </div>
