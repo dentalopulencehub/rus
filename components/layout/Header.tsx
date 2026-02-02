@@ -15,7 +15,7 @@ export function Header() {
       "fixed left-0 right-0 top-0 z-50 transition-all duration-300 ease-out",
       isScrolled ? "py-2 px-4" : "py-4 px-4"
     )}>
-      <nav className="relative h-[75px] max-w-6xl mx-auto px-8 rounded-xl shadow-lg transition-all duration-300 ease-out flex items-center">
+      <nav className="relative h-[75px] max-w-6xl mx-auto px-4 md:px-8 rounded-xl shadow-lg transition-all duration-300 ease-out flex items-center">
         {/* Layer 1: Glassmorphic backdrop with blur and saturation */}
         <div className="absolute inset-0 -z-10 rounded-xl overflow-hidden before:absolute before:inset-0 before:backdrop-blur-xl before:backdrop-saturate-150" />
 
@@ -25,7 +25,7 @@ export function Header() {
         {/* Layer 3: Solid background base */}
         <div className="absolute inset-0 -z-30 bg-white/70 rounded-xl overflow-hidden" />
 
-        <div className="relative z-10 w-full grid grid-cols-[auto_1fr_auto] items-center gap-4">
+        <div className="relative z-10 w-full grid grid-cols-[auto_1fr_auto] items-center gap-2 md:gap-4">
           {/* Logo */}
           <Link
             href="/"
@@ -73,14 +73,6 @@ export function Header() {
           {/* Trailing Actions */}
           <div className="flex items-center gap-2 justify-end">
             <CommandMenu />
-            <a
-              href="#"
-              className="hidden md:inline-flex items-center justify-center px-6 py-1.5 rounded-full text-sm font-medium text-white bg-[#01458f] hover:bg-[#01458f]/90 hover:shadow-md transition-all duration-200 shadow-sm"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Portal
-            </a>
           </div>
         </div>
       </nav>

@@ -10,6 +10,7 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "@next/third-parties": "^16.1.6",
     "@types/three": "^0.182.0",
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",

@@ -11,16 +11,16 @@ export function Hero() {
 
       <div className="relative z-10 max-w-5xl mx-auto w-full">
         <div className="flex flex-col items-center text-center space-y-12">
-          {/* Top - Content */}
+          {/* Top - Title */}
           <div className="space-y-6">
             {/* Main Title - Uppercase */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-tight tracking-tight uppercase">
-              An Anchor of Stability <br className="hidden md:block" />
+              An Anchor of Stability <br />
               in a Sea of Complexity.
             </h1>
 
-            {/* CTA Buttons - Vercel Style */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-4">
+            {/* CTA Buttons - Desktop Only */}
+            <div className="hidden md:flex flex-row items-center justify-center gap-3 pt-4">
               <a
                 href="/contact"
                 className="inline-flex items-center justify-center px-8 py-2 bg-[#01458f]/90 backdrop-blur-xl backdrop-saturate-150 text-white rounded-full text-sm font-medium hover:bg-[#01458f] hover:shadow-lg transition-all duration-200 shadow-sm w-40 border border-white/20"
@@ -28,15 +28,15 @@ export function Hero() {
                 Contact Us
               </a>
               <a
-                href="/services"
+                href="/who-we-are"
                 className="inline-flex items-center justify-center px-8 py-2 bg-white text-[#01458f] rounded-full text-sm font-medium border border-[#01458f]/20 hover:border-[#01458f]/40 hover:shadow-md transition-all duration-200 w-40"
               >
-                Our Services
+                About Us
               </a>
             </div>
           </div>
 
-          {/* Bottom - Hero Image */}
+          {/* Middle - Hero Image */}
           <div className="relative w-full max-w-4xl">
             <div className="relative w-full aspect-[16/6] rounded-xl border border-gray-200/50 shadow-lg overflow-hidden bg-white">
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -46,6 +46,22 @@ export function Hero() {
                 className="w-full h-full object-contain"
               />
             </div>
+          </div>
+
+          {/* Bottom - CTA Buttons Mobile Only (below image) */}
+          <div className="flex md:hidden flex-row items-center justify-center gap-3 -mt-6">
+            <a
+              href="/contact"
+              className="inline-flex items-center justify-center px-8 py-2 bg-[#01458f]/90 backdrop-blur-xl backdrop-saturate-150 text-white rounded-full text-sm font-medium hover:bg-[#01458f] hover:shadow-lg transition-all duration-200 shadow-sm w-40 border border-white/20"
+            >
+              Contact Us
+            </a>
+            <a
+              href="/who-we-are"
+              className="inline-flex items-center justify-center px-8 py-2 bg-white text-[#01458f] rounded-full text-sm font-medium border border-[#01458f]/20 hover:border-[#01458f]/40 hover:shadow-md transition-all duration-200 w-40"
+            >
+              About Us
+            </a>
           </div>
         </div>
       </div>

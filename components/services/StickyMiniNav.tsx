@@ -65,7 +65,7 @@ export function StickyMiniNav({ links }: StickyMiniNavProps) {
 
   return (
     <nav
-      className={`fixed right-6 top-1/2 -translate-y-1/2 z-40 transition-all duration-500 ease-out ${
+      className={`fixed right-6 bottom-20 md:top-1/2 md:-translate-y-1/2 md:bottom-auto z-40 transition-all duration-500 ease-out ${
         isVisible ? 'opacity-100 translate-x-0 scale-100' : 'opacity-0 translate-x-12 scale-95 pointer-events-none'
       }`}
       style={{

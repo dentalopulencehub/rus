@@ -124,3 +124,18 @@ export function generateExcerpt(htmlContent: string, maxLength: number = 160): s
   const text = htmlContent.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
   return truncateText(text, maxLength);
 }
+
+/**
+ * Get insights featured on the home page carousel
+ * Filters by featured flag and sorts by display order
+ */
+export function getHomePageInsights(limit: number = 5): InsightPost[] {
+  return insightPosts
+    .filter(post => post.homePageDisplay?.featured)
+    .sort((a, b) => {
+      const orderA = a.homePageDisplay?.order ?? 999;
+      const orderB = b.homePageDisplay?.order ?? 999;
+      return orderA - orderB;
+    })
+    .slice(0, limit);
+}

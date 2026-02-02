@@ -197,14 +197,6 @@ export function Footer() {
                       Contact
                     </ContactTrigger>
                   </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="text-sm text-white/40 hover:text-white transition-colors duration-300 font-light block"
-                    >
-                      Client Portal
-                    </a>
-                  </li>
                 </ul>
               </div>
 

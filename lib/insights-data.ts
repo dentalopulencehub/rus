@@ -31,6 +31,7 @@ export interface InsightPost {
   tags: string[];
   relatedServices?: string[]; // Links to service pages (for smart tagging later)
   seo?: InsightSEO;
+  homePageDisplay?: HomePageDisplay;
 }
 
 export interface InsightCategory {
@@ -47,6 +48,12 @@ export interface InsightSEO {
   metaDescription?: string;
   canonicalUrl?: string;
   ogImage?: string;
+}
+
+export interface HomePageDisplay {
+  svgType: 'tax' | 'growth' | 'digital' | 'cashflow' | 'investment';
+  featured: boolean;
+  order?: number;
 }
 
 // Insight Categories - Aligned with RUS Services
@@ -153,6 +160,7 @@ export const insightPosts: InsightPost[] = [
     views: 2500,
     tags: ['IR35', 'contractor tax', 'employment status', 'HMRC', 'off payroll', 'limited company'],
     relatedServices: ['/services/taxation-services', '/sectors/contractors-professional-services'],
+    homePageDisplay: { svgType: 'investment', featured: true, order: 5 },
     seo: {
       metaTitle: 'IR35 Status: Key Factors for Contractors | RUS Chartered Accountants',
       metaDescription: 'Expert guide to IR35 status determination. Understand control, substitution, and mutuality of obligation for contractors and limited companies.',
@@ -284,6 +292,7 @@ export const insightPosts: InsightPost[] = [
     views: 1876,
     tags: ['making tax digital', 'VAT', 'HMRC', 'compliance', 'digital accounting'],
     relatedServices: ['/services/taxation-services/business-tax', '/services/bookkeeping'],
+    homePageDisplay: { svgType: 'digital', featured: true, order: 3 },
     seo: {
       metaTitle: 'Making Tax Digital for VAT 2024 Guide | RUS Accountants Birmingham',
       metaDescription: 'Complete MTD for VAT guide. Software requirements, compliance deadlines and how RUS can help your business meet HMRC digital record-keeping obligations.',
@@ -327,6 +336,7 @@ export const insightPosts: InsightPost[] = [
     views: 1234,
     tags: ['NHS pensions', 'GP accounting', 'medical practitioners', 'pension tax', 'healthcare'],
     relatedServices: ['/sectors/healthcare', '/sectors/healthcare/medical'],
+    homePageDisplay: { svgType: 'cashflow', featured: true, order: 4 },
     seo: {
       metaTitle: 'NHS Pension Planning for GPs | Expert Guide | RUS Chartered Accountants',
       metaDescription: 'Essential NHS pension planning guide for GPs and medical practitioners. Annual allowance, tax charges and strategies from specialist healthcare accountants.',
@@ -370,6 +380,7 @@ export const insightPosts: InsightPost[] = [
     views: 987,
     tags: ['inheritance tax', 'IHT planning', 'estate planning', 'wealth protection', 'trusts'],
     relatedServices: ['/services/taxation-services/inheritance-tax'],
+    homePageDisplay: { svgType: 'tax', featured: true, order: 1 },
     seo: {
       metaTitle: 'Inheritance Tax Planning Strategies 2025 | IHT Advice | RUS Accountants',
       metaDescription: 'Expert IHT planning strategies to protect your estate. Trusts, lifetime gifts, BPR and tax-efficient wealth transfer from specialist accountants.',
@@ -422,6 +433,7 @@ export const insightPosts: InsightPost[] = [
     views: 1543,
     tags: ['R&D tax credits', 'innovation', 'SME', 'tax relief', 'HMRC claims'],
     relatedServices: ['/services/taxation-services/business-tax'],
+    homePageDisplay: { svgType: 'growth', featured: true, order: 2 },
     seo: {
       metaTitle: 'R&D Tax Credits Guide for UK SMEs 2024 | RUS Chartered Accountants',
       metaDescription: 'Complete guide to claiming R&D tax credits. Qualifying activities, merged scheme rates and how RUS can maximize your innovation tax relief.',
@@ -475,6 +487,7 @@ export const insightPosts: InsightPost[] = [
     views: 432,
     tags: ['firm news', 'RUS updates', 'chartered accountants Birmingham'],
     relatedServices: ['/who-we-are'],
+    homePageDisplay: { svgType: 'investment', featured: false, order: 6 },
     seo: {
       metaTitle: 'Welcome to RUS Insights | Expert Accounting & Tax Blog | Birmingham',
       metaDescription: 'Introducing RUS Insights - your source for expert tax advice, business guidance and accounting updates from Birmingham\'s trusted chartered accountants.',

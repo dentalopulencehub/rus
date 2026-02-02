@@ -2,54 +2,7 @@
 
 import { useRef, useState, useEffect } from 'react';
 import Link from 'next/link';
-
-const insights = [
-  {
-    slug: 'inheritance-tax-planning-strategies-2024',
-    category: 'Tax Planning',
-    title: 'Inheritance Tax Planning Strategies 2024',
-    excerpt: 'Discover strategic approaches to optimize your tax position and protect your estate for future generations.',
-    readTime: '5 min read',
-    date: 'Dec 2024',
-    svgType: 'tax',
-  },
-  {
-    slug: 'r-and-d-tax-credits-complete-guide-for-smes',
-    category: 'Business Growth',
-    title: 'R&D Tax Credits: Complete Guide for SMEs',
-    excerpt: 'Key financial planning strategies to support sustainable business growth through R&D tax relief.',
-    readTime: '7 min read',
-    date: 'Nov 2024',
-    svgType: 'growth',
-  },
-  {
-    slug: 'making-tax-digital-vat-what-you-need-to-know',
-    category: 'Compliance',
-    title: 'Making Tax Digital: What You Need to Know',
-    excerpt: 'Stay compliant with HMRC\'s digital requirements and streamline your reporting processes.',
-    readTime: '4 min read',
-    date: 'Nov 2024',
-    svgType: 'digital',
-  },
-  {
-    slug: 'gp-practice-accounting-nhs-pension-planning-guide',
-    category: 'Healthcare',
-    title: 'GP Practice Accounting & NHS Pension Planning',
-    excerpt: 'Essential guidance for GP practices on accounting requirements and NHS pension optimization.',
-    readTime: '6 min read',
-    date: 'Oct 2024',
-    svgType: 'cashflow',
-  },
-  {
-    slug: 'ir35-status-key-factors',
-    category: 'Tax Insights',
-    title: 'IR35 Status: Key Factors for Contractors',
-    excerpt: 'Navigate IR35 legislation with confidence and understand the key factors affecting your employment status.',
-    readTime: '8 min read',
-    date: 'Oct 2024',
-    svgType: 'investment',
-  },
-];
+import { getHomePageInsights, formatDate } from '@/lib/insights-helpers';
 
 const FinanceSVG = ({ type }: { type: string }) => {
   switch (type) {
@@ -245,6 +198,7 @@ const FinanceSVG = ({ type }: { type: string }) => {
 };
 
 export function InsightsPreview() {
+  const insights = getHomePageInsights(5);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
@@ -350,7 +304,7 @@ export function InsightsPreview() {
                   {/* SVG Illustration - Large and Prominent */}
                   <div className="h-56 bg-gradient-to-br from-gray-50 to-white flex items-center justify-center border-b border-gray-100 group-hover:from-[#BBDEFB]/20 group-hover:to-white transition-all duration-300">
                     <div className="w-48 h-48 group-hover:scale-110 transition-transform duration-300">
-                      <FinanceSVG type={insight.svgType} />
+                      <FinanceSVG type={insight.homePageDisplay?.svgType || 'tax'} />
                     </div>
                   </div>
 
@@ -358,7 +312,7 @@ export function InsightsPreview() {
                   <div className="p-8 flex flex-col flex-grow">
                     {/* Category Badge */}
                     <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-gray-100 rounded-full mb-4 self-start group-hover:bg-[#BBDEFB] transition-colors duration-300">
-                      <span className="text-xs font-medium text-gray-700">{insight.category}</span>
+                      <span className="text-xs font-medium text-gray-700">{insight.category.name}</span>
                     </div>
 
                     {/* Title */}
@@ -376,8 +330,8 @@ export function InsightsPreview() {
 
                     {/* Footer */}
                     <div className="flex items-center justify-between text-xs text-gray-500">
-                      <span>{insight.date}</span>
-                      <span>{insight.readTime}</span>
+                      <span>{formatDate(insight.publishedAt)}</span>
+                      <span>{insight.readTime} min read</span>
                     </div>
                   </div>
                 </div>
