@@ -4,7 +4,7 @@
 // RUS Logo - Hosted image for better email compatibility
 const RUS_LOGO_INLINE = `
 <div style="margin: 0 auto; text-align: center; padding: 0;">
-  <img src="https://rus.co.uk/RUS%20logo.svg" alt="RUS Chartered Accountants" width="500" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
+  <img src="https://rus-swart.vercel.app/RUS%20logo.svg" alt="RUS Chartered Accountants" width="500" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
 </div>
 `;
 
