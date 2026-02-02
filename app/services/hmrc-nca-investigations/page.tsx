@@ -236,40 +236,10 @@ export default function HMRCNCAInvestigationsPage() {
         imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/9138c1d3-957c-40f7-5d3c-746815ad5600/public"
       />
 
-      {/* First CTA - Tax Investigation Cover Quote */}
-      <section className="py-20 md:py-32 px-4 md:px-6 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent"></div>
-
-        <div className="max-w-5xl mx-auto relative z-10">
-          <div className="text-center space-y-8">
-            <div className="space-y-4">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight">
-                Protect yourself with<br />Tax Investigation Cover
-              </h2>
-              <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
-                Insurance protection covering professional fees during HMRC enquiries. Get immediate expert support without cost concerns.
-              </p>
-            </div>
-
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4">
-              <a
-                href="/contact"
-                className="relative inline-flex items-center justify-center px-32 py-2 bg-white text-gray-900 rounded-full text-base md:text-lg font-semibold hover:shadow-2xl hover:shadow-white/30 transition-all duration-300 overflow-hidden group"
-              >
-                <span className="relative z-10">Get a Quote</span>
-              </a>
-
-              <a
-                href="/who-we-are"
-                className="relative inline-flex items-center justify-center px-32 py-2 bg-transparent text-white rounded-full text-base md:text-lg font-semibold border-2 border-white/30 hover:border-white/60 hover:bg-white/10 transition-all duration-300"
-              >
-                <span className="relative z-10">Learn More</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <CTASimple
+        heading="Need Tax Investigation Cover?"
+        supportingText="Protect your business with comprehensive tax investigation insurance and expert representation."
+      />
 
       <div id="benefits">
         <ServiceBenefits title="Why Choose Our HMRC & NCA Investigation Support?" items={benefits} />
@@ -283,48 +253,10 @@ export default function HMRCNCAInvestigationsPage() {
         />
       </div>
 
-      {/* Second CTA - Contact */}
-      <section className="py-20 md:py-32 px-4 md:px-6 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent"></div>
-
-        <div className="max-w-5xl mx-auto relative z-10">
-          <div className="text-center space-y-8">
-            <div className="space-y-4">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight">
-                Facing an HMRC or NCA<br />investigation?
-              </h2>
-              <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
-                Early professional advice is essential. Contact us today for confidential, expert support.
-              </p>
-            </div>
-
-            <div className="flex flex-col items-center gap-6">
-              <a
-                href="/contact"
-                className="relative inline-flex items-center justify-center px-32 py-2 bg-white text-gray-900 rounded-full text-base md:text-lg font-semibold hover:shadow-2xl hover:shadow-white/30 transition-all duration-300 overflow-hidden group"
-              >
-                <span className="relative z-10">Contact Us Today</span>
-              </a>
-
-              <div className="flex flex-col md:flex-row items-center gap-6 text-white/80">
-                <a href="tel:01214440607" className="flex items-center gap-2 hover:text-white transition-colors">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                  </svg>
-                  <span>0121 444 0607</span>
-                </a>
-                <a href="mailto:info@rus-cpa.co.uk" className="flex items-center gap-2 hover:text-white transition-colors">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
-                  <span>info@rus-cpa.co.uk</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <CTASimple
+        heading="Facing an HMRC or NCA Investigation?"
+        supportingText="Contact our specialist team for immediate, confidential advice and professional representation."
+      />
 
       <div id="faqs">
         <ServiceFAQ

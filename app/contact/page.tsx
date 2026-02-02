@@ -1,10 +1,63 @@
 "use client";
 
-import { useState } from "react";
+import { useState, FormEvent } from "react";
 import { ContactFormInline } from "@/components/contact/ContactFormInline";
 
 export default function ContactPage() {
   const [activeView, setActiveView] = useState<"details" | "form">("form");
+
+  // Quick contact form state
+  const [quickFormData, setQuickFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
+
+  const handleQuickContactSubmit = async (e: FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitError(null);
+
+    try {
+      const response = await fetch('/api/contact-quick', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(quickFormData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to send message');
+      }
+
+      setIsSubmitted(true);
+      setQuickFormData({ name: "", email: "", phone: "", message: "" });
+
+      // Reset success message after 5 seconds
+      setTimeout(() => {
+        setIsSubmitted(false);
+      }, 5000);
+    } catch (error) {
+      console.error('Quick contact form error:', error);
+      setSubmitError(error instanceof Error ? error.message : 'Failed to send message');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const handleQuickFormChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setQuickFormData(prev => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
 
   return (
     <main className="overflow-x-hidden bg-white">
@@ -172,70 +225,116 @@ export default function ContactPage() {
 
               {/* Quick Contact Form - Always Visible */}
               <div className="bg-white rounded-xl border border-gray-200 p-8">
-                <form className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {isSubmitted ? (
+                  <div className="py-8 text-center space-y-4">
+                    <div className="flex justify-center">
+                      <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center">
+                        <svg className="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                    </div>
+                    <h3 className="text-2xl font-light italic text-gray-900">Message sent successfully!</h3>
+                    <p className="text-gray-600">We'll get back to you soon. Check your email for confirmation.</p>
+                  </div>
+                ) : (
+                  <form onSubmit={handleQuickContactSubmit} className="space-y-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div>
+                        <label htmlFor="name" className="block text-sm font-medium text-gray-900 mb-2">
+                          Your Name *
+                        </label>
+                        <input
+                          type="text"
+                          id="name"
+                          name="name"
+                          required
+                          value={quickFormData.name}
+                          onChange={handleQuickFormChange}
+                          disabled={isSubmitting}
+                          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#01458f] focus:ring-2 focus:ring-[#01458f]/20 outline-none transition-all disabled:bg-gray-50 disabled:cursor-not-allowed"
+                          placeholder="John Smith"
+                        />
+                      </div>
+                      <div>
+                        <label htmlFor="email" className="block text-sm font-medium text-gray-900 mb-2">
+                          Email Address *
+                        </label>
+                        <input
+                          type="email"
+                          id="email"
+                          name="email"
+                          required
+                          value={quickFormData.email}
+                          onChange={handleQuickFormChange}
+                          disabled={isSubmitting}
+                          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#01458f] focus:ring-2 focus:ring-[#01458f]/20 outline-none transition-all disabled:bg-gray-50 disabled:cursor-not-allowed"
+                          placeholder="john@example.com"
+                        />
+                      </div>
+                    </div>
+
                     <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-gray-900 mb-2">
-                        Your Name *
+                      <label htmlFor="phone" className="block text-sm font-medium text-gray-900 mb-2">
+                        Phone Number
                       </label>
                       <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        required
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#01458f] focus:ring-2 focus:ring-[#01458f]/20 outline-none transition-all"
-                        placeholder="John Smith"
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        value={quickFormData.phone}
+                        onChange={handleQuickFormChange}
+                        disabled={isSubmitting}
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#01458f] focus:ring-2 focus:ring-[#01458f]/20 outline-none transition-all disabled:bg-gray-50 disabled:cursor-not-allowed"
+                        placeholder="0121 777 1200"
                       />
                     </div>
+
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-900 mb-2">
-                        Email Address *
+                      <label htmlFor="message" className="block text-sm font-medium text-gray-900 mb-2">
+                        Your Message *
                       </label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
+                      <textarea
+                        id="message"
+                        name="message"
                         required
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#01458f] focus:ring-2 focus:ring-[#01458f]/20 outline-none transition-all"
-                        placeholder="john@example.com"
-                      />
+                        rows={6}
+                        value={quickFormData.message}
+                        onChange={handleQuickFormChange}
+                        disabled={isSubmitting}
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#01458f] focus:ring-2 focus:ring-[#01458f]/20 outline-none transition-all resize-none disabled:bg-gray-50 disabled:cursor-not-allowed"
+                        placeholder="Tell us how we can help you..."
+                      ></textarea>
                     </div>
-                  </div>
 
-                  <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-900 mb-2">
-                      Phone Number
-                    </label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#01458f] focus:ring-2 focus:ring-[#01458f]/20 outline-none transition-all"
-                      placeholder="0121 777 1200"
-                    />
-                  </div>
+                    {submitError && (
+                      <div className="bg-red-50 border border-red-200 rounded-lg p-4">
+                        <p className="text-sm text-red-700">{submitError}</p>
+                        <p className="text-sm text-red-600 mt-1">
+                          Please try again or contact us at <a href="mailto:info@rus.co.uk" className="underline">info@rus.co.uk</a>
+                        </p>
+                      </div>
+                    )}
 
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-900 mb-2">
-                      Your Message *
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      required
-                      rows={6}
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#01458f] focus:ring-2 focus:ring-[#01458f]/20 outline-none transition-all resize-none"
-                      placeholder="Tell us how we can help you..."
-                    ></textarea>
-                  </div>
-
-                  <button
-                    type="submit"
-                    className="w-full md:w-auto inline-flex items-center justify-center px-8 py-3 bg-[#01458f] text-white rounded-full text-sm font-medium hover:bg-[#013a75] hover:shadow-lg transition-all duration-300"
-                  >
-                    Send Message
-                  </button>
-                </form>
+                    <button
+                      type="submit"
+                      disabled={isSubmitting}
+                      className="w-full md:w-auto inline-flex items-center justify-center px-8 py-3 bg-[#01458f] text-white rounded-full text-sm font-medium hover:bg-[#013a75] hover:shadow-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                      {isSubmitting ? (
+                        <>
+                          <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" fill="none" viewBox="0 0 24 24">
+                            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                          </svg>
+                          Sending...
+                        </>
+                      ) : (
+                        'Send Message'
+                      )}
+                    </button>
+                  </form>
+                )}
 
                 <div className="mt-6 pt-6 border-t border-gray-200">
                   <p className="text-sm text-gray-600 text-center mb-3">

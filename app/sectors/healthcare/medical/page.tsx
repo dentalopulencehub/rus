@@ -9,6 +9,7 @@ import { ServiceFAQ } from '@/components/services/ServiceFAQ';
 import { FAQSchema } from '@/components/seo/FAQSchema';
 import { InsightsPreview } from '@/components/home/InsightsPreview';
 import { StickyMiniNav } from '@/components/services/StickyMiniNav';
+import { CTASimple } from '@/components/home/CTASimple';
 
 export const metadata: Metadata = {
   title: 'Medical Accountants Birmingham | GP, Consultant & Locum Accounting | RUS',
@@ -551,41 +552,11 @@ export default function MedicalAccountingPage() {
         />
       </div>
 
-      <section className="w-full flex items-center justify-center bg-white px-4 py-24">
-        <div className="max-w-6xl mx-auto w-full">
-          <div className="relative bg-gradient-to-br from-[#01458f] to-[#0052cc] rounded-3xl overflow-hidden px-8 md:px-16 py-20 md:py-28">
-            <svg className="absolute inset-0 w-full h-full opacity-20" xmlns="http://www.w3.org/2000/svg">
-              <path d="M 600 -100 Q 800 100 850 300" stroke="white" strokeWidth="2" fill="none" />
-              <circle cx="750" cy="150" r="80" stroke="white" strokeWidth="1.5" fill="none" />
-              <path d="M 700 50 L 850 80 L 820 200" stroke="white" strokeWidth="1.5" fill="none" />
-              <path d="M 650 120 L 750 100 L 730 180 L 640 190 Z" stroke="white" strokeWidth="1" fill="none" />
-              <path d="M -50 400 Q 100 450 200 480" stroke="white" strokeWidth="2" fill="none" />
-              <circle cx="100" cy="420" r="60" stroke="white" strokeWidth="1.5" fill="none" />
-              <path d="M 50 380 L 180 400 L 160 480" stroke="white" strokeWidth="1.5" fill="none" />
-              <line x1="400" y1="50" x2="500" y2="80" stroke="white" strokeWidth="1" opacity="0.5" />
-              <line x1="300" y1="400" x2="400" y2="420" stroke="white" strokeWidth="1" opacity="0.5" />
-              <circle cx="500" cy="60" r="30" stroke="white" strokeWidth="1" fill="none" opacity="0.4" />
-            </svg>
-
-            <div className="relative z-10 flex flex-col items-center text-center space-y-6">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight">
-                Ready to work with<br />specialist medical accountants?
-              </h2>
-
-              <a href="/contact" className="relative inline-flex items-center justify-center px-32 py-2 bg-white text-gray-900 rounded-full text-base md:text-lg font-semibold hover:shadow-2xl hover:shadow-white/30 transition-all duration-300 overflow-hidden group">
-                <div className="absolute inset-0 -z-10 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 backdrop-blur-md backdrop-saturate-150" />
-                <div className="absolute inset-0 -z-20 bg-gradient-to-br from-white/30 via-white/10 to-white/30 rounded-full opacity-0 group-hover:opacity-40 transition-all duration-300" />
-                <div className="absolute inset-0 -z-30 bg-white rounded-full transition-all duration-300 group-hover:bg-white/95" />
-                <span className="relative z-10">Get Started</span>
-              </a>
-
-              <p className="text-white/90 text-sm md:text-base">
-                Three decades of medical sector expertise
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <CTASimple
+        heading="Ready to work with specialist medical accountants?"
+        supportingText="Three decades of medical sector expertise"
+        buttonText="Get Started"
+      />
 
       <div id="faqs">
         <ServiceFAQ

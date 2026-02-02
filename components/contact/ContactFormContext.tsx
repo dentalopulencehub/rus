@@ -33,6 +33,8 @@ interface ContactFormContextType {
   currentStep: number;
   isOpen: boolean;
   isSubmitted: boolean;
+  isSubmitting: boolean;
+  submitError: string | null;
   updateFormData: (data: Partial<ContactFormData>) => void;
   nextStep: () => void;
   previousStep: () => void;
@@ -40,7 +42,7 @@ interface ContactFormContextType {
   openModal: () => void;
   closeModal: () => void;
   resetForm: () => void;
-  submitForm: () => void;
+  submitForm: () => Promise<void>;
 }
 
 const initialFormData: ContactFormData = {
@@ -65,6 +67,8 @@ export function ContactFormProvider({ children }: { children: ReactNode }) {
   const [currentStep, setCurrentStep] = useState(1);
   const [isOpen, setIsOpen] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const updateFormData = (data: Partial<ContactFormData>) => {
     setFormData((prev) => ({ ...prev, ...data }));
@@ -98,12 +102,36 @@ export function ContactFormProvider({ children }: { children: ReactNode }) {
     setFormData(initialFormData);
     setCurrentStep(1);
     setIsSubmitted(false);
+    setSubmitError(null);
   };
 
-  const submitForm = () => {
-    // Handle form submission (API call would go here)
-    console.log('Form submitted:', formData);
-    setIsSubmitted(true);
+  const submitForm = async () => {
+    setIsSubmitting(true);
+    setSubmitError(null);
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to submit form');
+      }
+
+      setIsSubmitted(true);
+      console.log('Form submitted successfully:', data);
+    } catch (error) {
+      console.error('Form submission error:', error);
+      setSubmitError(error instanceof Error ? error.message : 'Failed to submit form');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -113,6 +141,8 @@ export function ContactFormProvider({ children }: { children: ReactNode }) {
         currentStep,
         isOpen,
         isSubmitted,
+        isSubmitting,
+        submitError,
         updateFormData,
         nextStep,
         previousStep,
