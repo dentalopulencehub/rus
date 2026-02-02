@@ -214,7 +214,7 @@ export default function CompanySecretarialPage() {
         title="Company Secretarial Services"
         subtitle="Professional company secretarial support ensuring full compliance with Companies House and all statutory obligations"
         description="Every UK limited company must meet ongoing statutory requirements including maintaining accurate registers, filing annual Confirmation Statements and recording changes to directors, shareholders and company structure. Our Company Secretarial service takes care of these responsibilities, giving you confidence that your company remains fully compliant and professionally managed at all times."
-        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/0cd31fe0-0abd-4faa-7617-8568b168b100/public"
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/d4e709d8-3db7-450b-cab7-6972e7133600/public"
       />
 
       <div id="services">
@@ -238,7 +238,7 @@ export default function CompanySecretarialPage() {
             { value: 'ICAEW', label: 'Chartered' },
           ],
         }}
-        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/d2be3801-5f26-4663-58d6-f54d78e33a00/public"
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/22a85c7d-bf53-453b-63d2-218e6096a400/public"
       />
 
       {/* Company Formation Link */}

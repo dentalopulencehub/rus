@@ -226,7 +226,7 @@ export default function PropertyServicesSectorPage() {
         title="Property Services Accountancy"
         subtitle="Specialist accountants for estate agents, landlords, property managers and investment companies"
         description="The property sector is one of the most diverse and fast-moving industries in the UK, with complex tax rules, regulatory requirements and financial structures that demand expert guidance. Whether you are managing a portfolio, running an estate agency, operating a property management business or investing through a Special Purpose Vehicle (SPV), strong financial oversight is essential."
-        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/3a91b8bb-5b8a-4ef2-7e58-7d87cb014f00/public"
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/d9c1958c-8187-4ab5-1740-be4b6e847a00/public"
       />
 
       <div id="services">
@@ -250,7 +250,7 @@ export default function PropertyServicesSectorPage() {
             { value: '500+', label: 'Property Clients' },
           ],
         }}
-        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/930408ea-1abd-4bb2-1815-71eefe665800/public"
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/9f1ba927-456c-443d-8ae6-f257836e2d00/public"
       />
 
       {/* First CTA */}

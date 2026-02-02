@@ -213,7 +213,7 @@ export default function AuditAssurancePage() {
         title="Audit & Assurance"
         subtitle="Independent, accurate and trusted audit and assurance services designed to strengthen financial credibility and support regulatory compliance"
         description="A robust audit provides far more than a statutory requirement—it offers valuable insight into the health, integrity and resilience of your organisation. Our Audit & Assurance services deliver a clear and independent view of your financial position, ensuring transparency, compliance and confidence for stakeholders."
-        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/2f5663c0-137b-4c3b-2f1a-10ebae6f5600/public"
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/f9c8e5e3-a5f4-451d-2bf8-04741ba85800/public"
       />
 
       <div id="services">
@@ -237,7 +237,7 @@ export default function AuditAssurancePage() {
             { value: 'ICAEW', label: 'Registered Auditors' },
           ],
         }}
-        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/a8663433-46ee-44c9-e6e7-7a36928c8200/public"
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/b8055a8f-f3a6-4d71-8b2f-6d3034d06900/public"
       />
 
       <div id="benefits">

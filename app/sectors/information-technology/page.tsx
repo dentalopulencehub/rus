@@ -213,7 +213,7 @@ export default function InformationTechnologySectorPage() {
         title="Information Technology Sector Accountancy"
         subtitle="Specialist accountants for IT professionals, tech start-ups and fast-growing digital businesses"
         description="The IT and technology sector has expanded rapidly in recent years, driven by innovation, digital transformation and the rise of remote and cloud-based solutions. With this growth comes increasing financial complexity — from subscription-based revenue models and R&D tax relief to contractor regulations, international income and scaling challenges."
-        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/c1a56891-5cce-4e12-59a6-6a8c84b77d00/public"
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/10c2fbaf-f72c-4d48-e212-1ca122705400/public"
       />
 
       <div id="services">
@@ -237,7 +237,7 @@ export default function InformationTechnologySectorPage() {
             { value: '350+', label: 'Tech Clients' },
           ],
         }}
-        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/f5263711-e524-4b96-559c-d1792e659a00/public"
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/0159623c-922b-41a5-8759-baf313c78200/public"
       />
 
       {/* First CTA */}

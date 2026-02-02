@@ -213,7 +213,7 @@ export default function RetailSectorPage() {
         title="Retail Sector Accountancy"
         subtitle="Specialist accountants for online retailers, high street shops and multi-channel retail businesses"
         description="The retail sector has transformed dramatically in recent years, with rapid growth in e-commerce, multi-platform selling and hybrid business models. Whether you run an online store, operate through platforms like Amazon and eBay, or manage a physical shop on the high street, you face unique financial and operational challenges — from managing stock and margins to dealing with complex VAT rules and fast-moving customer demands."
-        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/14930fda-2bd9-481b-f9f8-78cdd5a32f00/public"
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/75ae737c-b98a-4968-cc73-c3e5e513de00/public"
       />
 
       <div id="services">
@@ -237,7 +237,7 @@ export default function RetailSectorPage() {
             { value: '400+', label: 'Retail Clients' },
           ],
         }}
-        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/99027bab-8cb6-489b-06de-67309f025700/public"
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/f8e101dd-a644-4910-c6b8-78150bfe5e00/public"
       />
 
       {/* First CTA */}

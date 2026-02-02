@@ -225,7 +225,7 @@ export default function BusinessAdvisoryPage() {
         title="Business Advisory"
         subtitle="Strategic, practical and forward-thinking business advisory services designed to support growth, improve performance and strengthen long-term financial stability"
         description="Running a successful business requires more than day-to-day financial management. It demands clear strategy, informed decision-making and expert guidance at every stage. Our Business Advisory services provide the insight, analysis and support you need to navigate challenges, seize opportunities and drive your organisation forward with confidence."
-        imageUrl="/premium-abstract-editorial-vector-illustration-com 2.svg"
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/22b71046-163f-463c-60b0-88e0c83be000/public"
       />
 
       <div id="services">

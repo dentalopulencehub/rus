@@ -334,7 +334,7 @@ export default function TaxationServicesPage() {
         title="Taxation Services"
         subtitle="Expert tax advice and compliance support for individuals and businesses across the UK"
         description="Managing tax efficiently is essential for maintaining compliance, reducing liabilities and protecting long-term financial wellbeing. Our specialist Taxation Services provide clear, strategic guidance across all major UK tax areas, helping you stay fully compliant with HMRC whilst making the most of available allowances and planning opportunities."
-        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/834d3fab-5d69-44d5-7a7a-2c136b27b400/public"
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/7fd3e279-1a9c-4e10-530a-5a3d54366c00/public"
       />
 
       <div id="services">

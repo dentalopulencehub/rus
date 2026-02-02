@@ -8,6 +8,8 @@ import { OrganizationSchema } from '@/components/seo/OrganizationSchema';
 import { ContactFormProvider } from '@/components/contact/ContactFormContext';
 import { ContactModal } from '@/components/contact/ContactModal';
 import { CookieConsent } from '@/components/layout/CookieConsent';
+import { ConsentAwareGTM } from '@/components/analytics/ConsentAwareGTM';
+import { GTMPageView } from '@/components/analytics/GTMPageView';
 import { Fira_Sans_Condensed, Inter } from 'next/font/google';
 
 // Logo-matching font for headings (condensed, professional)
@@ -45,8 +47,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning className={`overflow-x-hidden ${firaSansCondensed.variable} ${inter.variable}`}>
+      <ConsentAwareGTM />
       <body suppressHydrationWarning className="overflow-x-hidden font-sans antialiased">
+        {/* GTM noscript fallback */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-TRMH8HWT"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
+
         <OrganizationSchema />
+        <GTMPageView />
         <ContactFormProvider>
           <Header />
           <main className="pb-16 overflow-x-hidden">{children}</main>

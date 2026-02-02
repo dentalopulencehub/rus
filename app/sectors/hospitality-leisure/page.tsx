@@ -213,7 +213,7 @@ export default function HospitalityLeisurePage() {
         title="Hospitality & Leisure Sector Accountancy"
         subtitle="Specialist accountants for restaurants, cafés, hotels, bars, leisure businesses and hospitality operators"
         description="The hospitality and leisure industry is one of the most dynamic and fast-moving sectors in the UK — but it also faces intense financial pressures. Rising costs, fluctuating demand, staffing challenges, stock control, multi-stream revenue and strict regulatory compliance all make strong financial management essential."
-        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/5df867d0-d40c-4737-e407-1ac682f2ae00/public"
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/f27634c6-c80a-486f-fcf6-e5eda96ff500/public"
       />
 
       <div id="services">
@@ -237,7 +237,7 @@ export default function HospitalityLeisurePage() {
             { value: '350+', label: 'Hospitality Clients' },
           ],
         }}
-        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/ba91546f-931f-4f2e-a712-8d1b4c89bf00/public"
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/756ca553-246d-450c-37de-17abfc0e8100/public"
       />
 
       {/* First CTA */}

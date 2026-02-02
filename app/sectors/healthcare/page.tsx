@@ -315,7 +315,7 @@ export default function HealthcareSectorPage() {
             { value: '1000+', label: 'Healthcare Clients' },
           ],
         }}
-        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/e00c5ddd-40d4-4ab3-cc27-b53db06cc000/public"
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/8e155de6-3d1e-4f70-3144-b8b2d9df8f00/public"
       />
 
       {/* First CTA - Before Benefits */}
