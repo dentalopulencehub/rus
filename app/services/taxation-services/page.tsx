@@ -375,68 +375,11 @@ export default function TaxationServicesPage() {
         />
       </div>
 
-      {/* CTA after Comprehensive Tax Support */}
-      <section className="w-full flex items-center justify-center bg-white px-4 py-24">
-        <div className="max-w-6xl mx-auto w-full">
-          <div className="relative bg-gradient-to-br from-[#01458f] to-[#0052cc] rounded-3xl overflow-hidden px-8 md:px-16 py-20 md:py-28">
-            {/* SVG Background */}
-            <div className="absolute inset-0 w-full h-full opacity-20">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/minimal-modern-hero-background-with-deep-royal-blu 1.svg"
-                alt=""
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            {/* Content */}
-            <div className="relative z-10 flex flex-col items-center text-center space-y-6">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight">
-                Stay one step ahead of HMRC
-              </h2>
-
-              <p className="text-white/90 text-base md:text-lg -mb-2">
-                Activate your tax investigation cover
-              </p>
-
-              {/* CTA Buttons */}
-              <div className="flex flex-col md:flex-row items-center gap-4">
-                <a
-                  href="/contact"
-                  className="relative inline-flex items-center justify-center px-32 py-2 bg-white text-gray-900 rounded-full text-base md:text-lg font-semibold hover:shadow-2xl hover:shadow-white/30 transition-all duration-300 overflow-hidden group"
-                >
-                  {/* Layer 1: Glassmorphic backdrop */}
-                  <div className="absolute inset-0 -z-10 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 backdrop-blur-md backdrop-saturate-150" />
-
-                  {/* Layer 2: Gradient shimmer */}
-                  <div className="absolute inset-0 -z-20 bg-gradient-to-br from-white/30 via-white/10 to-white/30 rounded-full opacity-0 group-hover:opacity-40 transition-all duration-300" />
-
-                  {/* Layer 3: Solid background */}
-                  <div className="absolute inset-0 -z-30 bg-white rounded-full transition-all duration-300 group-hover:bg-white/95" />
-
-                  <span className="relative z-10">Contact Us</span>
-                </a>
-
-                <a
-                  href="/who-we-are"
-                  className="relative inline-flex items-center justify-center px-8 py-3 bg-gray-900 text-white rounded-full text-sm font-medium hover:shadow-2xl hover:shadow-gray-900/30 transition-all duration-300 overflow-hidden group"
-                >
-                  {/* Layer 1: Glassmorphic backdrop */}
-                  <div className="absolute inset-0 -z-10 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 backdrop-blur-md backdrop-saturate-150" />
-
-                  {/* Layer 2: Gradient shimmer */}
-                  <div className="absolute inset-0 -z-20 bg-gradient-to-br from-gray-800/30 via-gray-700/10 to-gray-800/30 rounded-full opacity-0 group-hover:opacity-40 transition-all duration-300" />
-
-                  {/* Layer 3: Solid background */}
-                  <div className="absolute inset-0 -z-30 bg-gray-900 rounded-full transition-all duration-300 group-hover:bg-gray-800" />
-
-                  <span className="relative z-10">Learn More</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <CTASimple
+        heading="Stay one step ahead of HMRC"
+        supportingText="Activate your tax investigation cover"
+        buttonText="Contact Us"
+      />
 
       <ServiceBenefits
         title="Why Choose Our Tax Services?"

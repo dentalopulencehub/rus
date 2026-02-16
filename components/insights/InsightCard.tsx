@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { InsightPost } from '@/lib/insights-data';
 import { formatDate } from '@/lib/insights-helpers';
+import { InsightCardVisual } from './InsightCardVisual';
 
 interface InsightCardProps {
   post: InsightPost;
@@ -12,12 +13,12 @@ export function InsightCard({ post }: InsightCardProps) {
       href={`/insights/${post.slug}`}
       className="group flex flex-col bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-lg transition-all duration-300"
     >
-      {/* Featured Image */}
-      <div className="relative h-48 overflow-hidden bg-gray-100">
-        <img
-          src={post.featuredImage}
-          alt={post.featuredImageAlt}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+      {/* Featured Visual */}
+      <div className="relative h-48 overflow-hidden">
+        <InsightCardVisual
+          slug={post.slug}
+          categorySlug={post.category.slug}
+          className="w-full h-full group-hover:scale-105 transition-transform duration-300"
         />
         {/* Category Badge */}
         <div className="absolute top-4 left-4">

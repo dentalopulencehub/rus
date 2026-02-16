@@ -1,12 +1,13 @@
-import { BorderBeam } from '@/components/ui/border-beam';
+import { StripeGradient } from '@/components/ui/stripe-gradient';
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen w-full flex items-center justify-center bg-[#F0F7FF] px-4 pt-24 pb-16 overflow-hidden">
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 opacity-10 bg-cover bg-center"
-        style={{ backgroundImage: 'url(https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/5ee11fdf-aac0-4c26-0f5e-026a2df87900/public)' }}
+    <section className="relative min-h-screen w-full flex items-center justify-center px-4 pt-24 pb-16 overflow-hidden">
+      {/* Stripe WebGL gradient mesh — full hero background */}
+      <StripeGradient
+        id="gradient-hero"
+        className="absolute inset-0 w-full h-full"
+        colors={['#BBDEFB', '#0052cc', '#01458f', '#F0F7FF']}
       />
 
       <div className="relative z-10 max-w-5xl mx-auto w-full">
@@ -29,22 +30,10 @@ export function Hero() {
               </a>
               <a
                 href="/who-we-are"
-                className="inline-flex items-center justify-center px-8 py-2 bg-white text-[#01458f] rounded-full text-sm font-medium border border-[#01458f]/20 hover:border-[#01458f]/40 hover:shadow-md transition-all duration-200 w-40"
+                className="inline-flex items-center justify-center px-8 py-2 bg-white/90 backdrop-blur-sm text-[#01458f] rounded-full text-sm font-medium border border-white/40 hover:bg-white hover:shadow-md transition-all duration-200 w-40"
               >
                 About Us
               </a>
-            </div>
-          </div>
-
-          {/* Middle - Hero Image */}
-          <div className="relative w-full max-w-4xl">
-            <div className="relative w-full aspect-[16/6] rounded-xl border border-gray-200/50 shadow-lg overflow-hidden bg-white">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/49e6164c-98fc-49df-b91d-651777866100/public"
-                alt="RUS Accountancy Office"
-                className="w-full h-full object-contain"
-              />
             </div>
           </div>
 
