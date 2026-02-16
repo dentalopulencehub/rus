@@ -115,27 +115,24 @@ const benefits = [
     title: 'Over 30 Years Legal Sector Experience',
     description: 'Three decades supporting solicitors, law firms and legal practices with specialist accounting, audit and SRA compliance services tailored to the legal profession.',
     icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-      </svg>
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/5704b5ca-3a45-41f8-52ae-427eadcc4200/public" alt="Over 30 Years Legal Sector Experience" className="w-20 h-20 md:w-24 md:h-24" />
     ),
   },
   {
     title: 'SRA Accounts Rules Audit Specialists',
     description: 'Deep expertise in SRA Accounts Rules audits, client money handling, regulatory compliance and helping legal practices maintain robust financial controls.',
     icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-      </svg>
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/6a486339-8e63-493b-82da-796de2612400/public" alt="SRA Accounts Rules Audit Specialists" className="w-20 h-20 md:w-24 md:h-24" />
     ),
   },
   {
     title: 'Regulatory Compliance & Risk Management Expertise',
     description: 'Clear guidance on SRA requirements, internal controls strengthening, breach identification and risk reduction to ensure full regulatory compliance.',
     icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-      </svg>
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/a48ad60d-8d95-4a0a-a4cd-8d24f7280a00/public" alt="Regulatory Compliance & Risk Management" className="w-20 h-20 md:w-24 md:h-24" />
     ),
   },
   {

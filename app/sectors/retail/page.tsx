@@ -123,18 +123,16 @@ const benefits = [
     title: 'E-Commerce Platform Specialists',
     description: 'Expert integration with Shopify, Amazon, eBay, WooCommerce and all major retail platforms',
     icon: (
-      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-      </svg>
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/4ad2a4fe-547a-4cf6-d1f1-04191365c300/public" alt="E-Commerce Platform Specialists" className="w-20 h-20 md:w-24 md:h-24" />
     ),
   },
   {
     title: 'Multi-Channel VAT Expertise',
     description: 'Comprehensive guidance on complex VAT rules for online, marketplace and international sales',
     icon: (
-      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-      </svg>
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/6a486339-8e63-493b-82da-796de2612400/public" alt="Multi-Channel VAT Expertise" className="w-20 h-20 md:w-24 md:h-24" />
     ),
   },
   {

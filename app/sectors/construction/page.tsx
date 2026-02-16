@@ -124,18 +124,16 @@ const benefits = [
     title: 'Specialist CIS & Construction VAT Expertise',
     description: 'In-depth understanding of CIS compliance, reverse charge VAT, zero-rated works and construction-specific tax rules to keep your business compliant and efficient.',
     icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-      </svg>
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/6a486339-8e63-493b-82da-796de2612400/public" alt="Specialist CIS & VAT Expertise" className="w-20 h-20 md:w-24 md:h-24" />
     ),
   },
   {
     title: 'Cashflow Management Focus',
     description: 'Strong emphasis on cashflow forecasting, job costing, work-in-progress reporting and financial stability to help you manage project-based income effectively.',
     icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-      </svg>
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/0e632d3f-00c8-43b5-23ac-f6adbe4e1300/public" alt="Cashflow Management Focus" className="w-20 h-20 md:w-24 md:h-24" />
     ),
   },
   {

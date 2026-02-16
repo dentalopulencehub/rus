@@ -114,27 +114,24 @@ const benefits = [
     title: 'Broad Sector Experience',
     description: 'With 30+ years serving Birmingham businesses, we have extensive experience across diverse industries and business types. Whatever your sector, we understand your needs.',
     icon: (
-      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-      </svg>
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/5704b5ca-3a45-41f8-52ae-427eadcc4200/public" alt="Broad Sector Experience" className="w-20 h-20 md:w-24 md:h-24" />
     ),
   },
   {
     title: 'Flexible Accounting Solutions',
     description: 'We tailor our services to your specific business needs. Whether you need basic compliance or comprehensive CFO-level support, we create a solution that fits.',
     icon: (
-      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-      </svg>
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/f796cefc-8777-4677-95c2-71bb44b0ac00/public" alt="Flexible Accounting Solutions" className="w-20 h-20 md:w-24 md:h-24" />
     ),
   },
   {
     title: 'Personalised Service',
     description: 'You will work with a dedicated accountant who understands your business personally. No call centres, no ticket systems - just direct access to your trusted advisor.',
     icon: (
-      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-      </svg>
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cd599fb0-6498-4d2d-c78f-5a72a0ee5800/public" alt="Personalised Service" className="w-20 h-20 md:w-24 md:h-24" />
     ),
   },
   {

@@ -123,18 +123,16 @@ const benefits = [
     title: 'EPOS & Stock Control Specialists',
     description: 'Deep understanding of till systems, EPOS integration, stock management, supplier reconciliation and high-volume transaction processing for hospitality businesses.',
     icon: (
-      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-      </svg>
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/9eca2f57-c118-4fe7-32c4-2c565905ac00/public" alt="EPOS & Stock Control Specialists" className="w-20 h-20 md:w-24 md:h-24" />
     ),
   },
   {
     title: 'Fast-Paced Operational Support',
     description: 'Clear, practical guidance tailored to fast-moving hospitality environments with seasonal demand, staffing complexities and tight margin management requirements.',
     icon: (
-      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-      </svg>
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/fe9a39e1-d4e3-47e4-0d44-c15d9c532c00/public" alt="Fast-Paced Operational Support" className="w-20 h-20 md:w-24 md:h-24" />
     ),
   },
   {

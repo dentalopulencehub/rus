@@ -365,7 +365,7 @@ export default function TaxationServicesPage() {
             { value: "ICAEW", label: "Chartered" },
           ]
         }}
-        imageUrl="/premium-abstract-editorial-vector-illustration-wit (6) 1.svg"
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/5eae8dff-fe0c-4e00-24b8-24089de31f00/public"
       />
 
       <div id="benefits">

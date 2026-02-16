@@ -125,27 +125,24 @@ const benefits = [
     title: 'Fully Managed',
     description: 'Fully managed and compliant payroll with expert support from experienced professionals',
     icon: (
-      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-      </svg>
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/fe9a39e1-d4e3-47e4-0d44-c15d9c532c00/public" alt="Fully Managed" className="w-20 h-20 md:w-24 md:h-24" />
     ),
   },
   {
     title: 'Secure Access',
     description: 'Secure employee payslip app for instant access to payslips and payroll history',
     icon: (
-      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-      </svg>
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/b25170a2-e447-45e5-9d1d-1f18d58b6400/public" alt="Secure Access" className="w-20 h-20 md:w-24 md:h-24" />
     ),
   },
   {
     title: 'CIS Specialists',
     description: 'CIS and P11D specialists ensuring full compliance with construction industry regulations',
     icon: (
-      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-      </svg>
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cd599fb0-6498-4d2d-c78f-5a72a0ee5800/public" alt="CIS Specialists" className="w-20 h-20 md:w-24 md:h-24" />
     ),
   },
   {
@@ -229,7 +226,7 @@ export default function PayrollPage() {
         title="Payroll Services"
         subtitle="Accurate, compliant and fully managed payroll services for UK businesses, delivered with modern technology and expert support"
         description="Managing payroll correctly is essential for maintaining compliance with HMRC, paying employees accurately and on time, and protecting your business from penalties. Our Payroll Services provide a complete, hassle-free solution that combines modern technology with expert guidance, giving you confidence that your payroll is in safe hands."
-        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/a069be03-e2c0-478d-543c-f94ce72c8f00/public"
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/f740360f-ff0d-4394-1b17-919de6325600/public"
       />
 
       <div id="services">
@@ -254,7 +251,7 @@ export default function PayrollPage() {
             { value: 'RTI', label: 'Compliant' },
           ],
         }}
-        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/a2641ac8-a030-421f-e25d-caed0e036300/public"
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cc617005-b264-4ba1-3f39-f1d7c2083c00/public"
       />
 
       <CTASimple

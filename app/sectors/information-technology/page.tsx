@@ -123,18 +123,16 @@ const benefits = [
     title: 'R&D Tax Relief & Innovation Funding Specialists',
     description: 'Expert knowledge in identifying qualifying R&D projects, preparing technical documentation, maximising tax relief claims and supporting innovation funding applications.',
     icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-      </svg>
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/086d91c1-d009-4a85-b151-ffd206733500/public" alt="R&D Tax Relief & Innovation Funding" className="w-20 h-20 md:w-24 md:h-24" />
     ),
   },
   {
     title: 'SaaS & Subscription Revenue Model Expertise',
     description: 'Deep understanding of recurring revenue models, MRR/ARR reporting, churn metrics, revenue recognition and digital platform income across global markets.',
     icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
-      </svg>
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/4ad2a4fe-547a-4cf6-d1f1-04191365c300/public" alt="SaaS & Subscription Revenue Model" className="w-20 h-20 md:w-24 md:h-24" />
     ),
   },
   {

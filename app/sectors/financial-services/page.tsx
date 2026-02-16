@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { Award, Shield, TrendingUp, BarChart } from 'lucide-react';
+import { Award, BarChart } from 'lucide-react';
 import { ServiceHero } from '@/components/services/ServiceHero';
 import { WhoWeHelp } from '@/components/services/WhoWeHelp';
 import { ServiceOverview } from '@/components/services/ServiceOverview';
@@ -119,12 +119,18 @@ const benefits = [
     description: 'Deep understanding of financial services sector regulations, FCA requirements and industry-specific tax planning opportunities',
   },
   {
-    icon: <Shield className="w-6 h-6" />,
+    icon: (
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/38654a19-c947-4fcf-b872-85600294b100/public" alt="Regulatory Knowledge" className="w-20 h-20 md:w-24 md:h-24" />
+    ),
     title: 'Regulatory Knowledge',
     description: 'Comprehensive knowledge of compliance obligations, client money rules and regulatory reporting requirements for financial services firms',
   },
   {
-    icon: <TrendingUp className="w-6 h-6" />,
+    icon: (
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/f796cefc-8777-4677-95c2-71bb44b0ac00/public" alt="Proactive Tax Planning" className="w-20 h-20 md:w-24 md:h-24" />
+    ),
     title: 'Proactive Tax Planning',
     description: 'Strategic tax advice tailored to commission-based income, profit extraction and the unique structure of financial services businesses',
   },

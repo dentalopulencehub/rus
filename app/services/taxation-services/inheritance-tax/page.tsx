@@ -115,27 +115,24 @@ const benefits = [
     title: 'Protect Your Family Legacy',
     description: 'Strategic planning to ensure your wealth passes to your loved ones, not HMRC',
     icon: (
-      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-      </svg>
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/504bd974-8936-4098-eb4c-9a50067c0900/public" alt="Protect Your Family Legacy" className="w-20 h-20 md:w-24 md:h-24" />
     ),
   },
   {
     title: 'Experienced Estate Planners',
     description: 'Decades of experience helping families navigate complex inheritance tax rules',
     icon: (
-      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-      </svg>
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cd599fb0-6498-4d2d-c78f-5a72a0ee5800/public" alt="Experienced Estate Planners" className="w-20 h-20 md:w-24 md:h-24" />
     ),
   },
   {
     title: 'Holistic Wealth Planning',
     description: 'IHT planning integrated with wider financial, business and succession strategies',
     icon: (
-      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-      </svg>
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/f796cefc-8777-4677-95c2-71bb44b0ac00/public" alt="Holistic Wealth Planning" className="w-20 h-20 md:w-24 md:h-24" />
     ),
   },
   {
@@ -220,6 +217,7 @@ export default function InheritanceTaxPage() {
         title="Inheritance Tax Planning"
         subtitle="Protect your estate with strategic IHT planning"
         description="Inheritance tax can significantly reduce the wealth you pass to your loved ones. Our experienced team provides comprehensive estate planning and IHT mitigation strategies designed to protect your family legacy. From lifetime gifting and trusts to business property relief and probate support, we deliver clear, practical advice tailored to your personal circumstances."
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/9578d060-8377-47d5-91f0-c5e8f580a700/public"
       />
 
       <div id="services">
@@ -241,6 +239,7 @@ export default function InheritanceTaxPage() {
             { value: '£100M+', label: 'Estates Protected' },
           ],
         }}
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/dfd50117-3f66-4314-3bb3-ca7049cbac00/public"
       />
 
       {/* First CTA - Before Benefits */}

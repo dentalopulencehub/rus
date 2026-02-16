@@ -114,19 +114,16 @@ const benefits = [
     title: 'Independent & Unbiased Analysis',
     description: 'Objective, evidence-based analysis you can rely on for court proceedings and dispute resolution',
     icon: (
-      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-      </svg>
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/f796cefc-8777-4677-95c2-71bb44b0ac00/public" alt="Independent & Unbiased Analysis" className="w-20 h-20 md:w-24 md:h-24" />
     ),
   },
   {
     title: 'Court-Ready Reporting',
     description: 'Clear, concise and authoritative reports suitable for court, tribunals, mediation and arbitration',
     icon: (
-      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-      </svg>
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/6a486339-8e63-493b-82da-796de2612400/public" alt="Court-Ready Reporting" className="w-20 h-20 md:w-24 md:h-24" />
     ),
   },
   {
@@ -206,7 +203,7 @@ export default function ForensicAccountingPage() {
         title="Forensic Accounting"
         subtitle="Specialist forensic accounting services designed to investigate financial irregularities, support legal cases and provide clear, independent expert analysis"
         description="Forensic accounting plays a crucial role in uncovering financial discrepancies, identifying fraud, supporting disputes and providing evidence-based clarity in complex situations. Whether you are facing a commercial dispute, suspected wrongdoing, matrimonial proceedings or require an expert report, our forensic accounting service offers meticulous analysis, precise reporting and independent expertise."
-        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/b2dfd98d-b1eb-409f-38cb-a52fba2f6d00/public"
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/e64d1a58-193a-44eb-f302-b4981cd75600/public"
       />
 
       <div id="services">
@@ -230,7 +227,7 @@ export default function ForensicAccountingPage() {
             { value: '100%', label: 'Confidential Service' },
           ],
         }}
-        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/289db112-1643-4a40-d628-cd123d435e00/public"
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/ab17035d-b224-4298-be20-312b3e7b1e00/public"
       />
 
       {/* First CTA - Expert Support */}

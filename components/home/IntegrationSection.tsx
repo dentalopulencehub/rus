@@ -6,22 +6,22 @@ import Image from 'next/image';
 const partners = [
   {
     name: 'Sage',
-    logo: '/Sage (2).svg',
+    logo: 'https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/f1ae98ef-d483-463a-c710-ff0cfd020700/public',
     size: 'small',
   },
   {
     name: 'Xero',
-    logo: '/Xero (1).svg',
+    logo: 'https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/839224e7-dc17-4ecb-b932-5d01b7425700/public',
     size: 'small',
   },
   {
     name: 'QuickBooks',
-    logo: '/Quickbooks (2).svg',
+    logo: 'https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/dcd511f3-6702-4a6d-ae1d-b2cb36d4e900/public',
     size: 'normal',
   },
   {
     name: 'FreeAgent',
-    logo: '/Freeagent (3).svg',
+    logo: 'https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/25dfbd6f-6f0f-4b36-e4b1-cf0ad6275900/public',
     size: 'normal',
   },
 ];

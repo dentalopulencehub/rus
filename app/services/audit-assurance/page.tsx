@@ -99,11 +99,7 @@ const benefits = [
     description: 'Experienced auditors with sector-specific expertise across all industries',
     icon: (
       // eslint-disable-next-line @next/next/no-img-element
-      <img
-        src="/transform-to-two-interlocking-puzzle-pieces-icon-w (2).svg"
-        alt="Sector expertise"
-        className="w-20 h-20 md:w-24 md:h-24"
-      />
+      <img src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/5704b5ca-3a45-41f8-52ae-427eadcc4200/public" alt="Sector Expertise" className="w-20 h-20 md:w-24 md:h-24" />
     ),
   },
   {

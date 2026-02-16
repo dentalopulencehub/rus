@@ -106,27 +106,24 @@ const benefits = [
     title: 'Tax Efficiency Experts',
     description: 'Maximising allowances and reliefs to minimise your personal tax liability',
     icon: (
-      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-      </svg>
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/5704b5ca-3a45-41f8-52ae-427eadcc4200/public" alt="Tax Efficiency Experts" className="w-20 h-20 md:w-24 md:h-24" />
     ),
   },
   {
     title: 'Fixed Fee Pricing',
     description: 'Transparent, agreed fees with no hidden charges or unexpected costs',
     icon: (
-      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/0e632d3f-00c8-43b5-23ac-f6adbe4e1300/public" alt="Fixed Fee Pricing" className="w-20 h-20 md:w-24 md:h-24" />
     ),
   },
   {
     title: 'Proactive HMRC Compliance',
     description: 'Ensuring your tax returns are accurate, timely and fully compliant',
     icon: (
-      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-      </svg>
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/a48ad60d-8d95-4a0a-a4cd-8d24f7280a00/public" alt="Proactive HMRC Compliance" className="w-20 h-20 md:w-24 md:h-24" />
     ),
   },
   {
@@ -215,6 +212,7 @@ export default function PersonalTaxPage() {
         title="Personal Tax Services"
         subtitle="Expert self-assessment and tax planning for individuals"
         description="We provide comprehensive personal tax services for individuals across the UK. From self-assessment returns and capital gains tax to rental income and pension planning, our experienced team delivers practical tax advice designed to minimise your tax liability while ensuring full HMRC compliance."
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/f2a50e65-e365-4ebb-7e92-7b4e3e4b3700/public"
       />
 
       <div id="services">
@@ -236,6 +234,7 @@ export default function PersonalTaxPage() {
             { value: '1,000+', label: 'Individual Clients' },
           ],
         }}
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/e1acd38d-256f-4078-5377-4ef760858b00/public"
       />
 
       {/* First CTA - Before Benefits */}

@@ -115,27 +115,24 @@ const benefits = [
     title: 'Proactive Tax Planning',
     description: 'Forward-thinking strategies to minimise tax liabilities and maximise commercial opportunities',
     icon: (
-      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-      </svg>
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/086d91c1-d009-4a85-b151-ffd206733500/public" alt="Proactive Tax Planning" className="w-20 h-20 md:w-24 md:h-24" />
     ),
   },
   {
     title: 'HMRC Compliance Experts',
     description: 'Ensuring full compliance with all tax legislation and HMRC requirements',
     icon: (
-      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-      </svg>
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/a48ad60d-8d95-4a0a-a4cd-8d24f7280a00/public" alt="HMRC Compliance Experts" className="w-20 h-20 md:w-24 md:h-24" />
     ),
   },
   {
     title: 'Sector Specialists',
     description: 'Deep knowledge across multiple industries including healthcare, retail and professional services',
     icon: (
-      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-      </svg>
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cd599fb0-6498-4d2d-c78f-5a72a0ee5800/public" alt="Sector Specialists" className="w-20 h-20 md:w-24 md:h-24" />
     ),
   },
   {
@@ -224,6 +221,7 @@ export default function BusinessTaxPage() {
         title="Business Tax Services"
         subtitle="Expert tax planning and compliance for UK businesses"
         description="We provide comprehensive business tax services designed to minimise your tax liabilities, ensure HMRC compliance and support your commercial objectives. Our experienced team delivers proactive tax planning, accurate returns and strategic advice across corporation tax, VAT, R&D tax credits and all business tax matters."
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/ed068751-333a-470e-e059-2ac0d889a700/public"
       />
 
       <div id="services">
@@ -245,6 +243,7 @@ export default function BusinessTaxPage() {
             { value: '500+', label: 'Business Clients' },
           ],
         }}
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/3b6ae246-9b1d-43b2-954e-96c7ea20bf00/public"
       />
 
       {/* First CTA - Before Benefits */}

@@ -1,10 +1,9 @@
 // Premium Mailchimp-style email templates for RUS Chartered Accountants
-// World-class design with inline SVG logo
 
-// RUS Logo - Hosted image for better email compatibility
+// RUS Logo - Hosted PNG on Cloudflare Images for universal email client support
 const RUS_LOGO_INLINE = `
 <div style="margin: 0 auto; text-align: center; padding: 0;">
-  <img src="https://rus-swart.vercel.app/RUS%20logo.svg" alt="RUS Chartered Accountants" width="500" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
+  <img src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/85daba7e-8f6f-42ea-772c-15a7bea6dd00/public" alt="RUS Chartered Accountants" width="500" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
 </div>
 `;
 
