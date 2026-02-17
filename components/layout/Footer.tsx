@@ -62,7 +62,7 @@ export function Footer() {
                 <img
                   src="/Footer logo final.svg"
                   alt="RUS Chartered Accountants"
-                  className="h-20 w-auto"
+                  className="h-20 w-auto -ml-2"
                 />
 
                 {/* Since Badge */}
@@ -90,7 +90,7 @@ export function Footer() {
                 <div className="lg:col-span-4 flex justify-start items-start lg:pl-8">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/6b872cbc-f4ae-4919-7a00-5c64cea80f00/public"
+                    src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/214cb3e0-d89b-4d11-408e-ac54876ca100/public"
                     alt="ICAEW Chartered Accountants"
                     className="h-48 w-auto brightness-0 invert opacity-80 hover:opacity-95 transition-opacity duration-500"
                   />

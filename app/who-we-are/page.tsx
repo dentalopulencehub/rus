@@ -101,56 +101,96 @@ export default function WhoWeArePage() {
 
       {/* Section 3: Founder's Message */}
       <section className="py-32 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-16 lg:gap-20 items-start">
-            {/* Left Column (3/5) */}
-            <div className="lg:col-span-3">
-              <p className="text-sm font-semibold text-[#01458f] uppercase tracking-widest mb-6">
-                Message from Our Founder
-              </p>
-              <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-2 tracking-tight">
-                Raza Samar
-              </h2>
-              <p className="text-base text-gray-400 mb-10">
-                BA(Hons) MBA BFP FCA | Founder & Managing Director
-              </p>
+        <div className="max-w-5xl mx-auto">
+          <p className="text-sm font-semibold text-[#01458f] uppercase tracking-widest mb-6">
+            Message from Our Founder
+          </p>
+          <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-2 tracking-tight">
+            Raza Samar
+          </h2>
+          <p className="text-base text-gray-400 mb-10">
+            BA(Hons) MBA BFP FCA | Founder & Managing Director
+          </p>
 
-              <div className="space-y-8 text-lg md:text-xl font-light text-gray-900 leading-relaxed">
-                <p>
-                  When I founded RUS Chartered Accountants in 1995, I wanted to
-                  create more than just another accountancy firm. Having trained
-                  in what is now one of the Big Four, auditing listed companies
-                  with turnovers exceeding £100m, I learned the value of
-                  precision, professional discipline, and strategic thinking at
-                  the highest level.
-                </p>
-                <p>
-                  Today, our team of qualified accountants brings together
-                  specialist knowledge, sector expertise, and a modern digital
-                  approach, ensuring our clients remain fully supported in an
-                  ever-changing financial landscape. Our success story is built
-                  on dedication, resilience, and a commitment to doing things
-                  properly.
-                </p>
-              </div>
-            </div>
+          <div className="text-2xl md:text-3xl lg:text-4xl font-light text-gray-900 leading-relaxed tracking-tight">
+            <p>
+              When I founded RUS Chartered Accountants in 1995, I wanted to
+              create more than just another accountancy firm. I aimed to
+              build a practice that genuinely guided clients towards
+              long-term financial success—one shaped by real experience,
+              hard-earned insight, and a deep understanding of what
+              businesses need to thrive.
+            </p>
 
-            {/* Right Column (2/5) - Pull Quote */}
-            <div className="lg:col-span-2">
-              <div className="bg-gray-50 rounded-xl p-10">
-                <span className="text-6xl text-[#01458f]/30 leading-none block mb-6">
-                  &ldquo;
-                </span>
-                <p className="text-xl italic font-light text-gray-700 leading-relaxed mb-8">
-                  We understand the obstacles businesses face because we&apos;ve
-                  overcome many of them ourselves. That experience allows us to
-                  guide clients with clarity, confidence, and practical solutions.
-                </p>
-                <p className="text-base text-gray-900">
-                  Raza Samar, Founder
-                </p>
-              </div>
-            </div>
+            <div className="w-12 h-px bg-gray-200 my-8" />
+
+            <p>
+              My own career began as a graduate, moving on to Articled Clerk
+              in a medium-to-large firm of Chartered Accountants and
+              Registered Auditors, which has since become part of one of the
+              Big Four global accountancy practices. I started in the Audit
+              department and gained experience auditing large listed and
+              non-listed PLC companies with turnovers in excess of £100m.
+              Those early years were instrumental, teaching me the value of
+              precision, professional discipline, and strategic thinking at
+              the highest level. Later, I moved to a smaller, three-partner
+              firm of Chartered Accountants, where I worked with SME
+              businesses from a compliance and audit perspective. I also
+              completed my postgraduate Master&apos;s in Business
+              Administration, in addition to becoming a Fellow member of the
+              Institute of Chartered Accountants in England & Wales. This
+              further strengthened my understanding of how financial
+              decisions shape organisations, growth, and leadership.
+            </p>
+
+            <div className="w-12 h-px bg-gray-200 my-8" />
+
+            <p>
+              RUS Chartered Accountants, as a firm, is, in many ways, a
+              reflection of that journey. Our success story is built on
+              dedication, resilience, and a commitment to doing things
+              properly—qualities that now form the blueprint we use to
+              support our clients. We understand the obstacles businesses
+              face because we&apos;ve overcome many of them ourselves. That
+              experience allows us to guide clients with clarity, confidence,
+              and practical solutions that create meaningful results.
+            </p>
+
+            <div className="w-12 h-px bg-gray-200 my-8" />
+
+            <p>
+              Today, our substantial team—including a group of qualified
+              accountants—brings together specialist knowledge, sector
+              expertise, and a modern, digital approach that ensures our
+              clients remain fully supported in an ever-changing financial
+              landscape. We are proud to be a trusted partner to businesses
+              and individuals across the UK, helping them make informed
+              decisions and achieve sustainable growth.
+            </p>
+
+            <div className="w-12 h-px bg-gray-200 my-8" />
+
+            <p>
+              Thank you for taking the time to learn more about us. I hope
+              my story inspires confidence in the support and guidance RUS
+              Chartered Accountants can offer you on your own financial
+              journey.
+            </p>
+          </div>
+
+          {/* Pull Quote - Horizontal below text */}
+          <div className="bg-gray-50 rounded-xl p-10 mt-12">
+            <span className="text-6xl text-[#01458f]/30 leading-none block mb-6">
+              &ldquo;
+            </span>
+            <p className="text-xl italic font-light text-gray-700 leading-relaxed mb-8">
+              We understand the obstacles businesses face because we&apos;ve
+              overcome many of them ourselves. That experience allows us to
+              guide clients with clarity, confidence, and practical solutions.
+            </p>
+            <p className="text-base text-gray-900">
+              Raza Samar, Founder
+            </p>
           </div>
         </div>
       </section>

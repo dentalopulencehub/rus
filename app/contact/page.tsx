@@ -153,10 +153,15 @@ export default function ContactPage() {
               </p>
               <a
                 href="tel:01217771200"
-                className="text-base font-semibold text-white hover:text-white/80 transition-colors duration-200 inline-block"
+                className="text-base font-semibold text-white hover:text-white/80 transition-colors duration-200 inline-block mb-2"
               >
                 0121 777 1200
               </a>
+              <div className="space-y-0.5 text-sm font-medium text-white/90">
+                <p>Option 1: New client</p>
+                <p>Option 2: Existing client</p>
+                <p>Option 3: Other enquiries</p>
+              </div>
             </div>
 
             {/* Email */}
@@ -175,16 +180,24 @@ export default function ContactPage() {
               >
                 info@rus.co.uk
               </a>
-              <p className="text-xs text-white/50 mt-1">We reply within 24 hours</p>
+              <p className="text-sm font-medium text-white/90 mt-1">We aim to reply within 2 working days</p>
             </div>
           </div>
 
           {/* Condensed Opening Hours */}
-          <div className="flex items-center justify-center gap-2.5 text-white text-base md:text-lg font-medium">
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            <span>Mon–Fri: 9:00 AM – 5:30 PM</span>
+          <div className="flex flex-col items-center gap-3 text-white">
+            <div className="flex items-center justify-center gap-2.5 text-base md:text-lg font-medium">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span>Mon–Fri: 9:00 AM – 5:30 PM</span>
+            </div>
+            <p className="text-sm font-medium text-white/90 max-w-xl text-center leading-relaxed">
+              Visits to the practice are by appointment only. We kindly ask all visitors/clients to arrange their visit in advance before attending. Walk-ins are not accepted unless you are delivering records or documentation.
+            </p>
+            <p className="text-sm font-medium text-white/90 max-w-xl text-center leading-relaxed">
+              We are closed on all standard English bank holidays: New Year&apos;s Day, Good Friday, Easter Monday, Early May Bank Holiday, Spring Bank Holiday, Summer Bank Holiday, Christmas Day & Boxing Day
+            </p>
           </div>
         </div>
       </section>
@@ -406,12 +419,24 @@ export default function ContactPage() {
           {/* Access Information */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">
-              <p className="text-xs text-gray-400 uppercase tracking-wider mb-3">Parking</p>
+              <div className="flex items-center gap-2 mb-3">
+                <svg className="w-5 h-5 text-[#01458f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" />
+                </svg>
+                <p className="text-xs text-gray-400 uppercase tracking-wider">Parking</p>
+              </div>
               <p className="text-sm text-gray-900">Free on-site parking available for all clients</p>
+              <p className="text-xs text-gray-500 mt-1">Subject to availability</p>
             </div>
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">
-              <p className="text-xs text-gray-400 uppercase tracking-wider mb-3">Public Transport</p>
-              <p className="text-sm text-gray-900">Direct train access from Birmingham city centre</p>
+              <div className="flex items-center gap-2 mb-3">
+                <svg className="w-5 h-5 text-[#01458f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                </svg>
+                <p className="text-xs text-gray-400 uppercase tracking-wider">Public Transport</p>
+              </div>
+              <p className="text-sm text-gray-900">Birmingham City Centre: Direct trains available from both Moor Street Station and Snow Hill Station (journey duration approximately 13-18 minutes)</p>
             </div>
           </div>
         </div>

@@ -263,7 +263,12 @@ export function CompanyIntro() {
         {/* Bottom - 3 Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {/* Trustpilot Badge Card */}
-          <div className="relative overflow-hidden bg-gradient-to-br from-white to-gray-50/50 rounded-xl p-6 border border-gray-200/50 hover:border-gray-300/50 transition-all duration-300 hover:shadow-lg flex flex-col items-center justify-center group">
+          <a
+            href="https://uk.trustpilot.com/review/www.rus.co.uk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative overflow-hidden bg-gradient-to-br from-white to-gray-50/50 rounded-xl p-6 border border-gray-200/50 hover:border-gray-300/50 transition-all duration-300 hover:shadow-lg flex flex-col items-center justify-center group"
+          >
             {/* Decorative elements */}
             <div className="absolute -top-10 -right-10 w-32 h-32 bg-green-500/5 rounded-full blur-2xl group-hover:bg-green-500/8 transition-all duration-500"></div>
             <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-green-500/3 rounded-full blur-xl"></div>
@@ -280,10 +285,10 @@ export function CompanyIntro() {
               />
               <div className="text-center">
                 <div className="text-lg font-bold text-gray-900">Excellent</div>
-                <div className="text-sm text-gray-600">Rated 5.0 out of 5</div>
+                <div className="text-sm text-gray-600">Rated 4.4 out of 5 · 12 reviews</div>
               </div>
             </div>
-          </div>
+          </a>
 
           {/* Card 2 - ICAEW Logo as Card */}
           <div className="relative bg-white rounded-xl p-6 border border-gray-200/50 hover:border-gray-300 hover:shadow-lg transition-all duration-300 flex flex-col items-center justify-center group">
@@ -293,7 +298,7 @@ export function CompanyIntro() {
             {/* ICAEW Logo - Cloudflare Image Delivery */}
             <div className="relative z-10 w-full max-w-xs">
               <Image
-                src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/6b872cbc-f4ae-4919-7a00-5c64cea80f00/public"
+                src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/214cb3e0-d89b-4d11-408e-ac54876ca100/public"
                 alt="ICAEW Chartered Accountants"
                 width={300}
                 height={133}

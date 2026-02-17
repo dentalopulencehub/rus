@@ -286,10 +286,10 @@ export default function TermsPage() {
 
           {/* Footer Note */}
           <div className="bg-gradient-to-br from-[#E8F4FF] to-[#D4E9FF] rounded-2xl p-8 text-center">
-            <p className="text-gray-700 mb-4">
+            <p className="text-gray-900 mb-4">
               <strong>Questions about our terms?</strong>
             </p>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-700 mb-6">
               Our team is here to help clarify any questions you may have.
             </p>
             <Link
