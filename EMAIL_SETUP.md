@@ -137,7 +137,7 @@ ADMIN_EMAIL=info@rus.co.uk
 - Company Name: RUS Chartered Accountants
 - Tagline: Chartered Accountants | Registered Auditors | Tax Advisors
 - Location: Hall Green, West Midlands, Birmingham
-- Phone: 0121 777 7045
+- Phone: 0121 777 1200
 - Email: info@rus.co.uk
 - Website: www.rus.co.uk
 

@@ -189,7 +189,7 @@ Submitted: ${new Date().toLocaleString('en-GB')}
                 Thank you for contacting RUS Chartered Accountants. We have received your message and will respond as soon as possible.
               </div>
               <div class="message-text">
-                Our typical response time is within 1-2 business days. If your enquiry is urgent, please feel free to call us directly on <strong>0121 777 7045</strong>.
+                Our typical response time is within 1-2 business days. If your enquiry is urgent, please feel free to call us directly on <strong>0121 777 1200</strong>.
               </div>
               <div class="cta-section">
                 <a href="https://rus.co.uk" class="cta-button">Visit Our Website</a>
@@ -203,7 +203,7 @@ Submitted: ${new Date().toLocaleString('en-GB')}
               <div class="footer-company">RUS Chartered Accountants</div>
               <div class="footer-tagline">Est. 1995 • Over 30 Years of Excellence</div>
               <div class="footer-contact">1190A-1194 Stratford Road, Hall Green, Birmingham, B28 8AB</div>
-              <div class="footer-contact">Tel: <a href="tel:01217777045">0121 777 7045</a> | Email: <a href="mailto:info@rus.co.uk">info@rus.co.uk</a></div>
+              <div class="footer-contact">Tel: <a href="tel:01217771200">0121 777 1200</a> | Email: <a href="mailto:info@rus.co.uk">info@rus.co.uk</a></div>
             </div>
           </div>
         </div>
@@ -218,7 +218,7 @@ Dear ${data.name},
 
 Thank you for contacting RUS Chartered Accountants. We have received your message and will respond as soon as possible.
 
-Our typical response time is within 1-2 business days. If your enquiry is urgent, please feel free to call us directly on 0121 777 7045.
+Our typical response time is within 1-2 business days. If your enquiry is urgent, please feel free to call us directly on 0121 777 1200.
 
 Best regards,
 The RUS Team
@@ -227,7 +227,7 @@ The RUS Team
 RUS Chartered Accountants
 Est. 1995 • Over 30 Years of Excellence
 1190A-1194 Stratford Road, Hall Green, Birmingham, B28 8AB
-Tel: 0121 777 7045 | Email: info@rus.co.uk
+Tel: 0121 777 1200 | Email: info@rus.co.uk
     `,
   }),
 };
