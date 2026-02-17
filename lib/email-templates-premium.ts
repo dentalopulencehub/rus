@@ -857,7 +857,7 @@ export function generatePremiumUserConfirmationEmail(data: ContactFormData) {
           <tr>
             <td class="content-section" style="padding: 24px 40px; border-bottom: 1px solid #e5e5e5;">
               <div class="message-text" style="font-size: 15px; color: #333; line-height: 1.7;">
-                If your enquiry is urgent, please call us on <strong>0121 777 7045</strong>.
+                If your enquiry is urgent, please call us on <strong>0121 777 1200</strong>.
               </div>
               <div class="message-text" style="font-size: 15px; color: #333; line-height: 1.7; margin-top: 20px;">
                 Best regards,<br>
@@ -910,7 +910,7 @@ WHAT HAPPENS NEXT
 SERVICES YOU'RE INTERESTED IN
 ${data.services.join(', ')}
 
-If your enquiry is urgent, please call us on 0121 777 7045.
+If your enquiry is urgent, please call us on 0121 777 1200.
 
 Best regards,
 The RUS Team
@@ -921,7 +921,7 @@ Company No: 3833778 • VAT Reg: GB 754 1385 28
 Registered to carry out company Audit work in the UK by The Institute of Chartered Accountants in England & Wales (ICAEW)
 3. We'll discuss your requirements and how we can help
 
-If your enquiry is urgent, please feel free to call us directly on 0121 777 7045.
+If your enquiry is urgent, please feel free to call us directly on 0121 777 1200.
 
 Best regards,
 The RUS Team
@@ -930,7 +930,7 @@ The RUS Team
 RUS Chartered Accountants
 Est. 1995 • Over 30 Years of Excellence
 1190A-1194 Stratford Road, Hall Green, Birmingham, B28 8AB
-Tel: 0121 777 7045 | Email: info@rus.co.uk
+Tel: 0121 777 1200 | Email: info@rus.co.uk
 Web: www.rus.co.uk
     `,
   };

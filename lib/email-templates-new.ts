@@ -729,7 +729,7 @@ export function generateUserConfirmationEmail(data: ContactFormData) {
         </div>
 
         <div class="message-text" style="margin-top: 32px;">
-          If your enquiry is urgent, please feel free to call us directly on <strong>0121 777 7045</strong>.
+          If your enquiry is urgent, please feel free to call us directly on <strong>0121 777 1200</strong>.
         </div>
 
         <!-- CTA -->
@@ -748,7 +748,7 @@ export function generateUserConfirmationEmail(data: ContactFormData) {
         <div class="footer-company">RUS Chartered Accountants</div>
         <div class="footer-tagline">Est. 1995 • Over 30 Years of Excellence</div>
         <div class="footer-contact">1190A-1194 Stratford Road, Hall Green, Birmingham, B28 8AB</div>
-        <div class="footer-contact">Tel: <a href="tel:01217777045">0121 777 7045</a> | Email: <a href="mailto:info@rus.co.uk">info@rus.co.uk</a></div>
+        <div class="footer-contact">Tel: <a href="tel:01217771200">0121 777 1200</a> | Email: <a href="mailto:info@rus.co.uk">info@rus.co.uk</a></div>
         <div class="footer-contact"><a href="https://rus.co.uk">www.rus.co.uk</a></div>
         <div class="footer-divider"></div>
         <div class="footer-timestamp">
@@ -778,7 +778,7 @@ WHAT HAPPENS NEXT
 2. We'll contact you within 1-2 business days
 3. We'll discuss your requirements and how we can help
 
-If your enquiry is urgent, please feel free to call us directly on 0121 777 7045.
+If your enquiry is urgent, please feel free to call us directly on 0121 777 1200.
 
 Best regards,
 The RUS Team
@@ -787,7 +787,7 @@ The RUS Team
 RUS Chartered Accountants
 Est. 1995 • Over 30 Years of Excellence
 1190A-1194 Stratford Road, Hall Green, Birmingham, B28 8AB
-Tel: 0121 777 7045 | Email: info@rus.co.uk
+Tel: 0121 777 1200 | Email: info@rus.co.uk
 Web: www.rus.co.uk
 
 This email was sent in response to your enquiry submitted on ${new Date().toLocaleString('en-GB', { dateStyle: 'long' })}
