@@ -61,119 +61,130 @@ export default function ContactPage() {
 
   return (
     <main className="overflow-x-hidden bg-white">
-      {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 bg-gradient-to-b from-gray-50 to-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#01458f]/10 rounded-full mb-6">
-            <svg className="w-5 h-5 text-[#01458f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-            </svg>
-            <span className="text-sm font-medium text-[#01458f]">We're here to help</span>
-          </div>
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-light text-gray-900 mb-6 tracking-tight">
-            Contact Us
-          </h1>
-          <p className="text-xl text-gray-600 max-w-3xl leading-relaxed">
-            Get in touch with our team of Chartered Accountants. We're here to help with all your accounting, tax, and audit needs.
-          </p>
-        </div>
-      </section>
+      {/* Hero Section with Contact Info */}
+      <section className="relative pt-32 pb-20 px-4 bg-gradient-to-br from-[#01458f] to-[#0052cc] overflow-hidden">
+        {/* Flowing contour lines */}
+        <svg
+          className="absolute inset-0 w-full h-full pointer-events-none"
+          viewBox="0 0 1200 600"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient id="contact-lg" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stopColor="#ffffff" stopOpacity="0" />
+              <stop offset="20%" stopColor="#ffffff" stopOpacity="1" />
+              <stop offset="80%" stopColor="#ffffff" stopOpacity="1" />
+              <stop offset="100%" stopColor="#ffffff" stopOpacity="0" />
+            </linearGradient>
+          </defs>
+          <style>{`
+            @keyframes contactWave {
+              0%, 100% { transform: translateY(0px); }
+              50% { transform: translateY(-8px); }
+            }
+            .cw { animation: contactWave 20s ease-in-out infinite; }
+            .cw:nth-child(odd) { animation-direction: reverse; }
+            .cw:nth-child(3n) { animation-duration: 24s; }
+            .cw:nth-child(5n) { animation-duration: 18s; }
+            .cw:nth-child(7n) { animation-duration: 22s; }
+          `}</style>
+          <g stroke="url(#contact-lg)" fill="none" strokeWidth="1.5" opacity="0.12">
+            <path className="cw" d="M-50,20 Q300,26 600,18 T1250,22" />
+            <path className="cw" d="M-50,56 Q300,60 600,54 T1250,58" />
+            <path className="cw" d="M-50,92 Q300,94 600,90 T1250,94" />
+            <path className="cw" d="M-50,128 Q300,129 600,126 T1250,130" />
+            <path className="cw" d="M-50,164 Q300,163 600,162 T1250,166" />
+            <path className="cw" d="M-50,200 Q300,197 600,198 T1250,202" />
+            <path className="cw" d="M-50,236 Q300,231 600,234 T1250,238" />
+            <path className="cw" d="M-50,272 Q300,265 600,270 T1250,274" />
+            <path className="cw" d="M-50,308 Q300,299 600,306 T1250,310" />
+            <path className="cw" d="M-50,344 Q300,333 600,342 T1250,346" />
+            <path className="cw" d="M-50,380 Q300,367 600,378 T1250,382" />
+            <path className="cw" d="M-50,416 Q300,401 600,414 T1250,418" />
+            <path className="cw" d="M-50,452 Q300,435 600,450 T1250,454" />
+            <path className="cw" d="M-50,488 Q300,469 600,486 T1250,490" />
+            <path className="cw" d="M-50,524 Q300,503 600,522 T1250,526" />
+            <path className="cw" d="M-50,560 Q300,537 600,558 T1250,562" />
+            <path className="cw" d="M-50,596 Q300,571 600,594 T1250,598" />
+          </g>
+        </svg>
 
-      {/* Contact Information */}
-      <section className="py-16 px-4 bg-gradient-to-b from-white via-gray-50/30 to-white">
-        <div className="max-w-6xl mx-auto space-y-8">
-          {/* Contact Cards - 3 in a row */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Office Card */}
-            <div className="group bg-white border border-gray-200 rounded-xl p-8 hover:border-gray-300 transition-colors duration-200">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-[#01458f]/10 flex items-center justify-center">
-                  <svg className="w-5 h-5 text-[#01458f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                  </svg>
-                </div>
-                <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Office</p>
+        <div className="relative z-10 max-w-6xl mx-auto">
+          {/* Heading */}
+          <div className="text-center mb-12">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 tracking-tight">
+              Get in Touch
+            </h1>
+            <p className="text-lg md:text-xl text-white/85 max-w-2xl mx-auto leading-relaxed">
+              Expert accounting, tax, and audit advice from
+              Birmingham&apos;s trusted chartered accountants
+            </p>
+          </div>
+
+          {/* Contact Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-8">
+            {/* Visit */}
+            <div className="bg-white/10 border border-white/20 backdrop-blur-sm rounded-xl p-6 text-center">
+              <div className="w-10 h-10 rounded-full bg-white/15 flex items-center justify-center mx-auto mb-3">
+                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
               </div>
-              <p className="text-sm text-gray-700 leading-relaxed">
+              <p className="text-xs font-semibold text-white/60 uppercase tracking-wider mb-2">
+                Visit Us
+              </p>
+              <p className="text-sm text-white/90 leading-relaxed">
                 1190A-1192 Stratford Road<br />
-                Hall Green<br />
-                <span className="font-medium text-gray-900">Birmingham B28 8AB</span>
+                Hall Green, Birmingham B28 8AB
               </p>
             </div>
 
-            {/* Phone Card */}
-            <div className="group bg-white border border-gray-200 rounded-xl p-8 hover:border-gray-300 transition-colors duration-200">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-[#01458f]/10 flex items-center justify-center">
-                  <svg className="w-5 h-5 text-[#01458f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                  </svg>
-                </div>
-                <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Phone</p>
+            {/* Call */}
+            <div className="bg-white/10 border border-white/20 backdrop-blur-sm rounded-xl p-6 text-center">
+              <div className="w-10 h-10 rounded-full bg-white/15 flex items-center justify-center mx-auto mb-3">
+                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
               </div>
-              <a href="tel:01217771200" className="text-base font-semibold text-gray-900 hover:text-[#01458f] transition-colors duration-200 inline-block">
+              <p className="text-xs font-semibold text-white/60 uppercase tracking-wider mb-2">
+                Call Us
+              </p>
+              <a
+                href="tel:01217771200"
+                className="text-base font-semibold text-white hover:text-white/80 transition-colors duration-200 inline-block"
+              >
                 0121 777 1200
               </a>
-              <p className="text-xs text-gray-500 mt-2">Mon-Fri, 9AM-5:30PM</p>
             </div>
 
-            {/* Email Card */}
-            <div className="group bg-white border border-gray-200 rounded-xl p-8 hover:border-gray-300 transition-colors duration-200">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-[#01458f]/10 flex items-center justify-center">
-                  <svg className="w-5 h-5 text-[#01458f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
-                </div>
-                <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Email</p>
+            {/* Email */}
+            <div className="bg-white/10 border border-white/20 backdrop-blur-sm rounded-xl p-6 text-center">
+              <div className="w-10 h-10 rounded-full bg-white/15 flex items-center justify-center mx-auto mb-3">
+                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
               </div>
-              <a href="mailto:info@rus.co.uk" className="text-base font-semibold text-gray-900 hover:text-[#01458f] transition-colors duration-200 inline-block break-all">
+              <p className="text-xs font-semibold text-white/60 uppercase tracking-wider mb-2">
+                Email Us
+              </p>
+              <a
+                href="mailto:info@rus.co.uk"
+                className="text-base font-semibold text-white hover:text-white/80 transition-colors duration-200 inline-block"
+              >
                 info@rus.co.uk
               </a>
-              <p className="text-xs text-gray-500 mt-2">We reply within 24 hours</p>
+              <p className="text-xs text-white/50 mt-1">We reply within 24 hours</p>
             </div>
           </div>
 
-          {/* Opening Hours - Full width below */}
-          <div className="bg-white border border-gray-200/80 rounded-xl p-8 hover:shadow-lg hover:shadow-[#01458f]/5 transition-all duration-300">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-lg bg-[#01458f]/10 flex items-center justify-center">
-                <svg className="w-5 h-5 text-[#01458f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Opening Hours</p>
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6">
-              <div className="text-center">
-                <p className="text-xs text-gray-500 mb-2">Monday</p>
-                <p className="text-sm font-semibold text-gray-900">9:00 AM – 5:30 PM</p>
-              </div>
-              <div className="text-center">
-                <p className="text-xs text-gray-500 mb-2">Tuesday</p>
-                <p className="text-sm font-semibold text-gray-900">9:00 AM – 5:30 PM</p>
-              </div>
-              <div className="text-center">
-                <p className="text-xs text-gray-500 mb-2">Wednesday</p>
-                <p className="text-sm font-semibold text-gray-900">9:00 AM – 5:30 PM</p>
-              </div>
-              <div className="text-center">
-                <p className="text-xs text-gray-500 mb-2">Thursday</p>
-                <p className="text-sm font-semibold text-gray-900">9:00 AM – 5:30 PM</p>
-              </div>
-              <div className="text-center">
-                <p className="text-xs text-gray-500 mb-2">Friday</p>
-                <p className="text-sm font-semibold text-gray-900">9:00 AM – 5:30 PM</p>
-              </div>
-              <div className="text-center">
-                <p className="text-xs text-gray-400 mb-2">Saturday</p>
-                <p className="text-sm font-medium text-gray-400">Closed</p>
-              </div>
-              <div className="text-center">
-                <p className="text-xs text-gray-400 mb-2">Sunday</p>
-                <p className="text-sm font-medium text-gray-400">Closed</p>
-              </div>
-            </div>
+          {/* Condensed Opening Hours */}
+          <div className="flex items-center justify-center gap-2.5 text-white text-base md:text-lg font-medium">
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>Mon–Fri: 9:00 AM – 5:30 PM</span>
           </div>
         </div>
       </section>
