@@ -63,53 +63,6 @@ export default function ContactPage() {
     <main className="overflow-x-hidden bg-white">
       {/* Hero Section with Contact Info */}
       <section className="relative pt-32 pb-20 px-4 bg-gradient-to-br from-[#01458f] to-[#0052cc] overflow-hidden">
-        {/* Flowing contour lines */}
-        <svg
-          className="absolute inset-0 w-full h-full pointer-events-none"
-          viewBox="0 0 1200 600"
-          preserveAspectRatio="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <defs>
-            <linearGradient id="contact-lg" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0%" stopColor="#ffffff" stopOpacity="0" />
-              <stop offset="20%" stopColor="#ffffff" stopOpacity="1" />
-              <stop offset="80%" stopColor="#ffffff" stopOpacity="1" />
-              <stop offset="100%" stopColor="#ffffff" stopOpacity="0" />
-            </linearGradient>
-          </defs>
-          <style>{`
-            @keyframes contactWave {
-              0%, 100% { transform: translateY(0px); }
-              50% { transform: translateY(-8px); }
-            }
-            .cw { animation: contactWave 20s ease-in-out infinite; }
-            .cw:nth-child(odd) { animation-direction: reverse; }
-            .cw:nth-child(3n) { animation-duration: 24s; }
-            .cw:nth-child(5n) { animation-duration: 18s; }
-            .cw:nth-child(7n) { animation-duration: 22s; }
-          `}</style>
-          <g stroke="url(#contact-lg)" fill="none" strokeWidth="1.5" opacity="0.12">
-            <path className="cw" d="M-50,20 Q300,26 600,18 T1250,22" />
-            <path className="cw" d="M-50,56 Q300,60 600,54 T1250,58" />
-            <path className="cw" d="M-50,92 Q300,94 600,90 T1250,94" />
-            <path className="cw" d="M-50,128 Q300,129 600,126 T1250,130" />
-            <path className="cw" d="M-50,164 Q300,163 600,162 T1250,166" />
-            <path className="cw" d="M-50,200 Q300,197 600,198 T1250,202" />
-            <path className="cw" d="M-50,236 Q300,231 600,234 T1250,238" />
-            <path className="cw" d="M-50,272 Q300,265 600,270 T1250,274" />
-            <path className="cw" d="M-50,308 Q300,299 600,306 T1250,310" />
-            <path className="cw" d="M-50,344 Q300,333 600,342 T1250,346" />
-            <path className="cw" d="M-50,380 Q300,367 600,378 T1250,382" />
-            <path className="cw" d="M-50,416 Q300,401 600,414 T1250,418" />
-            <path className="cw" d="M-50,452 Q300,435 600,450 T1250,454" />
-            <path className="cw" d="M-50,488 Q300,469 600,486 T1250,490" />
-            <path className="cw" d="M-50,524 Q300,503 600,522 T1250,526" />
-            <path className="cw" d="M-50,560 Q300,537 600,558 T1250,562" />
-            <path className="cw" d="M-50,596 Q300,571 600,594 T1250,598" />
-          </g>
-        </svg>
-
         <div className="relative z-10 max-w-6xl mx-auto">
           {/* Heading */}
           <div className="text-center mb-12">
@@ -446,19 +399,6 @@ export default function ContactPage() {
       <section className="w-full flex items-center justify-center bg-gray-50 px-4 py-24">
         <div className="max-w-6xl mx-auto w-full">
           <div className="relative bg-gradient-to-br from-[#01458f] to-[#0052cc] rounded-3xl overflow-hidden px-8 md:px-16 py-20 md:py-28 shadow-xl">
-            <svg className="absolute inset-0 w-full h-full opacity-20" xmlns="http://www.w3.org/2000/svg">
-              <path d="M 600 -100 Q 800 100 850 300" stroke="white" strokeWidth="2" fill="none" />
-              <circle cx="750" cy="150" r="80" stroke="white" strokeWidth="1.5" fill="none" />
-              <path d="M 700 50 L 850 80 L 820 200" stroke="white" strokeWidth="1.5" fill="none" />
-              <path d="M 650 120 L 750 100 L 730 180 L 640 190 Z" stroke="white" strokeWidth="1" fill="none" />
-              <path d="M -50 400 Q 100 450 200 480" stroke="white" strokeWidth="2" fill="none" />
-              <circle cx="100" cy="420" r="60" stroke="white" strokeWidth="1.5" fill="none" />
-              <path d="M 50 380 L 180 400 L 160 480" stroke="white" strokeWidth="1.5" fill="none" />
-              <line x1="400" y1="50" x2="500" y2="80" stroke="white" strokeWidth="1" opacity="0.5" />
-              <line x1="300" y1="400" x2="400" y2="420" stroke="white" strokeWidth="1" opacity="0.5" />
-              <circle cx="500" cy="60" r="30" stroke="white" strokeWidth="1" fill="none" opacity="0.4" />
-            </svg>
-
             <div className="relative z-10 flex flex-col items-center text-center space-y-6">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight">
                 Prefer to speak to someone?
