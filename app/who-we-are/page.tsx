@@ -114,67 +114,86 @@ export default function WhoWeArePage() {
 
           <div className="text-2xl md:text-3xl lg:text-4xl font-light text-gray-900 leading-relaxed tracking-tight">
             <p>
-              When I founded RUS Chartered Accountants in 1995, I wanted to
-              create more than just another accountancy firm. I aimed to
-              build a practice that genuinely guided clients towards
-              long-term financial success—one shaped by real experience,
-              hard-earned insight, and a deep understanding of what
-              businesses need to thrive.
+              When I established RUS Chartered Accountants in 1995, my aim
+              was never simply to start another accountancy firm. I wanted
+              to build a practice that would genuinely help clients make
+              better financial decisions and achieve lasting success. From
+              the outset, the focus has been on delivering practical,
+              dependable advice shaped by real experience and a clear
+              understanding of what businesses need at every stage of their
+              journey, from early growth to long-term stability.
             </p>
 
             <div className="w-12 h-px bg-gray-200 my-8" />
 
             <p>
-              My own career began as a graduate, moving on to Articled Clerk
-              in a medium-to-large firm of Chartered Accountants and
-              Registered Auditors, which has since become part of one of the
-              Big Four global accountancy practices. I started in the Audit
-              department and gained experience auditing large listed and
-              non-listed PLC companies with turnovers in excess of £100m.
-              Those early years were instrumental, teaching me the value of
-              precision, professional discipline, and strategic thinking at
-              the highest level. Later, I moved to a smaller, three-partner
-              firm of Chartered Accountants, where I worked with SME
-              businesses from a compliance and audit perspective. I also
-              completed my postgraduate Master&apos;s in Business
-              Administration, in addition to becoming a Fellow member of the
-              Institute of Chartered Accountants in England & Wales. This
-              further strengthened my understanding of how financial
-              decisions shape organisations, growth, and leadership.
+              My career began as a graduate trainee before I went on to
+              qualify as an Articled Clerk with a large firm of Chartered
+              Accountants and Registered Auditors, which later became part
+              of one of the Big Four. I started in audit, working with large
+              listed and privately owned PLCs with turnovers well in excess
+              of £100 million. That experience gave me a strong grounding
+              in accuracy, professional standards and strategic financial
+              thinking.
             </p>
 
             <div className="w-12 h-px bg-gray-200 my-8" />
 
             <p>
-              RUS Chartered Accountants, as a firm, is, in many ways, a
-              reflection of that journey. Our success story is built on
-              dedication, resilience, and a commitment to doing things
-              properly—qualities that now form the blueprint we use to
-              support our clients. We understand the obstacles businesses
-              face because we&apos;ve overcome many of them ourselves. That
-              experience allows us to guide clients with clarity, confidence,
-              and practical solutions that create meaningful results.
+              I later moved to a smaller three-partner firm, where I worked
+              closely with small and medium-sized businesses on audit and
+              compliance matters. During that time, I also completed a
+              postgraduate MBA and later became a Fellow of the Institute
+              of Chartered Accountants in England and Wales. Both the
+              practical and academic sides of my career have played an
+              important role in shaping my approach to business, leadership
+              and sustainable growth.
             </p>
 
             <div className="w-12 h-px bg-gray-200 my-8" />
 
             <p>
-              Today, our substantial team—including a group of qualified
-              accountants—brings together specialist knowledge, sector
-              expertise, and a modern, digital approach that ensures our
-              clients remain fully supported in an ever-changing financial
-              landscape. We are proud to be a trusted partner to businesses
-              and individuals across the UK, helping them make informed
-              decisions and achieve sustainable growth.
+              Over the years, I have also had the privilege of contributing
+              beyond practice. I served as a Director of the Greater
+              Birmingham and Solihull Local Enterprise Partnership
+              alongside Andy Street, former Managing Director of John
+              Lewis, helping to support regional business growth and
+              economic development. In addition, I currently sit on the
+              advisory board of an accounting software company, allowing
+              me to remain closely involved with innovation and the future
+              of the profession.
             </p>
 
             <div className="w-12 h-px bg-gray-200 my-8" />
 
             <p>
-              Thank you for taking the time to learn more about us. I hope
-              my story inspires confidence in the support and guidance RUS
-              Chartered Accountants can offer you on your own financial
-              journey.
+              In many ways, RUS Chartered Accountants reflects that
+              journey. The firm has been built on hard work, consistency
+              and a determination to do things properly. Because we
+              understand the pressures and challenges that businesses face,
+              we are able to provide advice that is not only professional,
+              but also practical, commercially minded and grounded in
+              experience.
+            </p>
+
+            <div className="w-12 h-px bg-gray-200 my-8" />
+
+            <p>
+              Today, we are proud to have a strong team of qualified
+              accountants with broad experience across a range of sectors,
+              and we continue to invest in modern digital systems so that
+              our clients receive a flexible, responsive and efficient
+              service. We are delighted to support businesses and
+              individuals across the UK, helping them make informed
+              decisions and plan confidently for the future.
+            </p>
+
+            <div className="w-12 h-px bg-gray-200 my-8" />
+
+            <p>
+              Thank you for taking the time to learn more about RUS
+              Chartered Accountants. I hope this gives you a clearer sense
+              of who we are, what we stand for and how we can support you.
             </p>
           </div>
 
@@ -184,9 +203,10 @@ export default function WhoWeArePage() {
               &ldquo;
             </span>
             <p className="text-xl italic font-light text-gray-700 leading-relaxed mb-8">
-              We understand the obstacles businesses face because we&apos;ve
-              overcome many of them ourselves. That experience allows us to
-              guide clients with clarity, confidence, and practical solutions.
+              Because we understand the pressures and challenges that
+              businesses face, we are able to provide advice that is not
+              only professional, but also practical, commercially minded
+              and grounded in experience.
             </p>
             <p className="text-base text-gray-900">
               Raza Samar, Founder
