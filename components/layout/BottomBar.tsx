@@ -43,6 +43,7 @@ const menuItems: MenuItem[] = [
     ],
   },
   { label: 'Who We Are', href: '/who-we-are' },
+  { label: 'Contact', href: '/contact' },
 ];
 
 export function BottomBar() {
