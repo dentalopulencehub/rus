@@ -46,7 +46,7 @@ export function AboutHero() {
             <div className="relative w-full aspect-[16/6] rounded-xl border border-gray-200/50 shadow-lg overflow-hidden bg-white">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/49e6164c-98fc-49df-b91d-651777866100/public"
+                src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/bb61acc8-d49b-4313-93a4-8a7c01b5d200/public"
                 alt="RUS Accountancy Office"
                 className="w-full h-full object-contain"
               />
