@@ -48,7 +48,7 @@ export function AboutHero() {
               <img
                 src="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/bb61acc8-d49b-4313-93a4-8a7c01b5d200/public"
                 alt="RUS Accountancy Office"
-                className="w-full h-full object-contain"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
