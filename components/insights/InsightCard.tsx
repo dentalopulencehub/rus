@@ -42,15 +42,8 @@ export function InsightCard({ post }: InsightCardProps) {
 
         {/* Meta */}
         <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-          <div className="flex items-center gap-3">
-            {/* Author Avatar */}
-            <div className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center text-xs font-medium text-gray-600">
-              {post.author.name.split(' ').map(n => n[0]).join('')}
-            </div>
-            <div className="text-sm">
-              <p className="font-medium text-gray-900">{post.author.name}</p>
-              <p className="text-gray-500 text-xs">{formatDate(post.publishedAt)}</p>
-            </div>
+          <div className="text-sm text-gray-500">
+            {formatDate(post.publishedAt)}
           </div>
 
           {/* Read Time */}

@@ -26,14 +26,12 @@ export async function generateMetadata({ params }: InsightPostPageProps): Promis
     title: post.seo?.metaTitle || `${post.title} | RUS Insights`,
     description: post.seo?.metaDescription || post.excerpt,
     keywords: post.tags,
-    authors: [{ name: post.author.name }],
     openGraph: {
       title: post.title,
       description: post.excerpt,
       type: 'article',
       publishedTime: post.publishedAt,
       modifiedTime: post.updatedAt,
-      authors: [post.author.name],
       images: [
         {
           url: post.featuredImage,
@@ -74,9 +72,9 @@ export default async function InsightPostPage({ params }: InsightPostPageProps) 
     datePublished: post.publishedAt,
     dateModified: post.updatedAt || post.publishedAt,
     author: {
-      '@type': 'Person',
-      name: post.author.name,
-      jobTitle: post.author.role,
+      '@type': 'Organization',
+      name: 'RUS Chartered Accountants',
+      url: 'https://rus.co.uk',
     },
     publisher: {
       '@type': 'Organization',

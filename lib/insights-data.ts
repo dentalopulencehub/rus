@@ -1,17 +1,6 @@
 // RUS Insights Blog Data Structure
 
 // Blog Types
-export interface InsightAuthor {
-  id: string;
-  name: string;
-  role: string;
-  bio: string;
-  image: string;
-  qualifications?: string[];
-  specialties?: string[];
-  experience?: string;
-}
-
 export interface InsightPost {
   id: string;
   slug: string;
@@ -19,7 +8,6 @@ export interface InsightPost {
   excerpt: string;
   content: string; // Full HTML content
   category: InsightCategory;
-  author: InsightAuthor;
   publishedAt: string;
   updatedAt?: string;
   readTime: number; // in minutes
@@ -108,40 +96,6 @@ export const insightCategories: InsightCategory[] = [
   }
 ];
 
-// RUS Chartered Accountants Team (Authors)
-export const insightAuthors: InsightAuthor[] = [
-  {
-    id: 'senior-partner',
-    name: 'Senior Partner',
-    role: 'Managing Partner & Tax Specialist',
-    bio: 'With over 30 years of experience in taxation and business advisory, our Senior Partner leads RUS with a commitment to excellence and client-focused service.',
-    image: '/team/senior-partner.jpg',
-    qualifications: ['ACA', 'CTA', 'FCCA'],
-    specialties: ['Tax Planning', 'Business Advisory', 'Strategic Planning'],
-    experience: '30+ years in Chartered Accountancy and Tax'
-  },
-  {
-    id: 'tax-director',
-    name: 'Tax Director',
-    role: 'Director of Taxation Services',
-    bio: 'Specialist in complex tax matters, HMRC disputes and strategic tax planning for businesses and high-net-worth individuals.',
-    image: '/team/tax-director.jpg',
-    qualifications: ['ACA', 'CTA'],
-    specialties: ['Corporation Tax', 'IHT Planning', 'R&D Tax Credits'],
-    experience: '20+ years in Taxation'
-  },
-  {
-    id: 'healthcare-specialist',
-    name: 'Healthcare Sector Lead',
-    role: 'Partner - Healthcare Specialization',
-    bio: 'Dedicated to supporting healthcare professionals with specialist accounting, tax and practice management advice.',
-    image: '/team/healthcare-specialist.jpg',
-    qualifications: ['ACA', 'FCCA'],
-    specialties: ['Medical Practice Accounting', 'NHS Pensions', 'Practice Valuations'],
-    experience: '25+ years supporting healthcare professionals'
-  }
-];
-
 // Sample Insight Posts
 export const insightPosts: InsightPost[] = [
   {
@@ -150,7 +104,6 @@ export const insightPosts: InsightPost[] = [
     title: 'The Key Factors Which Determine Your IR35 Status',
     excerpt: 'Understanding control, substitution, mutuality of obligation, and other crucial factors that establish whether your contract work is caught by IR35.',
     category: insightCategories[0], // Tax Insights
-    author: insightAuthors[1], // Tax Director
     publishedAt: '2025-12-11',
     readTime: 12,
     featuredImage: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&h=630&fit=crop',
@@ -282,7 +235,6 @@ export const insightPosts: InsightPost[] = [
     title: 'Making Tax Digital for VAT: Essential Guide for 2025',
     excerpt: 'Everything you need to know about MTD for VAT compliance. Software requirements, penalties and how to prepare your business for digital record-keeping.',
     category: insightCategories[2], // Accounting Updates
-    author: insightAuthors[0], // Senior Partner
     publishedAt: '2025-12-08',
     readTime: 6,
     featuredImage: 'https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=1200&h=630&fit=crop',
@@ -326,7 +278,6 @@ export const insightPosts: InsightPost[] = [
     title: 'GP Practice Accounting: NHS Pension Planning Essentials',
     excerpt: 'Comprehensive guide to NHS pension planning for GPs. Annual allowance, lifetime allowance and tax-efficient strategies for medical practitioners.',
     category: insightCategories[3], // Sector Specific
-    author: insightAuthors[2], // Healthcare Specialist
     publishedAt: '2025-12-08',
     readTime: 10,
     featuredImage: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&h=630&fit=crop',
@@ -370,7 +321,6 @@ export const insightPosts: InsightPost[] = [
     title: 'Inheritance Tax Planning: 7 Strategies to Protect Your Estate',
     excerpt: 'Expert strategies to minimize inheritance tax and protect your family wealth. Lifetime gifts, trusts, business property relief and more.',
     category: insightCategories[0], // Tax Insights
-    author: insightAuthors[1], // Tax Director
     publishedAt: '2025-11-20',
     readTime: 12,
     featuredImage: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&h=630&fit=crop',
@@ -423,7 +373,6 @@ export const insightPosts: InsightPost[] = [
     title: 'R&D Tax Credits: Complete Guide for UK SMEs',
     excerpt: 'Unlock thousands in R&D tax relief. What qualifies, how to claim and maximizing your innovation tax credits under the new merged scheme.',
     category: insightCategories[0], // Tax Insights
-    author: insightAuthors[1], // Tax Director
     publishedAt: '2025-11-20',
     readTime: 9,
     featuredImage: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&h=630&fit=crop',
@@ -477,7 +426,6 @@ export const insightPosts: InsightPost[] = [
     title: 'Welcome to RUS Insights: Your Trusted Source for Accounting and Tax Expertise',
     excerpt: 'Introducing RUS Insights - expert advice, industry updates and practical guidance from Birmingham\'s trusted chartered accountants. Stay informed with our specialist team.',
     category: insightCategories[5], // Firm News
-    author: insightAuthors[0], // Senior Partner
     publishedAt: '2025-11-20',
     readTime: 4,
     featuredImage: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=630&fit=crop',
@@ -570,7 +518,6 @@ export function searchPosts(query: string): InsightPost[] {
     post.title.toLowerCase().includes(searchLower) ||
     post.excerpt.toLowerCase().includes(searchLower) ||
     post.tags.some(tag => tag.toLowerCase().includes(searchLower)) ||
-    post.author.name.toLowerCase().includes(searchLower) ||
     post.category.name.toLowerCase().includes(searchLower)
   );
 }

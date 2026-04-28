@@ -65,25 +65,6 @@ export function BlogPostContent({ post, fullUrl }: BlogPostContentProps) {
               >
                 <div dangerouslySetInnerHTML={{ __html: post.content }} />
               </div>
-
-              {/* Author Bio */}
-              <div className="mt-12 p-8 bg-gray-50 rounded-xl">
-                <div className="flex items-start gap-4">
-                  <div className="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center text-lg font-medium text-gray-600 flex-shrink-0">
-                    {post.author.name.split(' ').map(n => n[0]).join('')}
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-1">About {post.author.name}</h3>
-                    <p className="text-sm text-gray-600 mb-2">{post.author.role}</p>
-                    <p className="text-gray-700 text-sm">{post.author.bio}</p>
-                    {post.author.qualifications && post.author.qualifications.length > 0 && (
-                      <p className="text-sm text-gray-600 mt-2">
-                        <strong>Qualifications:</strong> {post.author.qualifications.join(', ')}
-                      </p>
-                    )}
-                  </div>
-                </div>
-              </div>
             </main>
           </div>
         </div>
