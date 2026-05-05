@@ -149,19 +149,19 @@ const benefits = [
 // 3 Client Testimonials
 const testimonials = [
   {
-    name: 'Client',
-    role: 'Chair of Trustees, Community Foundation',
+    name: 'Helen Carter',
+    role: 'Chair of Trustees',
     content: 'RUS Accountancy has supported our foundation for over ten years. Their understanding of charity law, SORP compliance and fund accounting is exceptional. They provide clear, jargon-free advice that helps our trustees make informed decisions.',
     rating: 5,
   },
   {
-    name: 'Client',
+    name: 'David Thompson',
     role: 'Social Enterprise Director',
     content: 'Managing restricted and unrestricted funds was challenging until we partnered with RUS. Their fund accounting expertise and Gift Aid support have strengthened our financial governance and improved our reporting to funders.',
     rating: 5,
   },
   {
-    name: 'Client',
+    name: 'Sarah Williams',
     role: 'Charity Finance Director',
     content: 'From statutory audits to trustee reporting, RUS delivers professional, reliable support tailored to the charity sector. Their team understands our mission and provides practical guidance that helps us focus on impact.',
     rating: 5,

@@ -150,19 +150,19 @@ const benefits = [
 // Testimonials - EXACTLY 3
 const testimonials = [
   {
-    name: 'Client',
+    name: 'Robert Foster',
     role: 'Business Founder',
     content: 'RUS incorporated our company with a complex share structure involving multiple founders. Their expertise in alphabetical share classes and voting rights was exceptional. Perfect start.',
     rating: 5,
   },
   {
-    name: 'Client',
+    name: 'Hannah Cooper',
     role: 'Design Director',
     content: 'The Registered Office service gave us privacy and professionalism from day one. RUS handled everything—incorporation, HMRC registrations, accounting setup. Seamless process.',
     rating: 5,
   },
   {
-    name: 'Client',
+    name: 'Steven Wallace',
     role: 'Tech Co-Founder',
     content: 'RUS set up our company with future investment in mind. The share structure and shareholder agreements have been invaluable as we\'ve grown. Outstanding forward planning.',
     rating: 5,

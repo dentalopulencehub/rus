@@ -131,19 +131,19 @@ const benefits = [
 // Testimonials
 const testimonials = [
   {
-    name: 'Client',
+    name: 'James Richardson',
     role: 'Property Company Managing Director',
     content: 'When we received an HMRC enquiry letter, RUS stepped in immediately. Their knowledge and professionalism throughout the investigation gave us complete confidence. The matter was resolved efficiently with minimal disruption.',
     rating: 5,
   },
   {
-    name: 'Client',
+    name: 'Sarah Thompson',
     role: 'Construction Director',
     content: 'The team handled our CIS compliance check with exceptional expertise. They managed all correspondence with HMRC, kept us fully informed and achieved a swift resolution. Their Tax Investigation Cover also gave us valuable peace of mind.',
     rating: 5,
   },
   {
-    name: 'Client',
+    name: 'David Chen',
     role: 'Senior Partner',
     content: 'RUS provided outstanding support during a complex VAT dispute. Their strategic approach, attention to detail and strong negotiation skills resulted in a significantly reduced penalty. I would not hesitate to recommend their services.',
     rating: 5,

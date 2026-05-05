@@ -150,19 +150,19 @@ const benefits = [
 // 3 Client Testimonials
 const testimonials = [
   {
-    name: 'Client',
+    name: 'Michael Davies',
     role: 'Building Contractor Director',
     content: 'RUS has handled our CIS returns and accounts for over eight years. Their construction sector knowledge is outstanding, and they always keep us compliant while minimising our tax burden. Highly recommended for any contractor.',
     rating: 5,
   },
   {
-    name: 'Client',
+    name: 'Robert Palmer',
     role: 'Electrical Services Owner',
     content: 'Managing CIS deductions used to be a headache until we partnered with RUS. Their team understands construction cashflow challenges and provides practical, timely support that keeps our business running smoothly.',
     rating: 5,
   },
   {
-    name: 'Client',
+    name: 'Jennifer Clarke',
     role: 'Property Developments Finance Director',
     content: 'From job costing to complex VAT advice on mixed-use developments, RUS provides the specialist construction accounting expertise we need. Their cashflow forecasting has been invaluable during project phases.',
     rating: 5,

@@ -150,19 +150,19 @@ const benefits = [
 // Testimonials
 const testimonials = [
   {
-    name: 'Client',
+    name: 'Elizabeth Morgan',
     role: 'Business Owner',
     content: 'RUS helped us establish a family trust and restructure our business to minimise IHT. Their knowledge of business property relief saved our family hundreds of thousands. We cannot thank them enough.',
     rating: 5,
   },
   {
-    name: 'Client',
+    name: 'Richard Thompson',
     role: 'Retired Professional',
     content: 'The inheritance tax planning advice from RUS gave us complete peace of mind. They explained complex rules clearly and provided a tailored strategy to protect our estate for our children.',
     rating: 5,
   },
   {
-    name: 'Client',
+    name: 'Margaret Stevens',
     role: 'Estate Executor',
     content: 'Following a bereavement, RUS handled the entire IHT return process professionally and compassionately. They liaised with HMRC, valued the estate accurately and made a difficult time much easier.',
     rating: 5,

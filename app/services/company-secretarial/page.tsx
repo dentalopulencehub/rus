@@ -150,19 +150,19 @@ const benefits = [
 // Testimonials - EXACTLY 3
 const testimonials = [
   {
-    name: 'Client',
+    name: 'Jennifer Clarke',
     role: 'Consulting Director',
     content: 'RUS has handled all our company secretarial work for years. From share transfers to Confirmation Statements, everything is managed professionally and on time. Excellent service.',
     rating: 5,
   },
   {
-    name: 'Client',
+    name: 'David Reynolds',
     role: 'Group Managing Director',
     content: 'The Registered Office service from RUS has been invaluable. It keeps our home addresses private and ensures all statutory correspondence is handled professionally.',
     rating: 5,
   },
   {
-    name: 'Client',
+    name: 'Catherine Morris',
     role: 'Company Secretary',
     content: 'RUS manages our statutory registers, board minutes and all Companies House filings with complete accuracy. Their expertise in share structures is outstanding.',
     rating: 5,

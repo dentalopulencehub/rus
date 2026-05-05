@@ -133,13 +133,13 @@ const benefits = [
 // Testimonials
 const testimonials = [
   {
-    name: 'Client',
+    name: 'David Chen',
     role: 'Manufacturing Director',
     content: 'RUS set up our Xero system and migrated all our data seamlessly. The real-time reporting has been a game-changer for our business, and we\'re fully MTD compliant.',
     rating: 5,
   },
   {
-    name: 'Client',
+    name: 'Lisa Patterson',
     role: 'Business Owner',
     content: 'The training and support we received was excellent. The team explained everything clearly, and now we have complete confidence using QuickBooks for all our accounting needs.',
     rating: 5,

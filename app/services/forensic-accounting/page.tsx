@@ -140,19 +140,19 @@ const benefits = [
 // Testimonials
 const testimonials = [
   {
-    name: 'Client',
+    name: 'Helen Winters',
     role: 'Solicitors Partner',
     content: 'RUS provided exceptional forensic accounting support during a complex commercial dispute. Their expert witness report was clear, thorough and instrumental in achieving a favourable settlement for our client. Their professionalism throughout was outstanding.',
     rating: 5,
   },
   {
-    name: 'Client',
+    name: 'Marcus Taylor',
     role: 'Industry Finance Director',
     content: 'When we suspected internal fraud, RUS conducted a comprehensive forensic investigation. Their meticulous analysis uncovered the full extent of the issue and provided the evidence we needed. Their discretion and expertise were invaluable throughout a difficult situation.',
     rating: 5,
   },
   {
-    name: 'Client',
+    name: 'Claire Roberts',
     role: 'Property Group Managing Director',
     content: 'The forensic accounting team supported us through a partnership dispute with detailed financial analysis and an independent business valuation. Their court-ready reporting and clear explanations gave us complete confidence during the proceedings.',
     rating: 5,

@@ -149,19 +149,19 @@ const benefits = [
 // 3 Client Testimonials
 const testimonials = [
   {
-    name: 'Client',
+    name: 'David Foster',
     role: 'IT Contractor & Software Developer',
     content: 'RUS has been managing my limited company for five years. Their IR35 advice gave me confidence to accept contracts worry-free, and their dividend planning has saved me thousands in tax. Highly recommended for any contractor.',
     rating: 5,
   },
   {
-    name: 'Client',
+    name: 'Sarah Mitchell',
     role: 'Engineering Consultant',
     content: 'Switching from umbrella to limited company seemed daunting until I found RUS. They set everything up, explained the tax benefits clearly, and handle all my accounts and VAT. Professional, responsive and genuinely helpful.',
     rating: 5,
   },
   {
-    name: 'Client',
+    name: 'James Chen',
     role: 'Financial Contractor & Interim FD',
     content: 'Working across multiple contracts means complex finances. RUS keeps everything organised with cloud accounting, handles my quarterly VAT, and provides proactive tax planning. They understand contractors and make it all straightforward.',
     rating: 5,

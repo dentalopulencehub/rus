@@ -150,19 +150,19 @@ const benefits = [
 // 3 Client Testimonials
 const testimonials = [
   {
-    name: 'Client',
+    name: 'Dr Elizabeth Thompson',
     role: 'Academy Trust Principal',
     content: 'RUS has supported our academy trust for over seven years. Their understanding of ESFA requirements, restricted fund accounting and academy financial reporting is exceptional. They provide clarity and confidence to our trustees.',
     rating: 5,
   },
   {
-    name: 'Client',
+    name: 'Michael Harrison',
     role: 'Educational Services Director',
     content: 'When VAT rules on private tuition changed, RUS guided us through the implications with clear, practical advice. They helped us update our invoicing, restructure our courses and remain fully compliant. Invaluable support.',
     rating: 5,
   },
   {
-    name: 'Client',
+    name: 'Sarah Collins',
     role: 'Digital Training Platform Founder',
     content: 'Building a subscription-based e-learning business brought complex VAT and international income challenges. RUS set up our digital accounting, advised on VAT for digital services and helped us claim R&D tax relief. Brilliant team.',
     rating: 5,

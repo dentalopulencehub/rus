@@ -150,19 +150,19 @@ const benefits = [
 // Testimonials
 const testimonials = [
   {
-    name: 'Client',
+    name: 'Andrew Peterson',
     role: 'Estate Agency Managing Director',
     content: 'RUS has supported our estate agency for over 10 years. Their understanding of agency finances, VAT and profitability analysis is excellent. They provide clear, practical advice that helps us run a more efficient business.',
     rating: 5,
   },
   {
-    name: 'Client',
+    name: 'Sophie Williams',
     role: 'Property Investor',
     content: 'When I started building my property portfolio, RUS guided me through SPV setup, tax planning and cashflow forecasting. Their expertise in landlord taxation and Section 24 has saved me thousands. Highly recommended.',
     rating: 5,
   },
   {
-    name: 'Client',
+    name: 'Marcus Thompson',
     role: 'Property Management Director',
     content: 'Managing service charges and client money requires meticulous accounting. RUS ensures we stay compliant, our records are accurate and our reporting is transparent. Their property sector knowledge is second to none.',
     rating: 5,

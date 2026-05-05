@@ -159,19 +159,19 @@ const benefits = [
 // Testimonials - EXACTLY 3
 const testimonials = [
   {
-    name: 'Client',
+    name: 'Paul Richardson',
     role: 'Construction Owner',
     content: 'RUS handles our entire payroll including CIS returns for 30+ staff and subcontractors. The automated payments and employee app have transformed how we manage payroll. Excellent service.',
     rating: 5,
   },
   {
-    name: 'Client',
+    name: 'Karen Lewis',
     role: 'Retail HR Director',
     content: 'The payroll service from RUS is flawless. From P11Ds to auto-enrolment pensions, everything is managed professionally and on time. Our employees love the payslip app.',
     rating: 5,
   },
   {
-    name: 'Client',
+    name: 'Graham Phillips',
     role: 'Engineering Managing Director',
     content: 'Moving our payroll to RUS was the best decision we made. Their CIS expertise and automated payment system have saved us hours every month. Highly recommended.',
     rating: 5,

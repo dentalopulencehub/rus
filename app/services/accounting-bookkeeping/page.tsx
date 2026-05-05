@@ -168,19 +168,19 @@ const benefits = [
 // Testimonials
 const testimonials = [
   {
-    name: 'Client',
+    name: 'Sarah Mitchell',
     role: 'Tech Managing Director',
     content: 'The bookkeeping and accounts service from RUS has transformed how we manage our finances. Everything is clear, on time, and we always know exactly where we stand. Highly recommended.',
     rating: 5,
   },
   {
-    name: 'Client',
+    name: 'James Robertson',
     role: 'Business Owner',
     content: 'Moving to cloud accounting with RUS was seamless. Their team set everything up, trained us on the system, and now we have real-time visibility over our finances. Outstanding service.',
     rating: 5,
   },
   {
-    name: 'Client',
+    name: 'Emma Thompson',
     role: 'Retail Finance Director',
     content: 'RUS handles all our bookkeeping and VAT returns with complete accuracy. Their attention to detail and proactive approach means we can focus on growing the business.',
     rating: 5,
