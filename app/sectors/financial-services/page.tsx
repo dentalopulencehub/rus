@@ -144,23 +144,23 @@ const benefits = [
 // Testimonials - EXACTLY 3
 const testimonials = [
   {
-    name: 'David Richardson',
+    name: 'Client',
     role: 'Independent Financial Adviser',
-    company: 'Richardson Financial Planning Ltd',
+    company: '',
     content: 'RUS have been instrumental in helping us navigate FCA compliance requirements whilst optimising our tax position. Their sector knowledge is exceptional.',
     rating: 5,
   },
   {
-    name: 'Sarah Mitchell',
-    role: 'Managing Director',
-    company: 'Mitchell Insurance Brokers',
+    name: 'Client',
+    role: 'Insurance Brokerage Managing Director',
+    company: '',
     content: 'As an insurance brokerage, we need accountants who understand our industry. RUS provide expert advice on commission structures and regulatory reporting.',
     rating: 5,
   },
   {
-    name: 'James Patterson',
-    role: 'Principal',
-    company: 'Patterson Mortgage Services',
+    name: 'Client',
+    role: 'Mortgage Brokerage Principal',
+    company: '',
     content: 'The team at RUS understand the complexities of mortgage brokerage accounting. They have saved us significant time and helped us plan our growth effectively.',
     rating: 5,
   },

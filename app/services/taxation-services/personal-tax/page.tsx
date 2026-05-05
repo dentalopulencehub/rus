@@ -141,19 +141,19 @@ const benefits = [
 // Testimonials
 const testimonials = [
   {
-    name: 'David Williams',
+    name: 'Client',
     role: 'Freelance IT Consultant',
     content: 'RUS has handled my self-assessment for 8 years. Their service is excellent - always on time, always finding ways to reduce my tax bill legally. I would not trust anyone else with my personal tax.',
     rating: 5,
   },
   {
-    name: 'Rebecca Foster',
+    name: 'Client',
     role: 'Property Investor',
     content: 'Managing rental income tax across multiple properties was overwhelming. RUS simplified everything, identified allowable expenses I had missed and saved me considerable amounts in tax. Highly professional team.',
     rating: 5,
   },
   {
-    name: 'James Patterson',
+    name: 'Client',
     role: 'Company Director',
     content: 'The personal tax planning advice from RUS has been invaluable. They optimised my dividend and salary mix, advised on pension contributions and ensured I pay the right amount of tax - nothing more, nothing less.',
     rating: 5,

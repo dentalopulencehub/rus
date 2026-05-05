@@ -138,20 +138,20 @@ const benefits = [
 // Testimonials
 const testimonials = [
   {
-    name: 'Rachel Foster',
-    role: 'Trustee, Community Foundation',
+    name: 'Client',
+    role: 'Charity Trustee',
     content: 'The charity audit from RUS was thorough, professional and extremely supportive. Their team understood our sector and helped us strengthen our financial controls significantly.',
     rating: 5,
   },
   {
-    name: 'Michael Stevens',
-    role: 'Senior Partner, Stevens & Associates Solicitors',
+    name: 'Client',
+    role: 'Solicitors Senior Partner',
     content: 'RUS has handled our SRA audit for years. Their knowledge of the SRA Accounts Rules is exceptional, and their service is always efficient and reliable.',
     rating: 5,
   },
   {
-    name: 'Victoria Hughes',
-    role: 'Finance Director, Hughes Manufacturing Ltd',
+    name: 'Client',
+    role: 'Manufacturing Finance Director',
     content: 'Our statutory audit was completed smoothly and professionally. The team provided valuable insights that have improved our financial governance and internal processes.',
     rating: 5,
   },

@@ -199,21 +199,21 @@ const benefits = [
 // Testimonials
 const testimonials = [
   {
-    name: 'Dr Sarah Mitchell',
-    role: 'GP Partner, Greenfield Medical Practice',
-    content: 'RUS has supported our practice for over 15 years. Their understanding of NHS structures, partnership accounting and pension compliance is exceptional. They provide clear, practical advice that helps us make informed decisions.',
+    name: 'Dr Jethro Turner',
+    role: 'GP & Business Owner',
+    content: "RUS Accountants have been invaluable in supporting my GP business. They are proactive, knowledgeable, and always quick to respond with clear, practical advice. Their understanding of medical sector finances has made a real difference — from tax planning to business structure. I feel fully supported knowing they're in my corner. Highly recommend.",
     rating: 5,
   },
   {
-    name: 'Dr James Chen',
-    role: 'Consultant Orthopaedic Surgeon',
-    content: 'Managing private practice income alongside NHS employment can be complex. RUS makes it straightforward. Their tax planning advice has been invaluable, and their knowledge of consultant-specific financial matters is first-class.',
+    name: 'Dr Imran Waheed',
+    role: 'Consultant Psychiatrist',
+    content: 'I have been supported by RUS Accountants since 2012, when I first set up my psychiatric report writing business. From the outset, I found Raza, Adam and their team to be both approachable and highly responsive. Their advice has consistently been reliable, practical and timely.',
     rating: 5,
   },
   {
-    name: 'Emily Roberts',
-    role: 'Practice Manager, Riverside Dental Surgery',
-    content: 'The team at RUS understands the dental sector inside out. From practice accounts to buying and selling advice, their support has been professional, reliable and genuinely helpful. I would not hesitate to recommend them.',
+    name: 'Mrs Tracy Achieng',
+    role: 'Pharmacist',
+    content: "From the very beginning, they were compassionate, understanding and patient. Their guidance has always been reliable and thorough; I've never had any issues, callbacks or complications with HMRC since working with them, and that gives me immense peace of mind.",
     rating: 5,
   },
 ];

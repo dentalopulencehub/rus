@@ -300,15 +300,15 @@ const benefits = [
 
 const testimonials = [
   {
-    name: 'Dr Sarah Mitchell',
-    role: 'GP Partner',
-    content: 'RUS has supported our practice for over 15 years. Their understanding of NHS structures, partnership accounting and pension compliance is exceptional. They provide clear, practical advice that helps us make informed decisions.',
+    name: 'Dr Jethro Turner',
+    role: 'GP & Business Owner',
+    content: "RUS Accountants have been invaluable in supporting my GP business. They are proactive, knowledgeable, and always quick to respond with clear, practical advice. Their understanding of medical sector finances has made a real difference — from tax planning to business structure. I feel fully supported knowing they're in my corner. Highly recommend. I've now also chosen to use them for my new property business.",
     rating: 5,
   },
   {
-    name: 'Dr James Chen',
-    role: 'Consultant Orthopaedic Surgeon',
-    content: 'Managing private practice income alongside NHS employment can be complex. RUS makes it straightforward. Their tax planning advice has been invaluable, and their knowledge of consultant-specific financial matters is first-class.',
+    name: 'Dr Imran Waheed',
+    role: 'Consultant Psychiatrist',
+    content: 'I have been supported by RUS Accountants since 2012, when I first set up my psychiatric report writing business. From the outset, I found Raza, Adam and their team to be both approachable and highly responsive. They took the time to understand my work and provided tailored guidance, making the process of establishing and growing the business remarkably smooth. Over the years, their advice has consistently been reliable, practical and timely. Whether dealing with routine accounting matters, business planning or more complex financial decisions, I have always valued their professionalism and insight.',
     rating: 5,
   },
 ];

@@ -149,20 +149,20 @@ const benefits = [
 // 3 Client Testimonials
 const testimonials = [
   {
-    name: 'Michael Peters',
-    role: 'Managing Director, West Midlands Manufacturing Ltd',
+    name: 'Client',
+    role: 'Manufacturing Managing Director',
     content: 'RUS has been our accountants for over 8 years. They provide excellent service, always responsive, and genuinely care about our business success. Their advice has been invaluable.',
     rating: 5,
   },
   {
-    name: 'Sophie Ahmed',
-    role: 'Owner, Birmingham Events & Catering',
+    name: 'Client',
+    role: 'Events & Catering Owner',
     content: 'As a small business owner, I need accountants I can trust and rely on. RUS delivers exactly that - professional, proactive, and always available when I need guidance. Highly recommended.',
     rating: 5,
   },
   {
-    name: 'David Wilson',
-    role: 'Director, Wilson Trading Company',
+    name: 'Client',
+    role: 'Trading Company Director',
     content: 'Switching to RUS was one of the best decisions we made. They took the time to understand our business and provided strategic advice that has helped us grow. Outstanding service.',
     rating: 5,
   },

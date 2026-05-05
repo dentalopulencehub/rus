@@ -152,12 +152,6 @@ const testimonials = [
     content: 'RUS Chartered Accountants have been instrumental to our journey at Dental Opulence. We opened as a brand-new squat practice in December 2023, and from the very beginning their guidance was exceptional. They supported us with detailed budgeting and forecast planning, and their help during our CQC application made the entire start-up process far less daunting. The team at RUS genuinely feel like an extension of our own. They are approachable, knowledgeable, and always available when we need support. I cannot recommend them highly enough.',
     rating: 5,
   },
-  {
-    name: 'Emily Roberts',
-    role: 'Practice Manager, Riverside Dental Surgery',
-    content: 'The team at RUS understands the dental sector inside out. From practice accounts to buying and selling advice, their support has been professional, reliable and genuinely helpful. I would not hesitate to recommend them.',
-    rating: 5,
-  },
 ];
 
 const faqs = [

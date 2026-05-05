@@ -150,20 +150,20 @@ const benefits = [
 // 3 Client Testimonials
 const testimonials = [
   {
-    name: 'Dr Elizabeth Thompson',
-    role: 'Principal, Greenwood Academy Trust',
+    name: 'Client',
+    role: 'Academy Trust Principal',
     content: 'RUS has supported our academy trust for over seven years. Their understanding of ESFA requirements, restricted fund accounting and academy financial reporting is exceptional. They provide clarity and confidence to our trustees.',
     rating: 5,
   },
   {
-    name: 'Michael Harrison',
-    role: 'Director, Harrison Educational Services Ltd',
+    name: 'Client',
+    role: 'Educational Services Director',
     content: 'When VAT rules on private tuition changed, RUS guided us through the implications with clear, practical advice. They helped us update our invoicing, restructure our courses and remain fully compliant. Invaluable support.',
     rating: 5,
   },
   {
-    name: 'Sarah Collins',
-    role: 'Founder, LearnOnline Digital Training Platform',
+    name: 'Client',
+    role: 'Digital Training Platform Founder',
     content: 'Building a subscription-based e-learning business brought complex VAT and international income challenges. RUS set up our digital accounting, advised on VAT for digital services and helped us claim R&D tax relief. Brilliant team.',
     rating: 5,
   },

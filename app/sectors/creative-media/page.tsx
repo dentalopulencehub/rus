@@ -149,20 +149,20 @@ const benefits = [
 // 3 Client Testimonials
 const testimonials = [
   {
-    name: 'Alex Morgan',
-    role: 'Content Creator & YouTuber (300K+ subscribers)',
+    name: 'Client',
+    role: 'Content Creator & YouTuber',
     content: 'RUS completely transformed how I manage my income from YouTube, sponsorships and Patreon. They understand multi-platform earnings and helped me optimise my tax position while staying fully compliant. Couldn\'t recommend them more highly.',
     rating: 5,
   },
   {
-    name: 'Sophie Chen',
+    name: 'Client',
     role: 'Freelance Designer & Illustrator',
     content: 'Managing irregular freelance income across multiple clients and platforms used to stress me out. RUS set up a simple cloud accounting system and handles all my tax returns. They speak my language and genuinely understand creative work.',
     rating: 5,
   },
   {
-    name: 'Marcus Bennett',
-    role: 'Director, Catalyst Creative Agency',
+    name: 'Client',
+    role: 'Creative Agency Director',
     content: 'As our agency scaled from two founders to fifteen employees, RUS provided the financial guidance we needed. Their expertise in digital media income, VAT and growth planning has been crucial to our success.',
     rating: 5,
   },

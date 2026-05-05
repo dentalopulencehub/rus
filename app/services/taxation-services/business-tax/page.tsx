@@ -150,20 +150,20 @@ const benefits = [
 // Testimonials
 const testimonials = [
   {
-    name: 'Sarah Thompson',
-    role: 'Director, Thompson Engineering Ltd',
+    name: 'Client',
+    role: 'Engineering Director',
     content: 'RUS helped us claim R&D tax credits we did not even know we were entitled to. Their expertise in business tax has saved us thousands and their advice is always practical and easy to understand.',
     rating: 5,
   },
   {
-    name: 'Michael Chen',
-    role: 'CEO, Digital Innovations Group',
+    name: 'Client',
+    role: 'Digital Group CEO',
     content: 'The team at RUS provides exceptional corporation tax planning. They are proactive, knowledgeable and always find ways to optimise our tax position legally and ethically. Highly recommended.',
     rating: 5,
   },
   {
-    name: 'Amanda Roberts',
-    role: 'Finance Director, Roberts Retail Ltd',
+    name: 'Client',
+    role: 'Retail Finance Director',
     content: 'We have worked with RUS for VAT compliance and business tax planning for over 10 years. Their service is professional, reliable and they genuinely care about helping our business succeed.',
     rating: 5,
   },

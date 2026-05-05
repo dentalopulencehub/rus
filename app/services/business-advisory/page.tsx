@@ -160,20 +160,20 @@ const benefits = [
 // Testimonials - EXACTLY 3
 const testimonials = [
   {
-    name: 'Andrew Martin',
-    role: 'Founder, Martin Tech Solutions',
+    name: 'Client',
+    role: 'Tech Founder',
     content: 'The business advisory support from RUS has been invaluable. Their strategic planning guidance helped us secure funding and scale operations successfully. Outstanding service.',
     rating: 5,
   },
   {
-    name: 'Sophie Harrison',
-    role: 'Managing Director, Harrison Retail Ltd',
+    name: 'Client',
+    role: 'Retail Managing Director',
     content: 'RUS advised us through a complex business restructure and succession plan. Their commercial insight and practical approach made all the difference. Highly recommended.',
     rating: 5,
   },
   {
-    name: 'Thomas Wright',
-    role: 'Director, Wright Manufacturing',
+    name: 'Client',
+    role: 'Manufacturing Director',
     content: 'The cashflow forecasting and performance review services transformed how we manage our business. We now have complete visibility and confidence in our financial planning.',
     rating: 5,
   },

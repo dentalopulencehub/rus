@@ -146,9 +146,9 @@ const benefits = [
 
 const testimonials = [
   {
-    name: 'Pharmacy Owner',
-    role: 'Community Pharmacy, Birmingham',
-    content: 'RUS has been our accountant for over 10 years. Their knowledge of pharmacy accounting, NHS contracts and regulatory requirements is excellent. They provide clear advice and always respond quickly when we need support.',
+    name: 'Mrs Tracy Achieng',
+    role: 'Pharmacist',
+    content: "Working with this team has been an incredibly positive experience, especially as someone who was completely new to the world of tax returns. From the very beginning, they were compassionate, understanding and patient — walking me through everything step by step, and even arranging a phone call to help me understand the process in full. They provided a clear, easy-to-use template that I still use today to organise my income and expenses, which has made tax time far less stressful. Their guidance has always been reliable and thorough; I've never had any issues, callbacks or complications with HMRC since working with them, and that gives me immense peace of mind. They treat you like a human being, not just another client or transaction — and that makes all the difference.",
     rating: 5,
   },
 ];

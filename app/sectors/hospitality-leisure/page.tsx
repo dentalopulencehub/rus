@@ -146,24 +146,12 @@ const benefits = [
   },
 ];
 
-// 3 Client Testimonials
+// Client Testimonials
 const testimonials = [
   {
-    name: 'James Richardson',
-    role: 'Owner, The Green Kitchen Restaurant Group',
-    content: 'RUS Accountancy transformed our financial oversight across all three venues. Their EPOS integration and margin analysis gave us the clarity we needed to improve profitability. Outstanding hospitality sector expertise.',
-    rating: 5,
-  },
-  {
-    name: 'Sophie Campbell',
-    role: 'General Manager, Harborne Hotel & Spa',
-    content: 'Managing payroll for 45 staff across different departments was complex until we partnered with RUS. Their team understands hospitality operations and delivers reliable, timely support every month.',
-    rating: 5,
-  },
-  {
-    name: 'Marcus Bennett',
-    role: 'Director, FitLife Leisure Centres',
-    content: 'From cashflow forecasting to expansion planning, RUS has supported our growth from one gym to five sites. Their strategic advice and sector knowledge have been invaluable to our success.',
+    name: 'Omran Akhtar',
+    role: 'Fargos',
+    content: "The team at RUS have been absolutely instrumental in helping us structure and scale our food business over the past year. They took the time to fully understand our operations, cashflow patterns, and long-term goals, and then guided us step-by-step in creating a clear financial framework that supports growth while keeping everything compliant and efficient. From organising our company structure, optimising our tax position, to advising on profitability across each trailer and location, their expertise has given us real confidence in our numbers. Thanks to their support, we've been able to expand with clarity, make better decisions, and build a stronger, more sustainable business model.",
     rating: 5,
   },
 ];

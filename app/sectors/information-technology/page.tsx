@@ -149,20 +149,20 @@ const benefits = [
 // 3 Client Testimonials
 const testimonials = [
   {
-    name: 'Tom Bradley',
-    role: 'Founder & CEO, CloudSync SaaS Platform',
+    name: 'Client',
+    role: 'SaaS Platform Founder & CEO',
     content: 'RUS helped us navigate rapid growth from seed funding to Series A. Their R&D tax relief claims recovered over £80K, their investor-ready financial models impressed VCs, and their strategic advice has been invaluable. Perfect for scaling tech start-ups.',
     rating: 5,
   },
   {
-    name: 'Priya Sharma',
+    name: 'Client',
     role: 'Software Developer & IT Contractor',
     content: 'Managing my limited company used to be stressful until I partnered with RUS. Their IR35 contract reviews give me confidence, their dividend planning saves me tax, and they handle all my accounts and VAT. Highly recommended for IT contractors.',
     rating: 5,
   },
   {
-    name: 'Mark Richardson',
-    role: 'Director, Digital Solutions Agency',
+    name: 'Client',
+    role: 'Digital Agency Director',
     content: 'As we scaled from five to twenty-five employees, RUS provided the financial infrastructure we needed. From payroll to R&D claims to monthly management accounts, they understand tech businesses and deliver professional, proactive support.',
     rating: 5,
   },

@@ -149,20 +149,20 @@ const benefits = [
 // Testimonials
 const testimonials = [
   {
-    name: 'Emma Davies',
-    role: 'Founder, Davies Home & Lifestyle (Shopify)',
+    name: 'Client',
+    role: 'Shopify E-commerce Founder',
     content: "RUS transformed our e-commerce accounting. Their Shopify integration is seamless, VAT advice is brilliant and their understanding of online retail has been invaluable as we've grown from a small start-up to a six-figure business.",
     rating: 5,
   },
   {
-    name: 'Michael Khan',
-    role: 'Director, Khan Electronics (Amazon FBA Seller)',
+    name: 'Client',
+    role: 'Amazon FBA Seller',
     content: 'Managing Amazon fees, FBA costs and international VAT was overwhelming until we started working with RUS. They handle everything efficiently and provide clear monthly reports. Our accounts have never been more organised.',
     rating: 5,
   },
   {
-    name: 'Sarah Bennett',
-    role: 'Owner, Bennett Boutique (Multi-Channel Retailer)',
+    name: 'Client',
+    role: 'Multi-Channel Retailer',
     content: 'We sell online, on eBay and in our high street shop. RUS brings all our sales channels together into one clear financial picture. Their retail expertise and support with EPOS integration has been outstanding.',
     rating: 5,
   },
