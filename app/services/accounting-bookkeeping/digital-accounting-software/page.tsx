@@ -190,6 +190,7 @@ export default function DigitalAccountingSoftwarePage() {
         title="Digital Accounting Software"
         subtitle="Expert cloud accounting solutions that keep your business fully compliant with HMRC's Making Tax Digital regulations"
         description="As HMRC continues to roll out Making Tax Digital, businesses require reliable digital tools and professional support to stay compliant. Our team provides full setup, integration and management of leading MTD-compliant digital accounting software, helping you improve accuracy, streamline your bookkeeping and gain real-time financial insight."
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/1bac9108-53fe-483e-e1f7-aac6f7feab00/public"
       />
 
       {/* Breadcrumb */}
@@ -228,6 +229,7 @@ export default function DigitalAccountingSoftwarePage() {
             { value: 'MTD', label: 'Compliant' },
           ],
         }}
+        imageUrl="https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/40b1dda8-14b4-4f4a-f7c9-5153eb969500/public"
       />
 
       <div id="benefits">

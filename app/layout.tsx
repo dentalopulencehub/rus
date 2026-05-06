@@ -39,6 +39,13 @@ export const metadata: Metadata = {
     'Accountancy Services',
     'RUS Accountants',
   ],
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({
@@ -48,6 +55,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning className={`overflow-x-hidden ${firaSansCondensed.variable} ${inter.variable}`}>
+      <head>
+        <link
+          rel="preload"
+          href="/fonts/frutiger-57cn.woff"
+          as="font"
+          type="font/woff"
+          crossOrigin="anonymous"
+        />
+      </head>
       <ConsentAwareGTM />
       <body suppressHydrationWarning className="overflow-x-hidden font-sans antialiased">
         {/* GTM noscript fallback */}
