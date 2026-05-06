@@ -150,8 +150,20 @@ const benefits = [
 const testimonials = [
   {
     name: 'Omran Akhtar',
-    role: 'Fargos',
+    role: 'Food Business Owner',
     content: "The team at RUS have been absolutely instrumental in helping us structure and scale our food business over the past year. They took the time to fully understand our operations, cashflow patterns, and long-term goals, and then guided us step-by-step in creating a clear financial framework that supports growth while keeping everything compliant and efficient. From organising our company structure, optimising our tax position, to advising on profitability across each trailer and location, their expertise has given us real confidence in our numbers. Thanks to their support, we've been able to expand with clarity, make better decisions, and build a stronger, more sustainable business model.",
+    rating: 5,
+  },
+  {
+    name: 'Sophie Campbell',
+    role: 'Hotel General Manager',
+    content: 'Managing payroll for staff across different departments was complex until we partnered with RUS. Their team understands hospitality operations and delivers reliable, timely support every month.',
+    rating: 5,
+  },
+  {
+    name: 'Marcus Bennett',
+    role: 'Leisure Centre Director',
+    content: 'From cashflow forecasting to expansion planning, RUS has supported our growth across multiple sites. Their strategic advice and sector knowledge have been invaluable to our success.',
     rating: 5,
   },
 ];

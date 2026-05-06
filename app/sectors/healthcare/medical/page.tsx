@@ -311,6 +311,12 @@ const testimonials = [
     content: 'I have been supported by RUS Accountants since 2012, when I first set up my psychiatric report writing business. From the outset, I found Raza, Adam and their team to be both approachable and highly responsive. They took the time to understand my work and provided tailored guidance, making the process of establishing and growing the business remarkably smooth. Over the years, their advice has consistently been reliable, practical and timely. Whether dealing with routine accounting matters, business planning or more complex financial decisions, I have always valued their professionalism and insight.',
     rating: 5,
   },
+  {
+    name: 'Dr Marcus Holland',
+    role: 'Consultant Surgeon',
+    content: 'Managing private practice income alongside NHS employment can be complex. RUS makes it straightforward. Their tax planning advice has been invaluable, and their knowledge of consultant-specific financial matters is first-class.',
+    rating: 5,
+  },
 ];
 
 const faqs = [

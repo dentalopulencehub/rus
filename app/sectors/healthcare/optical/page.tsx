@@ -147,9 +147,21 @@ const benefits = [
 
 const testimonials = [
   {
-    name: 'Optical Practice Owner',
-    role: 'Independent Optician, West Midlands',
+    name: 'Hannah Reeves',
+    role: 'Independent Optician',
     content: 'RUS has been our accountant for many years. Their knowledge of optical accounting, NHS contracts and VAT is excellent. They always provide practical advice and support when we need it.',
+    rating: 5,
+  },
+  {
+    name: 'Joseph Marlow',
+    role: 'Optometrist',
+    content: 'The team understands the mix of NHS and private fee income that comes with running an optical practice. Their advice on stock, equipment and growth planning has been clear and genuinely useful.',
+    rating: 5,
+  },
+  {
+    name: 'Priya Naidu',
+    role: 'Dispensing Optician & Practice Manager',
+    content: "Switching to RUS was the best decision we made. Our reporting is finally clear, our VAT is handled properly, and we have a full picture of practice performance month on month.",
     rating: 5,
   },
 ];

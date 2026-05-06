@@ -150,8 +150,20 @@ const benefits = [
 const testimonials = [
   {
     name: 'Brose Joseph',
-    role: 'Brose Solicitors',
-    content: "Working with RUS Chartered Accountants has been an exceptional experience for our firm. Your team's expertise in accounting, tax planning and compliance has played a crucial role in the smooth setup and ongoing growth of Brose Solicitors Ltd. We have always received prompt, clear and practical guidance, and your proactive approach has given us great confidence as we scale our operations. I would highly recommend RUS to any legal practice or business looking for reliable, knowledgeable and genuinely supportive accountants.",
+    role: 'Solicitor',
+    content: "Working with RUS Chartered Accountants has been an exceptional experience for our firm. Your team's expertise in accounting, tax planning and compliance has played a crucial role in the smooth setup and ongoing growth of our practice. We have always received prompt, clear and practical guidance, and your proactive approach has given us great confidence as we scale our operations. I would highly recommend RUS to any legal practice or business looking for reliable, knowledgeable and genuinely supportive accountants.",
+    rating: 5,
+  },
+  {
+    name: 'Richard Thornton',
+    role: 'Senior Partner',
+    content: 'RUS has been our trusted accountant for over twelve years. Their understanding of SRA requirements and client money handling is exceptional. The annual SRA audit process is efficient, thorough and gives our partners complete confidence in our compliance.',
+    rating: 5,
+  },
+  {
+    name: 'James Mitchell',
+    role: 'Sole Practitioner',
+    content: 'As a sole practitioner, I need an accountant who understands the unique challenges of running a small legal practice. RUS provides clear, practical advice on SRA compliance, client money and tax planning that gives me peace of mind.',
     rating: 5,
   },
 ];

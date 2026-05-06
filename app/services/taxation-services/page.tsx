@@ -246,8 +246,7 @@ const testimonials = [
     id: 3,
     name: "Amelia Jamil",
     role: "Dental Office Manager",
-    company: "Dental Opulence",
-    quote: "RUS Chartered Accountants have been instrumental to our journey at Dental Opulence. We opened as a brand-new squat practice in December 2023, and from the very beginning their guidance was exceptional. They supported us with detailed budgeting and forecast planning, and their help during our CQC application made the entire start-up process far less daunting. The team at RUS genuinely feel like an extension of our own. They are approachable, knowledgeable, and always available when we need support. I cannot recommend them highly enough.",
+    quote: "RUS Chartered Accountants have been instrumental to our journey. We opened as a brand-new squat practice in December 2023, and from the very beginning their guidance was exceptional. They supported us with detailed budgeting and forecast planning, and their help during our CQC application made the entire start-up process far less daunting. The team at RUS genuinely feel like an extension of our own. They are approachable, knowledgeable, and always available when we need support. I cannot recommend them highly enough.",
   },
   {
     id: 4,
