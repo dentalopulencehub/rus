@@ -2,7 +2,6 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getPostBySlug, getRelatedPosts } from '@/lib/insights-data';
 import { InsightCard } from '@/components/insights/InsightCard';
-import { ReadingProgress } from '@/components/insights/ReadingProgress';
 import { ScrollToTop } from '@/components/insights/ScrollToTop';
 import { BlogPostContent } from '@/components/insights/BlogPostContent';
 
@@ -98,9 +97,6 @@ export default async function InsightPostPage({ params }: InsightPostPageProps) 
 
   return (
     <>
-      {/* Reading Progress Bar */}
-      <ReadingProgress />
-
       {/* Scroll to Top Button */}
       <ScrollToTop />
 

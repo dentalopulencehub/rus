@@ -106,7 +106,7 @@ export function InsightsPreview() {
               <Link
                 key={insight.slug}
                 href={`/insights/${insight.slug}`}
-                className="group flex-none w-[420px] snap-start"
+                className="group flex-none w-[85vw] sm:w-[420px] snap-start touch-manipulation"
               >
                 <div className="h-full min-h-[480px] rounded-2xl border border-gray-200 bg-white hover:shadow-2xl hover:border-[#01458f] transition-all duration-300 overflow-hidden flex flex-col">
                   {/* Generative Visual */}

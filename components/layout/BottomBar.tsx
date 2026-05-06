@@ -42,6 +42,7 @@ const menuItems: MenuItem[] = [
       { label: 'Solicitors', href: '/sectors/solicitors' },
     ],
   },
+  { label: 'Insights', href: '/insights' },
   { label: 'Who We Are', href: '/who-we-are' },
   { label: 'Contact', href: '/contact' },
 ];
