@@ -1,10 +1,29 @@
 "use client";
 
-import { useState, FormEvent } from "react";
+import { useState, useEffect, useRef, FormEvent } from "react";
 import { ContactFormInline } from "@/components/contact/ContactFormInline";
 
 export default function ContactPage() {
   const [activeView, setActiveView] = useState<"details" | "form">("form");
+  const formSectionRef = useRef<HTMLElement | null>(null);
+
+  // Deep-link support: /contact#enquiry → Detailed Enquiry, /contact#quick → Quick Contact.
+  // Switches the toggle and scrolls the form section into view (useful for conference QR codes).
+  useEffect(() => {
+    const applyHash = () => {
+      const hash = window.location.hash.replace("#", "").toLowerCase();
+      if (hash === "enquiry" || hash === "inquiry" || hash === "quick") {
+        setActiveView(hash === "quick" ? "details" : "form");
+        // Defer scroll so the selected view has rendered.
+        requestAnimationFrame(() => {
+          formSectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      }
+    };
+    applyHash();
+    window.addEventListener("hashchange", applyHash);
+    return () => window.removeEventListener("hashchange", applyHash);
+  }, []);
 
   // Quick contact form state
   const [quickFormData, setQuickFormData] = useState({
@@ -156,7 +175,11 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Options with Toggle */}
-      <section className="py-24 px-4 bg-gray-50">
+      <section
+        ref={formSectionRef}
+        id="enquiry"
+        className="py-24 px-4 bg-gray-50 scroll-mt-24"
+      >
         <div className="max-w-6xl mx-auto">
           <div className="mb-12">
             <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8 tracking-tight">
