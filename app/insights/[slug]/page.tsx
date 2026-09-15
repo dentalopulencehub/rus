@@ -1,14 +1,20 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getPostBySlug, getRelatedPosts } from '@/lib/insights-data';
+import { getPostBySlug, getRelatedPosts, insightPosts } from '@/lib/insights-data';
 import { InsightCard } from '@/components/insights/InsightCard';
 import { ScrollToTop } from '@/components/insights/ScrollToTop';
 import { BlogPostContent } from '@/components/insights/BlogPostContent';
+import { FAQSchema } from '@/components/seo/FAQSchema';
 
 interface InsightPostPageProps {
   params: Promise<{
     slug: string;
   }>;
+}
+
+// Pre-render every insight post at build time
+export function generateStaticParams() {
+  return insightPosts.map((post) => ({ slug: post.slug }));
 }
 
 export async function generateMetadata({ params }: InsightPostPageProps): Promise<Metadata> {
@@ -105,6 +111,9 @@ export default async function InsightPostPage({ params }: InsightPostPageProps) 
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
+
+      {/* FAQ Schema - eligible for rich results where the post defines FAQs */}
+      {post.faqs && post.faqs.length > 0 && <FAQSchema faqs={post.faqs} />}
 
       {/* Blog Post Content with TOC Sidebar */}
       <BlogPostContent post={post} fullUrl={fullUrl} />

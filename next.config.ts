@@ -22,6 +22,16 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        // Superseded by the expanded IHT & succession planning article
+        source: '/insights/inheritance-tax-planning-strategies-2024',
+        destination: '/insights/inheritance-tax-succession-planning-review',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
